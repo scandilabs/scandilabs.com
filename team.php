@@ -23,7 +23,8 @@
 		        <?php include("include/left.php"); ?>
 	        	
 	            <div class="copyBox">
-	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	            	<h3>Mads Kvalsvik, Founder</h3>
+	                <p>Mads has devoted most of his professional life to finding better ways to build software, through startup roles, consulting and corporate product development roles.</p>
 	            </div>
 	        </div>
         </div>        

@@ -23,7 +23,9 @@
 		        <?php include("include/left.php"); ?>
 	        	
 	            <div class="copyBox">
-	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>The best-laid development plan means little without the ability to execute the build out in a quality, fast, low cost, and hassle free manner.</p>  
+					<p>Scandi Labs combines the quality and close collaboration benefits of on-shore development with the speed, iteration, and cost advantages of off-shore development, creating a rapid development environment that maximizes product excellence while minimizing the client's capital burn rate.</p>  
+					<p>Scandi Labs' flexible catamaran framework and iterative lean development process, combined with our on and off-shore development structure, insures that the race to the client's minimum viable product is swift and efficient resulting in the best product in the shortest time. </p>
 	            </div>
 	        </div>
         </div>        

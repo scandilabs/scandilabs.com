@@ -16,14 +16,16 @@
         <div id="content">
     	
 	    	<div id="contentHeadingBox">
-				<h1>we make it easy for you</h1>
+				<h1>we make it easy</h1>
 	    	</div>
 	        
 	        <div id="contentBodyBox">
 		        <?php include("include/left.php"); ?>
 	        	
 	            <div class="copyBox">
-	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Good code works.  Great code is flexible, scalable, and easy to maintain.  Great code serves as the foundation for further product iterations and enhancement.  Great code is what Scandi Labs delivers.</p>
+					<p>Scandi Labs carries the flexibility of our framework and lean development approach to the way we work with clients, serving as a development-on-tap resource after the minimum viable product has been introduced and market response is evident.</p> 
+					<p>Whether the client has an internal team, wishes to build out their own internal capabilities, or to continue working with us on further iterations of the initial product, Scandi Labs makes straightforward hand-off or client resource on-boarding or post launch product development simple and easy.</p>
 	            </div>
 	        </div>
         </div>        

@@ -23,9 +23,13 @@
 		        <?php include("include/left.php"); ?>
 	        	
 	            <div class="copyBox">
-					<p>at scandi labs we believe in the value of planning and process.  our first step is to work with the client to define their product's functionality and use.</p>  
-					<p>be it rapid prototyping for a start-up or an enterprise application for large business we work with the client to identify the scope and key benchmarks in product readiness and to formulate a rational plan that fits the client desire for speed and is acheivable within the timeframe and budget.</p>
-					<p>with scandi labs the client can have confidence that the product they need is the product they will get.</p>
+					<p>At Scandi Labs we believe there is no substitute for iterative prototyping to clarify a project's needs and scope and fulfill the client's hopes and expectations for their product.</p>
+					
+					<p>Typical Scandi Labs' projects begin with a three-week discovery and RAMP (rapid application mapping and prototyping) period, focusing on the product's key functionality, components, and structure.</p> 
+					
+					<p>This results a clear product development plan, budget, and schedule, avoiding the endemic wasted effort or missteps of other development methods that often lead to product restructuring, high development burn rates, and constantly moving launch dates.</p>
+					
+					<p>Scandi Labs' clients can have absolute confidence that after the RAMP process they will be prepared and ready to build the product they envisioned and need.</p>
 	            </div>
 	        </div>
         </div>        
