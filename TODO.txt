@@ -1,0 +1,11 @@
+TODO:
+
+Clean responsive design:
+http://upperdog.se/
+Via http://webdesignerwall.com/tutorials/5-useful-css-tricks-for-responsive-design
+
+http://www.tripwiremagazine.com/2012/06/responsive-website-design.html
+http://designwoop.com/2012/07/great-examples-of-responsive-design-in-the-wild/
+
+PLAY FRAMEWORK
+http://www.playframework.org/
