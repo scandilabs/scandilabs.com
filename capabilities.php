@@ -13,14 +13,23 @@
         
         <?php include("include/top.php"); ?>
         
-        <?php include("include/left.php"); ?>
-
         <div id="content">
-			            
-            <div class="copyBox">
+    	
+	    	<div id="contentHeadingBox">
                 <h1>what we can do</h1>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    	</div>
+	        
+	        <div id="contentBodyBox">
+		        <?php include("include/left.php"); ?>
+	        	
+	            <div class="copyBox">
+	                <ul>
+	                	<li>Solutions Definition: RAMP discovery and product MVP definition prototypes</li>
+	                	<li>Rapid Web Development: New product development for browser clients using Catamaran Framework</li>
+	                	<li>Rapid Mobile development</li>
+	                	<li>New feature development and systems integration of existing software-based products and services</li>
+	                </ul>
+               </div> 
             </div>
         </div>        
     </body>
