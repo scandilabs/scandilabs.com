@@ -5,7 +5,7 @@
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
     	<style type="text/css">
     		body {
-	    		background-image:url('../img/background7.jpg');
+	    		background-image:url('../img/background4.jpg');
 			}
 		</style>
     </head>
@@ -23,26 +23,14 @@
 		        <?php include("include/left.php"); ?>
 	        	
 	            <div class="copyBox">
-	                <h2>inspectortime.com</h2>
+	                <h2>Real Estate Startup:<br/>inspectortime.com</h2>
 	                <ul>
-	                	<li>New start-up idea from Real Estate Professionals</li>
-						<li>Worked with the Business to quickly define technology, created product strategy and vision</li>
+	                	<li>Idea from Real Estate Professionals</li>
+						<li>Worked with realtors and inspectors to quickly define technology, created product strategy and vision</li>
 						<li>Built and hosted application</li>
 						<li>Design of simple-to use application - drove fast adoption for 900 realtors - Coldwell, Keller, ReMax, etc</li>
 	                </ul>
 	                
-	                <h2>Automarket consumer site</h2>
-	                <ul>
-		                <li>Early identification of external data sources/providers</li>
-						<li>Early architectural prototype of vehicle import, automotive data join, search results</li>
-						<li>Added visual design and user experience gradually</li>
-						<li>Added administrative tools and Dealer interface gradually (iteration by iteration)</li>
-					</ul> 
-	
-	                <h2>Social media search engine</h2>
-	                <ul>
-					</ul> 
-	
 	                <h2>Healthcare IT startup</h2>
 	                <ul>
 	                	<li>Start-up idea with venture backing</li>

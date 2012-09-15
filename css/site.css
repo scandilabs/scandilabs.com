@@ -7,7 +7,7 @@ body {
     background-image: url('../img/berg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 140%;
+    font-size: 120%;
     letter-spacing: -1px;
 }
 
@@ -53,6 +53,7 @@ body {
     list-style: none inside;
     display:inline-block;
     width:24%;
+    text-align:right;
     /*padding-left: 3em;*/
 }
 
