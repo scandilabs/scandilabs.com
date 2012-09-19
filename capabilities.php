@@ -5,7 +5,7 @@
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
     	<style type="text/css">
     		body {
-	    		background-image:url('../img/background1.jpg');
+	    		background-image:url('../img/background4.jpg');
 			}
 		</style>
     </head>
@@ -24,9 +24,13 @@
 	        	
 	            <div class="copyBox">
 	                <ul>
-	                	<li>Solutions Definition: RAMP discovery and product MVP definition prototypes</li>
-	                	<li>Rapid Web Development: New product development for browser clients using Catamaran Framework</li>
-	                	<li>Rapid Mobile development</li>
+	                	<li>Solution clarification: RAMP discovery and product MVP definition prototypes</li>
+	                	<li style="padding-bottom: 10px; ">Web Development:  New product development on the server-side Catamaran Framework which brings the following technologies together in a rapid-development platform:</li>
+	                		<li style="font-weight: 500; padding-bottom: 5px; width:100%;">Java, Apache Tomcat, MySQL and Apache SOLR search</li>
+	                		<li style="font-weight: 500; padding-bottom: 5px;   width:100%;">Spring Framework and Spring MVC</li>
+	                		<li style="font-weight: 500;   width:100%;">Freemarker template engine</li>
+	                	<li style="width:100%;">Mobile web development</li>
+	                	<li>Mobile application development</li>
 	                	<li>New feature development and systems integration of existing software-based products and services</li>
 	                </ul>
                </div> 
