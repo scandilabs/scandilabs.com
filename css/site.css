@@ -9,6 +9,8 @@ body {
     background-size: cover;
     font-size: 120%;
     letter-spacing: -1px;
+    color:#666667;
+
 }
 
 #content {
@@ -30,6 +32,7 @@ body {
     /* background-color: #FFDF73; */
    font-size: small;
 }
+
 
 #header #logoBox {
     display: inline-block;
@@ -76,31 +79,31 @@ body {
 .homeCopyBox {
     /*padding: 36px;*/
     display: inline-block;
-    width: 78%;
+    /*width: 78%;*/
     text-align: justify;
     padding-right: 10%;
     padding-left: 10%;
 }
 
 a.current:link, a.current:visited {
-    color: #000000;
+    color: #666667;
     text-decoration: none;
 }
 
 a:link, a:visited {
-    color: #666;
+    color: #000;
     text-decoration: none;
 }
 
 a:hover {
-    color: #000000;
+    color: #666667;
     text-decoration: none;
 }
 
 #leftNav li {
     list-style: none inside;
     padding-bottom: 20px;
-    letter-spacing: -2px;
+    letter-spacing: -1.7px;
 }
 
 #leftNav .small {
@@ -109,7 +112,13 @@ a:hover {
 
 h1 {
     /* color: #3A0574; */
+        letter-spacing: -1.99px;
 }
+
+#title {
+    font-size: 2em;
+}
+
 
 #contentHeadingBox {
     text-align: center;

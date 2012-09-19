@@ -5,7 +5,7 @@
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
     	<style type="text/css">
     		body {
-	    		background-image:url('../img/background6.jpg');
+	    		background-image:url('../img/background5.jpg');
 			}
 		</style>
     </head>
@@ -16,16 +16,16 @@
         <div id="content">
     	
 	    	<div id="contentHeadingBox">
-				<h1>we make it easy</h1>
+				<h1 id="title">we make it easy</h1>
 	    	</div>
 	        
 	        <div id="contentBodyBox">
 		        <?php include("include/left.php"); ?>
 	        	
 	            <div class="copyBox">
-					<p>Good code works.  Great code is flexible, scalable, and easy to maintain.  Great code serves as the foundation for further product iterations and enhancement.  Great code is what Scandi Labs delivers.</p>
-					<p>Scandi Labs carries the flexibility of our framework and lean development approach to the way we work with clients, serving as a development-on-tap resource after the minimum viable product has been introduced and market response is evident.</p> 
-					<p>Whether the client has an internal team, wishes to build out their own internal capabilities, or to continue working with us on further iterations of the initial product, Scandi Labs makes straightforward hand-off or client resource on-boarding or post launch product development simple and easy.</p>
+					<p>Good code works.  Great code is flexible, scalable, and easy to maintain.  Great code serves as the foundation for further product iterations.  Great code is what Scandi Labs delivers.</p>
+					<p>After the minimum viable product has been introduced, continuing to work with Scandi Labs’ is simple. We can provide our clients with “development-on-tap” resources that fit our client’s needs.</p> 
+					<p>Whether the client wants a clean hand-off or on-boarding assistance for their own team or for Scandi Labs to handle the post launch product development and maintenance, we make it easy.</p>
 	            </div>
 	        </div>
         </div>        
