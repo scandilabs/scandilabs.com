@@ -16,7 +16,7 @@
         <div id="content">
     	
 	    	<div id="contentHeadingBox">
-                <h1>we'd like to talk to you</h1>                
+                <h1>contact</h1>                
 	    	</div>
 	        
 	        <div id="contentBodyBox">

@@ -16,7 +16,7 @@
         <div id="content">
     	
 	    	<div id="contentHeadingBox">
-                <h1 style="text-align:center;">we deliver solutions</h1>
+                <h1 style="text-align:center;">projects</h1>
 	    	</div>
 	        
 	        <div id="contentBodyBox">

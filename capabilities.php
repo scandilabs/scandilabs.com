@@ -16,7 +16,7 @@
         <div id="content">
     	
 	    	<div id="contentHeadingBox">
-                <h1>what we can do</h1>
+                <h1>capabilities</h1>
 	    	</div>
 	        
 	        <div id="contentBodyBox">
