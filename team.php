@@ -39,7 +39,7 @@
 	                <p>Jen is Scandi Labs' go-to user experience expert.  She has deep industry experience with Healthcare, Finance and Consumer Products.  She starts every engagement with a thorough understanding of a client's business needs and goals, before building out the product concepts that guide the development team.</p>
 
                     <h4>Vikram Shinde, Off Shore Operations Manager</h4>
-                    <p>Vikram heads up the development center Pune, India.  He has over 12 years of experience developing products on the Java/J2EE technologies on which Scandi Labs' open source framework (Catamaran Framework) is based.</p>
+                    <p>Vikram heads up our development center Pune, India.  He has over 12 years of experience developing products on the Java/J2EE technologies on which Scandi Labs' open source framework (Catamaran Framework) is based.</p>
 
 	            	<h4>Kailash Thok, Software Developer</h4>
 	                <p>As a full-stack software developer, Kailash is responsible for both back-end and web development.  He is a self-starter with a thirst for learning, and likes to play cricket in his spare time.  He earned a Bachelor's degree in Computer Engineering from the University of Pune.</p>
