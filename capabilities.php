@@ -8,6 +8,7 @@
 	    		background-image:url('../img/background1.jpg');
 			}
 		</style>
+		<?php include("include/head.php"); ?>
     </head>
     <body>
         
