@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>New Web Project</title>
+        <title>Scandi Labs Projects</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
     	<style type="text/css">
     		body {
@@ -35,7 +35,7 @@
 	                <p style="margin-top: 40px;">PROJECT 2: Health Care Start-up</p>
 	        
 	        <p style="margin-top: 0px;font-weight: 500;">A start-up technology company with venture capital backing had the idea to centralize health providers’ contact with various key companies in the health care supply chain.  The technology removes inefficiencies for health care providers by providing a single system to manage their primary interactions. <br/> <br/> Scandi Labs:</p>
-			<p style="  font-weight: 500;">  Worked with founders and collaborate with industry leaders to define the technology</p>
+			<p style="  font-weight: 500;">  Worked with founders and collaborated with industry leaders to define the technology</p>
 			<p style="  font-weight: 500;"> Performed rapid, iterative early prototyping that resulted in additional funding</p>
 			<p style="  font-weight: 500;"> Built, iterated, and hosted website with Catamaran Framework and off shore resources.</p>
 			<p style="  font-weight: 500;"> Is performing ongoing iteration and systems integration with partner companies </p>

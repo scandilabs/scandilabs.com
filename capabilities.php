@@ -1,11 +1,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>New Web Project</title>
+        <title>Scandi Labs Capabilities</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
     	<style type="text/css">
     		body {
-	    		background-image:url('../img/background4.jpg');
+	    		background-image:url('../img/background1.jpg');
 			}
 		</style>
     </head>
@@ -13,13 +13,16 @@
         
         <?php include("include/top.php"); ?>
         
-        <div id="content">
+        <div id="content" >
+        <!--div id="content" style="background-color: #FFF; border-top: 1px solid #555; color:#333; opacity:.75; margin-top: 20px;"-->
     	
 	    	<div id="contentHeadingBox">
+             
                 <h1>capabilities</h1>
+
 	    	</div>
 	        
-	        <div id="contentBodyBox">
+	        <div id="contentBodyBox" >
 		        <?php include("include/left.php"); ?>
 	        	
 	            <div class="copyBox">

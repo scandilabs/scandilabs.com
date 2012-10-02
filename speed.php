@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>New Web Project</title>
+        <title>Scandi Labs Value</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
     	<style type="text/css">
     		body {
