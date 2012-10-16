@@ -1,0 +1,147 @@
+#homeContent {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: white;
+    width: 100%;
+}
+
+#homeContent h1 {
+    font-size: 150%;
+}
+
+#rotatorBox {
+    /* see http://stackoverflow.com/questions/5062684/a-jquery-rotator-that-doesnt-suck */
+    background-color: #F8E9FC;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+    display: table;
+    text-align: center; 
+    height: 152px;
+    position: relative;
+    font-size: 120%;
+}
+
+.rotatorItem p {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.rotatorItem {
+    width:100%;
+    position: absolute;
+    left:0px;
+    top:16px;
+}
+
+.rotatorNav {
+    position: relative;
+    top: 56px;    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.rotatorNav li {
+    list-style: none;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../img/bg_buttons.png) no-repeat 0 -16px;
+    /*display: block;*/
+}
+
+.rotatorNav li.activeIcon {
+    background: url(../img/bg_buttons.png) no-repeat 0 -32px;
+}
+
+.rotatorCenteredInner {
+    /* vertical centering: http://css-tricks.com/vertically-center-multi-lined-text/ */
+    vertical-align:middle;
+    display: table-cell; 
+   /*position: absolute;*/
+   width: 100%;    
+   height: 100%;
+}
+
+#equationBox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 700px;
+    font-size: 120%;
+    background-color: #444;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 64px;
+}
+
+#equationBox p {
+    text-align: center;   
+}
+
+a.darkBackground:link, a.darkBackground:visited {
+    color: #DDD;
+    text-decoration: none;
+}
+
+a.darkBackground:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#lead {
+    margin-left: auto;
+    margin-right: auto;   
+    width: 900px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#rtb {
+    margin-left: auto;
+    margin-right: auto;   
+    width: 900px;
+    margin-top: 36px;
+    /*position: relative;*/
+    text-align: center; 
+}
+
+#rtb div {
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+}
+
+#ctaBox {
+    margin-top:24px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width:thin;
+    border-bottom-width:thin;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 900px;
+    text-align: center;    
+}
+
+#clients {
+    margin-top:24px;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 900px;
+    text-align: center;    
+}
+
+#clients ul {
+    list-style: none;
+        
+}
+
+#clients ul li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px;
+}

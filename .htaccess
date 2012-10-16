@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   # RewriteRule ^/?page/(.*)$ page.php/$1 [L]
+   # works: RewriteRule ^test/(.*)$ /$1.php [L] 
+   RewriteRule ^([A-Za-z0-9_-]+)(/)?$ /$1.php [L]
+   # RewriteRule ^page/([A-Za-z0-9_-]+)(/)?$ index.php?page=page&uri=$1
+   # RewriteRule ^work/([A-Za-z0-9_-]+)(/)?$ index.php?page=work&uri=$1
+</IfModule>

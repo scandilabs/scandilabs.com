@@ -2,159 +2,120 @@ body {
     margin: 0 0;
     /*font-family: arial,sans-serif;*/
     font-family: "Helvetica";
-    font-weight: 600;
-    width: 100%;
-    background-image: url('../img/berg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 120%;
-    letter-spacing: -1px;
-    color:#555556;
-
-}
-
-#content {
-    margin: 0em;
-    margin-top:50px;
-}
-
-#leftNav {
-    display: inline-block;
-    vertical-align: top;
-    width: 25%;
+    font-weight: 400;
+    width:100%;
     font-size: 100%;
-}
-
-#header {
-    padding-top: 36px;
-    padding-bottom: 100px;
-    color: #888888;
-    width: 100%;
-    /* background-color: #FFDF73; */
-   font-size: small;
-}
-
-
-#header #logoBox {
-    display: inline-block;
-    padding-left: 40px;
-    width: 47%;
-}
-
-#header ul {
-    display: inline-block;
-    padding: 0px;
-    /*float: right;*/
-    /*vertical-align: bottom;*/
-    /*margin: 0px;*/
-    width: 46%;
-    -webkit-margin-before:0px;
-    -webkit-margin-after:0px;
-    -webkit-padding-start:0px;
-}
-
-#header ul li {
-    list-style: none inside;
-    display:inline-block;
-    width:24%;
-    text-align:right;
-    /*padding-left: 3em;*/
-}
-
-#logoBox {
-    width:45%;
-}
-
-#logoBox img {
-    /* width:300px; */
-    margin: 0;
-    /* position: relative;
-     top:-2em; */
-}
-
-.copyBox {
-    display: inline-block;
-    width: 50%;
-}
-
-.copyBox ul {
-    margin-left:0px;
-    padding-left:0px;
-    text-align:justify;
-}
-
-
-.copyBox li {
-    display: inline-block;
-    padding-bottom: 25px;
-}
-
-.homeCopyBox {
-    /*padding: 36px;*/
-    display: inline-block;
-    /*width: 78%;*/
-    text-align: justify;
-    padding-right: 10%;
-    padding-left: 10%;
+    /*letter-spacing: -1px;*/
+    /* color:#555556; */
+   color: black;
+   background-color: #ddd;
+   
 }
 
 a.current:link, a.current:visited {
-    color: #666667;
-    text-decoration: none;
-}
-
-a:link, a:visited {
     color: #000;
     text-decoration: none;
 }
 
-a:hover {
+a:link, a:visited {
     color: #666667;
     text-decoration: none;
 }
 
-#leftNav li {
-    list-style: none inside;
-    padding-bottom: 20px;
-    letter-spacing: -1.7px;
+a:hover {
+    color: #000;
+    text-decoration: none;
 }
 
-#leftNav .small {
-    font-size: 60%;
+#outerContent {
+    background-color: #F9F9F9;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1 {
-    /* color: #3A0574; */
-        letter-spacing: -1.99px;
-}
-
-#title {
-    font-size: 2em;
-}
-
-
-#contentHeadingBox {
-    text-align: center;
-}
-
-#contentBodyBox {
+#content {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    background-color: white;
     width: 100%;
 }
 
-.copyBox p {
-    text-align: justify;
+#content h1 {
+    font-size: 130%;
 }
 
-form label {
-    display: inline-block;
-    margin-right: 5px;
-    padding-top: 4px;
-    /*text-align: right;*/
-    width: 60px;
+#content h2 {
+    font-size: 110%;
+}
+
+#content a.current:link, a.current:visited {
+    text-decoration:underline;
+}
+
+#content a:link, #content a:visited {
+    text-decoration: underline;
+}
+
+#content a:hover {
+    text-decoration: underline;
+}
+
+#crumbs {
+    margin-left:40px;
+    margin-right: 40px;
+}
+
+#crumbs p {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+#mainCol {
+    margin-left:40px;
+    margin-right: 40px;
+    display:inline-block;
+    width: 57%;
+}
+
+#mainRightCol {
+    width: 24%;
+    margin-left:40px;
+    margin-right: 40px;
+    display:inline-block;
     vertical-align: top;
-    font-size: 80%;
+    background: #F8E9FC;
+    padding: 8px;
 }
 
-form div {
+#leftCol {
+    margin-left:40px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right:10px;
+    display:inline-block;
+    width: 25%;
+    background-color:#FFD7B3
+}
 
+#centerCol {
+    margin-left:40px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right:10px;
+    display:inline-block;
+    width: 25%;
+    vertical-align: top;
+    background-color:#CAFFD8
+}
+
+#rightCol {
+    width: 25%;
+    margin-left:40px;
+    margin-right: 40px;
+    padding-left: 10px;
+    padding-right:10px;
+    display:inline-block;
+    vertical-align: top;
+    background-color:#CEF0FF;
 }

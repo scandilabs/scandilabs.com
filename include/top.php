@@ -3,20 +3,31 @@
 ?>
         <div id="header">
             <div id="logoBox" >
-                <a href="index.php" ><img src="img/logo_plain.png"></a>
+                <a href="index" ><img src="img/logo_plain.png"></a>
             </div>   
-            <ul style="  font-weight: 500;">
-				<li style="text-align: left;"><a 
-					<?php if($page=='/projects.php') echo "class='current'"; ?> 
-					href="projects.php">projects</a></li>	
-				<li style="text-align: center;"><a 
-					<?php if($page=='/capabilities.php') echo "class='current'"; ?> 
-					href="capabilities.php">capabilities</a></li>	
-				<li style="width: 22%; padding-right: 20px;"><a 
-					<?php if($page=='/team.php') echo "class='current'"; ?> 
-					href="team.php">team</a></li>	
-				<li><a 
-					<?php if($page=='/contact.php') echo "class='current'"; ?> 
-					href="contact.php">contact</a></li>			
+            <ul>
+				<li>
+					<a 
+						<?php if($page=='/what.php') echo "class='current'"; ?> 
+						href="what">
+						<h2>what we do</h2>
+						<p>web, b2b, enterprise, mobile</p>		
+					</a>
+				</li>	
+				<li>
+					<a 
+						<?php if($page=='/how.php') echo "class='current'"; ?> 
+						href="how">
+						<h2>how we work</h2>
+						<p>ux, agile, on tap</p>
+					</a>
+				</li>	
+				<li>
+					<a 
+						<?php if($page=='/why.php') echo "class='current'"; ?> 
+						href="why"><h2>why we are different</h2>
+						<p>framework, value, experience</p>		
+					</a>
+				</li>	
             </ul>       
         </div>
