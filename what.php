@@ -6,8 +6,7 @@
         <title>New Web Project</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/what.css" media="screen, projection">
     </head>
     <body>
     	<div id="outerContent">
@@ -16,6 +15,45 @@
         
         <div id="content">          
         	
+        	<div id="barBox">
+        	    <div id="barLeft">
+        	        <h1>Startups</h1>
+        	        <ul>
+        	            <a href="consumer-web"><li id="bar1">Consumer Web and Mobile</li></a>
+        	            <a href="enterprise"><li id="bar2">Internal Systems and Partner Portals</li></a>
+        	            <a href="it-consulting"><li id="bar3">Enterprise IT Consulting</li></a>
+        	            <a href="managed"><li id="bar4">Managed Cloud Hosting</li></a>
+        	            <a href="managed"><li id="bar5">Fundraising Assistance</li></a>
+        	        </ul>
+        	    </div>
+        	    
+        	    <div id="barRight">
+                    <h1>Midsize / Enterprise</h1>
+                </div>        	    
+        	</div>
+        	
+            <div id="rtb">
+                <div>
+                    <h2><a href="consumer-web">Consumer Web Sites</a></h2>
+                    <p>The fastest, least cost path to<br/>
+                        minimum viable product and successful market launch.
+                    </p>
+                </div>
+                <div>
+                    <h2><a href="enterprise">Corporate Business Systems</a></h2>
+                    <p>From mission critical enterprise<br/>
+                         systems to user friendly intranet applications.
+                    </p>
+                </div>
+                <div>
+                    <h2><a href="it-consulting">Enterprise IT Consulting</a></h2>
+                    <p>Help with architecture, SOA, ESB, <br/>
+                        fault tolerance, load balancing, development work intake process.
+                    </p>
+                </div>
+            </div>        	
+        	
+        	<!--
         	<?php include("include/crumbs.php"); ?>
         	
         	<div id="leftCol">
@@ -32,7 +70,7 @@
         		<a href="consumer-web">
         			MORE..
         		</a>
-        	</div>  <!-- leftCol -->
+        	</div>  
         	
         	<div id="centerCol">
         		<h1>Business to Business and Enterprise Web</h1>
@@ -47,7 +85,7 @@
         			MORE..
         		</a>
 
-        	</div>  <!-- centerCol -->        	
+        	</div>      	
         	
         	<div id="rightCol">
         		<h1>Mobile Web and Apps for iOS and Android</h1>
@@ -57,7 +95,8 @@
         		
         	</div>
         	
-    	</div>  <!-- content -->
+    	</div>  
+    	-->
     	
     	<?php include("include/bottom.php"); ?>  
     	

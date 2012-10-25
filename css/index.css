@@ -11,7 +11,7 @@
 
 #rotatorBox {
     /* see http://stackoverflow.com/questions/5062684/a-jquery-rotator-that-doesnt-suck */
-    background-color: #F8E9FC;
+    background-color: hsla(213,85%,90%,1);
     width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -98,21 +98,6 @@ a.darkBackground:hover {
     width: 900px;
     margin-top: 0px;
     text-align: center;
-}
-
-#rtb {
-    margin-left: auto;
-    margin-right: auto;   
-    width: 900px;
-    margin-top: 36px;
-    /*position: relative;*/
-    text-align: center; 
-}
-
-#rtb div {
-    width: 30%;
-    display: inline-block;
-    text-align: left;
 }
 
 #ctaBox {

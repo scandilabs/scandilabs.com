@@ -19,7 +19,7 @@
         <div id="homeContent">    
         
             <div id="lead">
-                <h1>Scandi Labs combines startup speed and enterprise scale to solve software challenges for our clients. <a href="speed-vs-scale">MORE..</a></h1>  
+                <h1>Scandi Labs uses startup speed and enterprise scale <br/>to build software products for our clients. <a href="speed-vs-scale">MORE..</a></h1>  
             </div>
             
             <div id="rotatorBox">

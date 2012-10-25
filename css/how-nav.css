@@ -1,0 +1,24 @@
+.breadcrumb li a {
+	padding-left: 91px;
+}
+
+.breadcrumb a {		
+	text-decoration: underline;
+	font-size: 14px;
+}
+
+
+/* override defaults */
+#how-crumbs li:first-child a {
+	padding-left: 40px;
+	/* disable link 
+	pointer-events: none;
+   	cursor: default;
+   	text-decoration: none;
+   	*/
+}
+
+/* override defaults */
+#how-crumbs li:last-child a {
+	padding-right: 40px;
+}

@@ -18,9 +18,9 @@
 	        	<?php include("include/crumbs.php"); ?>
 	        	
 	        	<div id="mainCol">
-	        		<h1>Business to Business and Enterprise Web</h1>
-	        		<h2>Domain Understanding</h2>
-	        		<p>We believe that in order to be an effective partner we need to have a good grasp of our client's business.  From Healthcare IT to Education, Finance, Technology and Supply Chain Management, we have prior experience in many industries.  And we read up if we don't.</p>
+	        		<h1>Cloud-based Internal Business Systems</h1>
+	        		<h2>Business Domain Understanding</h2>
+	        		<p>We believe that in order to be an effective partner we need to have a good grasp of our client's business.  From Healthcare IT to Finance, Technology, and Education, we have prior experience in many industries.  And we read up if we don't.</p>
 	        		<h2>User Buy-In through Prototyping</h2>
 	        		<p>The key to a successful B2B or Enterprise product launch is stakeholder buy-in.  Our experience goes back to the early nineties when companies like Cambridge Technology Partners and Sapient facilitated Rapid Application Development sessions to help various stake holders come together aroud a feature set.  This approach, coupled with frequent reviews with key users, ensure successful prototyping and product build-outs.</p>
 	        		<h2>Quickly Up and Running</h2>
@@ -30,11 +30,13 @@
 
 				</div>
 				<div id="mainRightCol">
-	        		<h1>Leading Trends in Enterprise Software</h1>
-	        		<ul>
-	        			<li><a href="http://aws.amazon.com/business-applications/">Enterprise Cloud</a></li>
-	        			<li><a href="http://www.workday.com/">SaaS ERP replacements</a></li>
-	        		</ul>
+	        		<h1>Focus on Usability</h1>
+	        		<p class="quote-indent">
+                        "For far too long the enterprise software selection decision has been a primarily IT-led and feature-set-focused process, with feedback from actual users typically playing a much less significant role than that required. Ignoring user opinion, of which user experience (UX) is a big part, has not gone unpunished of course, and has resulted in familiar problems including expensive training and lack of adoption."
+	        		</p>
+	        		<p>    
+	        		    From <a href="http://ovum.com/2012/08/13/incorporating-user-experience-in-enterprise-software-selection/" target="_new">Incorporating user experience in enterprise software selection</a><br/> by Somak Roy of <a href="http://ovum.com" target="_new">Ovum</a>
+	        		</p>
 	        	</div>
 	        	
 	    	</div>  <!-- content -->

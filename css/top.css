@@ -1,7 +1,7 @@
 /** CSS for header and footer **/
 
 #header {
-    padding-top: 24px;
+    padding-top: 12px;
     padding-bottom: 8px;
     color: #888888;
     width: 100%;
@@ -13,15 +13,18 @@
 
 #header h2 {
     margin: 0;
+    font-size: 18px;
 }
 
 #header p {
     margin: 0;
 }
 
-#header #logoBox {
+#logoBox {
     display: inline-block;
     padding-left: 40px;
+    vertical-align: top;
+    padding-top: 1px;
     /*width: 29%;*/
 }
 
@@ -33,12 +36,8 @@
 }
 
 #header ul {
-    display: inline-block;
+    display: inline-block;    
     padding: 0px;
-    padding-bottom: 8px;
-    /*float: right;*/
-    /*vertical-align: bottom;*/
-    /*margin: 0px;*/
     width: 80%;
     -webkit-margin-before:0px;
     -webkit-margin-after:0px;
@@ -49,6 +48,7 @@
 }
 
 #header ul li {
+	
     list-style: none inside;
     display:inline-block;
     /*width:24%;*/
