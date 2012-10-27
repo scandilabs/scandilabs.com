@@ -6,6 +6,7 @@
         <title>New Web Project</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>
@@ -14,9 +15,8 @@
 	        
 	        <?php include("include/top.php"); ?>  
 	        
-	        <div id="content">    
-	        	
-	        	<?php include("include/crumbs.php"); ?>
+	        <div id="content"> 
+	        	<?php include("include/why-tabs.php"); ?>   
             	       	   
 	        	<div id="mainCol">
 	        		<h1>Why We are Different</h1>
