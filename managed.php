@@ -6,6 +6,7 @@
         <title>New Web Project</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>
@@ -15,21 +16,9 @@
 	        <?php include("include/top.php"); ?>  
 	        
 	        <div id="content">           	   
-	        	<?php include("include/crumbs.php"); ?>
+	        	<?php include("include/what-tabs.php"); ?>
 	        	
-	        	<div id="mainCol">
-	        		<h1>Enterprise IT Consulting</h1>
-	        		<h2>Lorem ipsum</h2>
-	        		<p>Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum </p>
-
-				</div>
-				<div id="mainRightCol">
-	        		<h1>Leading Trends in Enterprise Software</h1>
-	        		<ul>
-	        			<li><a href="http://aws.amazon.com/business-applications/">Enterprise Cloud</a></li>
-	        			<li><a href="http://www.workday.com/">SaaS ERP replacements</a></li>
-	        		</ul>
-	        	</div>
+	        	<?php include("include/hosting-body.php"); ?>
 	        	
 	    	</div>  <!-- content -->
 	    	

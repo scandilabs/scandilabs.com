@@ -25,6 +25,7 @@
 					<h2>
 					    Why is enterprise software development slow?
 					</h2>
+					<img src="assets/dev_vs_maint_cost.png" />
 					<p>
 					    If you talk to business managers who rely on in-house developed software, you will often hear stories about slow implementations, poor usability, and
 					    resistance to change expressed via sky-high change estimates.

@@ -20,25 +20,8 @@
 	            
 	            <?php include("include/how-nav.php"); ?>
 	            
-	        	<?php include("include/crumbs.php"); ?>
-	        	     
-	        	<div id="mainCol">
-	        
-					<h1>
-					    Maintenance
-					</h1>
-                    <p>Market Research</p>
-					<ul>
-						<li>Full-stack developers save on communication overhead</li>
-						<li>Our own development framework provides continued learning, knowledge retention, and flexibility</li>
-					</ul>
-	        	</div>  <!-- mainCol -->
-	        	
-	        	<div id="mainRightCol">
-	        		<h1>Lorem ipsum</h1>
-	        		<p>Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum .</p>
-	        	</div>
-        	
+                <?php include("include/hosting-body.php"); ?>
+	        	             	
 	    	</div>  <!-- content -->
     	
     		<?php include("include/bottom.php"); ?>

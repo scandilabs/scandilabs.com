@@ -1,3 +1,5 @@
+/* TODO: Center pages like this site: http://www.coupa.com/purchasing-procurement-blog/usability-in-enterprise-applications-part-i  */
+
 body {
     margin: 0 0;
     /*font-family: arial,sans-serif;*/
@@ -75,10 +77,16 @@ a:hover {
 #crumbs p {
     margin-top: 0px;
     margin-bottom: 0px;    
+    display:inline;
 }
 
 #crumbs h1 {
 	display:inline;
+}
+
+.right-aligned {
+	position:relative;
+	left:498px;
 }
 
 #mainCol {
@@ -138,13 +146,23 @@ a:hover {
 
 .blurb {
 	margin-left: 40px;	
+	margin-right: 40px;
+}
+
+#chartBackgroundBox {
+	background-color: hsla(213,85%,90%,1);
+	text-align: center;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-right: 40px;
+	margin-left: 40px;
 }
 
 #rtb {
     margin-left: auto;
     margin-right: auto;   
     width: 900px;
-    margin-top: 36px;
+    margin-top: 18px;
     /*position: relative;*/
     text-align: center; 
 }

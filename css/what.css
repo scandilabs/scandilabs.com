@@ -1,6 +1,8 @@
 #barBox {	
 	/*height: 400px;*/
 	width: 100%;	
+	margin-top: 24px;
+	margin-bottom: 32px;
 }
 
 #barLeft {
@@ -21,9 +23,9 @@
 	vertical-align: top;
 }
 
-#barBox h1 {
+#barBox h2 {
 	
-	text-align: center;
+	text-align: center;	
 	/*
 	width: 200px;
 	margin-left: auto;
@@ -54,7 +56,7 @@ li#bar1 {	left:140px; }
 li#bar2 {	left:340px; }
 li#bar3 {	left:430px; }
 li#bar4 {	left:240px; }
-li#bar5 {	left:60px; width:80%; }
+li#bar5 {	left:80px; width:80%; }
 
 #barLeft a {
 	color: white;

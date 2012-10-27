@@ -18,6 +18,11 @@
         
         <div id="content">       
             
+            <div class="blurb">
+                <h1>How We Work</h1>
+                <p>From funding and market strategy to maintenance and hosting -- we assist clients at any step of the process.</p>
+            </div>
+            
             <ul id="process-nav" class="breadcrumb">
                 <li>
                     <a href="#">

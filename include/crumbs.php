@@ -10,10 +10,20 @@
         			<p><a href="index">home</a> : what we do</p>
 
         		<?php elseif ($page=='/consumer-web.php'): ?>
-        			<p><a href="what">What We Do</a> : </p>
+        			<p><a href="what">What We Do</a></p>
+        			<p class="right-aligned"><a href="enterprise">>></a></p>        			
 
         		<?php elseif ($page=='/enterprise.php'): ?>
-        			<p><a href="what">What We Do</a> : b2b and enterprise</p>
+        			<p><a href="what">What We Do</a></p>
+        			<p class="right-aligned"><a href="it-consulting">>></a></p>
+
+                <?php elseif ($page=='/it-consulting.php'): ?>
+                    <p><a href="what">What We Do</a></p>
+                    <p class="right-aligned"><a href="managed">>></a></p>
+
+                <?php elseif ($page=='/managed.php'): ?>
+                    <p><a href="what">What We Do</a></p>
+                    <p class="right-aligned"><a href="consumer-web">>></a></p>
 
         		<?php elseif ($page=='/how.php'): ?>
         			<p><a href="index">home</a> : how we work</p>

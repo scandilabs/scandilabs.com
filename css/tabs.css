@@ -1,0 +1,48 @@
+ul.tabs {
+	margin-left: 40px;	
+    list-style:none;
+    border-bottom: 1px solid #999;
+    margin:0;
+    margin-bottom: 16px;
+    padding:0;
+    width:100%;
+    float:left;
+}
+
+ul.tabs li {
+    margin:0;
+    padding:0;
+    position:relative;
+    float:left;
+    overflow:hidden;
+    margin-bottom: -1px;
+    border: 1px solid #999;
+    border-right: 1px solid white;
+    padding-top: 6px;                
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.tabs li:last-child {
+    border-right: 1px solid #999;
+}
+
+ul.tabs li.active {
+    border-bottom: 1px solid white;
+}
+
+ul.tabs li.title {
+    border: 1px solid white;
+    padding-left:0;
+    border-bottom: 1px solid #999;
+}            
+
+ul.tabs li a {
+    
+    
+}
+
+ul#what-tabs li a:link, ul.tabs li a:visited {
+    text-decoration: none;
+    
+}

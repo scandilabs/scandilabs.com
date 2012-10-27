@@ -6,6 +6,7 @@
         <title>New Web Project</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>
@@ -15,18 +16,17 @@
 	        <?php include("include/top.php"); ?>  
 	        
 	        <div id="content">           	   
-	        	<?php include("include/crumbs.php"); ?>
+	        	<?php include("include/what-tabs.php"); ?>
 	        	
 	        	<div id="mainCol">
-	        		<h1>Cloud-based Internal Business Systems</h1>
-	        		<h2>Business Domain Understanding</h2>
+	        		<h1>Corporate Business Systems</h1>
+	        		<p><img src="assets/medgrp_sm.png" /></p>
+	        		<h2>Business Understanding</h2>
 	        		<p>We believe that in order to be an effective partner we need to have a good grasp of our client's business.  From Healthcare IT to Finance, Technology, and Education, we have prior experience in many industries.  And we read up if we don't.</p>
-	        		<h2>User Buy-In through Prototyping</h2>
-	        		<p>The key to a successful B2B or Enterprise product launch is stakeholder buy-in.  Our experience goes back to the early nineties when companies like Cambridge Technology Partners and Sapient facilitated Rapid Application Development sessions to help various stake holders come together aroud a feature set.  This approach, coupled with frequent reviews with key users, ensure successful prototyping and product build-outs.</p>
-	        		<h2>Quickly Up and Running</h2>
-	        		<p>We get an MVP (minimally viable product) up and running quickly, in order to facilitate collaboration and feature convergence across users and stake holders.</p>
+	        		<h2>Rapid Prototyping</h2>
+	        		<p>We get an MVP (minimally viable product) up and running quickly, in order to facilitate collaboration and buy-in from users and stakeholders.</p>
 	        		<h2>API's and Integration</h2>
-	        		<p>Our adherence to clean code, proper assigment of responsibilities to components, and a <a href="technology-stack">flexible development framework</a> we make it a breeze to create API's and integration points with other systems.</p>
+	        		<p>Our first-rate <a href="technology-stack">enterprise technology</a>, with adherence to clean code and proper assigment of responsibilities to components, makes it a breeze to create API's and integration points with other systems.</p>
 
 				</div>
 				<div id="mainRightCol">

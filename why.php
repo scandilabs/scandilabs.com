@@ -20,6 +20,7 @@
             	       	   
 	        	<div id="mainCol">
 	        		<h1>Why We are Different</h1>
+	        		<img src="assets/catamaran_thumb.png" height="50%" width="50%" />
 	        		<h2>Startup speed, enterprise scaling</h2>
 	        		<p>We grew up doing enterprise software in the 90s, but we have spent most of the last decade building consumer web and business to business online properties.  And along the way, we have figured out how to combine the best of both worlds.  This knowledge and experience is embedded in the open source Catamaran Framework, where we continue to evolve it in collaboration with the open source community.  <a href="speed-vs-scale">MORE..</a></p>
 	        		<h2>Our secret sauce -- made public</h2>
