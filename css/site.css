@@ -182,3 +182,12 @@ td {
 .quote-indent {
 	padding-left: 8px;
 }
+
+.clearfix {
+    clear: both;
+}
+
+.float-right {
+    float: right;
+    margin-left: 24px;
+}
