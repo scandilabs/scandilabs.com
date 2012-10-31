@@ -25,37 +25,43 @@
 	        	<div id="mainCol">
 	        
 					<h1>
-					    Development: Value, Speed, and Flexibility
+					    Development
 					</h1>
-					<h2>Continued Improvement</h2>
+					<h2>Agile</h2>
 					<p>
-					    Our developers are good at what they do.  And they continue to get better because we incorporate our learning into the open-source <a href="http://catamaranframework.org">Catamaran Framework</a>.  
+					    We believe the <a target="_new" href="http://agilemanifesto.org/">Agile Manifesto</a> offers an excellent philosophy for software development.
                     </p>
-                    <h2>Solution Recycling</h2>
-                    <p>					    
-					    Although our client projects are very different, we come across the same technical challenges over and over again.  By documenting the solution in the searchable Catamaran FAQ, we make sure problems only need to be solved once.  
-                    </p>
-                    <p>					    
-					    Since technical problem solving can be the most time-consuming part of a developer's work day, this allows us to deliver great speed and value to our clients. 
+					<p>
+					    But when it comes to practical implementation, there is no substitute for experience and common sense.
 					</p>
+					<p>
+					    Process is ultimately about people, and how you approach development in a brand-new startup environment is different from an established organization with a great product management team and a poor engineering group (or vice versa).  
+					</p>
+					<h2>Knowledge Management</h2>
+					<p>
+					    Our developers are good at what they do, which translates into value for our clients.  
+					</p>
+					<p>    
+					    And by continually incorporating new learning into our open-source <a href="technology-stack">technology framework</a> we never have to solve the same technical problem twice.  
+                    </p>
 	        	</div>  <!-- mainCol -->
 	        	
 	        	<div id="mainRightCol">
 	        		<h1>Full-stack Developers</h1>
-	        		<p>We train our developers to be proficient in both web development (HTML, CSS, JavaScript) and back-end development (Java, databases, cloud servers).</p>
+	        		<p>Our developers master both web development (HTML, CSS, JavaScript) and back-end development (Java, databases, cloud servers).</p>
 	        		<p>This saves on communication overhead and internal team dependencies, which allows us to deliver running code faster.</p>
 	        	</div>
 
                 <div class="blurb">    	        	
                     <h2>
-                        On Tap Flexible Team Sizes
+                        On Tap Development
                     </h2>       
-                    <p>We can accommodate a number of different client needs and team sizes.  And more importantly, we make it easy for each client to dial the level of effort up or down depending on changing circumstances:</p>          
+                    <p>We can accommodate a number of different client needs and team sizes.  And more importantly, we make it easy for each client to dial the level of effort up or down depending on circumstances:</p>          
 	        	</div>	        	
 	        	
                 <div id="leftCol">
                     
-                    <h1>Client X: Seed funded</h1>
+                    <h1>First phase:<br/> Seed funded</h1>
                     <p>Received seed/angel funding to build out the initial Minimum Viable Product (MVP)</p>
                     <table>
                         <tr>
@@ -75,14 +81,14 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td>TOTAL HOURS</td>
+                            <td>WEEKLY HOURS</td>
                             <td>60</td>
                         </tr>
                     </table>
                 </div>  
                 
                 <div id="centerCol">
-                    <h1>Client X: Low burn</h1>
+                    <h1>Second phase:<br/>Low burn</h1>
                     <p>Completed MVP, slowly refining product and adding users while shopping the product around to investors</p>
                     <table>
                         <tr>
@@ -97,14 +103,14 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td>TOTAL HOURS</td>
+                            <td>WEEKLY HOURS</td>
                             <td>12</td>
                         </tr>
                     </table>
                 </div>          
                 
                 <div id="rightCol">
-                    <h1>Client X: Series A</h1>
+                    <h1>Third phase:<br/>Series A</h1>
                     <p>Just received series A round of funding, rapidly scaling up team and product functionality</p>
                     <table>
                         <tr>
@@ -124,7 +130,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td>TOTAL HOURS</td>
+                            <td>WEEKLY HOURS</td>
                             <td>280</td>
                         </tr>
                     </table>                

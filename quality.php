@@ -27,16 +27,22 @@
 					<h1>
 					    Quality
 					</h1>
-                    <p>Market Research</p>
-					<ul>
-						<li>Full-stack developers save on communication overhead</li>
-						<li>Our own development framework provides continued learning, knowledge retention, and flexibility</li>
-					</ul>
+					
+					<p>We believe great software leads to great quality.  We work with our clients to actively manage and prioritize quality defects, and set up automated regression tests where appropriate.</p>
+					<p>The test phase can be illustrated in a product funnel:</p>
+                    <img src="assets/product_funnel2.png" />
+                    <p class="sourcing">Source: McGrath "Setting the PACE in Product Development" (1992) via <a href="http://www.ams-inc.com/pdf/VisionsJuly11Katzl.pdf">Applied Marketing Science</a></p>
+                    
+					
 	        	</div>  <!-- mainCol -->
 	        	
 	        	<div id="mainRightCol">
-	        		<h1>Lorem ipsum</h1>
-	        		<p>Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum .</p>
+	        		<h1>Testing Tools</h1>
+	        		<ul>
+	        		    <li><a href="https://github.com/features/projects/issues">GitHub issues</a></li>
+	        		    <li><a href="http://www.atlassian.com/software/jira/overview">Jira</a></li>
+	        		    <li><a href="http://www.mantisbt.org/">Mantis</a></li>
+	        		</ul>
 	        	</div>
         	
 	    	</div>  <!-- content -->

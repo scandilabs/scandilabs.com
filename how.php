@@ -20,7 +20,7 @@
             
             <div class="blurb">
                 <h1>How We Work</h1>
-                <p>From funding and market strategy to maintenance and hosting -- we assist clients at any step of the process.</p>
+                <p>From funding and strategy to development and hosting -- we can help across the product development process.</p>
             </div>
             
             <ul id="process-nav" class="breadcrumb">
@@ -112,9 +112,9 @@
 
             <div id="rtb">
                 <div>
-                    <h2><a href="concept">Focus on User Experience</a></h2>
-                    <p>UX experts make ideas come alive<br/>
-                         in an intuitive way that speaks to <br/>end users.
+                    <h2><a href="concept">User Experience</a></h2>
+                    <p>We help clients bring ideas to life<br/>
+                         and define the initial Minimum<br/> Viable Product (MVP).
                     </p>
                 </div>
                 <div>
@@ -124,8 +124,8 @@
                 </div>
                 <div>
                     <h2><a href="development">Full Stack Developers</a></h2>
-                    <p>Web and back-end development<br/>
-                       performed by one person ensures speed and lowers cost.
+                    <p>Resources trained in both web and <br/>
+                         back-end development ensures speed and shorter development times.
                     </p>
                 </div>
             </div>

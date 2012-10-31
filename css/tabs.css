@@ -37,12 +37,18 @@ ul.tabs li.title {
     border-bottom: 1px solid #999;
 }            
 
-ul.tabs li a {
-    
-    
+ul.tabs li.active a:link, ul.tabs li a:visited {
+   	/* disable link */ 
+	pointer-events: none;
+   	cursor: default;
+   	text-decoration: none; 
+    color:black;
 }
 
 ul#what-tabs li a:link, ul.tabs li a:visited {
-    text-decoration: none;
-    
+    text-decoration: none;    
+}
+
+ul#why-tabs li a:link, ul.tabs li a:visited {
+    text-decoration: none;    
 }

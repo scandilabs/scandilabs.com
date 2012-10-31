@@ -27,19 +27,16 @@
 					<h1>
 					    Strategy
 					</h1>
-					<p>We can help you define and evaluate your product and market strategy.  Not only does our agile and iterative process help you arrive at the product/market fit as quickly as possible, we also assist you in thinking about the following:</p>
-                    <p>Market Research</p>
+                    <h2>Market Research</h2>
+					<p>We can help you understand users, visitors, and markets better.  Our experience includes:</p>
 					<ul>
-						<li>Existing web traffic patterns</li>
-						<li>Competition</li>
-						<li>Trends</li>
+						<li>Web Analytics</li>
+						<li>Competitive Analysis</li>
+						<li>Value Proposition Definition</li>
 					</ul>
-					<p>Interviews</p>
-					<ul>
-                        <li>Key users</li>
-                        <li>Sample customers</li>
-                        <li>Internal stakeholders such as customer support, sales, executives</li>
-                    </ul>
+					<h2>Interviews</h2>
+					<p>In addition to prototyping and MVP iteration, we find that interviews are an effective tool for better understanding application users, visitors, customers or internal stakeholders.</p>
+					<p>Here is a sample interview template we recently used with one of our clients:</p>
                     <div class="wideBox">
                         <object data="strategy_interview.pdf" type="application/pdf" width="100%" height="100%"> 
                               <p>It appears you don't have a PDF plugin for this browser.
@@ -53,9 +50,9 @@
 	        		<h1>Raising Funds</h1>
 	        		<p>We also help clients pitch to corporate sponsors, seed investors, and venture capitalists.</p>
 	        		<ul>
-	        			<li>Pitch deck <a href="https://github.com/catamaran/catamaran-framework">structure</a> and review.</li>
 	        			<li>Technical team augmentation</li>
 	        			<li>Interim CTO / VP Engineering</li>
+                        <li>Pitch deck format review</li>
 	        		</ul>
 	        	</div>
         	

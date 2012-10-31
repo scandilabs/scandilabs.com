@@ -25,8 +25,8 @@
 				<li>
 					<a 
 						<?php if($page=='/why.php') echo "class='current'"; ?> 
-						href="why"><h2>Why Us</h2>
-						<p>Technology, Speed</p>		
+						href="why"><h2>Why We Are Different</h2>
+						<p>Technology, Speed, Scale</p>		
 					</a>
 				</li>	
             </ul>       

@@ -191,3 +191,8 @@ td {
     float: right;
     margin-left: 24px;
 }
+
+.sourcing {
+	font-style:italics;
+	font-size:11px; 
+}

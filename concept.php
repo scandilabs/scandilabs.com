@@ -25,16 +25,16 @@
                 <div id="mainCol">
                     
                     <h1>
-                        Concepting and User Experience Design (UX)
+                        Concept and User Experience Design (UX)
                     </h1>                   
-                    <p>A good concept:</p>
+                    <p>Ideas are rarely ready for development right away.  A good concept:</p>
                     <ul>
-                        <li>Gets the team on the same page</li>
-                        <li>Informs graphical design, technical architectur and development</li>
-                        <li>Facilitates talks with customers, partners, and investors</li>
-                    </ul>   
+                         <li>Brings the idea to life</li>
+                         <li>Gets people on the same page</li>
+                         <li>Facilitates talks with customers, partners, and investors</li>
+                    </ul>
                     
-                    <h2>Typical steps to create a UX prototype:</h2>
+                    <h2>How approach a UX challenge:</h2>
                     <h3>1. Capture and organize thoughts from <a href="strategy">strategy</a> discussions</h3>
                     <p>
                         <img src="assets/idea_stickies.jpg" />
@@ -44,20 +44,14 @@
                 
                 <div id="mainRightCol">
                     
-                    <h1>UX in the Enterprise</h1>
+                    <h1>Enterprise UX</h1>
                     <p class="quote-indent">
                         "SO WHY DO INTELLIGENT, EXPERIENCED, and educated designers 
-and product managers produce software that frustrates their user base?"<br/>
-                        
-                        <ul>
-                            <li>Enterprise Buyers Aren't Users</li>
-                            <li>Architecture Constraints</li>
-                            <li>Too Many User Groups, Too Many Features</li>
-                            <li>The Risk Of Alienating The Established User Base</li>
-                        </ul>
+                        and product managers produce software that frustrates their user base?"
                     </p>
-                    <p>    
-                        From an <a href="http://www.macadamian.com/images/uploads/whitepapers/Mac_Enterprise_Software_Usability.pdf" target="_new">excellent white paper</a> by Didier Thizy of <a href="http://www.macadamian.com/" target="_new">Macadamian</a>
+                    <p>Enterprise software doesn't have to be difficult to use.  We at Scandi Labs believe in a well-facilitated concepting phase involving future application users.</p>
+                    <p class="sourcing">
+                        <a href="http://www.macadamian.com/images/uploads/whitepapers/Mac_Enterprise_Software_Usability.pdf" target="_new">Has the Usability Revolution Left Enterprise Software Behind?</a> by Didier Thizy of <a href="http://www.macadamian.com/" target="_new">Macadamian</a>
                     </p>
                 </div>	        	
 	        	     
