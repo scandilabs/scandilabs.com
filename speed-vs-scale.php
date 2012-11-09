@@ -26,54 +26,41 @@
 					<h2>
 					    Startups Are Fast					     
 					</h2>
-					<p>This is largely because they have no maintenance costs:</p>
+					<p>This is in part because they don't have any <a href="http://en.wikipedia.org/wiki/Software_maintenance" target="_new">maintenance costs</a> yet:</p>
                     <img src="assets/dev_vs_maint_cost.png" />
-                    <p>But over time, startups accumulate maintenance costs (also called "design debt" or simply "spaghetti code"), often at an alarming rate.</p>
-                    <h2>
-                        What can be done?
-                    </h2>
+                    <p>Also, recent <a href="catamaran">web development frameworks</a> like Rails, Django and Play make individual developers more productive.</p>
+
+                    <h2>But Startups Don't Scale Well</h2>                    
+                    <p>Over time, maintenance costs catch up.  And frameworks get slow and quick-start features become constraints that limit technical progress.</p>
+
+                    <h2>The Scandi Labs Solution</h2>
                     <p>
-                        Maintenance costs are inevitable.  But they can grow rapidly like above, or slowly and flatten out over time:
-                    </p>
-                    <img src="assets/maint_cost_low.png" />
-                    <p>
-                        This is how maintenance costs on a Scandi Labs project evolve.  We accomplish this through:
+                        We match startup speed with pro-active steps to lower complexity and maintenance costs through:
                         <ul>
-                            <li>Techology specialization and knowledge management: We solve technical problems only once</li>
-                            <li>A flexible <a href="catamaran">development framework</a> that doesn't box us in in a way that causes problems down the road</li>
-                            <li>Experience and volume: We have built a lot of web applications over the years, and we continue to do so</li>
+                            <li><strong>Techology Specialization:</strong> A more flexible <a href="catamaran">development framework</a> that provides speed but doesn't cause problems down the road</li>
+                            <li><strong>Knowledge Management:</strong> Continuous learning means we only have to solve technical problems once</li>
+                            <li><strong>Enterprise Experience:</strong> Lightweight best-of-breed enterprise technology and people processes</li>
                         </ul>
+                        Our approach limits maintenance costs which translates into better value for our clients:   
                     </p>
+                    <img src="assets/maint_cost2.png" />
 
-                    <h2>
-                        Common Startup Problems                        
-                    </h2>
-                    <p>
-                        TODO: Consider moving this and next h2 to the right sidebar.
-                        - inability to scale team past founding engineer/cto, poor performance, wrong framework, framework doesn't scale, picking a framework that doesn't allow for performance tuning, last 10% problem
-                    </p>
-
-
-					<h2>
-					    Common Enterprise Problems
-					</h2>					
-					<p>
-					    slow implementations, poor usability, and
-					    resistance to change expressed via sky-high change estimates.
-					</p>
-					<p>
-					    But we believe the biggest reason is simply that enterprise software is inherently very complex. Technology executives make strategic decisions about
-					    enterprise tools such as database, enterprise service bus (ESB), storage infrastructure, application servers, load balancers and monitoring infrastructure.
-					    Developers need to wrap their heads around all of this, and then put it together in a unique way. Once this work is done, there is often resistance to
-					    making further changes. And subsequent development efforts are usually shoe-horned into this assembled structure to avoid having to rock the boat. This
-					    leads to fragmented and poorly engineered code, which in turn is fragile, error prone, and difficult to change.
-					</p>
 	        	</div>  <!-- mainCol -->
 	        	
 	        	<div id="mainRightCol">	
-	        		<h1>Real world startup scaling examples</h1>
-	        		<p>TODO: Consider moving this over to the Catamaran page:  One of the things that I've found throughout my career is the need to have long-lived processes. And Ruby, like many scripting languages, has trouble being an environment for long lived processes. But the JVM is very good at that, because it's been optimized for that over the last ten years.<br/><em>- <a href="http://www.artima.com/scalazine/articles/twitter_on_scala.html">Steve Jenson, Twitter</a></em></p>
-					<p>PHP's popularity and simplicity made it easy for the company's developers to quickly build new features. But PHP's (lack of) performance makes scaling Facebook's site to handle hundreds of billions of page views a month problematic, so Facebook has made big investments in making it leaner and faster.<br/><em>- <a href="http://arstechnica.com/business/2011/12/facebook-looks-to-fix-php-performance-with-hiphop-virtual-machine/">Sean Gallagher, ars technica</a></em></p>
+                    <h2>
+                        Common Startup Problems                        
+                    </h2>
+                    <p><strong>Scaling the Tech Team:</strong> Existing resources are good coders but not managers.</p>
+                    <p><strong>Site is Slow:</strong> The technology platform doesn't scale well and bottlenecks are difficult to change without breaking everything.</p>
+                    <p><strong>Last 10% Problem:</strong> The framework made the first 90% of functionality easy, but implementing the last 10% is painfully slow and requires ugly hacks.</p>
+                    <hr/>
+                    <h2>
+                        Common Enterprise Problems
+                    </h2>
+                    <p><strong>Complex Infrastructure:</strong> Technology Executives keep buying expensive enterprise tools that are difficult to integrate with existing infrastructure.</p>
+                    <p><strong>Resistance to Change:</strong> It took a painful death march to get the existing infrastructure running, now engineers inflate change estimates so they don't have to rock the boat again.</p>
+                    <p><strong>Poor Code Quality:</strong> Developers shoehorn new code into established patterns instead of doing things "the right way".</p>                   
 	        		
 	        	</div>
 	        	

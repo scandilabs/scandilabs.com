@@ -1,0 +1,27 @@
+th, td {
+	padding-right: 6px;
+	padding-left: 6px;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 4px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+	background-color: rgba(208, 227, 251, 1);
+}
+
+th {
+	font-weight: normal;
+}
+
+td img {
+	padding-left: 20%;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+td, th {
+	border:solid thin;
+}

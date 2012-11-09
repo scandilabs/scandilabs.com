@@ -20,7 +20,8 @@
             
             <div class="blurb">
                 <h1>How We Work</h1>
-                <p>From funding and strategy to development and hosting -- we can help across the product development process.</p>
+                <p>Process is ultimately about people.  A brand-new startup approaches things differently from an established company.  And some organizations are strong on product management but weak on engineering.  And vice versa.</p>
+                <p>Whatever your situation is, we take a comprehensive view of the product development life cycle.  And we help you fill your particular needs.</p>  
             </div>
             
             <ul id="process-nav" class="breadcrumb">
@@ -71,11 +72,11 @@
                         <div>
                             <h1>Development</h1>
                             <p>
-                                Agile Iterations<br/>
+                                Agile<br/>
                                 &nbsp;<br/>
-                                Weekly Reviews<br/>
+                                Weekly Iterations<br/>
                                 &nbsp;<br/>
-                                On Tap Team<br/>
+                                On Tap Billing<br/>
                             </p>
                         </div>     
                     </a>
@@ -112,14 +113,16 @@
 
             <div id="rtb">
                 <div>
-                    <h2><a href="concept">User Experience</a></h2>
-                    <p>We help clients bring ideas to life<br/>
-                         and define the initial Minimum<br/> Viable Product (MVP).
+                    <h2><a href="development">Weekly Iterations</a></h2>
+                    <p>Clients review running code as it <br/>
+                         takes shape and we make it easy <br/>to change and re-prioritize.
                     </p>
                 </div>
                 <div>
-                    <h2><a href="development">Agile Development</a></h2>
-                    <p>Short iterations, efficient prioritization and close collaboration ensures constant forward momentum.
+                    <h2><a href="development">On Tap Billing</a></h2>
+                    <p>You can start small and grow when <br/>
+                        funding becomes available. And <br/>        
+                        then take a break.  We're flexible. 
                     </p>
                 </div>
                 <div>
@@ -131,13 +134,6 @@
             </div>
 
         	<!--
-        	<div id="leftCol">
-        		<h1>User Experience Oversight</h1>
-        		<p>We will work with clients who have their own product function, including user experience experts and graphical designers</p>
-        		<p>For clients who don't have a product function, or who want to leverage Scandi Labs to create a shared consensus, we bring in our own user experience designers.  This involvement will vary a bit depending on whether it's a <a href="consumer-web">consumer web</a> or <a href="enterprise">b2b or enterprise</a> project.</p>
-        		
-        	</div>  
-        	
         	<div id="centerCol">
         		<h1>Agile Process</h1>
         		<p>As long-time students of software development processes, we have hands-on experience with everything from Scrum and Kanban to RUP and waterfall.</p>

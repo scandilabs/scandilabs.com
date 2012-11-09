@@ -1,0 +1,42 @@
+#content {
+	height:800px;
+}
+
+.rotatorBox {
+    background-color: white;
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+    width:100%;
+    
+}
+
+.rotatorCenteredInner {
+	
+}
+
+.rotatorNav {	
+    
+    top: 400px;    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.rotatorItem {
+	padding: 8px;
+	
+	height: 460px;
+}	
+
+.rotatorItem img {
+	border: 1px solid;
+	
+}
+
+.rotatorItem p {
+	text-align: left:
+	
+}
+

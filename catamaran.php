@@ -26,7 +26,7 @@
                     </h1>
                     <a href="http://www.catamaranframework.org/" target="_new"><img src="assets/catamaran_thumb.png" height="25%" width="25%" class="float-right" /></a>
                     <p>
-                        Our own open-source framework located at <a href="http://catamaranframework.org" target="_new">catamaranframework.org</a> packages the following proven enterprise Java technologies into a lightweight set of best practices and tools:
+                        Scandi Labs' own open-source framework located at <a href="http://catamaranframework.org" target="_new">catamaranframework.org</a> packages the following proven enterprise Java technologies into a lightweight set of best practices and tools:
                     </p>
                     <ul>
                         <li>MySQL database with Hibernate and Java Persistence 2.0</li>
@@ -129,8 +129,12 @@
                         <img src="img/yellow-dot-trans.png"> Some&nbsp;&nbsp;
                         <img src="img/red-dot-trans.png"> No
                     </p>
-                     
-                    
+                    <!--  
+                    <h3>Twitter</h3>
+                    <p>One of the things that I've found throughout my career is the need to have long-lived processes. And Ruby, like many scripting languages, has trouble being an environment for long lived processes. But the JVM is very good at that, because it's been optimized for that over the last ten years.<br/><em>- <a href="http://www.artima.com/scalazine/articles/twitter_on_scala.html">Steve Jenson, Twitter</a></em></p>
+                    <h3>Facebook</h3>
+                    <p>PHP's popularity and simplicity made it easy for the company's developers to quickly build new features. But PHP's (lack of) performance makes scaling Facebook's site to handle hundreds of billions of page views a month problematic, so Facebook has made big investments in making it leaner and faster.<br/><em>- <a href="http://arstechnica.com/business/2011/12/facebook-looks-to-fix-php-performance-with-hiphop-virtual-machine/">Sean Gallagher, ars technica</a></em></p>
+                    -->
                 </div>
 
             </div>  <!-- content -->

@@ -34,16 +34,15 @@
 					<p>
 					    But when it comes to practical implementation, there is no substitute for experience and common sense.
 					</p>
-					<p>
-					    Process is ultimately about people, and how you approach development in a brand-new startup environment is different from an established organization with a great product management team and a poor engineering group (or vice versa).  
-					</p>
-					<h2>Knowledge Management</h2>
-					<p>
-					    Our developers are good at what they do, which translates into value for our clients.  
-					</p>
-					<p>    
-					    And by continually incorporating new learning into our open-source <a href="technology-stack">technology framework</a> we never have to solve the same technical problem twice.  
-                    </p>
+					<h2>Taylored to Your Needs</h2>
+                    <p>As long-time students of software development processes, we have hands-on experience with everything from Scrum and Kanban to RUP and waterfall.</p>
+                    <p>As a result, we are confident in our ability to strike the right balance between anarchy and bueraucracy.  Our typical process will include:</p>
+                    <ul>
+                        <li>Weekly reviews of running code</li>
+                        <li>Tracking and joint prioritization of the next two week's worth of work</li>
+                        <li>Defect and issue tracking</li>
+                    </ul>
+					
 	        	</div>  <!-- mainCol -->
 	        	
 	        	<div id="mainRightCol">
@@ -54,7 +53,7 @@
 
                 <div class="blurb">    	        	
                     <h2>
-                        On Tap Development
+                        On Tap Billing
                     </h2>       
                     <p>We can accommodate a number of different client needs and team sizes.  And more importantly, we make it easy for each client to dial the level of effort up or down depending on circumstances:</p>          
 	        	</div>	        	

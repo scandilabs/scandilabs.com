@@ -173,6 +173,10 @@ a:hover {
     text-align: left;    
 }
 
+#rtb h2 {
+	margin-bottom: 0;
+}
+
 td {
 	vertical-align: top;
 	padding-right: 4px;
@@ -195,4 +199,8 @@ td {
 .sourcing {
 	font-style:italics;
 	font-size:11px; 
+}
+
+.pop {
+	background-color:yellow;
 }
