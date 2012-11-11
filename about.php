@@ -19,7 +19,7 @@
 		        	<p>At the "get something up and running quickly" end of the market you had young and smart web developers powered by popular frameworks like Ruby on Rails.  And at the "mission critical business systems" end you had expensive systems integrators who scaled well in terms of performance, team size, and integration with other systems.  But if you needed both speed and scale, you were generally out of luck.</p>
 		        	<p>We are working to change that.  We have proven there is a need for a service provider who can combine enterprise experience with startup speed and value.</p>
 		        	<h2>Team</h2>
-                    <img src="assets/mads.png" class="float-right" />
+                    <img src="assets/mads.png" style="margin-bottom: 8px" class="float-right" />
 	            	<h4>Mads Kvalsvik, President and Founder</h4>
 	            	
 					<p>Throughout his professional life, Mads has taken a special interest in finding better ways to build software.</p>  

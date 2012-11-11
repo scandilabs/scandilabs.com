@@ -39,8 +39,8 @@
                         </div>
                         <div>
                             <label for="submit"></label>
-                            <input class="button" type="reset" name="Submit2" value="Reset">
                             <input class="button" type="submit" name="submit_btn" value="Send"/>
+                            <input class="button" type="reset" name="Submit2" value="Reset">
                         </div>    
                     </form>    	    	
 	        

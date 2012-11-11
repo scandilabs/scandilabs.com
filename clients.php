@@ -7,33 +7,39 @@
         <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/clients.css" media="screen, projection">
         <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-        <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-        <script type="text/javascript" src="js/rotator.js"></script>        
+        <!-- <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> -->
+        <script src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/clients.js"></script>        
 		<?php include("include/analytics.php"); ?>
     </head>
     <body>
-    	<div id="outerContent">
         
+    	<div id="outerContent">
 	        <?php include("include/top.php"); ?>  
 	        
 	        <div id="content">     
 	
 				<div class="blurb">		
 	        	
-                    <div class="rotatorBox">
+                    <div id="clientBox" class="rotatorBox">
                         <div class="rotatorCenteredInner">
                             <div class="rotatorItem">
-                                <img src="assets/medgrp_sm.png" />
+                            	<div class="imgBox">
+                                	<img src="assets/medgrp_sm.png" />
+                               	</div>
                                 <h2>Healthcare IT Startup</h2>
-                                <p>
+                                <p class="rotatorParagraph">
                                     A start-up technology company with venture capital backing had the idea to centralize health providers' contact with various key companies in the health care supply chain. The solution removes inefficiencies for health care providers by providing a single system to manage their primary interactions.                             
                                 </p>
                             </div>
                             <div class="rotatorItem">
-                                <img src="assets/inspection_sm2.png" />
-                                <p>
-                                    Why does it take so long to get simple IT projects done?<br/>
-                                </p>
+                            	<div class="imgBox">
+                                	<img src="assets/inspection_sm2.png" />
+                                </div>
+                                <h2>Inspector Time</h2>
+								<p> 
+									A new startup idea in the real estate field.  The concept was to connect home buyers and real estate agents with inspectors in their area making inspection scheduling easier and saving everyone time.
+								</p>
                             </div>
                                             
                             <ol class="rotatorNav">

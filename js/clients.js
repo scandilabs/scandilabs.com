@@ -16,7 +16,7 @@ $(document).ready(function() {
         show(curIdx, clickedIdx);
         curIdx = clickedIdx;
         clearTimeout(timeoutId);
-        timeoutId = setTimeout(doAuto, 25000);
+        timeoutId = setTimeout(doAuto, 100000);
     });
     
     $('#clientBox .rotatorItem').hover(function() {
@@ -44,7 +44,7 @@ $(document).ready(function() {
     function doAuto() {
         console.log('auto cur ' + curIdx);
         next();
-        timeoutId = setTimeout(doAuto, 5000);
+        timeoutId = setTimeout(doAuto, 100000);
     }
-    var timeoutId = setTimeout(doAuto, 5000); 
+    var timeoutId = setTimeout(doAuto, 100000); 
 });
