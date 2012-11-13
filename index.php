@@ -20,7 +20,7 @@
         <div id="homeContent">    
         
             <div id="lead">
-                <h1>Scandi Labs uses startup speed and enterprise scale to help <br/>technology companies find the most direct path to success.</h1>  
+                <h1>Scandi Labs uses <span class="pop">startup speed</span> and <span class="pop">enterprise scale</span> <br/>to help technology companies find the best path to success.</h1>  
             </div>
             
             <!--
