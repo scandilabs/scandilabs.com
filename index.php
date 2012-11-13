@@ -20,9 +20,10 @@
         <div id="homeContent">    
         
             <div id="lead">
-                <h1>Scandi Labs uses startup speed and enterprise scale <br/>to build software products for our clients.</h1>  
+                <h1>Scandi Labs uses startup speed and enterprise scale to help <br/>technology companies find the most direct path to success.</h1>  
             </div>
             
+            <!--
             <div class="rotatorBox">
                 <div class="rotatorCenteredInner">
                     <div class="rotatorItem">
@@ -50,6 +51,12 @@
                     </ol>                    
                 </div>                
             </div>
+            -->
+            
+            <div class="centeredBox">
+                <a href="how"><img src="assets/map.png" /></a>
+            </div> 
+           
             
             <div id="rtb">
                 <div>

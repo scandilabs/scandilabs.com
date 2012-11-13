@@ -6,8 +6,8 @@
         <title>New Web Project</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
-        <link type="text/css" rel="stylesheet" href="css/how-nav.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/arrow-breadcrumb.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/how-nav.css" media="screen, projection">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>

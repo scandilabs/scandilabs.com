@@ -61,7 +61,11 @@
     text-align: center;
     border-top-style: solid;
     background-color: #F8F8F8;
-    color: #888888;
+    color: #888888;    
+}
+
+#footer a:link, #footer a:visited {
+	text-decoration:none;
 }
 
 #footer ul {

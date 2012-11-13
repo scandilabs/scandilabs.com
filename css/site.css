@@ -10,7 +10,7 @@ body {
     /*letter-spacing: -1px;*/
     /* color:#555556; */
    color: black;
-   /*background-color: #ddd;*/
+   background-color: #ddd;
    
 }
 
@@ -32,6 +32,7 @@ a:hover {
 #outerContent {
     background-color: #F9F9F9;
     width: 960px;
+    box-shadow: 0 0 5px 5px #888;
     /*margin-left: auto;
     margin-right: auto;*/
    
@@ -204,3 +205,10 @@ td {
 .pop {
 	background-color:yellow;
 }
+
+.centeredBox {
+	margin-left:auto;
+	margin-right:auto;
+	width:823px;
+}
+
