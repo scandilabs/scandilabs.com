@@ -20,7 +20,7 @@
             
             <div class="blurb">
                 <p><strong>COMMON CHALLENGES:</strong> All technology startups face a similar set of challenges.  Do you start with a seasoned CTO or a hands-on coder?  How do you scale the team without losing speed and quality?  How do you introduce and prioritize new product features?</p>
-                <p><strong>SOLVED, REPEATEDLY:</strong> At Scandi Labs, we believe there is no reason so slow down your startup with engineering mistakes, process mis-steps, and lengthy talent searches.  We help our clients build software and get the engineering team on the right track.  We get it right, because we do it over and over.  Thus we allow the founders to focus on business growth.</p>
+                <p><strong>SOLVED, REPEATEDLY:</strong> At Scandi Labs, we believe there is no reason to slow down your startup with engineering mistakes, process mis-steps, and lengthy talent searches.  We help our clients build software and get the engineering team on the right track.  We get it right, because we do it over and over.  Thus we allow the founders to focus on business growth.</p>
                 <p><strong>TALK TO US:</strong> Whichever stage your business is in, this is how we view the product development life cycle.  Let us know where your particular challenges are.</p>  
             </div>
             
