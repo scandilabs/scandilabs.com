@@ -20,7 +20,7 @@
         <div id="homeContent">    
         
             <div id="lead">
-                <h1>Scandi Labs uses <span class="pop">startup speed</span> and <span class="pop">enterprise scale</span> <br/>to help technology companies find the best path to success.</h1>  
+                <h1>Scandi Labs uses <a href="speed-vs-scale">startup speed</a> and <a href="speed-vs-scale">enterprise scale</a> <br/>to help technology companies find the best path to success.</h1>  
             </div>
             
             <!--
@@ -57,7 +57,7 @@
                 <a href="how"><img src="assets/map.png" /></a>
             </div> 
            
-            
+            <!-- 
             <div id="rtb">
                 <div>
                     <h2><a href="speed-vs-scale">Startup Development</a></h2>
@@ -78,10 +78,13 @@
                     </p>
                 </div>
             </div>
+            -->
             
+            <!-- 
             <div id="ctaBox">
                 <p><a href="contact?subject=Free Quote Request">Request a <span class="pop">free quote</span> today!</a></p>
             </div>
+            -->
             
             <div id="clients">
                 <ul>

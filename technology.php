@@ -32,7 +32,7 @@
                     <h2>Experience</h2>
                     <p>But having the right tools is not enough -- you also need to know how to use them.  This is where more than <a href="about">15 years of software development experience</a> comes in.</p>
                     <a href="catamaran"><img src="assets/catamaran_thumb.png" class="float-right" /></a>
-                    <p>And when you use different open-source tools that are not backed by a single software company (like Microsoft), you have to make sure it all works well together.  At Scandi Labs, we make it seamless by combining the tools used into our own development framework, the open-source <a href="catamaran" >Catamaran Framework</a>.  This offers <a href="catamaran">many advantages</a> over other frameworks.</p>
+                    <p>And when you use different open-source tools that are not backed by a single software company (like Microsoft), you have to make sure it all works well together.  At Scandi Labs, we make it seamless by combining the tools used into our own development framework, Catamaran.  This offers many advantages over other frameworks.</p>
 				</p>	
 	        	</div>  <!-- mainCol -->
 	        	

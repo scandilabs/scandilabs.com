@@ -4,7 +4,11 @@
     <div class="blurb">
         <ul id="why-tabs" class="tabs">
             <li class="title">
-                Why We Are Different:
+                <?php if($page=='/why.php'): ?>
+                    Why We Are Different
+                <?php else: ?>
+                    <a href="why">Why We Are Different</a>
+                <?php endif; ?>                    
             </li>
             <li
                 <?php if($page=='/technology.php') echo "class='active'"; ?> 

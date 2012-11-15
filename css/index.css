@@ -44,6 +44,10 @@ a.darkBackground:hover {
     text-align: center;
 }
 
+#lead a:link, #lead a:visited {
+    text-decoration: underline;
+}
+
 #ctaBox {
     margin-top:24px;
     border-top-style: solid;
@@ -56,13 +60,16 @@ a.darkBackground:hover {
     text-align: center;    
 }
 
-#ctaBox a:link, a:visited {
+#ctaBox a:link, a:visited {	
     color: black;
     text-decoration: none;
 }
 
 #clients {
-    margin-top:24px;
+	border-top-style: solid;
+	border-top-width:thin;
+    margin-top:48px;
+    padding-top:24px;
     margin-left: auto;
     margin-right: auto;   
     width: 900px;

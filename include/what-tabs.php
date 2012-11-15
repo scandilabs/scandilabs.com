@@ -4,7 +4,11 @@
     <div class="blurb">
         <ul id="what-tabs" class="tabs">
             <li class="title">
-                What We Do:
+                <?php if($page=='/what.php'): ?>
+                    What We Do
+                <?php else: ?>
+                    <a href="what">What We Do</a>
+                <?php endif; ?>                    
             </li>
             <li
                 <?php if($page=='/consumer-web.php') echo "class='active'"; ?> 

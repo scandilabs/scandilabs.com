@@ -18,11 +18,50 @@
             <?php include("include/what-tabs.php"); ?>
             
             <div class="blurb">
-                <h1>Great Code</h1>
-                <p>Good code works.  Great code is flexible, scalable, and easy to maintain.  Great code serves as the foundation for further product iterations.  Great code is what Scandi Labs delivers.</p>
-                <p>Our code powers companies ranging from startups to large enterprises:</p>
+                <h1>Minimize Technology Risk</h1>
+                <p>Your business success can hinge on these key issues:</p>
             </div>   
         	
+        	<div class="threeColBox">
+                <div class="leftCol">
+                    
+                    <h2>CTO Search</h2>
+                    <ul>
+                        <li>Takes time</li>
+                        <li>Manager or coder?</li>
+                        <li>Talent scarcity</li>
+                    </ul>
+                </div>  
+                
+                <div class="centerCol">
+                    <h2>Platform Flexibility</h2>
+                    <ul>
+                        <li>Framework constraints</li>
+                        <li>Codebase not shared</li>
+                        <li>Poor release quality</li>
+                    </ul>
+                </div>          
+                
+                <div class="rightCol">
+                    <h2>Scaling The Team</h2>
+                    <ul>
+                        <li>Engineers disagree</li>
+                        <li>Slow team member on-boarding</li>
+                        <li>Inflated estimates</li>
+                    </ul>
+                </div>
+            </div>          	
+        	
+            <div class="blurb">
+                <p>Scand Labs can help by:</p>
+                <ul>
+                    <li>Engineers disagree</li>
+                    <li>Slow team member on-boarding</li>
+                    <li>Inflated estimates</li>
+                </ul>
+            </div>           	
+        	
+        	<!--
         	<div id="barBox">
         	    <div id="barLeft">
         	        <h2>Startups</h2>
@@ -38,6 +77,7 @@
                     <h2>Midsize / Enterprise</h2>
                 </div>        	    
         	</div>
+        	-->
     	
     	<?php include("include/bottom.php"); ?>  
     	

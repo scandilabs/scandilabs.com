@@ -11,7 +11,6 @@ body {
     /* color:#555556; */
    color: black;
    background-color: #ddd;
-   
 }
 
 a.current:link, a.current:visited {
@@ -108,35 +107,39 @@ a:hover {
     padding: 8px;
 }
 
-#leftCol {
-    margin-left:40px;
-    margin-right: 0px;
-    padding-left: 10px;
-    padding-right:10px;
-    display:inline-block;
-    width: 25%;
-    background-color:#FFD7B3
+.threeColBox {
+	margin-left:40px;
+	height: 140px;
+	margin-bottom:40px;
 }
 
-#centerCol {
-    margin-left:40px;
-    margin-right: 0px;
+.threeColBox div {
+	vertical-align: top;
+    
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right:10px;
     display:inline-block;
     width: 25%;
-    vertical-align: top;
-    background-color:#CAFFD8
+    margin-left:10px;
+    margin-right: 0px;
+	height: 100%;
 }
 
-#rightCol {
-    width: 25%;
-    margin-left:40px;
-    margin-right: 40px;
-    padding-left: 10px;
-    padding-right:10px;
-    display:inline-block;
-    vertical-align: top;
+.threeColBox li {
+	padding-bottom:4px;
+}
+
+div.leftCol {
+	margin-left:0px;
+    background-color:hsla(213,85%,80%,1);
+}
+
+div.centerCol {
+    background-color:hsla(213,85%,85%,1);
+}
+
+div.rightCol {
     background-color:hsla(213,85%,90%,1);
 }
 
