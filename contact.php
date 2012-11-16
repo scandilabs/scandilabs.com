@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Scandi Labs Contact</title>
+        <title>Scandi Labs - Contact</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/contact.css" media="screen, projection">
@@ -47,12 +47,11 @@
                             <input class="button" type="reset" name="Submit2" value="Reset">
                         </div>    
                     </form>    	    	
-	        
+				</div>        
 
+	            <?php include("include/bottom.php"); ?>  
 		        
             </div>  <!-- content -->
-            
-            <?php include("include/bottom.php"); ?>  
             
         </div> <!-- outerContent -->
     </body>

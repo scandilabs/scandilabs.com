@@ -22,15 +22,15 @@
 					<h1>About Scandi Labs</h1>
 		        	<p>Scandi Labs was founded in 2012 because we saw a hole in the marketplace for software development services.</p>  
 		        	    
-		        	<p>At the "get something up and running quickly" end of the market you had young and smart web developers powered by popular frameworks like Ruby on Rails.  And at the "mission critical business systems" end you had expensive systems integrators who scaled well in terms of performance, team size, and integration with other systems.  But if you needed both speed and scale, you were generally out of luck.</p>
+		        	<p>At the "get something up and running quickly" end of you had young and smart web developers powered by popular frameworks like Ruby on Rails.  And at the "mission critical business systems" end you had big and slow systems integrators who could scale performance and team sizes.  But if you needed both speed and scale, you were generally out of luck.</p>
 		        	<p>We are working to change that.  We have proven there is a need for a service provider who can combine enterprise experience with startup speed and value.</p>
 		        	<h2>Team</h2>
                     <img src="assets/mads.png" style="margin-bottom: 8px" class="float-right" />
 	            	<h4>Mads Kvalsvik, President and Founder</h4>
 	            	
 					<p>Throughout his professional life, Mads has taken a special interest in finding better ways to build software.</p>  
-					<p>Prior to starting Scandi Labs, he headed up new technology ventures for Boathouse Group and built numerous online properties like <a href="http://speedbilly.com" target="_new">speedbilly.com</a>, an auto marketplace, and <a href="http://postpost.com" target="_new">postpost.com</a>, a social media search engine.</p>
-					<p>Earlier he co-founded Savant Technologies, a software consulting business specializing in e-Commerce solutions. He later sold the business to IntraLinks.com, a leading provider of virtual datarooms.  As a member of the IntraLinks senior team he led the design and development of the company's flagship SaaS offering and introduced Agile to a 50-person strong team.</p> 
+					<p>Prior to starting Scandi Labs, he headed up new technology ventures for Boathouse Group and built a number of online properties including <a href="http://speedbilly.com" target="_new">speedbilly.com</a>, an auto marketplace, and <a href="http://postpost.com" target="_new">postpost.com</a>, a social media search engine.</p>
+					<p>Earlier he co-founded Savant Technologies, a software consulting business specializing in e-Commerce solutions. He then sold the business to IntraLinks.com, a leading provider of virtual datarooms.  As a member of the IntraLinks senior team he led the design and development of the company's flagship SaaS offering and introduced Agile to a 50-person strong team.</p> 
 					<p>Mads also spent a number of years at Turner Broadcasting where he learned a lot about creating re-usable software for brands like CNN, TBS, TNT, NASCAR and Cartoon Network.  He graduated from MIT in 1994.</p>
 					<h5><a href="contact.php">E-mail</a> | </a><a href="http://www.linkedin.com/in/kvalsvik" target="_new">LinkedIn</a> | <a href="https://twitter.com/mkvalsvik" target="_new">Twitter</a> | <a href="http://www.facebook.com/ScandiLabs" target="_new">Facebook</a></h5>
 	
