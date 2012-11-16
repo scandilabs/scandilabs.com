@@ -8,7 +8,10 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/how-nav.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/arrow-breadcrumb.css" media="screen, projection">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+        <script src="js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+		<?php include("include/analytics.php"); ?>
         <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>
     <body>
@@ -27,15 +30,16 @@
                     <h1>
                         Concept and User Experience Design (UX)
                     </h1>                   
-                    <p>Ideas are rarely ready for development right away.  A good concept:</p>
+                    <p>Ideas and strategies need some more thought before they are ready for development.  We call this process the concepting phase.  A good concept:</p>
                     <ul>
                          <li>Brings the idea to life</li>
                          <li>Gets people on the same page</li>
                          <li>Facilitates talks with customers, partners, and investors</li>
                     </ul>
                     
-                    <h2>How approach a UX challenge:</h2>
-                    <h3>1. Capture and organize thoughts from <a href="strategy">strategy</a> discussions</h3>
+                    <br/>
+                    <h2>Sample Concepting Steps</h2>
+                    <h3>1. Capture and organize thoughts from <a href="strategy">strategy</a> sessions</h3>
                     <p>
                         <img src="assets/idea_stickies.jpg" />
                     </p>
@@ -56,12 +60,14 @@
                 </div>	        	
 	        	     
 	        	<div class="blurb">
-					
-                    <h3>2. Rough outline of ideas/pages</h3>
+					<br/>
+                    <h3>2. Create a rough outline of ideas and pages</h3>
                     <p>
                         <img src="assets/pages.jpg" />
                     </p>					
-					<h3>3. Clickable wireframes / Information Architecture</h3>
+                    <br/>
+					<h3>3. Generate clickable wireframes</h3>
+					<p>At this stage, we focus on functionality and flow, not graphical design.</p>
 					<div class="wideBox">	
                         <object data="assets/itime_web.pdf" type="application/pdf" width="100%" height="100%"> 
                             <p>It appears you don't have a PDF plugin for this browser.

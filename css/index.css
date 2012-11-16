@@ -1,6 +1,5 @@
 #homeContent {
     padding-top: 32px;
-    padding-bottom: 32px;
     background-color: white;
     width: 100%;
 }
@@ -20,6 +19,15 @@
     padding-top: 4px;
     padding-bottom: 4px;
     margin-bottom: 64px;
+}
+
+.centeredBox a img {
+   width:722px;
+}
+
+.centeredBox {
+    width:722px;
+    height:100%;
 }
 
 #equationBox p {

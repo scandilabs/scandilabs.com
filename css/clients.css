@@ -1,5 +1,5 @@
 #content {
-	height:600px;
+
 }
 
 .rotatorBox {
@@ -17,7 +17,7 @@
 
 .rotatorNav {	
     
-    top: 500px;    
+    top: 280px;    
     width: 100%;
     margin: 0;
     padding: 0;
@@ -33,6 +33,10 @@
 .rotatorItem img {
 	border: 1px solid;
 	
+}
+
+#clientBox {
+    height:654px;
 }
 
 #clientBox div div p {

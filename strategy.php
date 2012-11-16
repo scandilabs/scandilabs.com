@@ -8,8 +8,10 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/arrow-breadcrumb.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/how-nav.css" media="screen, projection">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
+
+        <script src="js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+		<?php include("include/analytics.php"); ?>
     </head>
     <body>
     	<div id="outerContent">
@@ -25,9 +27,8 @@
 	        	<div id="mainCol">
 	        
 					<h1>
-					    Strategy
+					    Market Research
 					</h1>
-                    <h2>Market Research</h2>
 					<p>We can help you understand users, visitors, and markets better.  Our experience includes:</p>
 					<ul>
 						<li>Web Analytics</li>

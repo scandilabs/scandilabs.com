@@ -10,6 +10,9 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
        
+        <script src="js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+		<?php include("include/analytics.php"); ?>
     </head>
     <body>
     	<div id="outerContent">

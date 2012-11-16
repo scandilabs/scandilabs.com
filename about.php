@@ -4,6 +4,11 @@
         <title>Scandi Labs - Team</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
+
+        <script src="js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+		<?php include("include/analytics.php"); ?>
     </head>
     <body>
     	<div id="outerContent">
@@ -11,7 +16,8 @@
 	        <?php include("include/top.php"); ?>  
 	        
 	        <div id="content">     
-	        
+	        	<?php include("include/about-tabs.php"); ?>
+
 		        <div id="mainCol">
 					<h1>About Scandi Labs</h1>
 		        	<p>Scandi Labs was founded in 2012 because we saw a hole in the marketplace for software development services.</p>  

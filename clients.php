@@ -6,11 +6,11 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/clients.css" media="screen, projection">
-        <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-        <!-- <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> -->
-        <script src="js/jquery-1.6.2.min.js"></script>
-        <script type="text/javascript" src="js/clients.js"></script>        
+
+        <script src="js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
 		<?php include("include/analytics.php"); ?>
+        <script type="text/javascript" src="js/clients.js"></script>        
     </head>
     <body>
         
@@ -71,9 +71,9 @@
 					<p> Is performing ongoing iteration and systems integration with partner companies </p>
 			         -->
 				</div>
+		    	<?php include("include/bottom.php"); ?>  
 	    	</div>  <!-- content -->
 	    	
-	    	<?php include("include/bottom.php"); ?>  
     	</div> <!-- outerContent -->
     </body>
 </html>

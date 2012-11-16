@@ -39,7 +39,7 @@ a:hover {
 
 #content {
     padding-top: 16px;
-    padding-bottom: 32px;
+    /*padding-bottom: 32px;*/
     background-color: white;
     width: 100%;
 }
@@ -103,13 +103,13 @@ a:hover {
     display:inline-block;
     vertical-align: top;
     /*background: #F8E9FC;*/
-   	background-color: #EAD59F;
+   	background-color: #EAD6A8;
     padding: 8px;
 }
 
 .threeColBox {
 	margin-left:40px;
-	height: 140px;
+	height: 21em;
 	margin-bottom:40px;
 }
 
@@ -132,7 +132,7 @@ a:hover {
 
 div.leftCol {
 	margin-left:0px;
-    background-color:hsla(213,85%,80%,1);
+    background-color:hsla(213,85%,77%,1);
 }
 
 div.centerCol {
@@ -140,7 +140,7 @@ div.centerCol {
 }
 
 div.rightCol {
-    background-color:hsla(213,85%,90%,1);
+    background-color:hsla(213,85%,93%,1);
 }
 
 .wideBox {
@@ -163,16 +163,15 @@ div.rightCol {
 }
 
 #rtb {
-    margin-left: auto;
-    margin-right: auto;   
+    margin-left:40px;
     width: 900px;
     margin-top: 18px;
     /*position: relative;*/
-    text-align: center; 
+    text-align: left; 
 }
 
 #rtb div {
-    width: 30%;
+    width: 32%;
     display: inline-block;
     text-align: left;    
 }

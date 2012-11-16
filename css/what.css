@@ -63,3 +63,42 @@ li#bar5 {	left:80px; width:80%; }
 }	
 #barLeft li:hover { background: hsla(213,85%,15%,1); }
 #barLeft li:active { background-color: hsla(213,85%,15%,1); }
+
+table th, table td {
+    vertical-align: top;
+    padding:10px;
+    width:20%;
+}
+
+table {
+    border-spacing:10px 0px;
+}
+
+table th {
+    background-color: hsla(213,85%,70%,1);
+}
+
+table ul {
+    margin:0;    
+}
+
+table ul li {
+    padding-bottom: 4px;
+}
+
+.firstRow td  {
+    background-color: hsla(213,85%,80%,1);
+}
+
+.secondRow td  {
+    background-color: hsla(213,85%,90%,1);
+}
+
+td.headCol, th.headCol {
+    font-weight: bold;
+    background-color:#fff;
+    vertical-align: middle;
+    width:7%;
+}
+
+

@@ -8,8 +8,10 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/catamaran.css" media="screen, projection">
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  
+        <script src="js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+		<?php include("include/analytics.php"); ?>
         <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>
     <body>
@@ -17,7 +19,7 @@
             <?php include("include/top.php"); ?>        
         
             <div id="content"> 
-                <?php include("include/why-tabs.php"); ?>
+                <?php include("include/about-tabs.php"); ?>
                      
                 <div class="blurb">
                     

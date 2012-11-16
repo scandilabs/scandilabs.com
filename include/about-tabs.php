@@ -4,10 +4,10 @@
     <div class="blurb">
         <ul id="why-tabs" class="tabs">
             <li class="title">
-                <?php if($page=='/why.php'): ?>
-                    Why We Are Different
+                <?php if($page=='/about.php'): ?>
+                    About Us
                 <?php else: ?>
-                    <a href="why">Why We Are Different</a>
+                    <a href="about">About Us</a>
                 <?php endif; ?>                    
             </li>
             <li

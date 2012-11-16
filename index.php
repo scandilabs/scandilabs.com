@@ -8,9 +8,12 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/index.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">        
-        <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+
+        <script src="js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+		<?php include("include/analytics.php"); ?>
         <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-        <script type="text/javascript" src="js/rotator.js"></script>
+        <!-- <script type="text/javascript" src="js/rotator.js"></script> -->
     </head>
     <body>
         <div id="outerContent">
@@ -19,9 +22,6 @@
         
         <div id="homeContent">    
         
-            <div id="lead">
-                <h1>Scandi Labs uses <a href="speed-vs-scale">startup speed</a> and <a href="speed-vs-scale">enterprise scale</a> <br/>to help technology companies find the best path to success.</h1>  
-            </div>
             
             <!--
             <div class="rotatorBox">
@@ -53,8 +53,12 @@
             </div>
             -->
             
+            <div id="lead">
+                <h1>Scandi Labs helps startups overcome technology obstacles.</h1>  
+            </div>
+
             <div class="centeredBox">
-                <a href="how"><img src="assets/map.png" /></a>
+                <a href="what"><img src="img/rocks2.png" /></a>
             </div> 
            
             <!-- 
@@ -94,10 +98,11 @@
                     <!-- <li><img src="http://www.custommade.com/static/library/images/CustomMade_logo.png" /></li> -->
                 </ul>
             </div>
+
+	        <?php include("include/bottom.php"); ?>
         
         </div> <!-- homeContent -->
         
-        <?php include("include/bottom.php"); ?>
         
         </div>  
     </body>

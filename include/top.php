@@ -31,15 +31,5 @@
                         <p>UX, Agile, Full Stack</p>
                     </a>
                 </li>   
-				<li>
-					<a 
-						<?php if($page=='/why.php') echo "class='current'"; ?> 
-                        <?php if($page=='/technology.php') echo "class='current'"; ?> 
-                        <?php if($page=='/speed-vs-scale.php') echo "class='current'"; ?> 
-                        <?php if($page=='/catamaran.php') echo "class='current'"; ?> 
-						href="why"><h2>Why We Are Different</h2>
-						<p>Technology, Speed, Scale</p>		
-					</a>
-				</li>	
             </ul>       
         </div>
