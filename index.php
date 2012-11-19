@@ -94,7 +94,7 @@
                 <ul>
                     <li>Sample client:</li>
                     <!-- <li><img src="http://postpost.com/static/img/global/postpost-logo.png" /></li> -->
-                    <li><a href="clients"><img height="55px" width="150px" src="http://inspectortime.com/it/images/home/header.gif" /></a></li>
+                    <li><a href="clients#1"><img height="55px" width="150px" src="http://inspectortime.com/it/images/home/header.gif" /></a></li>
                     <!-- <li><img src="http://www.custommade.com/static/library/images/CustomMade_logo.png" /></li> -->
                 </ul>
             </div>
