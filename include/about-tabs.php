@@ -3,12 +3,20 @@
 ?>
     <div class="blurb">
         <ul id="why-tabs" class="tabs">
+        	<!--
             <li class="title">
                 <?php if($page=='/about.php'): ?>
                     About Us
                 <?php else: ?>
                     <a href="about">About Us</a>
                 <?php endif; ?>                    
+            </li>
+            -->
+            
+            <li
+                <?php if($page=='/about.php') echo "class='active'"; ?> 
+            >
+                <a href="about">About Us</a>
             </li>
             <li
                 <?php if($page=='/technology.php') echo "class='active'"; ?> 

@@ -21,6 +21,7 @@ ul.tabs li {
     padding-top: 6px;                
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #eee;
 }
 
 ul.tabs li:last-child {
@@ -29,12 +30,14 @@ ul.tabs li:last-child {
 
 ul.tabs li.active {
     border-bottom: 1px solid white;
+    background-color: #fff;
 }
 
 ul.tabs li.title {
     border: 1px solid white;
     padding-left:0;
     border-bottom: 1px solid #999;
+    background-color: #fff;
 }            
 
 ul.tabs li.active a:link, ul.tabs li a:visited {

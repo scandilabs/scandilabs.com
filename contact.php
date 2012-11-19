@@ -21,7 +21,19 @@
                     <h1>Contact Us</h1>                
                     <p>
                         Mads Kvalsvik, President<br/>
-                        Phone: (978) 206-1090    
+                        Phone: (617) 682-0310<br/>
+                        <br/>
+                        Scandi Labs, Inc. <br/>
+                        155 5th Street<br/>
+                        Cambridge, MA 02141<br/>
+                	</p>
+                	<p>Get in touch via your favorite social network: &nbsp;
+                        <a href="https://twitter.com/scandilabs" target="_new"><img src="img/twitter_1.png" /></a>
+                        <a href="http://www.facebook.com/ScandiLabs" target="_new"><img src="img/fb_1.png" /></a>
+                        <a href="https://plus.google.com/104908377553538789362" target="_new"><img src="img/google_plus.png" /></a>                            
+                    </p>
+                    <p>
+                    	Or send us an e-mail with this form:
                     </p>
 
                     <form action="contact-send.php" method="post">
@@ -38,7 +50,7 @@
                             <input name="subject" value="<?php echo $_GET['subject']; ?>" />
                         </div>
                         <div>
-                            <label for="detail">Detail</label>
+                            <label for="detail">Details</label>
                             <textarea name="detail" cols="50" rows="4" id="detail"></textarea>                       
                         </div>
                         <div>

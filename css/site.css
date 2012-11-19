@@ -96,6 +96,11 @@ a:hover {
     width: 57%;
 }
 
+.mainLeftCol {
+    display:inline-block;
+    width: 67%;
+}
+
 #mainRightCol {
     width: 24%;
     margin-left:40px;
