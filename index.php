@@ -58,7 +58,7 @@
             </div>
 
             <div class="centeredBox">
-                <a href="what"><img src="img/rocks2.png" /></a>
+                <a href="what"><img src="img/rocks3.jpg" /></a>
             </div> 
            
             <!-- 

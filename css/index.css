@@ -22,12 +22,13 @@
 }
 
 .centeredBox a img {
-   width:722px;
+   /*width:722px;*/
 }
 
 .centeredBox {
-    width:722px;
-    height:100%;
+    /*width:722px;
+    height:100%;*/
+   width:722px;
 }
 
 #equationBox p {
