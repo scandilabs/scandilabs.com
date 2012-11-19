@@ -43,9 +43,9 @@
                             <li><strong>Knowledge Management:</strong> Continuous learning means we only have to solve technical problems once</li>
                             <li><strong>Enterprise Experience:</strong> Lightweight best-of-breed enterprise technology and people processes</li>
                         </ul>
-                        Our approach limits maintenance costs which translates into better value for our clients:   
+                        Our approach limits maintenance costs which translates into better value for our clients.   
                     </p>
-                    <img src="assets/maint_cost2.png" />
+                    
 
 	        	</div>  <!-- mainCol -->
 	        	

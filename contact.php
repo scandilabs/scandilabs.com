@@ -21,7 +21,8 @@
                     <h1>Contact Us</h1>                
                     <p>
                         Mads Kvalsvik, President<br/>
-                        Phone: (617) 682-0310<br/>
+                        <span class="label">Phone:</span> <a href="tel:617 682 0310">(617) 682-0310</a><br/>
+                        <span class="label">Fax:</span> (617) 297-0013<br/>
                         <br/>
                         Scandi Labs, Inc. <br/>
                         155 5th Street<br/>
@@ -30,10 +31,11 @@
                 	<p>Get in touch via your favorite social network: &nbsp;
                         <a href="https://twitter.com/scandilabs" target="_new"><img src="img/twitter_1.png" /></a>
                         <a href="http://www.facebook.com/ScandiLabs" target="_new"><img src="img/fb_1.png" /></a>
-                        <a href="https://plus.google.com/104908377553538789362" target="_new"><img src="img/google_plus.png" /></a>                            
+                        <a href="https://plus.google.com/104908377553538789362" target="_new"><img src="img/google_plus.png" /></a>
+                        <a href="https://github.com/scandilabs" target="_new"></a>                            
                     </p>
                     <p>
-                    	Or send us an e-mail with this form:
+                    	Or send us an e-mail by filling out this form:
                     </p>
 
                     <form action="contact-send.php" method="post">

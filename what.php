@@ -11,6 +11,7 @@
         
         <script src="js/jquery-1.8.2.js"></script>
         <script type="text/javascript" src="js/site.js"></script>
+        <script type="text/javascript" src="js/what.js"></script>
 		<?php include("include/analytics.php"); ?>
     </head>
     <body>
@@ -21,58 +22,35 @@
 	        <div id="content">       
 	        	<?php include("include/what-tabs.php"); ?>
 	            
-	           <!--
-	            <div id="mainCol">
-	                <h1>Help Technology Startups Maintain Speed</h1>
-	                <p>Startups often experience delays due to:</p>
-	                <ul>
-	                	<li>Lengthy talent searches</li>
-	                	<li>Bad technology decisions</li>
-	                	<li>Slow engineering teams</li>
-	                	<li>Poor performance and code quality</li>
-	                </ul>
-	                <p>Scandi Labs specializes in helping startups become successful through:</p>
-	                <ul>
-	                    <li><strong>Technical Leadership: </strong>Technology infrastructure, scaling, engineering team management, investor pitching</li>
-	                    <li><strong>Experienced Engineers: </strong>Full stack software engineers ready to go</li>
-	                    <li><strong>Technology Platform: </strong>Proven technology platform that supports both startup speed and enterprise scale</li>
-	                    <li><strong>Collaboration: </strong>Training, on boarding of new hires, talent search assistance</li>
-	                </ul>
-	            </div>   
-				<div id="mainRightCol">
-					
-				</div>
-	           -->
-	
 	            <div class="blurb">
 	                <h1>Engineering Team In A Box </h1>
-	                <p>Building a startup engineering team takes time.  And sometimes existing teams go through a transition, or face new challenges.  We can help you avoid delays and overcome obstacles, whether they are related to people, technology, or processes.</p>
+	                <p>Building a startup engineering team takes time.  And sometimes existing teams go through a transition, or face new challenges.  We help you avoid delays, whether they are related to <em>people</em>, <em>technology</em>, or <em>process</em>.</p>
 	                <br/>
 	                
 	                <table>
 	                	<tr class="headRow">
 	                		<th class="headCol"></th>
-	                		<th>People</th>
-	                		<th>Technology</th>
-	                		<th>Process</th>
+	                		<th class="peopleCol">People</th>
+	                		<th class="techCol">Technology</th>
+	                		<th class="processCol">Process</th>
 	                	</tr>
 	                	<tr class="firstRow">
 	                		<td class="headCol">Common Obstacles</td>
-	                		<td>
+	                		<td class="peopleCol">
 	                			<ul>
 			                        <li>Difficult CTO search</li>
 			                        <li>Wrong technical hire</li>
 			                        <li>Inadequate skills</li>
 			                    </ul>
-			                </td>  
-							<td>
+			                </td>
+							<td class="techCol">
 			                    <ul>
 			                        <li>Bad technical decisions</li>
 			                        <li>Slow site performance</li>
 			                        <li>Poor code quality</li>
 			                    </ul>
 			                </td>  
-							<td>
+							<td class="processCol">
 			                    <ul>
 			                        <li>Inflated estimates</li>
 			                        <li>Slow progress</li>
@@ -82,21 +60,21 @@
 	                   </tr>
 	                   <tr class="secondRow">
 							<td class="headCol">How We Help</td>
-							<td>								
+							<td class="peopleCol">								
 			                    <ul>
 			                        <li>Interim technical leadership</li>
 			                        <li>Consultant engineers</li>
 			                        <li>Training, on boarding</li>
 			                    </ul>
 		                   </td>
-		                   <td>
+		                   <td class="techCol">
 			                    <ul>
-			                        <li>Technical architect</li>
+			                        <li>Technical architecture</li>
 			                        <li>Performance tuning</li>
 			                        <li>Scaleable framework</li>
 			                    </ul>
 		                   </td>
-		                   <td>
+		                   <td class="processCol">
 			                    <ul>
 			                        <li>Agile prioritization and estimation</li>
 			                        <li>Team decision making and ownership culture</li>

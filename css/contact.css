@@ -4,6 +4,12 @@ label {
 	vertical-align: top;
 }
 
+.label {
+    display: inline-block;
+    width: 54px;
+    vertical-align: top;
+}
+
 input {
 	width: 371px;
 }

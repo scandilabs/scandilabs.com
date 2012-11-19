@@ -101,4 +101,20 @@ td.headCol, th.headCol {
     width:7%;
 }
 
+.peopleCol {
+    cursor:pointer;    
+}
 
+.techCol {
+    cursor:pointer;
+}
+
+.processCol {
+    cursor:pointer;
+}
+
+#content a:link, #content a:visited {
+    text-decoration: none;
+    color:#000000;
+    
+}
