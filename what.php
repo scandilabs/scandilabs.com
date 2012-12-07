@@ -22,6 +22,8 @@
 	        <div id="content">       
 	        	<?php include("include/what-tabs.php"); ?>
 	            
+	            
+	            <!--
 	            <div class="blurb">
 	                <h1>Engineering Team In A Box </h1>
 	                <p>Building a startup engineering team takes time.  And sometimes existing teams go through a transition, or face new challenges.  We help you avoid delays, whether they are related to <em>people</em>, <em>technology</em>, or <em>process</em>.</p>
@@ -85,8 +87,8 @@
 					</table>
 	        	</div>
 	        	
+	        -->
 	        	
-	        	<!--
 	        	<div id="barBox">
 	        	    <div id="barLeft">
 	        	        <h2>Startups</h2>
@@ -102,7 +104,7 @@
 	                    <h2>Midsize / Enterprise</h2>
 	                </div>        	    
 	        	</div>
-	        	-->
+	        	
 	    	
 		    	<?php include("include/bottom.php"); ?>  
 	

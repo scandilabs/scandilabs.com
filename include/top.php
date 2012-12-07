@@ -1,9 +1,10 @@
 <?php 
   $page = $_SERVER["PHP_SELF"];
 ?>
+	<div id="headerOuter">
         <div id="header">
             <div id="logoBox" >
-                <a href="index" ><img src="img/logo_plain.png"></a>
+                <a href="index" ><img src="img/logo246x43_transp.png"></a>
             </div>   
             <ul>
                 <li>
@@ -33,3 +34,4 @@
                 </li>   
             </ul>       
         </div>
+	</div>
