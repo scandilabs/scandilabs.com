@@ -24,8 +24,11 @@
 	        	
 	        	<div class="blurb">
                 	        	    
-	        		<h1>Enterprise IT Consulting</h1>
+	        		<!-- <h1>Enterprise IT Consulting</h1> -->
 
+                    <div id="agileImageBox" class="float-right">
+                    	<a title="VersionOne, Inc. [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AAgile_Software_Development_methodology.jpg"><img width="256" alt="Agile Software Development methodology" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Agile_Software_Development_methodology.jpg/256px-Agile_Software_Development_methodology.jpg"/></a>
+                    </div>
                     <h2>Agile Process</h2>
                     <p>The best way to introduce Agile depends on your the organization.  Is it product-driven or engineering-driven?  Does feature ownership reside with teams or individuals?  Who <em>really</em> sets priorities when push comes to shove?</p>
                     <p>We have successfully introduced Agile methodologies at a number of development shops, by focusing on:</p>
@@ -34,6 +37,7 @@
                         <li>Clear ownership of code and features</li>
                         <li>Estimation: Collaboration and expectation setting</li>
                     </ul>
+                    <div class="clearfix"></div>
 
 	        		<h2>Technical Architecture Review</h2>
                     <p>We can help midsize technology firms and enterprise IT departments assess their application, service and systems architecture:</p>

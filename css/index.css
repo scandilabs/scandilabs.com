@@ -21,14 +21,26 @@
     margin-bottom: 64px;
 }
 
-.centeredBox a img {
-   /*width:722px;*/
+.centeredBox img {
+    width:900px;
+    height:300px;
+}
+
+.centeredBox h3 {
+    text-align: center;
+    padding-top:16px;
+}
+
+.centeredBox a {
+    color:black;
+    text-decoration:underline;
 }
 
 .centeredBox {
-    /*width:722px;
-    height:100%;*/
-   width:722px;
+    /*position:absolute;
+    width:100%;*/
+   position:relative;
+   left:-40px;
 }
 
 #equationBox p {
@@ -47,16 +59,30 @@ a.darkBackground:hover {
 
 #lead {
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
     width: 900px;
-    margin-top: 0px;
+    margin-top: 40px;
     text-align: center;
+    position:relative;
+    top:180px;
+    z-index: 20;
+    font-size:20px;
+}
+
+#lead span {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(255, 255, 255, 0.5);
+    padding:8px 16px;
 }
 
 #lead a:link, #lead a:visited {
     text-decoration: underline;
+    color:black;
 }
 
+/*
 #ctaBox {
     margin-top:24px;
     border-top-style: solid;
@@ -73,12 +99,13 @@ a.darkBackground:hover {
     color: black;
     text-decoration: none;
 }
+*/
 
 #clients {
 	border-top-style: solid;
 	border-top-width:thin;
-    margin-top:48px;
-    padding-top:24px;
+    margin-top:40px;
+    padding-top:16px;
     margin-left: auto;
     margin-right: auto;   
     width: 900px;

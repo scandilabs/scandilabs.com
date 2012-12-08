@@ -163,12 +163,17 @@ div.rightCol {
 }
 
 #chartBackgroundBox {
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+    /*
 	background-color: hsla(213,85%,90%,1);
+	*/
 	text-align: center;
 	padding-top: 16px;
 	padding-bottom: 16px;
 	margin-right: 40px;
-	margin-left: 40px;
+	/*margin-left: 40px;*/
 }
 
 #rtb {

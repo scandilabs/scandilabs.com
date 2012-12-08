@@ -158,9 +158,9 @@
         	
         	-->
         	
-	    	<?php include("include/bottom.php"); ?>  
     	</div>  <!-- content -->
     	
+    	<?php include("include/bottom.php"); ?>  
     	</div> <!-- outerContent -->
     </body>
 </html>

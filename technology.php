@@ -23,14 +23,18 @@
 	        	<div id="mainCol">
 	        
                     <img style="padding-bottom: 6px" src="assets/stack.png" class="float-right" />
-                    <h2>Enterprise Ready Tools</h2>
+                    <h2>Enterprise Ready Java</h2>
+                    <!--
 					<p>Servers, databases, operating systems, programming languages, development frameworks, editors.
 					These are some of the tools that technology professionals use.  Better tools leads to a more efficient software creation and higher quality applications and sites.
-					</p><p>At Scandi Labs, our preferred tools are jQuery, Freemarker, Java, Tomcat, Apache, Spring, Eclipse, MySQL, and Solr.  These are proven enterprise-ready technologies that are also well-suited for rapid <a alt="hi" href="http://en.wikipedia.org/wiki/Minimum_viable_product" target="_new">MVP</a> development.</p>
-
-                    <h2>Experience</h2>
-                    <p>But having the right tools is not enough, you also need to know how to use them.  This is where more than <a href="about">15 years of software development experience</a> comes in.</p>
+					</p>
+					-->
+					<p>Our preferred tools are jQuery, Freemarker, Java, Tomcat, Apache, Spring, Eclipse, MySQL, and Solr.  These are proven enterprise-ready technologies that are also well-suited for rapid startup MVP development.  </p>
+					<p>And to make sure it all works well together, we have combining these tools into our own development framework, Catamaran Framework.</p>
                     <a href="catamaran"><img src="assets/catamaran_thumb.png" class="float-right" /></a>
+
+                    <h2>PHP and Microsoft .NET</h2>
+                    <p>For smaller sites or clients with significant prior investments in PHP, C#, or VB/ASP.NET skill sets, we also develop feature-rich web sites and applications end-to-end.  We do advanced HTML, CSS, Javascript, server-side scripting, form processing, database storage, emails and everything else.</p>
                     <p>And when you use different open-source tools that are not backed by a single software company (like Microsoft), you have to make sure it all works well together.  At Scandi Labs, we make it seamless by combining the tools used into our own development framework, Catamaran.  This offers many advantages over other frameworks.</p>
 				</p>	
 	        	</div>  <!-- mainCol -->

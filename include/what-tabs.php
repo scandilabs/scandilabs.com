@@ -23,13 +23,15 @@
             <li
                 <?php if($page=='/it-consulting.php') echo "class='active'"; ?> 
             >
-                <a href="it-consulting">IT Consulting</a>
+                <a href="it-consulting">Agile & Systems</a>
             </li>
+			<!--
             <li
                 <?php if($page=='/managed.php') echo "class='active'"; ?> 
             >
                 <a href="managed">Hosting</a>
             </li>
+           -->
         </ul>
         <div style="clear: both;"></div>
     </div>

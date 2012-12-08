@@ -54,11 +54,13 @@
             -->
             
             <div id="lead">
-                <h1>Scandi Labs helps startups overcome technology obstacles.</h1>  
+                <h1><span>We build enterprise-ready software at <a href="speed-vs-scale">startup speed</a>.</span></h1>  
             </div>
 
             <div class="centeredBox">
-                <a href="what"><img src="img/rocks3.jpg" /></a>
+                <img src="img/background11.jpg" />
+                <h3>Want to hire us?  Call (617) 682-0310 or <a href="contact">find us here</a>.</h3>
+
             </div> 
            
             <!-- 
@@ -84,16 +86,10 @@
             </div>
             -->
             
-            <!-- 
-            <div id="ctaBox">
-                <p><a href="contact?subject=Free Quote Request">Request a <span class="pop">free quote</span> today!</a></p>
-            </div>
-            -->
-            
             <div id="clients">
                 <ul>
-                    <li>Sample client:</li>
-                    <!-- <li><img src="http://postpost.com/static/img/global/postpost-logo.png" /></li> -->
+                    <li>Sample clients:</li>
+                    <li><a href="clients#0"><img src="http://postpost.com/static/img/global/postpost-logo.png" /></a></li>
                     <li><a href="clients#1"><img height="55px" width="150px" src="http://inspectortime.com/it/images/home/header.gif" /></a></li>
                     <!-- <li><img src="http://www.custommade.com/static/library/images/CustomMade_logo.png" /></li> -->
                 </ul>

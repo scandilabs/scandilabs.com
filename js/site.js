@@ -7,7 +7,7 @@ $(document).ready(function() {
 */
 
 $(window).load(function() {
-    resizeToMinHeight();
+    // resizeToMinHeight();
 });
 
 /*

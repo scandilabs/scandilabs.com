@@ -60,6 +60,7 @@ li#bar5 {	left:80px; width:80%; }
 
 #barLeft a {
 	color: white;
+	font-weight: bold;
 }	
 #barLeft li:hover { background: hsla(213,85%,15%,1); }
 #barLeft li:active { background-color: hsla(213,85%,15%,1); }
@@ -113,8 +114,9 @@ td.headCol, th.headCol {
     cursor:pointer;
 }
 
-#content a:link, #content a:visited {
-    text-decoration: none;
-    color:#000000;
-    
+#rtb {
+    border-top-style: solid;
+    border-top-width:thin;
+    padding-top:34px;
+    margin-top:58px;
 }

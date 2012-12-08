@@ -25,11 +25,11 @@
                         <div class="rotatorCenteredInner">
                             <div class="rotatorItem">
                             	<div class="imgBox">
-                                	<img src="assets/medgrp_sm.png" />
+                                	<img src="assets/pp.png" />
                                	</div>
-                                <h2>Healthcare IT Startup</h2>
+                                <h2>PostPost.com</h2>
                                 <p class="rotatorParagraph">
-                                    A start-up technology company with venture capital backing had the idea to centralize health providers' contact with various key companies in the health care supply chain. The solution removes inefficiencies for health care providers by providing a single system to manage their primary interactions.                             
+                                    A social media search tool that ReadWriteWeb called "Twitter Search Done Right".
                                 </p>
                             </div>
                             <div class="rotatorItem">
@@ -41,10 +41,20 @@
 									A new startup idea in the real estate field.  The concept was to connect home buyers and real estate agents with inspectors in their area making inspection scheduling easier and saving everyone time.
 								</p>
                             </div>
+                            <div class="rotatorItem">
+                            	<div class="imgBox">
+                                	<img src="assets/medgrp_sm.png" />
+                               	</div>
+                                <h2>Healthcare IT Startup</h2>
+                                <p class="rotatorParagraph">
+                                    A startup technology company with venture capital backing had the idea to centralize health providers' contact with various key companies in the health care supply chain. The solution removes inefficiencies for health care providers by providing a single system to manage their primary interactions.                             
+                                </p>
+                            </div>
                                             
                             <ol class="rotatorNav">
                                 <li data-idx="0"></li>
                                 <li data-idx="1"></li>
+                                <li data-idx="2"></li>
                             </ol>                    
                         </div>                
                     </div>	                
