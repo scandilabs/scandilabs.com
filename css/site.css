@@ -1,5 +1,13 @@
 /* TODO: Center pages like this site: http://www.coupa.com/purchasing-procurement-blog/usability-in-enterprise-applications-part-i  */
 
+html {
+	
+	/* Show disabled scroll bar when content too short 
+	 * http://www.designerstalk.com/forums/web-standards/42762-center-margin-auto-what-about-scrollbar.html
+	 */
+	overflow-y:scroll;
+}
+
 body {
     margin: 0 0;
     /*font-family: arial,sans-serif;*/
@@ -29,7 +37,7 @@ a:hover {
 }
 
 #outerContent {
-    
+	
 }
 
 #content {

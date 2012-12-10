@@ -60,7 +60,6 @@ li#bar5 {	left:80px; width:80%; }
 
 #barLeft a {
 	color: white;
-	font-weight: bold;
 }	
 #barLeft li:hover { background: hsla(213,85%,15%,1); }
 #barLeft li:active { background-color: hsla(213,85%,15%,1); }

@@ -12,7 +12,6 @@
         <script src="js/jquery-1.8.2.js"></script>
         <script type="text/javascript" src="js/site.js"></script>
 		<?php include("include/analytics.php"); ?>
-        <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>
     <body>
     	<div id="outerContent">

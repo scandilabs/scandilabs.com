@@ -29,8 +29,8 @@
                         Cambridge, MA 02141<br/>
                 	</p>
                 	<p>Get in touch via your favorite social network: &nbsp;
-                        <a href="https://twitter.com/scandilabs" target="_new"><img src="img/twitter_1.png" /></a>
                         <a href="http://www.facebook.com/ScandiLabs" target="_new"><img src="img/fb_1.png" /></a>
+                        <a href="https://twitter.com/scandilabs" target="_new"><img src="img/twitter_1.png" /></a>
                         <a href="https://plus.google.com/104908377553538789362" target="_new"><img src="img/google_plus.png" /></a>
                         <a href="https://github.com/scandilabs" target="_new"></a>                            
                     </p>
@@ -63,10 +63,10 @@
                     </form>    	    	
 				</div>        
 
-	            <?php include("include/bottom.php"); ?>  
 		        
             </div>  <!-- content -->
             
+        <?php include("include/bottom.php"); ?>  
         </div> <!-- outerContent -->
     </body>
 </html>

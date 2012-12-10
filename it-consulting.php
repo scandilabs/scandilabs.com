@@ -7,8 +7,8 @@
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
+        <!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script -->
        
         <script src="js/jquery-1.8.2.js"></script>
         <script type="text/javascript" src="js/site.js"></script>
@@ -27,7 +27,7 @@
 	        		<!-- <h1>Enterprise IT Consulting</h1> -->
 
                     <div id="agileImageBox" class="float-right">
-                    	<a title="VersionOne, Inc. [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AAgile_Software_Development_methodology.jpg"><img width="256" alt="Agile Software Development methodology" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Agile_Software_Development_methodology.jpg/256px-Agile_Software_Development_methodology.jpg"/></a>
+                    	<a title="VersionOne, Inc. [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AAgile_Software_Development_methodology.jpg"><img width="256" alt="Agile Software Development methodology" src="assets/Agile_Software_Development_methodology.jpg"/></a>
                     </div>
                     <h2>Agile Process</h2>
                     <p>The best way to introduce Agile depends on your the organization.  Is it product-driven or engineering-driven?  Does feature ownership reside with teams or individuals?  Who <em>really</em> sets priorities when push comes to shove?</p>

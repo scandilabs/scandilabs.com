@@ -7,10 +7,10 @@
 	        <div id="footer">
 	        	<div id="footerLinkBox">
 		            <ul>
-		                <li><a href="about">About Us</a></li>
+                        <li><a href="clients">Clients</a></li>
 		                <li><a href="technology">Technology</a></li>
+                        <li><a href="about">About Us</a></li>
 		                <li><a href="contact">Contact Us</a></li>
-		                <li><a href="clients">Clients</a></li>
 		            </ul>
 					<div id="social">
 					    <a href="http://www.facebook.com/ScandiLabs" target="_blank" rel="nofollow"><img src="img/fb_1.png" /></a>
