@@ -47,7 +47,7 @@
                                	</div>
                                 <h2>Healthcare IT Startup</h2>
                                 <p class="rotatorParagraph">
-                                    A startup technology company with venture capital backing had the idea to centralize health providers' contact with various key companies in the health care supply chain. The solution removes inefficiencies for health care providers by providing a single system to manage their primary interactions.                             
+                                    A startup technology company with venture capital backing had the idea to centralize health providers' contact with various key companies in the health care supply chain. The solution, currently in stealth mode, removes inefficiencies for health care providers by providing a single system to manage their primary interactions.                             
                                 </p>
                             </div>
                                             
@@ -81,9 +81,9 @@
 					<p> Is performing ongoing iteration and systems integration with partner companies </p>
 			         -->
 				</div>
-		    	<?php include("include/bottom.php"); ?>  
 	    	</div>  <!-- content -->
 	    	
+        <?php include("include/bottom.php"); ?>  
     	</div> <!-- outerContent -->
     </body>
 </html>

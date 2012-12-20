@@ -12,7 +12,6 @@
         <script src="js/jquery-1.8.2.js"></script>
         <script type="text/javascript" src="js/site.js"></script>
 		<?php include("include/analytics.php"); ?>
-        <script src="https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js"></script>
     </head>
     <body>
     	<div id="outerContent">
@@ -26,10 +25,14 @@
 	        	<?php include("include/crumbs.php"); ?>
 	        	     
 	        	<div id="mainCol">
+	        	    
+	        	    <h1>
+	        	        Development
+	        	    </h1>
 	        
-					<h2>Agile Experts</h2>
-                    <p>As long-time students of software development processes, we have hands-on experience with everything from Scrum and Kanban to RUP and waterfall.</p>
-                    <p>As a result, we are confident in our ability to strike the right balance between anarchy and bueraucracy.  Our typical process will include:</p>
+					<h2>Agile</h2>
+                    <p>We are long-time students of software development process methodology, and we have hands-on experience with everything from Scrum and Kanban to RUP and waterfall.</p>
+                    <p>As a result, we are confident in our ability to strike the right balance between developer freedom anc chaos.  Our typical process will include:</p>
                     <ul>
                         <li>Weekly reviews of running code</li>
                         <li>Tracking and joint prioritization of the next two week's worth of work</li>
