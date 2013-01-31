@@ -37,14 +37,26 @@ a:hover {
 }
 
 #outerContent {
-	
+	background-color: #E8E8E8;
+}
+
+#border {
+    width:970px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #616161;
+    z-index: -99;
+}
+
+#pageCanvas {
+    background-color: white;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:20px;
 }
 
 #content {
-    
-    /* should equal height of fixed position header */
-    margin-top:83px;
-    /*padding-top: 83px;*/
     
     padding-top: 16px;
     

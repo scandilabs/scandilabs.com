@@ -1,13 +1,3 @@
-#homeContent {
-    padding-top: 32px;
-    background-color: white;
-    width: 100%;
-}
-
-#homeContent h1 {
-    font-size: 150%;
-}
-
 #equationBox {
     margin-left: auto;
     margin-right: auto;
@@ -82,25 +72,6 @@ a.darkBackground:hover {
     color:black;
 }
 
-/*
-#ctaBox {
-    margin-top:24px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-width:thin;
-    border-bottom-width:thin;
-    margin-left: auto;
-    margin-right: auto;   
-    width: 900px;
-    text-align: center;    
-}
-
-#ctaBox a:link, a:visited {	
-    color: black;
-    text-decoration: none;
-}
-*/
-
 #clients {
 	border-top-style: solid;
 	border-top-width:thin;
@@ -122,3 +93,86 @@ a.darkBackground:hover {
     vertical-align: middle;
     padding: 8px;
 }
+
+/* slide show */
+
+body {
+    overflow: hidden;
+}
+
+.slideOuter {
+    height: 478px;
+    padding-top: 53px;    
+}
+
+.slideBg {
+    width:1360px;
+    margin-left: auto;
+    margin-right:auto;
+    position:relative;
+    top: -454px;
+    left: -200px;
+    z-index: 0;    
+}
+
+.bgImageBox {
+    width:1360px;
+    height:510px;
+    margin-left: auto;
+    margin-right:auto;
+    
+    /*
+    z-index: -99;
+    
+    position:relative;
+    top:-500px;
+    */
+}
+
+.bgImageBox img {
+    border-top-style: solid;
+    border-top-width: thick;    
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+}
+
+.slideTextOuter {
+    /*width:960px;
+    margin-left: auto;
+    margin-right:auto;
+    */    
+}
+
+.slideText {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:880px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.slideText h1 {
+    font-size: 44px;
+    text-transform:uppercase;    
+    display:block;
+    color: white;
+}
+
+.slideText p {
+    font-size:30px;
+    display:block;
+    color: white;
+    z-index: 990;
+}
+
+.slideText a:link, #lead a:visited {
+    text-decoration: underline;
+    color:black;
+}
+

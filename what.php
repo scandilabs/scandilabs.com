@@ -15,9 +15,7 @@
 		<?php include("include/analytics.php"); ?>
     </head>
     <body>
-    	<div id="outerContent">
-        
-	        <?php include("include/top.php"); ?>  
+    <?php include("include/top.php"); ?>  
 	        
 	        <div id="content">       
 	        	<?php include("include/what-tabs.php"); ?>
@@ -61,8 +59,6 @@
 	            </div>
 
 			</div>  <!-- content -->
-	    	<?php include("include/bottom.php"); ?>  
-   	
-    	</div> <!-- outerContent -->
+	<?php include("include/bottom.php"); ?>  
     </body>
 </html>

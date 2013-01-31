@@ -64,6 +64,7 @@ li#bar5 {	left:80px; width:80%; }
 #barLeft li:hover { background: hsla(213,85%,15%,1); }
 #barLeft li:active { background-color: hsla(213,85%,15%,1); }
 
+/*
 table th, table td {
     vertical-align: top;
     padding:10px;
@@ -100,6 +101,7 @@ td.headCol, th.headCol {
     vertical-align: middle;
     width:7%;
 }
+*/
 
 .peopleCol {
     cursor:pointer;    
