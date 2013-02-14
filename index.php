@@ -48,10 +48,8 @@
 
      </div> <!-- slideOuter -->
        
-     <div class="blurb">
-     	<h1>Partners:</h1>
-     	<img src="img/ibm_bp_member.gif" />     	
-     </div>
+ 	<h1>Partners:</h1>
+ 	<img src="img/ibm_bp_member.gif" />     	
     
 	<?php include("include/bottom.php"); ?>        
     </body>

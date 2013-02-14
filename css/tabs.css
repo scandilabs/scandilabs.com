@@ -48,6 +48,14 @@ ul.tabs li.active a:link, ul.tabs li a:visited {
     color:black;
 }
 
+ul.tabs li.clickable a:link, ul.tabs li a:visited {
+    /* do not disable link */ 
+    pointer-events: auto;
+    cursor: pointer;
+    text-decoration: none; 
+    color:black;
+}
+
 ul#what-tabs li a:link, ul.tabs li a:visited {
     text-decoration: none;    
 }

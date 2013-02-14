@@ -4,6 +4,14 @@ body {
     overflow: hidden;
 }
 
+#header {
+    border-bottom: 0px solid #BDBDBD;
+}
+
+#pageCanvas {
+    margin-top: -2px; /* workaround to hide top line */
+}
+
 .slideOuter {
     /*
     height: 458px;
@@ -28,42 +36,10 @@ body {
 }
 
 .bgImageBox img {
-}
-
-.slideTextOuter {
-   margin-left:20px;    
-}
-
-.slideText {
-    /* Fallback for web browsers that doesn't support RGBa */
-    background: rgb(0, 0, 0);
-    /* RGBa with 0.6 opacity */
-    background: rgba(0, 0, 0, 0.5);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;    
-    width:880px;
-    margin-left: auto;
-    margin-right:auto;
-}
-
-.slideText h1 {
-    font-size: 44px;
-    text-transform:uppercase;    
-    display:block;
-    color: white;
-}
-
-.slideText p {
-    font-size:30px;
-    display:block;
-    color: white;
-}
-
-.slideText a:link, #lead a:visited {
-    text-decoration: underline;
-    color:black;
+    /*
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    */
 }
 
 .belowSliderBar {

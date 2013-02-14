@@ -17,8 +17,11 @@
     	<div id="outerContent">
 	        <?php include("include/top.php"); ?>  
 	        
-	        <div id="content">     
+	        <div id="content">   
+	        	
+	        	<p>Model on this gallery and one page per project: http://www.thoughtbot.com/ </p>  
 	
+<!--
 				<div class="blurb">		
 	        	
                     <div id="clientBox" class="rotatorBox">
@@ -57,7 +60,8 @@
                                 <li data-idx="2"></li>
                             </ol>                    
                         </div>                
-                    </div>	                
+                    </div>	   
+-->                                 
 	                
 	                <!--
 	                                   <p>Scandi Labs has applied its unique RAMP, MVP, Iterate process to a number of client projects with successful results. Below are a couple of examples.</p>

@@ -18,7 +18,7 @@ body {
     /*letter-spacing: -1px;*/
     /* color:#555556; */
    color: black;
-   background-color: #F8F8F8;
+   /*background-color: #E8E8E8;*/
 }
 
 a.current:link, a.current:visited {
@@ -27,7 +27,7 @@ a.current:link, a.current:visited {
 }
 
 a:link, a:visited {
-    color: #79797a;
+    color: #666667;
     text-decoration: none;
 }
 
@@ -41,13 +41,11 @@ a:hover {
 }
 
 #border {
+    width:960px;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: #616161;*/
-   background-color: #BDBDBD;
+    background-color: #616161;
     z-index: -99;
-
-    width:964px;
 }
 
 #pageCanvas {
@@ -56,7 +54,6 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     padding-bottom:20px;
-    
 }
 
 #content {
@@ -181,9 +178,10 @@ div.rightCol {
 }
 
 .blurb {
-	margin-left: 20px;	
-	margin-right: 20px;
-    color: #79797a;	
+	/*
+	margin-left: 40px;	
+	margin-right: 40px;
+	*/
 }
 
 #chartBackgroundBox {

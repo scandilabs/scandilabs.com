@@ -9,8 +9,6 @@
 
 #header {
    
-   border-bottom: 2px solid #BDBDBD;
-   
    /*
    border-bottom-style: solid;
    border-bottom-width:thin;
@@ -44,10 +42,11 @@
 
 #logoBox {
     display: inline-block;
+    /*padding-left: 40px;*/
     vertical-align: top;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left:20px;
+    /*padding-left:40px;*/
 }
 
 #logoBox img {
@@ -58,7 +57,7 @@
     float:right;
     padding: 0px;
     padding-top: 16px;
-    padding-right:20px;
+    /*padding-right:40px;*/
     -webkit-margin-before:0px;
     -webkit-margin-after:0px;
     -webkit-padding-start:0px;
@@ -75,7 +74,7 @@
 }
 
 #footerOuter {
-    /*margin-top: 20px;*/
+    margin-top: 20px;
     
     /*
     border-top-style: solid;
@@ -87,17 +86,16 @@
     width:100%;
     bottom:0;
     z-index: 9;
-    
+    background-color: #616161;
 }
 
 
 #footer {        
     margin-right: auto;
     margin-left: auto;
-    width: 964px;
+    width: 960px;
     color:white;
-    /*background-color: #616161;*/
-   background-color: #BDBDBD;
+    
 }
 
 .footerHeading {
@@ -151,11 +149,11 @@ ul.row li {
 #footerLinkBox {    
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:20px;
+    /*padding-left:20px;*/
 }
 
 #footerLinkBox td {
-    width:238px;
+    width:240px;
     padding-right:0px;
     /*padding-right: 20px;*/
 }
@@ -173,3 +171,4 @@ ul.row li {
     background: white;
     font-size: small;
 }
+

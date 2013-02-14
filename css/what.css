@@ -121,3 +121,7 @@ td.headCol, th.headCol {
     padding-top:34px;
     margin-top:58px;
 }
+
+#tags {
+    display:none;
+}

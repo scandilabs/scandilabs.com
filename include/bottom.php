@@ -29,7 +29,7 @@
     					<a href="http://www.oracle.com/us/technologies/java/overview/index.html">Oracle</a>
     				</td>
     				<td>
-    					<a href="tutorial">Tutorial</a>
+    					<a href="http://java.scandilabs.com/tutorial">Tutorial</a>
     				</td>
     				<td>
     					<a href="tel:617 682 0310">(617) 682-0310</a>    					
@@ -43,7 +43,7 @@
     					<a href="http://www.ibm.com/developerworks/java/">IBM</a>
     				</td>
     				<td>
-    					<a href="clients">Code</a>
+    					<a href="http://java.scandilabs.com/source">Source</a>
     				</td>
     				<td>
     					<a href="http://blog.catamaranframework.org/">Blog</a>
@@ -69,7 +69,7 @@
     				<td>
     				</td>
     				<td>
-    					<a href="http://maven.catamarancode.org/">Download</a>
+    					<a href="http://java.scandilabs.com/download">Download</a>
     				</td>
     				<td>
     					<a href="http://www.linkedin.com/company/scandi-labs">LinkedIn</a>
@@ -81,7 +81,7 @@
     				<td>
     				</td>
     				<td>
-    					<a href="https://github.com/catamaran/catamaran-framework/issues">Report Bugs</a>
+    					<a href="http://java.scandilabs.com/source">Report Bugs</a>
     				</td>
     				<td>
     					<a href="http://www.facebook.com/ScandiLabs">Facebook</a>

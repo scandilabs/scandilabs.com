@@ -4,9 +4,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Welcome to Scandi Labs</title>
-        <link type="text/css" rel="stylesheet" href="css/site2.css" media="screen, projection">
-        <link type="text/css" rel="stylesheet" href="css/top2.css" media="screen, projection">
-        <link type="text/css" rel="stylesheet" href="css/index2.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/site3.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/top3.css" media="screen, projection">
+        <link type="text/css" rel="stylesheet" href="css/index3.css" media="screen, projection">
 
         <script src="js/jquery-1.8.2.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
