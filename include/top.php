@@ -1,5 +1,6 @@
 <?php 
   $page = $_SERVER["PHP_SELF"];
+  $javabase = "http://localhost:8080/";
 ?>
 
         <div id="outerContent">
@@ -9,7 +10,7 @@
 				<div id="headerOuter">
 			        <div id="header">
 			            <div id="logoBox" >
-			                <a href="index" ><img src="img/logo246x43_transp.png"></a>
+			                <a href="index" ><img src="img/logo150x32.png"></a>
 			            </div>   
 			            <ul>
 			                <li>
@@ -28,7 +29,7 @@
 			                </li>   
 			                <li>
 			                    <a 
-			                        href="http://java.scandilabs.com/">
+			                        href="<?php echo $javabase ?>">
 			                        <h2>Java</h2>
 			                    </a>
 			                </li>   
@@ -41,14 +42,29 @@
 			                </li>   
 			                <li>
 			                    <a 
-			                        <?php if($page=='/clients.php') echo "class='current'"; ?> 
+			                        <?php 
+			                        	if(
+			                        		$page=='/clients.php' or 
+			                        		$page=='/clients-inspector-time.php' or
+			                        		$page=='/clients-medventive.php' or 
+			                        		$page=='/clients-postpost.php' or 
+			                        		$page=='/clients-snagajob.php' or 
+			                        		$page=='/clients-travelclick.php'  
+										) 
+			                        	echo "class='current'"; ?> 
 			                        href="clients">
 			                        <h2>Clients</h2>
 			                    </a>
 			                </li>   
 			                <li>
 			                    <a 
-			                        <?php if($page=='/about.php') echo "class='current'"; ?> 
+			                        <?php 
+			                        	if(
+			                        		$page=='/about.php' or
+			                        		$page=='/about-management.php' or
+			                        		$page=='/about-partners.php'
+		                        		) 
+		                        		echo "class='current'"; ?> 
 			                        href="about">
 			                        <h2>About</h2>
 			                    </a>

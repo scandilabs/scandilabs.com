@@ -21,20 +21,44 @@
     <body>
     <?php include("include/top.php"); ?>  
 
-	<h2>We are all about Java.</h2>
-	<p>Our ScandilLabs Java Web Framework is inspired by Rails and Django.  It provides a tutorial, reference documentation, FAQs, Java tools and conventions, and community discussion.</p>
-	<p>This allows developers to get up and running quickly like a startup while still retaining all the scalability of enterprise Java.</p>
-    <p><a href="http://java.scandilabs.com/">Read more</a> at java.scandilabs.com or click on an FAQ topic below:</p>
-	        
-    <div id="tag-cloud">
-	    <div id="myCanvasContainer" >
-            <canvas width="920" height="500" id="myCanvas">
-            </canvas>
-        </div>
-        <div id="tags">
-        </div>    			
-    </div>
-    
+		<div id="content">
+			
+	    	<h1 class="copy">Best of onshore and offshore</h1>
+	    	<h3 class="copy">Offshore cost benefits</h3>
+	    	<h3 class="copy">Onshore accountability, experience, and communication</h3>
+
+        	<h1 class="copy">Rapid and Scalable</h1>
+        	
+        	<div class="twoColLeft">
+        		<h2 class="copy">Consumer Web</h2>
+        		<div class="mediumHeightBox">
+	        		<h3 class="copy">Rapid Prototyping / MVP</h3>
+        			<h4 class="copy">Visual design</h3>
+        			<h4 class="copy">Interactive web features</h3>        			
+	        		<h4 class="copy">Feedback and A/B testing</h3>
+        		</div>
+        		
+        		<h3 class="copy">Benefits:</h3>
+            	<h4 class="copy">Reach funding milestones</h4>
+            	<h4 class="copy">Product quality</h4>
+            	<h4 class="copy">Growth and flexibility</h4>
+        	</div>
+        	
+        	<div class="twoColRight">
+        		<h2 class="copy">B2B and SaaS / Cloud</h2>
+        		<div class="mediumHeightBox">
+	        		<h3 class="copy">Deep Experience</h3>
+	        		<h4 class="copy">Business understanding</h4>
+	        		<h4 class="copy">Focus on usability</h4>
+        		</div>
+        		
+        		<h3 class="copy">Benefits:</h3>
+            	<h4 class="copy">Seamless enterprise integration</h4>
+            	<h4 class="copy">Enthusiastic user adoption</h4>
+            	<h4 class="copy">Low maintenance costs</h4>        		
+        	</div>			
+		    
+	 	</div> <!-- content -->
 	<?php include("include/bottom.php"); ?>  
     </body>
 </html>

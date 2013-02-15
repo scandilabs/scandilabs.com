@@ -19,49 +19,43 @@
         <?php include("include/top.php"); ?>  
         
         <div id="content">       
-            
-            <div class="threeColBox">
-                <div class="leftCol">
-                    
-                    <h4>Agile Engagement Model</h1>
-                    <p>Maximum flexibility</p>
-                    <ul>
-                    	<li>Resources billed monthly</li>
-                    	<li>Weekly iteration reviews</li>
-                    	<li>UX, designer, architect, developers</li>
-                    </ul>
-                    <p>Benefits:</p>
-                    <ul>
-                    	<li>No scoping, saves time</li>
-                    	<li>Minimal impact on client staff</li>
-                    	<li>Coding starts on day one</li>
-                    	<li>Product design desicions and revisions can happen as we go</li>
-                    </ul>
-                    
-                </div>  
-                
-                <div class="centerCol">
-                    <h4>Fixed Time / Fixed Price Engagement Model</h4>
-                    <p>Guaranteed delivery</p>
-                    <ul>
-                    	<li>Scope signoff based on UX/wireframes</li>                    	
-                    </ul>
-                    <p>Benefits:</p>
-                    <ul>
-                    	<li>Mitigates execution and systems integration risk</li>
-                    	<li>Guaranteed milestones</li>
-                    	<li>Mitigate user/stakeholder "consensus" risk</li>
-                    </ul>
-                </div>          
-                
-			</div>
-			
-                    <h4>Best of onshore and offshore</h4>
-                    <ul>
-                    	<li>Offshore cost benefits</li>
-                    	<li>Onshore accountability, experience, and communication</li>
-                    </ul>			     	            
         	
+	    	<h1 class="copy">Best of onshore and offshore</h1>
+	    	<h3 class="copy">Offshore cost benefits</h3>
+	    	<h3 class="copy">Onshore accountability, experience, and communication</h3>
+        	
+        	<h1 class="copy">Two Agile Engagement Models</h1>
+        	
+        	<div class="twoColLeft">
+        		<h2 class="copy">"Team In A Box"</h2>
+        		<div class="mediumHeightBox">
+	        		<h3 class="copy">Maximum flexibility</h3>
+	        		<h4 class="copy">Resources billed monthly</h4>
+	        		<h4 class="copy">UX, designer, architect</h4>
+	        		<h4 class="copy">Full-stack developers offshore</h4>
+        		</div>
+        		
+        		<h3 class="copy">Benefits:</h3>
+            	<h4 class="copy">No scoping, saves time</h4>
+            	<h4 class="copy">Minimal impact on client staff</h4>
+            	<h4 class="copy">Coding starts on day one</h4>
+            	<h4 class="copy">Product design desicions and <br/>revisions can happen as we go</h4>
+        	</div>
+        	
+        	<div class="twoColRight">
+        		<h2 class="copy">Fixed Time / Fixed Price</h2>
+        		<div class="mediumHeightBox">
+	        		<h3 class="copy">Guaranteed delivery</h3>
+	        		<h4 class="copy">Scope signoff based on UX/wireframes</h4>
+	        		<h4 class="copy">Weekly iteration reviews</h4>
+        		</div>
+        		
+        		<h3 class="copy">Benefits:</h3>
+            	<h4 class="copy">Mitigates execution and systems integration risk</h4>
+            	<h4 class="copy">Guaranteed milestones</h4>
+            	<h4 class="copy">Mitigate user/stakeholder "consensus" risk</h4>        		
+        	</div>
+        		
     	</div>  <!-- content -->
     	
     	<?php include("include/bottom.php"); ?>  

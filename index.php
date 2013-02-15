@@ -31,25 +31,47 @@
 						</div>
 						
 						<!--
-					     <div class="belowSliderBar">
-					     	<div class="sliderNav">
-					     		<img src="img/slidernav_on.png" /><img src="img/slidernav_off.png" />&nbsp;
-					 		</div>
-						 </div>
 						-->
+						<div style="padding:16px 16px; background-color:#79797a; opacity: 0.4; margin-bottom: -112px; position: relative; top: -460px; margin-left: 380px; width: 600px;">
+							
+							<h1 style="margin: 0px; color: white;"">ACCOUNTABILITY</h1>
+							
+							<h2 style="margin: 0px; color: #DDDDDD;">
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
+								Bernard Chien, CTO<br/>
+								MedVentive						
+							</h2>							
+						</div>
+						
 					</div>
 					<div class="bgImageBoxOuter">
 			    		<div class="bgImageBox">
-							<img src="img/slide1_midmanh.png" />
+							<img src="img/slide_long_boat.png" />
 						</div>
+						
+						<!--
+						-->
+						<div style="margin-bottom: -512px; padding:16px 16px; background-color:#79797a; opacity: 0.4; position: relative; top: -160px; margin-left: 260px; width: 600px;">
+							
+							<h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
+							
+							<h2 style="margin: 0px; color: #DDDDDD;">
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
+								Thomas Fredell, CTO<br/>
+								SnagAJob						
+							</h2>							
+						</div>
+						
 					</div>
 	        	</div>
         	</div>		        	
 
      </div> <!-- slideOuter -->
        
- 	<h1>Partners:</h1>
- 	<img src="img/ibm_bp_member.gif" />     	
+ 	<h1 class="copy">Lorem Ipsum</h1>
+ 	<h2 class="copy">Lorem Ipsum</h2>
+ 	<h3 class="copy">Lorem Ipsum</h3>
+
     
 	<?php include("include/bottom.php"); ?>        
     </body>

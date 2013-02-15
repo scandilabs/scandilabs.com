@@ -1,5 +1,3 @@
-/* TODO: Center pages like this site: http://www.coupa.com/purchasing-procurement-blog/usability-in-enterprise-applications-part-i  */
-
 html {
     
     /* Show disabled scroll bar when content too short 
@@ -10,15 +8,33 @@ html {
 
 body {
     margin: 0 0;
-    /*font-family: arial,sans-serif;*/
     font-family: "Helvetica";
-    font-weight: 400;
-    width:100%;
-    font-size: 100%;
+    font-weight: 400;    
+    font-size: 14px;
     /*letter-spacing: -1px;*/
     /* color:#555556; */
    color: black;
    background-color: #F8F8F8;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+ul.leftNav {
+    -webkit-margin-before:0px;
+    -webkit-margin-after:0px;
+    -webkit-padding-start:0px;
+    list-style:none;
+    display:inline-block;
+    vertical-align: top;
+    width:240px;
+    font-weight: 600;
+}
+
+ul.leftNav li {
+    padding-bottom: 4px;
 }
 
 a.current:link, a.current:visited {
@@ -52,87 +68,97 @@ a:hover {
 
 #pageCanvas {    
     background-color: white;
-    width: 920px;
+    width: 840px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom:20px;
-    padding-left:20px;
-    padding-right:20px;
+    padding-left:60px;
+    padding-right:60px;
     padding-top:0.1em; /* workaround for h2 top margins issue */    
+    min-height: 500px;
 }
 
+h1 {
+    color:black;
+    font-size:24px;
+    margin-bottom:12px;
+    margin-top:32px;
+}
+
+h1.copy {
+    margin-bottom:12px;
+    margin-top:32px;
+}
+
+h2 {
+    font-size:20px;
+    margin-top:32px;
+}
+
+h2.copy {
+    color:#555555;
+    -webkit-margin-after:12px;
+    margin-top:0.83em;
+}
+
+h3 {
+    font-size:18px;
+}
+
+h3.copy {
+    color:#696969;
+    margin-top:8px;
+    -webkit-margin-before:0px;    
+    -webkit-margin-after:8px;
+}
+
+h4 {
+    font-size:15px;
+}
+
+h4.copy {
+    color:#808080;
+    margin-top:8px;
+    -webkit-margin-before:0px;    
+    -webkit-margin-after:8px;
+}
+
+.twoColLeft, .twoColRight {
+    display:inline-block;
+    vertical-align: top;
+}
+
+.twoColLeft {
+    width: 420px;
+}
+
+/*
 #pageCanvas h1, #pageCanvas h2, #pageCanvas h3 {
     color:#79797a;
 }
+*/
 
-#content {
-    
-    padding-top: 16px;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-    */
-        
-    /*padding-bottom: 32px;*/
-    /*background-color: white;*/
+.mediumHeightBox {
+    height: 130px;    
 }
 
-#content h1 {
-    -webkit-margin-before: 4px;
-    font-size: 130%;
+#content {    
+    margin-top: 32px;
 }
 
-#content h2 {
-    font-size: 110%;
+#mainCol h4 {
+    margin-top:3em;
+    color:black;
 }
 
-#content h3 {
-    font-size: 100%;
-}
-
-#content a.current:link, a.current:visited {
-    text-decoration:underline;
-}
-
-#content a:link, #content a:visited {
-    text-decoration: underline;
-}
-
-#content a:hover {
-    text-decoration: underline;
-}
-
-#crumbs {
-    margin-left:40px;
-    margin-right: 40px;
-}
-
-#crumbs p {
-    margin-top: 0px;
-    margin-bottom: 0px;    
-    display:inline;
-}
-
-#crumbs h1 {
-    display:inline;
-}
-
-.right-aligned {
-    position:relative;
-    left:498px;
+#mainCol .noTopMargin {
+    margin-top:0px;
 }
 
 #mainCol {
     margin-left:0px;
-    margin-right: 40px;
     display:inline-block;
-    width: 57%;
-}
-
-.mainLeftCol {
-    display:inline-block;
-    width: 67%;
+    width: 600px;
 }
 
 #mainRightCol {
@@ -259,3 +285,44 @@ td {
     width:823px;
 }
 
+/* BEGIN image boxes */
+
+.thinBorder {
+    border:#808080 solid 1px;
+}
+
+.wideImgBox {
+    margin-top:40px;
+    margin-bottom:20px;
+    /* position:relative;
+    left:-240px;
+    width:840px; */    
+}
+
+/* nicolasgallagher.com/css-drop-shadows-without-images/demo/ */
+.drop-shadow {
+    /*position:relative;*/
+    /*float:left;*/
+    /*width:40%;*/
+    /*padding:1em;*/
+    /*margin:2em 10px 4em;*/
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.drop-shadow:before,
+    .drop-shadow:after {
+        content:"";
+    position:absolute;
+    z-index:-2;
+}
+
+.raised {
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* END image boxes */

@@ -105,7 +105,7 @@
 
 <div id="footerBottomOuter">
 	<div id="footerBottom">
-		Copyright 2013, ScandiLabs, Inc.        	
+		Tel: (617) 682-0310        	
 	</div>
 
 	<div style="float:right;padding-top:4px;">

@@ -24,8 +24,6 @@
    padding-bottom: 12px;   
    color: #888888;
     
-   font-size: 14px;
-   
    margin-left: auto;
    margin-right: auto;
    width: 960px;
@@ -47,7 +45,8 @@
     vertical-align: top;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left:20px;
+    padding-left:58px;
+    font-size:0px; /* java header workaround */
 }
 
 #logoBox img {
@@ -58,13 +57,13 @@
     float:right;
     padding: 0px;
     /*padding-top: 39px;*/
-    padding-right:20px;
+    padding-right:60px;
     -webkit-margin-before:0px;
     -webkit-margin-after:0px;
     -webkit-padding-start:0px;
     font-weight: 500;   
     position:relative;
-    top:39px;
+    top:25px;
 }
 
 #header ul li {
@@ -77,29 +76,19 @@
 }
 
 #footerOuter {
-    /*margin-top: 20px;*/
-    
-    /*
-    border-top-style: solid;
-    border-top-width: thin;
-    background-color: #F8F8F8;
-    */
-    /*position:fixed;*/
-    
-    width:100%;
-    bottom:0;
-    z-index: 9;
+    margin-right: auto;
+    margin-left: auto;
+    width: 964px;
+    background-color: #BDBDBD;
     
 }
 
 
-#footer {        
-    margin-right: auto;
-    margin-left: auto;
-    width: 964px;
+#footer {
+    margin-left:2px;        
+    margin-right:2px;
     color:white;
     /*background-color: #616161;*/
-   background-color: #BDBDBD;
 }
 
 .footerHeading {
@@ -153,11 +142,12 @@ ul.row li {
 #footerLinkBox {    
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:20px;
+    padding-left:0px;
 }
 
 #footerLinkBox td {
-    width:238px;
+    width:240px;
+    padding-left:60px;
     padding-right:0px;
     /*padding-right: 20px;*/
 }
