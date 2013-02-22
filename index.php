@@ -24,53 +24,155 @@
     	<div class="slideOuter">
 	        
         	<div class="slideBg">
-				<div class="slideshow">
-					<div class="bgImageBoxOuter">
-		        		<div class="bgImageBox">
-							<img src="img/slide1_lowermanh.png" />
-						</div>
-						
-						<!--
-						-->
-						<div style="padding:16px 16px; background-color:#79797a; opacity: 0.4; margin-bottom: -112px; position: relative; top: -460px; margin-left: 380px; width: 600px;">
-							
-							<h1 style="margin: 0px; color: white;"">ACCOUNTABILITY</h1>
-							
-							<h2 style="margin: 0px; color: #DDDDDD;">
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
-								Bernard Chien, CTO<br/>
-								MedVentive						
-							</h2>							
-						</div>
-						
-					</div>
+				<div class="slideshow" style="height:410px;">
+					
 					<div class="bgImageBoxOuter">
 			    		<div class="bgImageBox">
-							<img src="img/slide_long_boat.png" />
+							<img src="img/topp60.jpg" />
 						</div>
 						
-						<!--
-						-->
-						<div style="margin-bottom: -512px; padding:16px 16px; background-color:#79797a; opacity: 0.4; position: relative; top: -160px; margin-left: 260px; width: 600px;">
+						<div style="padding:16px 16px; background-color:#79797a; opacity: 0.8; position: 
+						  relative; top: -340px; margin-left: 540px; width: 440px;">
 							
-							<h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
-							
-							<h2 style="margin: 0px; color: #DDDDDD;">
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
-								Thomas Fredell, CTO<br/>
-								SnagAJob						
-							</h2>							
-						</div>
-						
+							<p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+						      "I need vendors who get it right away.
+                            </p>            						         
+                            <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+								ScandiLabs immediately understood my priorities and got to work."
+							</p>
+							<p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
+								Bernard Chien, CTO<br/>
+								MedVentive						
+							</p>							
+						</div>						
 					</div>
+					
+                    <div class="bgImageBoxOuter">
+                        <div class="bgImageBox">
+                            <img src="img/wfall60.jpg" />
+                        </div>
+                        
+                        <div style="padding:16px 16px; background-color:#79797a; opacity: 0.7; margin-bottom: -112px; 
+                          position: relative; top: -380px; margin-left: 240px; width: 600px;">
+                            
+                            <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                              "These guys are smart.  They combine experience and innovative thinking to solve problems.  
+                              And with their deep resource bench in India they execute well too."
+                            </p>                                             
+                            <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
+                                Thomas Fredell, CTO<br/>
+                                SnagAJob                        
+                            </p>                                
+                            
+                        </div>                      
+                    </div>
+                    
+                    
+                    <div class="bgImageBoxOuter">
+                        <div class="bgImageBox">
+                            <img src="img/kvik30.jpg" />
+                        </div>
+                        
+                        <div style="padding:16px 16px; background-color:#79797a; opacity: 0.8; 
+                            position: relative; top: -150px; margin-left: 474px; width: 600px;">
+                            
+                            <h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
+                            
+                            <h2 style="margin: 0px; color: #DDDDDD;">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
+                                Jim Dougherty, Co-Founder<br/>
+                                Madaket Health                      
+                            </h2>                           
+                        </div>                        
+                    </div>         
+                    
+                    <div class="bgImageBoxOuter">
+                        <div class="bgImageBox">
+                            <img src="img/berg60.jpg" />
+                        </div>
+                        
+                        <div style="padding:16px 16px; background-color:#79797a; opacity: 0.5; 
+                            position: relative; top: -320px; margin-left: 360px; width: 600px;">
+                            
+                            <h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
+                            
+                            <h2 style="margin: 0px; color: #DDDDDD;">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
+                                Myles Trachtenberg, CIO<br/>
+                                TravelClick                        
+                            </h2>                           
+                        </div>                        
+                    </div>    
+                    
 	        	</div>
         	</div>		        	
 
      </div> <!-- slideOuter -->
        
- 	<h1 class="copy">Lorem Ipsum</h1>
- 	<h2 class="copy">Lorem Ipsum</h2>
- 	<h3 class="copy">Lorem Ipsum</h3>
+ 	<h1 class="copy">We help clients develop scalable software in rapid timeframes</h1>    
+    <h2 class="copy">By combining onshore accountability and experience with offshore value</h2>
+ 	<br/>
+ 	
+ 	<div id="logoGrid">
+        <ul class="logoRow1">
+            <li>
+                <div class="tableBlock drop-shadow raised">
+                    <a class="centeredTableCell" href="clients-inspector-time">
+                        <div>
+                            <img style="width:150px; " src="http://inspectortime.com/it/images/home/header.gif">
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="tableBlock drop-shadow raised">
+                    <a class="centeredTableCell" href="clients-medventive">
+                        <div>
+                            <img src="http://www.medventive.com/Collateral/Templates/English-US/Images/top_logo.gif">
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="tableBlock drop-shadow raised">
+                    <a class="centeredTableCell" href="clients-postpost">
+                        <div>
+                            <img style="width:150px; " src="http://postpost.com/static/img/global/postpost-logo.png">
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <ul class="logoRow2">
+            <li>
+                <div class="tableBlock drop-shadow raised">
+                    <a class="centeredTableCell" href="clients-snagajob">
+                        <div>
+                            <img src="http://2011.richmond.wordcamp.org/files/2011/10/Snag-a-Job-Logo.gif">
+                        </div>
+                    </a>
+                </div>    
+            </li>     
+            <li>
+                <div class="tableBlock drop-shadow raised">
+                    <a class="centeredTableCell" href="clients-travelclick">
+                        <div>
+                            <img src="http://www.travelclick.com/sites/all/themes/travelclick/logo.png">
+                        </div>    
+                    </a>
+                </div>
+            </li>     
+            <li>
+                <div class="tableBlock drop-shadow raised">
+                    <a class="centeredTableCell" href="clients">
+                        <div>
+                            <img src="img/stealth_logo.png">
+                        </div>    
+                    </a>
+                </div>
+            </li>     
+        </ul>
+    </div>
 
     
 	<?php include("include/bottom.php"); ?>        

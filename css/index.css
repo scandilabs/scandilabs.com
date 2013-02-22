@@ -30,7 +30,7 @@ body {
 
 .bgImageBox {
     width:1360px;
-    height:510px;
+    height:400px;
     margin-left: auto;
     margin-right:auto;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 #nav {
-    width:22px;
+    width:44px;
     margin-left: auto;
     margin-right:auto;
     /*padding-right:40px;*/
@@ -71,3 +71,63 @@ body {
 }
 
 
+.overlay {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+}
+
+td {
+    border: 0px;
+    padding: 0px;
+}
+
+#logoGrid ul {
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    margin-bottom:8px;
+}
+
+#logoGrid li {
+    display:inline-block;  
+    margin-right:8px;  
+}
+
+.tableBlock {
+    width: 269px;
+    height: 220px;
+    border: thin solid #BDBDBD;
+    display:table;    
+}
+
+.hover {
+    border: 1px solid #000000;
+    cursor:pointer;
+}
+
+.centeredTableCell {
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.logoRow1 div {
+    
+}
+
+.logoRow1 div {
+    text-align: center; 
+}
+
+#logoGrid div img {
+    vertical-align: middle;
+}
+
+.logoRow2 div {
+        
+}
+
+.logoRow2 div {
+    text-align: center; 
+}

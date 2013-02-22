@@ -29,7 +29,6 @@
 				</ul><div id="mainCol">
 					
                     <h2 class="noTopMargin">Enrolling Doctors with Insurance Companies</h2>
-                    <p>Portfolio link: http://www.rvamedia.com/portfolio</p>
                     <p class="rotatorParagraph">
                         A startup technology company with venture capital backing had the idea to centralize health providers' contact with various key companies in the health care supply chain.
                     </p>
