@@ -1,6 +1,7 @@
 <?php 
   $page = $_SERVER["PHP_SELF"];
-  $javabase = "http://localhost:8080/";
+  $javabase = "http://java.scandilabs.com";
+  $blogbase = "http://blog.scandilabs.com";
 ?>
 
         <div id="outerContent">
@@ -29,14 +30,13 @@
 			                </li>   
 			                <li>
 			                    <a 
-			                        href="<?php echo $javabase ?>">
+			                        href="<?php echo $javabase ?>/">
 			                        <h2>Java</h2>
 			                    </a>
 			                </li>   
 			                <li>
-			                    <a 
-			                    	<?php if($page=='/blog.php') echo "class='current'"; ?>
-			                        href="blog">
+			                    <a 			                    	
+			                        href="<?php echo $blogbase ?>/blog">
 			                        <h2>Blog</h2>
 			                    </a>
 			                </li>   
