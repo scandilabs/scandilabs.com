@@ -26,33 +26,34 @@
         	<div class="slideBg">
 				<div class="slideshow" style="height:410px;">
 					
-					<div class="bgImageBoxOuter">
-			    		<div class="bgImageBox">
-							<img src="img/topp60.jpg" />
-						</div>
-						
-						<div style="padding:16px 16px; background-color:#79797a; opacity: 0.8; position: 
-						  relative; top: -340px; margin-left: 540px; width: 440px;">
-							
-							<p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-						      "I need vendors who get it right away.
-                            </p>            						         
-                            <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-								ScandiLabs immediately understood my priorities and got to work."
-							</p>
-							<p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
-								Bernard Chien, CTO<br/>
-								MedVentive						
-							</p>							
-						</div>						
-					</div>
 					
+                    <div class="bgImageBoxOuter">
+                        <div class="bgImageBox">
+                            <img src="img/berg60.jpg" />
+                        </div>
+                        
+                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.5; 
+                            position: relative; top: -320px; margin-left: 360px; width: 600px;">
+                            
+                            <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                              "I need vendors who get it right away.
+                            </p>                                             
+                            <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                                ScandiLabs immediately understood my priorities and got to work."
+                            </p>
+                            <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
+                                Bernard Chien, CTO<br/>
+                                MedVentive                      
+                            </p>                            
+                        </div>                        
+                    </div>    
+   					
                     <div class="bgImageBoxOuter">
                         <div class="bgImageBox">
                             <img src="img/wfall60.jpg" />
                         </div>
                         
-                        <div style="padding:16px 16px; background-color:#79797a; opacity: 0.7; margin-bottom: -112px; 
+                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.5; margin-bottom: -112px; 
                           position: relative; top: -380px; margin-left: 240px; width: 600px;">
                             
                             <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
@@ -67,13 +68,33 @@
                         </div>                      
                     </div>
                     
-                    
+                    <!--
+					<div class="bgImageBoxOuter">
+			    		<div class="bgImageBox">
+							<img src="img/topp60.jpg" />
+						</div>
+						
+						<div style="padding:16px 16px; background-color:#000000; opacity: 0.6; position: 
+						  relative; top: -340px; margin-left: 540px; width: 440px;">
+
+                            <h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
+                            
+                            <h2 style="margin: 0px; color: #DDDDDD;">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
+                                Myles Trachtenberg, CIO<br/>
+                                TravelClick                        
+                            </h2>                           
+							
+						</div>						
+					</div>
+					
+
                     <div class="bgImageBoxOuter">
                         <div class="bgImageBox">
                             <img src="img/kvik30.jpg" />
                         </div>
                         
-                        <div style="padding:16px 16px; background-color:#79797a; opacity: 0.8; 
+                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.8; 
                             position: relative; top: -150px; margin-left: 474px; width: 600px;">
                             
                             <h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
@@ -84,33 +105,15 @@
                                 Madaket Health                      
                             </h2>                           
                         </div>                        
-                    </div>         
-                    
-                    <div class="bgImageBoxOuter">
-                        <div class="bgImageBox">
-                            <img src="img/berg60.jpg" />
-                        </div>
-                        
-                        <div style="padding:16px 16px; background-color:#79797a; opacity: 0.5; 
-                            position: relative; top: -320px; margin-left: 360px; width: 600px;">
-                            
-                            <h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
-                            
-                            <h2 style="margin: 0px; color: #DDDDDD;">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
-                                Myles Trachtenberg, CIO<br/>
-                                TravelClick                        
-                            </h2>                           
-                        </div>                        
-                    </div>    
-                    
+                    </div>   
+                    -->      
+                                     
 	        	</div>
         	</div>		        	
 
      </div> <!-- slideOuter -->
        
- 	<h1 class="copy">We help clients develop scalable software in rapid timeframes</h1>    
-    <h2 class="copy">By combining onshore accountability and experience with offshore value</h2>
+ 	<h1 style="text-align: center" calss="copy">We deliver quality scalable software</h1>    
  	<br/>
  	
  	<div id="logoGrid">

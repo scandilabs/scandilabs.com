@@ -19,28 +19,31 @@
 	        
 	        <div id="content">     
 	
-				<ul class="leftNav">
-					<li><a href="clients">Healthcare IT Startup</a></li>
-					<li><a href="clients-inspector-time">Inspector Time</a></li>
-					<li><a href="clients-medventive">MedVentive</a></li>
-					<li><a href="clients-postpost">PostPost</a></li>
-					<li><a class='current' href="clients-snagajob">SnagAJob</a></li>
-					<li><a href="clients-travelclick">TravelClick</a></li>
-				</ul><div id="mainCol">
-
-					<img style="float:right; margin-bottom: 8px;" src="http://2011.richmond.wordcamp.org/files/2011/10/Snag-a-Job-Logo.gif" />
-					
-                    <h2 class="noTopMargin">Enterprise Client Reporting</h2>
-					<p> 
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum risus vitae lacus sodales id malesuada sapien laoreet. Praesent erat lorem, mattis lacinia dapibus ut, feugiat a risus. Proin ultrices elit ut ante dignissim eget condimentum erat tristique. Donec justo massa, feugiat eu fermentum a, egestas non est. Aenean blandit nisi vel arcu placerat eget lacinia lectus commodo. Vivamus suscipit ipsum in lacus tincidunt ac blandit risus pharetra. Duis rutrum, leo imperdiet gravida placerat, diam massa pulvinar magna, nec pretium mi felis vel nulla. Cras imperdiet porttitor lectus, nec tempor turpis ornare nec. Duis pharetra augue vel nisl dictum non posuere massa rhoncus. Curabitur non odio sed orci hendrerit interdum id eget ligula. Nulla cursus eleifend mi, sed cursus dolor feugiat ac.
-					</p>
-
-					<h2 class="copy">
-						"ScandiLabs saved us lots of time and money!"<br/>
-						Thomas Fredell, CTO<br/>
-						SnagAJob						
-					</h2>
-				</div> <!-- mainCol -->	
+               <div class="mainColOuter">
+                    <div class="leftNavOuter">
+        				<ul class="leftNav">
+        					<li><a href="clients">Healthcare IT Startup</a></li>
+        					<li><a href="clients-inspector-time">Inspector Time</a></li>
+        					<li><a href="clients-medventive">MedVentive</a></li>
+        					<li><a href="clients-postpost">PostPost</a></li>
+        					<li><a class='current' href="clients-snagajob">SnagAJob</a></li>
+        					<li><a href="clients-travelclick">TravelClick</a></li>
+        				</ul>
+        				<img style="width:150px" src="http://2011.richmond.wordcamp.org/files/2011/10/Snag-a-Job-Logo.gif" />
+    				</div>
+    				<div id="mainCol">
+                        <h2 class="noTopMargin">Enterprise Client Reporting</h2>
+                        <p>
+                            "ScandiLabs saved us lots of time and money!"<br/>
+                            Thomas Fredell, CTO<br/>
+                            SnagAJob                        
+                        </p>
+    					<p> 
+    						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum risus vitae lacus sodales id malesuada sapien laoreet. Praesent erat lorem, mattis lacinia dapibus ut, feugiat a risus. Proin ultrices elit ut ante dignissim eget condimentum erat tristique. Donec justo massa, feugiat eu fermentum a, egestas non est. Aenean blandit nisi vel arcu placerat eget lacinia lectus commodo. Vivamus suscipit ipsum in lacus tincidunt ac blandit risus pharetra. Duis rutrum, leo imperdiet gravida placerat, diam massa pulvinar magna, nec pretium mi felis vel nulla. Cras imperdiet porttitor lectus, nec tempor turpis ornare nec. Duis pharetra augue vel nisl dictum non posuere massa rhoncus. Curabitur non odio sed orci hendrerit interdum id eget ligula. Nulla cursus eleifend mi, sed cursus dolor feugiat ac.
+    					</p>
+    
+    				</div> <!-- mainCol -->	
+    			</div>
 	    	</div>  <!-- content -->
 	    	
         <?php include("include/bottom.php"); ?>  

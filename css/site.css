@@ -47,8 +47,13 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+.blackLink a:link, .blackLink a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
 a:hover {
-    color: #000;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -126,10 +131,11 @@ h4.copy {
 .twoColLeft, .twoColRight {
     display:inline-block;
     vertical-align: top;
+    margin-top: 38px;
 }
 
 .twoColLeft {
-    width: 420px;
+    width: 372px;
 }
 
 /*
@@ -170,6 +176,19 @@ h4.copy {
     /*background: #F8E9FC;*/
     background-color: #EAD6A8;
     padding: 8px;
+}
+
+#mainCol .twoColLeft {
+    width: 300px;
+    margin-top:0px;
+}
+
+#mainCol .twoColRight {
+    margin-top:0px;
+}
+
+#mainCol .twoColLeft h4, #mainCol .twoColRight h4 {
+    margin-top:16px;
 }
 
 .threeColBox {

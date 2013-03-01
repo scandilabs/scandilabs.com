@@ -6,7 +6,7 @@ $(document).ready(function() {
     .cycle({
         fx: 'scrollLeft',
         /*next:   '.slideshow',*/ 
-        timeout: 100000,
+        timeout: 8000,
         pause: 1,
         speed: 1000,        
         pagerAnchorBuilder: function(index, el) {

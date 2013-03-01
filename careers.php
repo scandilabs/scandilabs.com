@@ -17,18 +17,34 @@
         <div id="content">     
 
 			<ul class="leftNav">
-				<li><a class='current' href="about">Company</a></li>
+				<li><a href="about">Company</a></li>
 				<li><a href="about-management">Management</a></li>
 				<li><a href="about-partners">Partners</a></li>
-				<li><a href="careers">Careers</a></li>
+                <li><a class='current' href="careers">Careers</a></li>
 				<li><a href="contact">Contact</a></li>
 			</ul><div id="mainCol">
 				
-				<h2 class="noTopMargin">Accountability, Experience, and Communication</h2>
-	        	<p>Scandi Labs was founded in 2012 because we saw a hole in the marketplace for software development services.</p>  
-	        	    
-	        	<p>At the "get something up and running quickly" end of you had young and smart web developers powered by popular frameworks like Ruby on Rails.  And at the "mission critical business systems" end you had big and slow systems integrators who could scale performance and team sizes.  But if you needed both speed and scale, you were generally out of luck.</p>
-	        	<p>We are working to change that.  We have proven there is a need for a service provider who can combine enterprise experience with startup speed and value.</p>
+				<h2 class="noTopMargin">Jave Software Engineer</h2>
+	        	<p>Location: Pune, India</p>
+	        	<p>
+	        	    We are looking for talented software developers with strong foundational skills in:
+	        	    <ul>
+	        	        <li>Java</li>
+	        	        <li>Linux</li>
+	        	        <li>HTML and CSS</li>
+	        	    </ul>
+        	    </p>
+	        	<p>
+	        	    The following skills are a big plus:
+                    <ul>
+                        <li>Freemarker</li>
+                        <li>Tomcat</li>
+                        <li>Amazon AWS</li>
+                    </ul>
+                </p>
+                <p>
+                    We are currently accepting <a target="_blank" href="https://scandilabs.submittable.com/submit/b95201fe-254c-40ff-9d97-1d710f6e7c9e">online applications</a> for this position.
+                </p>
 
             	<div class="clearfix"></div>    
 			</div>

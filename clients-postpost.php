@@ -19,24 +19,31 @@
 	        
 	        <div id="content">     
 	
-				<ul class="leftNav">
-					<li><a href="clients">Healthcare IT Startup</a></li>
-					<li><a href="clients-inspector-time">Inspector Time</a></li>
-					<li><a href="clients-medventive">MedVentive</a></li>
-					<li><a class='current' href="clients-postpost">PostPost</a></li>
-					<li><a href="clients-snagajob">SnagAJob</a></li>
-					<li><a href="clients-travelclick">TravelClick</a></li>
-				</ul><div id="mainCol">
-					
-					<img style="float:right; margin-bottom: 8px;" src="http://postpost.com/static/img/global/postpost-logo.png" />
-					
-					<h2 class="noTopMargin">Finding Old Tweets</h2>
-
-                    <p class="rotatorParagraph">
-                        A social media search tool that ReadWriteWeb called "Twitter Search Done Right".
-                    </p>
-					
-				</div> <!-- mainCol -->
+	           <div class="mainColOuter">
+                    <div class="leftNavOuter">
+                    	<ul class="leftNav">
+                    		<li><a href="clients">Healthcare IT Startup</a></li>
+                    		<li><a href="clients-inspector-time">Inspector Time</a></li>
+                    		<li><a href="clients-medventive">MedVentive</a></li>
+                    		<li><a class='current' href="clients-postpost">PostPost</a></li>
+                    		<li><a href="clients-snagajob">SnagAJob</a></li>
+                    		<li><a href="clients-travelclick">TravelClick</a></li>
+                    	</ul>    				
+                    	<!-- <img style="" src="http://postpost.com/static/img/global/postpost-logo.png" /> -->
+                	</div>
+                	<div id="mainCol">
+                	
+                		<h2 class="noTopMargin">Finding Old Tweets</h2>
+                
+                        <p class="rotatorParagraph">
+                            A social media search tool that ReadWriteWeb called "Twitter Search Done Right".  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula magna, molestie a cursus quis, viverra eu elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut non lectus sem, sit amet tristique lacus. Nulla dapibus volutpat ligula vel adipiscing. Vestibulum nisl risus, malesuada non posuere nec, eleifend eu quam. Quisque fringilla risus congue magna fringilla eu eleifend turpis feugiat. Mauris imperdiet massa in leo congue ut gravida odio rutrum. Donec enim nisi, pretium quis sodales rhoncus, bibendum et sapien. Nullam cursus fringilla neque ac interdum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula magna, molestie a cursus quis, viverra eu elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut non lectus sem, sit amet tristique lacus. Nulla dapibus volutpat ligula vel adipiscing. Vestibulum nisl risus, malesuada non posuere nec, eleifend eu quam. Quisque fringilla risus congue magna fringilla eu eleifend turpis feugiat. Mauris imperdiet massa in leo congue ut gravida odio rutrum. Donec enim nisi, pretium quis sodales rhoncus, bibendum et sapien. 
+                        </p>
+                        <p>
+                            Nullam cursus fringilla neque ac interdum.
+                        </p>
+                    	
+                    </div> <!-- mainCol -->
+                </div>
 				
             	<div class="wideImgBox raised drop-shadow thinBorder">
                 	<img src="assets/pp.png" />

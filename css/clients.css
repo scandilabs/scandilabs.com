@@ -1,48 +1,29 @@
-#content {
-
+.mainColOuter {
+    position:relative;
 }
 
-.rotatorBox {
-    background-color: white;
-    margin-top:0;
-    margin-left:0;
-    margin-right:0;
-    width:100%;
-    
+.leftNavOuter {
+    vertical-align: top;
+    display:inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100%;
 }
 
-.rotatorCenteredInner {
-	
+.leftNavOuter ul {
+    /*height: 180px;*/
+    display:block;
 }
 
-.rotatorNav {	
-    
-    top: 280px;    
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    
+.leftNavOuter img {
+    position:absolute;
+    bottom:0;
+    padding-bottom: 1em;
 }
 
-.rotatorItem {
-	padding: 8px;
-	
-	height: 460px;
-}	
-
-.rotatorItem img {
-	border: 1px solid;
-	
+#mainCol {
+    margin-left: 240px;
 }
-
-#clientBox {
-    height:654px;
-}
-
-#clientBox div div p {
-	text-align: left;
-	
-}
-
-
 

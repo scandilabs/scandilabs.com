@@ -163,5 +163,6 @@ ul.row li {
     margin-top:8px;
     margin-bottom:8px;
     background: white;
-    font-size: small;
+    font-size: 11px;
+    text-transform: uppercase;
 }

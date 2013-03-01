@@ -20,10 +20,6 @@
         
         <div id="content">       
         	
-	    	<h1 class="copy">Best of onshore and offshore</h1>
-	    	<h3 class="copy">Offshore cost benefits</h3>
-	    	<h3 class="copy">Onshore accountability, experience, and communication</h3>
-        	
         	<h1 class="copy">Two Agile Engagement Models</h1>
         	
         	<div class="twoColLeft">

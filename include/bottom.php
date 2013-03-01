@@ -88,14 +88,7 @@
     				</td>
     			</tr>
     		</table>
-    		<!--
-			<div id="social">
-			    <a href="http://www.facebook.com/ScandiLabs" target="_blank" rel="nofollow"><img src="img/fb_1.png" /></a>
-			    <a href="https://twitter.com/scandilabs" target="_blank" rel="nofollow"><img src="img/twitter_1.png" /></a>
-			    <a href="https://plus.google.com/u/0/104908377553538789362/posts" target="_blank" rel="nofollow"><img src="img/google_plus.png" /></a>
-			</div>
-			-->
-			
+
 		</div>
     </div>
     
@@ -105,11 +98,13 @@
 
 <div id="footerBottomOuter">
 	<div id="footerBottom">
-		Tel: (617) 682-0310        	
+        ScandiLabs&nbsp;&nbsp;(617) 682-0310&nbsp;&nbsp;155 Fifth Street&nbsp;&nbsp;Cambridge, MA 02141        	
 	</div>
 
 	<div style="float:right;padding-top:4px;">
-		<img src="img/temp_social_btns.png"/>
+	    <a target="_blank" href="https://twitter.com/scandilabs"><img src="img/tw_icon_20.gif"/></a>
+	    <a target="_blank" href="http://www.facebook.com/ScandiLabs"><img src="img/fb_icon_20.gif"/></a>
+	    <a target="_blank" href="https://plus.google.com/u/0/104908377553538789362/about"><img src="img/gplus_icon_20.gif"/></a>
 	</div>
 </div>
 <!-- footer include end -->   	
