@@ -31,7 +31,7 @@
 	        		<h4 class="copy">Full-stack developers offshore</h4>
         		</div>
         		
-        		<h3 class="copy">Benefits:</h3>
+        		<h3 class="copy">Advantages:</h3>
             	<h4 class="copy">No scoping, saves time</h4>
             	<h4 class="copy">Minimal impact on client staff</h4>
             	<h4 class="copy">Coding starts on day one</h4>
@@ -46,7 +46,7 @@
 	        		<h4 class="copy">Weekly iteration reviews</h4>
         		</div>
         		
-        		<h3 class="copy">Benefits:</h3>
+        		<h3 class="copy">Advantages:</h3>
             	<h4 class="copy">Mitigates execution and systems integration risk</h4>
             	<h4 class="copy">Guaranteed milestones</h4>
             	<h4 class="copy">Mitigate user/stakeholder "consensus" risk</h4>        		

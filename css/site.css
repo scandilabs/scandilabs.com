@@ -50,6 +50,7 @@ a:link, a:visited {
 .blackLink a:link, .blackLink a:visited {
     color: #000000;
     text-decoration: none;
+    cursor:default;
 }
 
 a:hover {
