@@ -91,19 +91,25 @@
     /*background-color: #616161;*/
 }
 
-.footerHeading {
-    font-weight:700;
-    color:white;
-}
-
-#footer a {
+.footerLinkBox a {
     font-size: 14px;
     padding-left:8px;
 }
 
-#footer a:link, #footer a:visited {
+.footerLinkBox a:link, #footer a:visited {
     text-decoration:none;
     color:white;
+}
+
+.footerHeading {
+    font-weight:700;
+    color:white;
+    font-size:16px;    
+}
+
+.footerHeading a {
+    font-size:16px;
+    padding-left:0px;
 }
 
 #footer ul {
@@ -128,24 +134,24 @@
 }
 
 ul.row {
-    list-style:inside
+    list-style:inside;
     display:block;
     margin-right: 20px;
 }
 
 ul.row li {
-    list-style:inside
+    list-style:inside;
     display:block;
     margin-right: 20px;
 }
 
-#footerLinkBox {    
+.footerLinkBox {    
     padding-top:10px;
     padding-bottom:10px;
     padding-left:0px;
 }
 
-#footerLinkBox td {
+.footerLinkBox td {
     width:240px;
     padding-left:60px;
     padding-right:0px;

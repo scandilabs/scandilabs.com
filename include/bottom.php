@@ -5,86 +5,72 @@
         
 <div id="footerOuter">
     <div id="footer">
-    	<div id="footerLinkBox">
+    	<div class="footerLinkBox">
     		<table>
     			<tr>
-    				<td>
-    					<span class="footerHeading">Company</span>
+    				<td class="footerHeading" >
+    					<a href="about">Company</a>
     				</td>
-    				<td>
-    					<span class="footerHeading">Partners</span>
+    				<td class="footerHeading">    				    
+    					Services
     				</td>
-    				<td>
-    					<span class="footerHeading">Java</span>	        					
+    				<td class="footerHeading">
+    					<a href="<?php echo $javabase ?>/">Java</a>	        					
     				</td>
-    				<td>
-    					<span class="footerHeading">Contact</span>
-    				</td>
-    			</tr>
-    			<tr>
-    				<td>
-    					<a href="about">About Us</a>
-    				</td>
-    				<td>
-    					<a href="http://www.oracle.com/us/technologies/java/overview/index.html">Oracle</a>
-    				</td>
-    				<td>
-    					<a href="http://java.scandilabs.com/tutorial">Tutorial</a>
-    				</td>
-    				<td>
-    					<a href="tel:617 682 0310">(617) 682-0310</a>    					
+    				<td class="footerHeading">
+    				    <a href="contact">Contact</a>    					
     				</td>
     			</tr>
     			<tr>
     				<td>
-    					<a href="clients">Clients</a>
+    					<a href="about-management">Management</a>
     				</td>
-    				<td>
-    					<a href="http://www.ibm.com/developerworks/java/">IBM</a>
-    				</td>
-    				<td>
-    					<a href="http://java.scandilabs.com/source">Source</a>
-    				</td>
-    				<td>
-    					<a href="http://blog.catamaranframework.org/">Blog</a>
-    				</td>
-    			</tr>
-    			<tr>
     				<td>
     					<a href="what">What We Do</a>
     				</td>
     				<td>
+    				    <a href="<?php echo $javabase ?>/faqs">Knowledge Base</a>    					
     				</td>
     				<td>
-    					<a href="http://faq.catamaranframework.org/">FAQ / Support</a>
-    				</td>
-    				<td>
-    					<a href="https://twitter.com/scandilabs">Twitter</a>
+    					<a href="<?php echo $blogbase ?>/blog">Blog</a>    					
     				</td>
     			</tr>
     			<tr>
+    				<td>
+    					<a href="partners">Partners</a>
+    				</td>
     				<td>
     					<a href="how">How We Work</a>
     				</td>
     				<td>
+    				    <a href="<?php echo $javabase ?>/tutorial">Tutorial</a>    					
     				</td>
-    				<td>
-    					<a href="http://java.scandilabs.com/download">Download</a>
-    				</td>
-    				<td>
-    					<a href="http://www.linkedin.com/company/scandi-labs">LinkedIn</a>
+    				<td>    					
     				</td>
     			</tr>
     			<tr>
     				<td>
+    					<a href="careers">Careers</a>
+    				</td>
+    				<td>
+    				    <a href="clients">Clients</a>
+    				</td>
+    				<td>
+                        <a href="<?php echo $javabase ?>/source">Source</a>
+    				</td>
+    				<td>    					
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					
     				</td>
     				<td>
     				</td>
     				<td>
-    					<a href="http://java.scandilabs.com/source">Report Bugs</a>
+    					<a href="<?php echo $javabase ?>/download">Download</a>
     				</td>
-    				<td>
-    					<a href="http://www.facebook.com/ScandiLabs">Facebook</a>
+    				<td>    				
     				</td>
     			</tr>
     		</table>

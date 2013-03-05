@@ -36,14 +36,14 @@
                             position: relative; top: -320px; margin-left: 360px; width: 600px;">
                             
                             <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                              "I need vendors who get it right away.
+                              "I don't like it when vendors need a lot of hand-holding.
                             </p>                                             
                             <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                                ScandiLabs immediately understood my priorities and got to work."
+                                ScandiLabs understood our needs quickly and started working on a solution right away."
                             </p>
                             <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
-                                Bernard Chien, CTO<br/>
-                                MedVentive                      
+                                Thomas Fredell, CTO<br/>
+                                SnagAJob                        
                             </p>                            
                         </div>                        
                     </div>    
@@ -53,16 +53,18 @@
                             <img src="img/wfall60.jpg" />
                         </div>
                         
-                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.5; margin-bottom: -112px; 
-                          position: relative; top: -380px; margin-left: 240px; width: 600px;">
+                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.6; margin-bottom: -112px; 
+                          position: relative; top: -360px; margin-left: 240px; width: 600px;">
                             
                             <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                              "These guys are smart.  They combine experience and innovative thinking to solve problems.  
-                              And with their deep resource bench in India they execute well too."
+                              "These guys are smart and experienced problem solvers."
+                            </p>                                             
+                            <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                              "And the quality of the development team in India was great, they executed flawlessly."
                             </p>                                             
                             <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
-                                Thomas Fredell, CTO<br/>
-                                SnagAJob                        
+                                Bernard Chien, CTO<br/>
+                                MedVentive, a McKesson Company                      
                             </p>                                
                             
                         </div>                      
@@ -167,9 +169,9 @@
             </li>     
             <li>
                 <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients">
+                    <a class="centeredTableCell" href="clients-medventive">
                         <div>
-                            <img src="img/stealth_logo.png">
+                            <img style="padding-left: 19px" src="img/mckesson.png">
                         </div>    
                     </a>
                 </div>

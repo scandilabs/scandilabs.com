@@ -52,7 +52,7 @@
 			                        		$page=='/clients-travelclick.php'  
 										) 
 			                        	echo "class='current'"; ?> 
-			                        href="clients">
+			                        href="clients/">
 			                        <h2>Clients</h2>
 			                    </a>
 			                </li>   

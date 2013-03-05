@@ -5,11 +5,12 @@
 .leftNavOuter {
     vertical-align: top;
     display:inline-block;
-    position: absolute;
+    /*position: absolute;
     left: 0;
-    top: 0;
+    top: 0;*/
     width: 240px;
-    height: 100%;
+    /*height: 100%;*/
+    
 }
 
 .leftNavOuter ul {
@@ -18,12 +19,19 @@
 }
 
 .leftNavOuter img {
+    /*
     position:absolute;
     bottom:0;
     padding-bottom: 1em;
+    */
+   vertical-align: bottom;
+   padding-top:100px;
 }
 
 #mainCol {
-    margin-left: 240px;
+    /*margin-left: 240px;*/
 }
 
+#mainCol h4 {
+    margin-top: 2em;
+}
