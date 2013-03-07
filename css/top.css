@@ -27,7 +27,7 @@
    margin-left: auto;
    margin-right: auto;
    width: 960px;
-   
+   height: 54px; /* this exists only to prevent refresh issue on no-cache reload */
 }
 
 #header h2 {
