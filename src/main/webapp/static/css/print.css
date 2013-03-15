@@ -1,0 +1,10 @@
+.skip,
+#topNav,
+.footerLinks,
+#shareBox,
+.bottomShareBox
+{display:none;}
+
+a img {border:none;}
+
+.tooltip {display:block;}

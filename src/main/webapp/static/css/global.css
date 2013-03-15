@@ -1,0 +1,92 @@
+body {
+	margin:0px;
+	/*font-family: arial,sans-serif;*/
+	font-family: Georgia,"Times New Roman","Bitstream Vera Serif",serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.grey {
+	font-size: 0.9em;
+	color: #5E7185;
+}
+
+.successMessage {
+	color:blue;
+}
+
+.failureMessage {
+	color:red;
+}
+
+.fieldErrors {
+	color:red;
+}
+
+form label {display:block; float:left; margin-right:5px; padding-top:4px; text-align:right; width:150px;}
+form div {padding: 0.2em;}
+
+#bodyContent {
+	margin: 12px 12px;	
+}
+
+/* Autocomplete options */
+.ui-menu-item {
+	font-size:70%;
+}
+
+/* catamaran-faq specific */
+ul.tags {
+	list-style-type: none;
+	padding: 0px;
+	padding-left: 4px;
+	margin: 0px;	
+	font-size:small;
+	display:inline;
+}
+
+ul.tags li {
+	display:inline;
+	padding: 0px;
+	padding-right: 6px;
+	margin: 0px;
+}
+
+ul.categoryList {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;	
+	/*font-size:small;*/
+	/*display:inline;*/	
+}
+
+ul.categoryList li {
+	display:inline;
+	padding: 0px;
+	margin: 0px;
+}
+
+.faqMeta {
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+.answerBox {
+	padding: 0px;	
+	margin: 0px;	
+}
+
+.answerBox p {
+	padding: 0px;	
+	margin: 0px;
+	padding-top:0.5em;
+	white-space:pre-wrap;	
+}
+
+.toggle {
+	font-family:monospace;
+	font-size:larger;
+	cursor: pointer;	
+}

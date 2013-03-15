@@ -1,0 +1,76 @@
+#leftCol {
+	width: 65%;
+	display:inline-block;
+}
+
+#rightCol {
+	width: 33%;
+	display:inline-block;
+	vertical-align: top;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	/*
+	padding: 0.5em;
+	margin: 0.5em; */
+}
+
+ul#level1 {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 8px;
+}
+
+.answerBox {
+    background-color: #DDDDDD;
+    padding: 8px;
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    overflow-x:scroll;
+}
+
+.answerBox p {
+	/*margin-left: 0.9em;*/	
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+}
+
+form {
+    display:inline-block;
+}
+
+.toggle {
+    cursor: pointer;    
+}
+
+.plus {
+    width: 9px;
+    display:inline-block;
+}
+
+.category {
+    margin-bottom:8px;
+    margin-top:8px;
+}
+
+.singleFaq {
+    
+    /*
+    
+    padding-left: 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    overflow-x: auto;
+    */
+}
+
+.singleFaq .answerBox {
+    display:block;
+    background-color: #FFFFFF;
+    padding: 0px;
+    padding-bottom: 16px;
+}

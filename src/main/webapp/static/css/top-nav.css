@@ -1,0 +1,118 @@
+#topNav { 
+	padding-left:12px;
+	padding-right:12px;
+	padding-top:20px;
+	border-bottom: 1px solid #C9D7F1; 
+	margin-bottom: 2px;
+	height:40px;
+	background-color: #EEEEEE;
+}
+
+.right {
+    float:right;
+}
+
+#mainNav {
+	/*display:inline-block;*/
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 4px;
+	margin-top: 6px;
+	
+	border-bottom: 1px solid #C9D7F1; 
+	margin-bottom: 2px;
+}
+
+
+#userNav { 
+	position: absolute; 
+	right: 16px; 
+	top: 0px;
+	z-index: 6;
+	padding: 10px 6px 6px 6px; 
+	margin-bottom: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+#userNav.down { 
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-bottom: 1px solid #C9D7F1;
+	border-left: 1px solid #C9D7F1;
+	border-right: 1px solid #C9D7F1;
+	z-index: 16;
+	background-color: #FFFFFF;
+}
+
+/* Begin drop-down code */
+.dropDownLabel { 
+	background: url(../img/arrowSmallDown.gif) no-repeat right 18px; 
+	cursor: hand; 
+	cursor: pointer; 
+	padding: 10px 16px 12px 4px;
+	/*padding-right: 16px;*/
+	/* text-decoration: underline; */
+	/* font-size:small; */ 
+}
+.dropDownLabel:hover { 
+	background-color: #CCC; /* #B2C0C6 */ 
+}
+
+/*
+.dropDownLabel.down { 
+	background: url(../img/arrowSmallUp.gif) no-repeat right 7px; 
+}
+*/
+.dropDownLabel.down a:hover { 
+	background-color: #CCC; 
+}
+.dropDownList { 
+	display: none; 
+	z-index: 999;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+.dropDownList li { 
+	cursor: hand; 
+	cursor: pointer; 
+	list-style: none inside; 
+	padding-left: 4px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	font-size: 90%;
+}
+
+.dropDownList li:hover { 
+	background-color:#CCC;	
+}
+
+.dropDownList li a { 
+	color: #333; 
+	text-decoration: none;
+}
+/* End drop-down code */
+
+#signInBox, #signUpBox {
+	display:inline-block;
+}
+
+#headerRow {
+	padding:6px 6px;
+	/*border-bottom: 1px solid #C9D7F1;*/
+}
+
+#logoBox {
+	display:inline-block;	
+	font-weight:bold;
+	font-size:24px;
+	font-style:italic;
+	width:200px;	
+}
+
+#logoBox a {
+	text-decoration: none;
+}
+
+

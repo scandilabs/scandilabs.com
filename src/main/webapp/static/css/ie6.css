@@ -1,0 +1,16 @@
+.modal-overlay {filter:alpha(opacity = 75); position: absolute; height:expression(document.body.clientHeight + "px");}
+
+#searchBox form {padding:3px 6px;}
+#searchBox input.searchZip {margin-top:7px;}
+#searchBox input#submitButton {margin-top:5px;}
+
+/*
+table.categoryResults th.category { width:340px;}
+table.categoryResults td.metStandardsStatus {width:210px; padding-right:35px;}
+table.categoryResults th.progressTowards {padding-left:30px; width:auto;}
+table.categoryResults td.barGraph {padding-right:8px; text-align:right; padding-right:7px; width:auto;}
+table.categoryResults td.barGraph img {float:right;}
+
+.barScoreBox {float:right;}
+.negAvg {text-align:inherit;}
+*/

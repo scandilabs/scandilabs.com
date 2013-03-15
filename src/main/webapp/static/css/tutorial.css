@@ -1,0 +1,37 @@
+pre {
+    color:black;
+    border-top: 1px solid hsla(213,85%,40%,1);
+    border-bottom: 1px solid hsla(213,85%,40%,1);
+    padding: 4px;    
+    background-color: hsla(213,85%,95%,1);
+}
+
+pre code {
+    font-size: 13px;
+}
+
+code {
+    font-size: 14px;
+}
+
+blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    border-style: solid;
+    border-color:  hsla(213,85%,40%,1);
+    border-width: 1px;
+    padding: 4px;
+    background-image: url('../img/icn-tips-large.png');
+    background-repeat: no-repeat;
+}
+
+blockquote p {
+    margin: 0px;   
+    margin-left:32px;
+    padding-top:3px;
+    padding-bottom:4px;
+}
+
+#mainCol div+h1 { /* Trick to select first h1 - http://stackoverflow.com/questions/3747547/need-css-selector-for-first-div-within-another-div */
+    margin-top:0px;    
+}
