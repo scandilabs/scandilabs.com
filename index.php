@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Welcome to Scandi Labs</title>
+        <title>ScandiLabs : Home</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/index.css" media="screen, projection">
@@ -26,6 +26,26 @@
         	<div class="slideBg">
 				<div class="slideshow" style="height:410px;">
 					
+                    <div class="bgImageBoxOuter">
+                        <div class="bgImageBox">
+                            <img src="img/wfall60.jpg" />
+                        </div>
+                        
+                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.6; margin-bottom: -112px; 
+                          position: relative; top: -360px; margin-left: 240px; width: 600px;">
+                            
+                            <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                              "These guys are smart and experienced problem solvers.
+                              And the quality of the development team was great. They executed flawlessly."
+                            </p>                                             
+                            <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
+                                Bernard Chien, CTO<br/>
+                                MedVentive, a McKesson Company                      
+                            </p>                                
+                            
+                        </div>                      
+                    </div>
+                  					
 					
                     <div class="bgImageBoxOuter">
                         <div class="bgImageBox">
@@ -39,7 +59,7 @@
                               "I don't like it when vendors need a lot of hand-holding.
                             </p>                                             
                             <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                                ScandiLabs understood our needs quickly and started working on a solution right away."
+                                ScandiLabs understood our needs right away, and got to work."
                             </p>
                             <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
                                 Thomas Fredell, CTO<br/>
@@ -47,29 +67,27 @@
                             </p>                            
                         </div>                        
                     </div>    
-   					
+  
                     <div class="bgImageBoxOuter">
                         <div class="bgImageBox">
-                            <img src="img/wfall60.jpg" />
+                            <img src="img/kvik30.jpg" />
                         </div>
                         
-                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.6; margin-bottom: -112px; 
-                          position: relative; top: -360px; margin-left: 240px; width: 600px;">
+                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.8; 
+                            position: relative; top: -180px; margin-left: 474px; width: 600px;">
                             
                             <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                              "These guys are smart and experienced problem solvers."
-                            </p>                                             
-                            <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                              "And the quality of the development team in India was great, they executed flawlessly."
-                            </p>                                             
+                              "ScandiLabs provided a full tech-team-in-a-box which helped me launch my Healthcare IT startup quickly."
+                            </p>
+                                
                             <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
-                                Bernard Chien, CTO<br/>
-                                MedVentive, a McKesson Company                      
-                            </p>                                
-                            
-                        </div>                      
-                    </div>
-                    
+                                Jim Dougherty, Founder<br/>
+                                Madaket Health                      
+                            </p>
+                                                       
+                        </div>                        
+                    </div>   
+
                     <!--
 					<div class="bgImageBoxOuter">
 			    		<div class="bgImageBox">
@@ -89,25 +107,6 @@
 							
 						</div>						
 					</div>
-					
-
-                    <div class="bgImageBoxOuter">
-                        <div class="bgImageBox">
-                            <img src="img/kvik30.jpg" />
-                        </div>
-                        
-                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.8; 
-                            position: relative; top: -150px; margin-left: 474px; width: 600px;">
-                            
-                            <h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
-                            
-                            <h2 style="margin: 0px; color: #DDDDDD;">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
-                                Jim Dougherty, Co-Founder<br/>
-                                Madaket Health                      
-                            </h2>                           
-                        </div>                        
-                    </div>   
                     -->      
                                      
 	        	</div>
@@ -122,16 +121,16 @@
         <ul class="logoRow1">
             <li>
                 <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients-inspector-time">
+                    <a class="centeredTableCell" href="clients">
                         <div>
-                            <img style="width:150px; " src="http://inspectortime.com/it/images/home/header.gif">
-                        </div>
+                            <img style="width:154px;" src="img/madaket_color.png" />
+                        </div>    
                     </a>
                 </div>
-            </li>
+            </li>     
             <li>
                 <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients-medventive">
+                    <a class="centeredTableCell" href="clients/medventive">
                         <div>
                             <img src="http://www.medventive.com/Collateral/Templates/English-US/Images/top_logo.gif">
                         </div>
@@ -140,42 +139,54 @@
             </li>
             <li>
                 <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients-postpost">
+                    <a class="centeredTableCell" href="clients/travelclick">
+                        <div>
+                            <img src="http://www.travelclick.com/sites/all/themes/travelclick/logo.png">
+                        </div>    
+                    </a>
+                </div>
+            </li>   
+        </ul>
+        <ul class="logoRow2">
+            <li>
+                <div class="tableBlock drop-shadow raised">
+                    <a class="centeredTableCell" href="clients/postpost">
                         <div>
                             <img style="width:150px; " src="http://postpost.com/static/img/global/postpost-logo.png">
                         </div>
                     </a>
                 </div>
             </li>
-        </ul>
-        <ul class="logoRow2">
             <li>
                 <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients-snagajob">
+                    <a class="centeredTableCell" href="clients/snagajob">
                         <div>
                             <img src="http://2011.richmond.wordcamp.org/files/2011/10/Snag-a-Job-Logo.gif">
                         </div>
                     </a>
                 </div>    
-            </li>     
+            </li>
             <li>
                 <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients-travelclick">
+                    <a class="centeredTableCell" href="clients/medventive">
                         <div>
-                            <img src="http://www.travelclick.com/sites/all/themes/travelclick/logo.png">
+                            <img style="padding-left: 19px; padding-top:18px;" src="img/mckesson.png">
                         </div>    
                     </a>
                 </div>
             </li>     
+            
+            <!--     
             <li>
                 <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients-medventive">
+                    <a class="centeredTableCell" href="clients/inspector-time">
                         <div>
-                            <img style="padding-left: 19px" src="img/mckesson.png">
-                        </div>    
+                            <img style="width:150px; " src="http://inspectortime.com/it/images/home/header.gif">
+                        </div>
                     </a>
                 </div>
-            </li>     
+            </li>       
+            -->       
         </ul>
     </div>
 

@@ -6,8 +6,8 @@ $(document).ready(function() {
     .cycle({
         fx: 'scrollLeft',
         /*next:   '.slideshow',*/ 
-        timeout: 8000,
-        pause: 1,
+        timeout: 5000,
+        pause: 0,
         speed: 1000,        
         pagerAnchorBuilder: function(index, el) {
           return '<div class="navItem"><a href="#">&nbsp;&nbsp;</a></div>';

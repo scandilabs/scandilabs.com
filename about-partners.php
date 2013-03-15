@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Scandi Labs - Team</title>
+        <title>ScandiLabs : Partners</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
@@ -23,17 +23,17 @@
 				<li><a href="contact">Contact</a></li>
 			</ul><div id="mainCol">
 				
-				<h2 style="margin-bottom:30px;" class="noTopMargin">Enterprise Clout</h2>
+				<h2 style="margin-bottom:30px;" class="noTopMargin">Enterprise Strength</h2>
 				
                 <img style="float: left; margin-left: -12px; margin-right:9px;" src="img/O_SilverPartner_clr.gif" />                
 				<p style="padding-top:10px;">					 
-					ScandiLabs is proud to be an Oracle Business Partner at the Silver level.
+					ScandiLabs is an Oracle Business Partner at the Silver level.
 				</p>
 				
 				<p><br/></p>
                 <img style="float: left; margin-right:46px;margin-bottom:8px;" src="img/ibm_bp_member.gif" />              
 				<p>					 
-					ScandiLabs is proud to be an IBM Business Partner.
+					ScandiLabs is an IBM Business Partner.
 				</p>
 				
 	        	    

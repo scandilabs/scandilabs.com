@@ -33,6 +33,15 @@
         				<img style="width:150px; position:relative; left:-8px;" src="img/Snag-a-Job-Logo.gif" />
     				</div><div id="mainCol">
                         <h2 class="noTopMargin">Enterprise Business Intelligence</h2>
+
+                        <p>
+                            <div style="padding-bottom:6px; font-style:italic;">
+                                "ScandiLabs did a great job for us.  They were really helpful and provided very fast turnaround times!"
+                            </div>
+                            Thomas Fredell, CTO<br/>
+                            SnagAJob
+                        </p>
+                        
                         
                         <h4>The Problem</h4>
                         <p>

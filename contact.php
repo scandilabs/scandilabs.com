@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Scandi Labs - Contact</title>
+        <title>ScandiLabs : Contact</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/contact.css" media="screen, projection">
@@ -28,13 +28,13 @@
                 <div class="twoColLeft">
                     <h4>United States</h4>
                     <p>
-                        Mads Kvalsvik, President<br/>
+                        Mads Kvalsvik, Owner<br/>
                         <span class="label">Phone:</span> <span class="blackLink"><a href="tel:617 682 0310">(617) 682-0310</a></span><br/>
                         <span class="label">Fax:</span> (617) 297-0013<br/>
                         <br/>
                         ScandiLabs, Inc. <br/>
-                        155 Fifth Street<br/>
-                        Cambridge, MA 02141<br/>
+                        122 Prospect Street<br/>
+                        Acton, MA 01720<br/>
                         United States<br/>
                     </p>
                 </div>
@@ -45,6 +45,7 @@
                         <span class="label">Phone:</span> <span class="blackLink"><a href="tel:617 682 0310">(617) 682-0310</a></span><br/>
                         <span class="label">Fax:</span> (617) 297-0013<br/>
                         <br/>
+                        ScandiLabs<br/>
                         27/365, Netaji Nagar, Wanworie,<br/> 
                         Pune - 411040 Maharashtra<br/>
                         India

@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Scandi Labs - Team</title>
+        <title>ScandiLabs : Careers</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
@@ -27,16 +27,17 @@
 				<h2 class="noTopMargin">Jave Software Engineer</h2>
 	        	<p>Location: Pune, India</p>
 	        	<p>
-	        	    We are looking for talented software developers with strong foundational skills in:
+	        	    We are looking for several talented software engineers with strong foundational skills in:
 	        	    <ul>
 	        	        <li>Java</li>
-	        	        <li>Linux</li>
-	        	        <li>HTML and CSS</li>
+                        <li>HTML and CSS</li>
+                        <li>Javascript / jQuery</li>
 	        	    </ul>
         	    </p>
 	        	<p>
-	        	    The following skills are a big plus:
+	        	    Applicants with the following skills will be given preference:
                     <ul>
+                        <li>Linux shell scripting and server operations</li>
                         <li>Freemarker</li>
                         <li>Tomcat</li>
                         <li>Amazon AWS</li>

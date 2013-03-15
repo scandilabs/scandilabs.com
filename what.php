@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Scandi Labs - What</title>
+        <title>ScandiLabs : What</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
@@ -23,7 +23,7 @@
 
 		<div id="content">
 			
-        	<h1 class="copy">Rapid and Scalable</h1>
+        	<h1 class="copy">Speed and Scale</h1>
         	
         	<div class="twoColLeft">
         		<h2 class="copy">Consumer Web</h2>

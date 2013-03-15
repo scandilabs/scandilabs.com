@@ -31,6 +31,7 @@
         					<li><a href="clients/travelclick">TravelClick</a></li>					
         				</ul>
         				<img style="width:134px;" src="img/medventive_logo.gif" />
+        				<p>A McKesson Company</p>
 				    </div><div id="mainCol">
     					
                         <h2 class="noTopMargin">Advanced SaaS Application Monitoring</h2>

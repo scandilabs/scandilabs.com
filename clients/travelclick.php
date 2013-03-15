@@ -33,11 +33,6 @@
         				<img style="width:150px; " src="img/travelclick_logo.png" />
     				</div><div id="mainCol">
                         <h2 class="noTopMargin">Enterprise Client Reporting</h2>
-                        <p>
-                            "ScandiLabs saved us lots of time and money!"<br/>
-                            Myles Trachtenberg, CTO<br/>
-                            TravelClick                     
-                        </p>
                             
                         <h4>The Problem</h4>
                         <p>
