@@ -19,10 +19,10 @@
 
 			<h1 class="noTopMargin">Source</h1>
 			<h3>Web Framework</h3>			
-			<div class="github-widget" data-repo="catamaran/catamaran-framework"></div>
+			<div class="github-widget" data-repo="scandilabs/scandilabs-framework"></div>
 			
-            <h3>Demo</h3>           
-            <div class="github-widget" data-repo="catamaran/catamaran-faq"></div>
+            <h3>Sample Applications</h3>           
+            <div class="github-widget" data-repo="scandilabs/scandilabs-apps"></div>
             
             <p>For more information, see <a href="/faqs?query=git">keyword 'git'</a> and <a href="/faqs?query=github">keyword 'github'</a> in our knowledge base.
             
