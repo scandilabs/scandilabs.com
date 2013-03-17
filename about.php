@@ -7,9 +7,6 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
 
-        <script src="js/jquery-1.8.2.js"></script>
-        <script type="text/javascript" src="js/site.js"></script>
-        <script type="text/javascript" src="js/about.js"></script>
 		<?php include("include/analytics.php"); ?>
     </head>
     <body>

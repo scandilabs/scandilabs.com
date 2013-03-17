@@ -12,11 +12,6 @@
         <script type="text/javascript" src="js/site.js"></script>
 		<?php include("include/analytics.php"); ?>
 		
-	    <script type="text/javascript" src="js/jquery-1.4.js"></script>
-    	<script type="text/javascript" src="js/jquery.animate.js"></script>
-		<script type="text/javascript" src="js/jquery.tagcanvas.min.js"></script>
-	    <script type="text/javascript" src="js/compounds.js" ></script>		
-        <script type="text/javascript" src="js/what.js"></script>
     </head>
     <body>
     <?php include("include/top.php"); ?>  

@@ -44,12 +44,12 @@
 			                    <a 
 			                        <?php 
 			                        	if(
-			                        		$page=='/clients.php' or 
-			                        		$page=='/clients-inspector-time.php' or
-			                        		$page=='/clients-medventive.php' or 
-			                        		$page=='/clients-postpost.php' or 
-			                        		$page=='/clients-snagajob.php' or 
-			                        		$page=='/clients-travelclick.php'  
+			                        		$page=='/clients/index.php' or 
+			                        		$page=='/clients/inspector-time.php' or
+			                        		$page=='/clients/medventive.php' or 
+			                        		$page=='/clients/postpost.php' or 
+			                        		$page=='/clients/snagajob.php' or 
+			                        		$page=='/clients/travelclick.php'  
 										) 
 			                        	echo "class='current'"; ?> 
 			                        href="clients/">

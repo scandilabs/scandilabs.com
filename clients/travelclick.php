@@ -8,10 +8,7 @@
         <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/clients.css" media="screen, projection">
 
-        <script src="js/jquery-1.8.2.js"></script>
-        <script type="text/javascript" src="js/site.js"></script>
 		<?php include("../include/analytics.php"); ?>
-        <script type="text/javascript" src="js/clients.js"></script>        
     </head>
     <body>
         

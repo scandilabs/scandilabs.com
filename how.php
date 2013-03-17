@@ -9,8 +9,6 @@
         <link type="text/css" rel="stylesheet" href="css/how.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/arrow-breadcrumb.css" media="screen, projection">
 
-        <script src="js/jquery-1.8.2.js"></script>
-        <script type="text/javascript" src="js/site.js"></script>
 		<?php include("include/analytics.php"); ?>
     </head>
     <body>
