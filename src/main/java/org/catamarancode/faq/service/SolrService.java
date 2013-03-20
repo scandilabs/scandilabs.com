@@ -22,12 +22,13 @@ import org.catamarancode.faq.entity.Faq;
 import org.catamarancode.faq.entity.NestedTag;
 import org.catamarancode.faq.entity.User;
 import org.catamarancode.faq.service.support.Visibility;
-import org.catamarancode.solr.SearchQuery;
-import org.catamarancode.solr.SolrServerConfig;
 import org.catamarancode.util.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
+
+import com.scandilabs.framework.solr.SearchQuery;
+import com.scandilabs.framework.solr.SolrServerConfig;
 
 public class SolrService {
     

@@ -40,7 +40,7 @@ To split configuration across multiple spring files, consult web.xml -->
         <constructor-arg ref="solrServerConfig"/>
     </bean>
     
-    <bean id="solrServerConfig" class="org.catamarancode.solr.SolrServerConfig" init-method="init">
+    <bean id="solrServerConfig" class="com.scandilabs.framework.solr.SolrServerConfig" init-method="init">
         <property name="solrHost" value="localhost" />
         <property name="solrPort" value="8997"/>
     </bean>
