@@ -18,7 +18,7 @@
         				<td class="footerHeading">
         					<a href="<?php echo $javabase ?>/">Java</a>	        					
         				</td>
-        				<td class="footerHeading">
+        				<td class="footerHeading" style="width:120px;">
         				    <a href="contact">Contact</a>    					
         				</td>
         			</tr>

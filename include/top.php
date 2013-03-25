@@ -1,7 +1,7 @@
 <?php 
   $page = $_SERVER["PHP_SELF"];
-  $javabase = "http://java.scandilabs.com";
-  $blogbase = "http://blog.scandilabs.com";
+  $javabase = "http://localhost:8080";
+  $blogbase = "http://localhost:8080";
 ?>
 
         <div id="outerContent">

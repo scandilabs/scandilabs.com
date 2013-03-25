@@ -70,7 +70,7 @@
                             <img src="img/kvik30.jpg" />
                         </div>
                         
-                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.8; 
+                       <div style="padding:16px 16px; background-color:#000000; opacity: 0.8; 
                             position: relative; top: -180px; margin-left: 474px; width: 600px;">
                             
                             <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
