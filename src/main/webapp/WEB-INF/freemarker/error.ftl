@@ -14,7 +14,7 @@
 	<#if logExceptionMessage??>
 		<p>${logExceptionMessage}</p>
 	</#if>			
-	<p>If you receive this error message a second time, please <a href="mailto:support@catamaranframework.org?subject=FAQ error code: ${logExceptionID}">contact our support staff</a> and mention error code ${logExceptionID}.</p>
+	<p>If you receive this error message a second time, please <a href="mailto:support@scandilabs.com?subject=ScandiLabs Java error, code: ${logExceptionID}">email us</a>.</p>
 		
 	<#include "includes/bottom.ftl" />
 </body>

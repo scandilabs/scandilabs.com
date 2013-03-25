@@ -125,12 +125,8 @@ public class VisitorController {
         
         // Create keyword list from tags and categories
         Set<String> keywords = FaqUtils.extractKeywords(faqs);
-        
-        // Create keyword list from only
-        
-        List<String> level1 = new ArrayList<String>();
-        
         mv.addObject("keywords", keywords);
+
         mv.addObject("top", top);
         return mv;
     }
@@ -157,6 +153,12 @@ public class VisitorController {
         mv.addObject("audits",  audits);
         List<Comment> comments = solrService.listComments(faq);
         mv.addObject("comments", comments);
+        
+        // Create keyword list from tags and categories
+        List<Faq> faqs = new ArrayList<Faq>();
+        faqs.add(faq);
+        Set<String> keywords = FaqUtils.extractKeywords(faqs);
+        mv.addObject("keywords", keywords);
         
         // Nothing
         mv.addObject("faq", faq);

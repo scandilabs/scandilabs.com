@@ -82,7 +82,7 @@
 					<ul>
 					<#list level1Node.faqs as faq>
 						<li id="${level1Node.nodeId}-${faq.shortId}" class="faq">
-							<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <#if user??><a href="faq?key=${faq.key}">[details]</a></#if>
+							<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a href="faq?key=${faq.key}">[details]</a>
 							<div class="answerBox"></div>
 						</li>
 					</#list>
@@ -94,7 +94,7 @@
 							<ul>
 							<#list level2Node.faqs as faq>
 								<li id="${level2Node.nodeId}-${faq.shortId}" class="faq">
-									<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <#if user??><a href="faq?key=${faq.key}">[details]</a></#if>
+									<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a href="faq?key=${faq.key}">[details]</a>
 									<div class="answerBox"></div>
 								</li>								
 							</#list>
@@ -106,7 +106,7 @@
 									<ul>
 									<#list level3Node.faqs as faq>
 										<li id="${level3Node.nodeId}-${faq.shortId}" class="faq">
-											<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <#if user??><a href="faq?key=${faq.key}">[details]</a></#if>
+											<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a href="faq?key=${faq.key}">[details]</a>
 											<div class="answerBox"></div>
 										</li>
 									</#list>						
@@ -118,7 +118,7 @@
 											<ul>
 											<#list level4Node.faqs as faq>
 												<li id="${level4Node.nodeId}-${faq.shortId}" class="faq">
-													<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <#if user??><a href="faq?key=${faq.key}">[details]</a></#if>
+													<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a href="faq?key=${faq.key}">[details]</a>
 													<div class="answerBox"></div>
 												</li>
 											</#list>

@@ -5,21 +5,21 @@
 
 <div id="footerOuter">
     <div id="footer">
-    	<div id="footerLinkBox">
+    	<div class="footerLinkBox">
     		<table>
     			<tr>
-    				<td>
-    					<span class="footerHeading">Company</span>
-    				</td>
-    				<td>
-    					<span class="footerHeading">Partners</span>
-    				</td>
-    				<td>
-    					<span class="footerHeading">Java</span>	        					
-    				</td>
-    				<td>
-    					<span class="footerHeading">Contact</span>
-    				</td>
+                    <td class="footerHeading" >
+                        <a href="${parentSiteBase}/about">Company</a>
+                    </td>
+                    <td class="footerHeading">                      
+                        Services
+                    </td>
+                    <td class="footerHeading">
+                        <a href="<?php echo $javabase ?>/">Java</a>                             
+                    </td>
+                    <td class="footerHeading" style="width:120px;">
+                        <a href="contact">Contact</a>                       
+                    </td>
     			</tr>
     			<tr>
     				<td>

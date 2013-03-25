@@ -27,3 +27,24 @@ label {
 input[type=text], input[type=password] {
     width: 200px;
 }
+
+pre {
+    color:black;
+    border-top: 1px solid hsla(213,85%,40%,1);
+    border-bottom: 1px solid hsla(213,85%,40%,1);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left:13px;    
+    background-color: hsla(213,85%,95%,1);
+    overflow-x:scroll;
+}
+
+pre code {
+    font-size: 13px;
+    }
+
+code {    
+    font-size: 14px;
+}
+
+

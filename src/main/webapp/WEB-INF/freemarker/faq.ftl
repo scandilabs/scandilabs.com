@@ -14,13 +14,25 @@
 	<div id="content">
 		<ul class="leftNav">
 			<#assign menu="faqs" />
-			<li><a href="faqs">Back</a></li>
-		    <#if user??>
-		        <li><a href="faq-edit?key=${faq.key}">Edit</a></li>
-		        <#if ((user.administrator) && !(faq.visibility == "PUBLIC"))>
-		            <li><a href="faq-publicize?key=${faq.key}">Publicize</a></li>
-		        </#if>
-		    </#if>
+			<div style="height: 100px">
+    			<li><a href="faqs">Back</a></li>
+    		    <#if user??>
+    		        <li><a href="faq-edit?key=${faq.key}">Edit</a></li>
+    		        <#if ((user.administrator) && !(faq.visibility == "PUBLIC"))>
+    		            <li><a href="faq-publicize?key=${faq.key}">Publicize</a></li>
+    		        </#if>
+    		    </#if>
+		    </div>
+		    
+            <div style="margin-top:24px;">          
+                <h3>Related topics</h3>
+                <ul>
+                <#list keywords as keyword>
+                    <li><a href="faqs?query=${keyword}">${keyword}</a></li>
+                </#list>
+                </ul>
+            </div>
+		    
 			
 		</ul><div id="mainCol">
 
