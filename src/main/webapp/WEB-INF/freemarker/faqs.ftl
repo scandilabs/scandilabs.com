@@ -31,6 +31,7 @@
 			<#assign menu="faqs" />
 			<#include "includes/left-nav-content.ftl" />
 
+            <!--
 			<div style="margin-top:24px;">			
 				<h3>Related topics</h3>
 				<ul>
@@ -39,8 +40,9 @@
 				</#list>
 				</ul>
 			</div>
+			-->
 			
-		    <div id="tag-cloud">
+		    <div style="margin-top:54px;" id="tag-cloud">
 			    <div id="smallCanvasContainer" >
 		            <canvas width="240" height="120" id="myCanvas">
 		            </canvas>

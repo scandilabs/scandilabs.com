@@ -4,10 +4,8 @@
 
 <head>
 	<#include "includes/head.ftl" />
-	
-    <script type="text/javascript" src="static/js/jquery-1.4.js"></script>
+	<title>ScandiLabs : Blog</title>
     <script type="text/javascript" src="static/js/blog.js"></script>
-
 	<link type="text/css" rel="stylesheet" href="static/css/blog.css" media="screen, projection">
 </head>
 <body>
