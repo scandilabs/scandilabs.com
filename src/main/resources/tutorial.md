@@ -14,7 +14,7 @@ http://github.github.com/github-flavored-markdown/
 # Introduction
 Welcome to the ScandiLabs Java tutorial!
 
-Please note we are constantly adding topics to this tutorial (it was last updated on 3/27/2013).  If you don't find what you're looking for, check back soon.  You can also revie the <a href="/faqs">knowledge base</a> and the sample applications at <a href="https://github.com/scandilabs/scandilabs-apps">github</a>. 
+Please note we are constantly adding topics to this tutorial (it was last updated on 3/27/2013).  If you don't find what you're looking for, check back soon.  You can also review the <a href="/faqs">knowledge base</a> and the sample applications at <a href="https://github.com/scandilabs/scandilabs-apps">github</a>. 
 
 # Eclipse and Maven
 First install [Eclipse IDE for Java Developers](http://www.eclipse.org/).  
