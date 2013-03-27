@@ -43,8 +43,8 @@
 #logoBox {
     display: inline-block;
     vertical-align: top;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 11px;
+    padding-bottom: 9px;
     padding-left:58px;
     font-size:0px; /* java header workaround */
 }

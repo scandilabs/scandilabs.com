@@ -18,7 +18,7 @@
 
 		<div id="content">
 			
-        	<h1 class="copy">Speed and Scale</h1>
+        	<h1 class="copy">End-to-end Application Development</h1>
         	
         	<div class="twoColLeft">
         		<h2 class="copy">Consumer Web</h2>
@@ -29,21 +29,21 @@
 	        		<h4 class="copy">Feedback and A/B testing</h3>
         		</div>
         		
-        		<h3 class="copy">Benefits:</h3>
+        		<h3 class="copy">We Help You:</h3>
             	<h4 class="copy">Reach funding milestones</h4>
-            	<h4 class="copy">Product quality</h4>
-            	<h4 class="copy">Growth and flexibility</h4>
+            	<h4 class="copy">Deliver product quality</h4>
+            	<h4 class="copy">Grow and respond to change</h4>
         	</div>
         	
         	<div class="twoColRight">
         		<h2 class="copy">B2B and SaaS / Cloud</h2>
         		<div class="mediumHeightBox">
-	        		<h3 class="copy">Deep Experience</h3>
+	        		<h3 class="copy">Broad Industry Knowledge</h3>
 	        		<h4 class="copy">Business understanding</h4>
 	        		<h4 class="copy">Focus on usability</h4>
         		</div>
         		
-        		<h3 class="copy">Benefits:</h3>
+        		<h3 class="copy">We Provide:</h3>
             	<h4 class="copy">Seamless enterprise integration</h4>
             	<h4 class="copy">Enthusiastic user adoption</h4>
             	<h4 class="copy">Low maintenance costs</h4>        		

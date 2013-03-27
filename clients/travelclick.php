@@ -42,7 +42,7 @@
                         <ul>
                             <li>Improved caching of hotel-specific user interface data</li>
                             <li>Established detailed page and call-specific instrumentation for better performance analysis</li>
-                            <li>Analysis and re-structuring of Javascript and CSS code faster parallel loading</li>
+                            <li>Analyzed and re-structured Javascript and CSS for faster parallel loading</li>
                         </ul>
 
 

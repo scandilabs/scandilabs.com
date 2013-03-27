@@ -34,7 +34,7 @@
                         
                         <p>
                             <div style="padding-bottom:6px; font-style:italic;">
-                                "Hiring an experienced team from ScandiLabs allowed us to eliminate technical risk.  In addition to delivering high quality software, they also help us think about the overall data flow from doctors and hospital groups to billing services and insurance companies."
+                                "Hiring an experienced team from ScandiLabs allowed us to eliminate technical risk.  However, in addition to delivering high quality software, they also helped us solve some key business issues.  For example, how to handle the overall data flow from doctors and hospital groups to billing services and insurance companies."
                             </div>
                             Jim Dougherty<br/>
                             Founder, Madaket Health                    
@@ -42,10 +42,10 @@
                         
                         <h4>The Problem</h4>
                         <p>
-                            Doctors need to enroll with insurance companies before they can start accepting patients.  The current process is slow and imposes a paper burden on medical office staff and hospitals.  And while insurance companies are processing dead-tree paperwork, doctors lose money.  Madaket Health was created to collect enrollment data once and then automate the interface with insurance companies.  
+                            Doctors need to enroll with insurance companies before they can start accepting patients.  The current process is slow and imposes a paper burden on medical office staff and hospitals.  While insurance companies are processing dead-tree paperwork, doctors cannot deliver services and lose revenue.  Madaket Health was created to collect enrollment data once and then automate the process with insurance companies.  
                         </p>
                         <p>
-                            They needed a technical team that combined enterprise IT experience with startup speed and flexibility.  
+                            Madaket Health needed a technical team that combined enterprise IT experience with startup speed and flexibility.  
                         </p>
                         <h4>The ScandiLabs Solution</h4>
                         <p>
@@ -55,8 +55,8 @@
                             <li>Worked with founders and collaborated with industry leaders to define the technology</li>
                             <li>Performed rapid, iterative early prototyping</li>
                             <li>Built, iterated, and hosted demo site with on shore tech lead and off shore resources</li>
-                            <li>Ongoing systems integrations with partner companies</li>
-                            <li>Java technology stack, utilizing domain-driven design and ScandiLabs' rapid web development framework</li>                            
+                            <li>Integrated with systems at partner companies</li>
+                            <li>Created using the ScandiLabs Java technology stack, utilizing domain-driven design and rapid web development framework</li>                            
                         </ul>
                         
     				</div>

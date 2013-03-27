@@ -22,10 +22,16 @@
 				<li><a href="contact">Contact</a></li>
 			</ul><div id="mainCol">
 				
-				<h2 class="noTopMargin">Enterprise Experience, Startup Speed</h2>
-	        	<p>ScandiLabs was founded in 2012 because we saw an opportunity for a software development vendor who could combine enterprise and startup experience.</p>
-	        	<p>Enterprise vendors excelled at scale and integration challenges, but they were slow to respond to change.  Startups powered by popular frameworks like Ruby on Rails got up and running quickly, but often experienced performance and scaling problems later.</p>  
-	        	<p>Our standardized methodology and Java open source web framework allows us to combine startup speed with enterprise scale.</p>
+				<h2 class="noTopMargin">A Better Way</h2>
+                <p>How come these developers do not understand our business needs?</p>
+                <p>Why does software development take so long?</p>
+                <p>Sound familiar?  These are the questions that plague many software development projects.  At ScandiLabs, we are passionate about creating quality software to fulfill your business needs.  We strive to get it right the first time, so that you don't have to ask these questions.</p>
+                <p>Our experience with both startups and enterprise projects helps us to determine how we can best help you.</p>  
+                <ul>
+                    <li>Does your business have scaling and integration challenges?</li>
+                    <li>Are you bogged down by performance problems?</li>                
+                </ul>
+                <p>Let us help you with our standardized methodology and Java open source web framework.  ScandiLabs combines startup speed with enterprise scale to deliver your projects.  We believe that yes&mdash;you can and should have it all.</p>
 
             	<div class="clearfix"></div>    
 			</div>

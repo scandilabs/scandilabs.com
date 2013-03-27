@@ -46,7 +46,7 @@
                         </p>
                         <h4>The ScandiLabs Solution</h4>
                         <p>
-                            Leveraging our Business Intelligence experience, we helped the client formulate a strategy based on cloud Data Warehousing technology and client BI tools.  The solution would leverage heterogenous data sources and internal transformation APIs in a seamless and scalable way to provide maximum reporting and analytics flexibility for top-tier customers.                                                                                 
+                            Leveraging our Business Intelligence experience, we helped SnagAJob formulate a strategy based on cloud Data Warehousing technology and client BI tools.  The solution leveraged heterogenous data sources and internal transformation APIs in a seamless and scalable way.  This provided maximum reporting and analytics flexibility for top-tier customers.                                                                                 
     					</p>
     
     				</div> <!-- mainCol -->	

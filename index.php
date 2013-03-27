@@ -32,8 +32,7 @@
                           position: relative; top: -360px; margin-left: 240px; width: 600px;">
                             
                             <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                              "These guys are smart and experienced problem solvers.
-                              And the quality of the development team was great. They executed flawlessly."
+                              "Our business demands flawless execution.  ScandiLabs proved time and time again that they are experienced and creative problem solvers who deliver high quality code."
                             </p>                                             
                             <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
                                 Bernard Chien, CTO<br/>
@@ -56,7 +55,7 @@
                               "I don't like it when vendors need a lot of hand-holding.
                             </p>                                             
                             <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                                ScandiLabs understood our needs right away, and got to work."
+                                ScandiLabs understood our business needs right away, and got productive FAST."
                             </p>
                             <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
                                 Thomas Fredell, CTO<br/>
@@ -111,7 +110,7 @@
 
      </div> <!-- slideOuter -->
        
- 	<h1 style="text-align: center" calss="copy">We deliver quality scalable software</h1>    
+ 	<h1 style="text-align: center" calss="copy">We create quality scalable software</h1>    
  	<br/>
  	
  	<div id="logoGrid">

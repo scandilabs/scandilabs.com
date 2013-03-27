@@ -23,8 +23,8 @@
                 <img src="img/mads_bw.jpg" style="float:right; margin-bottom: 8px; margin-left: 16px;"  />
             	<h2 class="noTopMargin">Mads Kvalsvik, Owner</h2>
             	
-				<p>Throughout his professional life, Mads has taken a special interest in finding better ways to build software.</p>  
-				<p>Prior to starting ScandiLabs, he headed up new technology ventures for Boathouse Group and built a number of online properties including <a href="http://speedbilly.com" target="_new">speedbilly.com</a>, an auto marketplace.</p>
+				<p>Mads is always looking for the best way to build software.  He started ScandiLabs for everyone who says "There must be a better way!"</p>  
+				<p>Prior to starting ScandiLabs, he headed up new technology ventures for Boathouse Group and built a number of online businesses including <a href="http://speedbilly.com" target="_new">speedbilly.com</a>, an auto marketplace.</p>
 				<p>Earlier he co-founded Savant Technologies, a software consulting business specializing in e-Commerce solutions. He then sold the business to IntraLinks, a leading provider of virtual datarooms.  As a member of the IntraLinks senior team he led the design and development of the company's flagship SaaS offering and introduced Agile to a 50-person strong team.</p> 
 				<p>Mads also spent several years at Turner Broadcasting where he learned a lot about creating re-usable software for brands like CNN, TBS, TNT, NASCAR and Cartoon Network.</p>
 				<p>He graduated from MIT in 1994.</p>

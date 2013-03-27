@@ -21,7 +21,7 @@
 				<li><a href="contact">Contact</a></li>
 			</ul><div id="mainCol">
 				
-				<h2 style="margin-bottom:30px;" class="noTopMargin">Enterprise Strength</h2>
+				<h2 style="margin-bottom:30px;" class="noTopMargin">Enterprise Experience</h2>
 				
                 <img style="float: left; margin-left: -12px; margin-right:9px;" src="img/O_SilverPartner_clr.gif" />                
 				<p style="padding-top:10px;">					 

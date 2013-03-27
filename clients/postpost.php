@@ -34,7 +34,7 @@
                 		
                 		<h4>The Problem</h4>
                         <p>
-                            PostPost grew out of a social media user's frustration with finding old tweets and status updates.  Finding tweets from, say, 6 months ago required lengthy scrolling of your timeline.  But the idea required some serious search technology to make it fast and scalable.              
+                            PostPost grew out of a social media user's frustration with ineffective searches for old tweets and status updates within Twitter.  Finding tweets required lengthy scrolling of the timeline.  A better way required some serious search technology to make searching fast and scalable.              
                         </p>
                         <h4>The ScandiLabs Solution</h4>
                         <p>

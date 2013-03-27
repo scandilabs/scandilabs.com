@@ -18,7 +18,7 @@
         
         <div id="content">       
         	
-        	<h1 class="copy">Two Agile Engagement Models</h1>
+        	<h1 class="copy">Two Engagement Models</h1>
         	
         	<div class="twoColLeft">
         		<h2 class="copy">"Team In A Box"</h2>
@@ -33,7 +33,7 @@
             	<h4 class="copy">No scoping, saves time</h4>
             	<h4 class="copy">Minimal impact on client staff</h4>
             	<h4 class="copy">Coding starts on day one</h4>
-            	<h4 class="copy">Product design desicions and <br/>revisions can happen as we go</h4>
+            	<h4 class="copy">Product design decisions and <br/>revisions can happen as we go</h4>
         	</div>
         	
         	<div class="twoColRight">

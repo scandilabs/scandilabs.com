@@ -35,11 +35,11 @@
                         
                         <h4>The Problem</h4>
                         <p>
-                            MedVentive, a pioneer in SaaS-based Healthcare IT services, needed an application monitoring solution to help ensure service uptime for a growing list of clients while allowing for flexibility in client on-boarding and support.     
+                            MedVentive, a pioneer in SaaS-based Healthcare IT services, needed an application monitoring solution.  They needed to ensure service uptime for a growing list of clients while allowing flexibility for client on-boarding and support.     
                         </p>
                         <h4>The ScandiLabs Solution</h4>
                         <p>
-                              ScandiLabs proposed and implemented an advanced monitoring solution that emulated client usage patterns to detect any site anomolies.  At the same time, the solution would keep track of internal deployment and on-boarding events and ensure that service was restored in a safe and timely fashion.  Solution highlights:
+                              ScandiLabs proposed and implemented an advanced monitoring solution that emulated client usage patterns to detect any site anomolies.  The solution also kept track of internal deployment and on-boarding events to ensure that service was restored in a safe and timely fashion.  Solution highlights:
                         </p>                        
                         <ul>
                             <li>Pure Java, multi-threaded solution</li>
@@ -47,7 +47,7 @@
                             <li>Telephony-based event alerting</li>
                         </ul>
                         <p>
-                            MedVentive are now looking at significantly increased uptime and service levels, which translates into happier customers.  
+                            MedVentive is now looking at significantly increased uptime and service levels, which translates into happier customers.  
                         </p>                        
         
         				</div> <!-- mainCol -->

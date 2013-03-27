@@ -42,22 +42,22 @@
                         
                         <h4>The Problem</h4>
                         <p>
-                            Home buyers need to find a good inspector and schedule an appointment quickly before closing on a new house.  But how do you find a good inspector who is available on a short notice?  
+                            Home buyers need to find a good inspector and schedule an appointment quickly before closing on a new house.  But how do they find a good inspector who is available on a short notice?  
                         </p>
                         <p>
-                            A group of entrepreneurs with extensive real estate backgrounds built a service to connect home buyers and real estate agents with inspectors in their area.  This would make inspection scheduling easier and saving everyone time.
+                            A group of entrepreneurs with extensive real estate backgrounds built a service to connect home buyers and real estate agents with inspectors in their area.  This would make inspection scheduling easier and save everyone time.
                         </p>
                         <h4>The ScandiLabs Solution</h4>
                         <p>
                               ScandiLabs helped define the problem and build a robust solution using our rapid Java web framework.  Project highlights:
                         </p>
                         <ul>                                
-        					<li>  Defined the technology and created an MVP and iterative product strategy and vision </li>
-        					<li>  Built and hosted the MVP </li>
-        					<li>  Performed three major iterations of the MVP </li>
+        					<li>Defined the technology and created a Minimum Viable Product (MVP)</li>
+        					<li>Built and hosted the MVP on the ScandiLabs Java platform</li>
+        					<li>Performed three major iterations of the MVP in response to customer feedback</li>
                         </ul>
                         <p>
-                            In the end, ScandiLabs delivered a solution that was quickly adopted by over 900 realtors at both major brokerages such as Coldwell Banker, Keller Williams, and ReMax and small offices.
+                            In the end, ScandiLabs delivered a solution that was quickly adopted by over 900 realtors at major real estate brokerages such as Coldwell Banker, Keller Williams, and ReMax.
                         </p>
     				</div> <!-- mainCol -->
     			</div>
