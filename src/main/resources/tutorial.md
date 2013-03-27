@@ -12,10 +12,9 @@ http://github.github.com/github-flavored-markdown/
 -->
 
 # Introduction
-Check out this as a quick-start reference: http://docs.seleniumhq.org/docs/03_webdriver.jsp
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum vestibulum justo. Integer faucibus bibendum tortor eu molestie. Nam vitae nunc at justo euismod commodo. Curabitur ornare, purus sit amet molestie vestibulum, nunc sapien faucibus purus, tincidunt blandit erat dolor a purus. Aliquam vel mi massa, eget rutrum magna. Aliquam metus metus, tristique ut euismod id, commodo in leo. Aliquam vel mi libero, nec aliquam nisi. Vestibulum ut risus ac nunc pretium vehicula. Donec gravida pellentesque nisl, sed placerat lacus congue non.
+Welcome to the ScandiLabs Java tutorial!
 
-Ut suscipit massa eu orci venenatis ac porttitor erat pellentesque. Phasellus id lectus vel mi egestas facilisis. Maecenas justo magna, malesuada eget feugiat sed, hendrerit nec nulla. Pellentesque mattis accumsan pellentesque. Pellentesque sollicitudin luctus condimentum. Ut consectetur est nec odio ultrices laoreet. Proin consequat pharetra tellus, et sagittis justo consequat vitae. Ut dapibus ultricies nunc. Proin viverra libero id sapien ultrices pellentesque. Suspendisse potenti. Nullam in augue nunc. Nunc dapibus fermentum venenatis. Etiam sit amet risus augue.
+Please note we are constantly adding topics to this tutorial (it was last updated on 3/27/2013).  If you don't find what you're looking for, check back soon.  You can also revie the <a href="/faqs">knowledge base</a> and the sample applications at <a href="https://github.com/scandilabs/scandilabs-apps">github</a>. 
 
 # Eclipse and Maven
 First install [Eclipse IDE for Java Developers](http://www.eclipse.org/).  

@@ -1,6 +1,6 @@
-	<#assign parentSiteBase="http://localhost:8090" />
-	<#assign blogSiteBase="http://localhost:8080" />
-	<#assign javaSiteBase="http://localhost:8080" />
+	<#assign parentSiteBase="http://www.scandilabs.com" />
+	<#assign blogSiteBase="http://blog.scandilabs.com" />
+	<#assign javaSiteBase="http://java.scandilabs.com" />
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<link type="text/css" rel="stylesheet" href="${parentSiteBase}/css/site.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="${parentSiteBase}/css/top.css" media="screen, projection">
