@@ -49,19 +49,17 @@
                         India
                     </p>                    
                 </div>
-                <br/><br/><br/>
+                <br/>
                 <div class="twoColLeft">
-                    <p>Get in touch via your favorite social network: </p>
-                </div>
-                <div style="margin-top:8px" class="twoColRight">
                     <a href="https://twitter.com/scandilabs" target="_new"><img src="img/twitter_1.png" /></a>
                     <a href="http://www.facebook.com/ScandiLabs" target="_new"><img src="img/fb_1.png" /></a>
                     <a href="http://www.linkedin.com/company/scandilabs" target="_new"><img src="img/linkedin24.png" /></a>
                     <a href="https://plus.google.com/104908377553538789362" target="_new"><img src="img/google_plus.png" /></a>
                     <!-- <a href="https://github.com/scandilabs" target="_new"></a> -->                            
                 </div>
+                <br/><br/>
                 <p>
-                    Or send us an e-mail by filling out this form:
+                    Or send us an e-mail:
                 </p>
 
                 <form action="contact-send.php" method="post">

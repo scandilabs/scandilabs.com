@@ -7,7 +7,7 @@ $(document).ready(function() {
         fx: 'scrollLeft',
         /*next:   '.slideshow',*/ 
         timeout: 5000,
-        pause: 0,
+        pause: 1,
         speed: 1000,        
         pagerAnchorBuilder: function(index, el) {
           return '<div class="navItem"><a href="#">&nbsp;&nbsp;</a></div>';
