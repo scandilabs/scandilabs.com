@@ -1,7 +1,9 @@
 package org.catamarancode.faq.web;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,6 +14,7 @@ import net.bican.wordpress.Wordpress;
 import org.catamarancode.faq.service.MessageContext;
 import org.catamarancode.faq.service.SolrService;
 import org.catamarancode.faq.service.UserContext;
+import org.catamarancode.faq.util.StringLineBreakToParagraphConverter;
 import org.catamarancode.util.LRUCache;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -102,6 +105,21 @@ public class BlogController {
 		mv.addObject("posts", recentPosts);
 		userContext.prepareModel(mv.getModel());
 		messageContext.addPendingToModel(mv.getModel());
+		
+		// Workaround for missing <p> tags
+		Map<String, Page> postsById = new HashMap<String, Page>();		
+		StringLineBreakToParagraphConverter converter = new StringLineBreakToParagraphConverter();
+		List<String> postIdList = new ArrayList<String>();
+		Map<String, String> paragraphedDescriptions = new HashMap<String, String>();
+		for (Page page : recentPosts) {
+			String idStr = String.valueOf(page.getPostid());
+			postIdList.add(idStr);
+			paragraphedDescriptions.put(idStr, converter.process(page.getDescription()));
+			postsById.put(idStr, page);
+		}
+		mv.addObject("paragraphedDescriptions", paragraphedDescriptions);
+		mv.addObject("postIds", postIdList);
+		mv.addObject("postsById", postsById);
 
 		return mv;
 	}
@@ -113,13 +131,16 @@ public class BlogController {
 		int id = Integer.parseInt(request.getParameter("id"));
 
 		Page post = this.getPostCached(id);		
-		List<Page> recentPosts = getRecentPostsCached(10);
 
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("posts", recentPosts);
 		mv.addObject("post", post);
 		userContext.prepareModel(mv.getModel());
 		messageContext.addPendingToModel(mv.getModel());
+		
+		// Workaround for missing <p> tags
+		StringLineBreakToParagraphConverter converter = new StringLineBreakToParagraphConverter();
+		mv.addObject("paragraphedDescription", converter.process(post.getDescription()));
+
 
 		return mv;
 	}

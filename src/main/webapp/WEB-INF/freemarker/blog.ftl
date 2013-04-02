@@ -38,9 +38,10 @@
 		        </#if>
 		    </#if>
 		    
-		    <#list posts as post>
-		      <h2 id="post-${post.postid}" class="blackLink noTopMargin"><a href="blog-post?id=${post.postid}">${post.title}</a></h2>
-		      <p class="postBody">${post.description}</p>
+		    <#list postIds as postId>
+		      <#assign post = postsById[postId] />
+		      <h2 id="post-${postId}" class="blackLink noTopMargin"><a href="blog-post?id=${postId}">${post.title}</a></h2>
+		      <p class="postBody">${paragraphedDescriptions[postId]}</p>
 		      <p style="font-style:italic; margin-bottom: 32px;">Posted on <a href="blog-post?id=${post.postid}">${post.dateCreated?string("MMM, dd yyyy")} at ${post.dateCreated?string("h:mm a")}</a></p>
 			</#list>
 				

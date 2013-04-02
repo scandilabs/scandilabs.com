@@ -34,7 +34,7 @@
 		    </#if>
 		    
 		      <h2 class="noTopMargin">${post.title}</h2>
-              <p >${post.description}</p>
+              <p >${paragraphedDescription}</p>
               <p style="font-style:italic; margin-bottom: 32px;">Posted on ${post.dateCreated?string("MMM, dd yyyy")} at ${post.dateCreated?string("h:mm a")}</p>
 				
 		</div> <!-- mainCol -->			
