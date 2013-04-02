@@ -21,6 +21,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,6 +34,9 @@ public class BlogController {
 	// Live 24hrs
 	// Note pageCache is static because of @Scope("request") annotation.  Without that annotation the controller would be a singleton so it would not have to be static. 
 	private static LRUCache<String, List<Page>> pageCache = new LRUCache<String, List<Page>>(200, 86400000);
+	
+	// A cache of keys used for cache-only lookups
+	private static List<String> keyCache = new ArrayList<String>();
 	
 	@Autowired
 	private SolrService solrService;
@@ -58,6 +62,7 @@ public class BlogController {
 			logger.debug("blog cache miss on " + cacheKey);
 			recentPosts = wp.getRecentPosts(number);
 			pageCache.put(cacheKey, recentPosts);
+			keyCache.add(cacheKey);
 		} else {
 			logger.debug("blog cache hit on " + cacheKey);
 		}
@@ -75,7 +80,8 @@ public class BlogController {
 			if (post != null) {
 				recentPosts = new ArrayList<Page>();
 				recentPosts.add(post);
-				pageCache.put(cacheKey, recentPosts);				
+				pageCache.put(cacheKey, recentPosts);	
+				keyCache.add(cacheKey);
 			}
 		} else {
 			logger.debug("blog cache hit on " + cacheKey);
@@ -85,6 +91,18 @@ public class BlogController {
 		} else {
 			return null;
 		}		
+	}
+	
+	private Page getPostCachedByPermalink(String permalink) throws Exception {
+		for (String key : keyCache) {
+			List<Page> posts = pageCache.get(key);
+			for (Page post : posts) {
+				if (post.getWp_slug().equals(permalink)) {
+					return post;
+				}
+			}
+		}
+		return null;	
 	}
 	
 	@RequestMapping("/blog-clear-cache")
@@ -124,6 +142,34 @@ public class BlogController {
 		return mv;
 	}
 	
+	@RequestMapping("/blog/{permalink}")
+	public ModelAndView permalink(@PathVariable("permalink") String permalink, HttpServletRequest request,
+			HttpServletResponse response) throws Exception {
+
+		// NOTE: Since wordpress-java does not allow lookup by permalink, we perform the lookup against cache instead
+		Page post = this.getPostCachedByPermalink(permalink);
+		if (post == null) {
+			
+			// This could happen for legitimate caching reasons, but to ensure a decent user experience we redirect to /blog
+			ModelAndView mv = new ModelAndView("redirect:/blog");
+			return mv;
+		}
+
+		ModelAndView mv = new ModelAndView("blog-post");
+		mv.addObject("post", post);
+		userContext.prepareModel(mv.getModel());
+		messageContext.addPendingToModel(mv.getModel());
+		
+		// Workaround for missing <p> tags
+		StringLineBreakToParagraphConverter converter = new StringLineBreakToParagraphConverter();
+		if (post != null) {
+			mv.addObject("paragraphedDescription", converter.process(post.getDescription()));	
+		}		
+
+		return mv;
+	}
+	
+	@Deprecated 
 	@RequestMapping("/blog-post")
 	public ModelAndView blogPost(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {

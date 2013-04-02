@@ -40,9 +40,9 @@
 		    
 		    <#list postIds as postId>
 		      <#assign post = postsById[postId] />
-		      <h2 id="post-${postId}" class="blackLink noTopMargin"><a href="blog-post?id=${postId}">${post.title}</a></h2>
+		      <h2 id="post-${postId}" class="blackLink noTopMargin"><a href="blog/${post.wp_slug}">${post.title}</a></h2>
 		      <p class="postBody">${paragraphedDescriptions[postId]}</p>
-		      <p style="font-style:italic; margin-bottom: 32px;">Posted on <a href="blog-post?id=${post.postid}">${post.dateCreated?string("MMM, dd yyyy")} at ${post.dateCreated?string("h:mm a")}</a></p>
+		      <p style="font-style:italic; margin-bottom: 32px;">Posted on <a href="blog/${post.wp_slug}">${post.dateCreated?string("MMM, dd yyyy")} at ${post.dateCreated?string("h:mm a")}</a></p>
 			</#list>
 				
 		</div> <!-- mainCol -->			
