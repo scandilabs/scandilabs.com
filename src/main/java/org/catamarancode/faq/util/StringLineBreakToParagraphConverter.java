@@ -16,7 +16,7 @@ public class StringLineBreakToParagraphConverter {
 	 */
 	public static void main(String[] args) {
 		
-		String test1 = "This is a test string\nthis is line2\nthis is line3";
+		String test1 = "<style>\ntd {\ncolor:black;\n}\n</style>\nThis is a test string\nthis is line2\nthis is line3";
 		StringLineBreakToParagraphConverter c = new StringLineBreakToParagraphConverter();
 		String result1 = c.process(test1);
 		System.out.println(result1);		
@@ -31,14 +31,32 @@ public class StringLineBreakToParagraphConverter {
 			return "";
 		}
 		
+		boolean suppressPTag = false;
 		BufferedReader in = new BufferedReader(new StringReader(
 				stringWithLineBreaks));
 		try {
-			String line = in.readLine();
+			String line = in.readLine();			
 			while (line != null) {
-				result.append("<p>");
-				result.append(line);				
-				result.append("</p>");
+				
+				// Does the line start with a style tag?  
+				if (line.startsWith("<style")) {
+					suppressPTag = true;
+				} 
+				
+				if (!suppressPTag) {
+					result.append("<p>");	
+				}				
+				result.append(line);
+				if (!suppressPTag) {
+					result.append("</p>");
+				}
+				
+				// Turn off p tag suppress?
+				if (line.startsWith("</style")) {
+					if (suppressPTag) {
+						suppressPTag = false;
+					}
+				}
 				line = in.readLine();
 			}			
 		} catch (IOException e) {
