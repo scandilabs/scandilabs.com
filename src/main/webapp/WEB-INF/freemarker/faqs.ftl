@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<#include "includes/head.ftl" />
@@ -19,7 +19,13 @@
 	<div id="content">
 	
 		<div class="right" style="margin-top: -22px; float:right;">
-		   <#if user??><a href="signout">Sign out ${user.email}</a><#else><a href="signin">Sign in</a></#if>
+		   <#if user??>
+		      <a href="faq-edit">New</a> | 
+		      <#if user.administrator><a href="users">Users</a> | </#if>
+		      <a href="signout">Sign out ${user.email}</a>
+	       <#else>
+	          <a href="signin">Sign in</a>
+	       </#if>
 		   
 		   <!-- TODO: Enable menu 
 		   <#if user??> | <a href="faq-edit">Create</a><#if user.administrator> | <a href="users">Manage Users</a> | <a href="audits">History</a></#if></#if>
