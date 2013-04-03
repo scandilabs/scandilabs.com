@@ -74,6 +74,25 @@ body {
 .overlay {
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
+    font-style:italic; 
+    font-size:22px;
+    font-weight:300; 
+    color: #FFFFFF;
+}
+
+.overlaySignature {
+    margin-top: 16px; 
+    color: #DDDDDD;
+}
+
+.overlayOuter {
+    position: relative; 
+    padding:16px 16px 16px 16px; 
+    background-color:#000000;
+} 
+
+.overlayAdditionalParagraph {
+    margin-top: 16px;
 }
 
 td {
@@ -92,7 +111,7 @@ td {
 
 #logoGrid li {
     display:inline-block;  
-    margin-right:8px;  
+    /*margin-right:8px;*/  
 }
 
 .tableBlock {

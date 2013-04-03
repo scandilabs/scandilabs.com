@@ -1,12 +1,24 @@
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>ScandiLabs : Clients : Madaket</title>
-        <base href="/" />
+        <base href="/">        
+        <!--[if IE]><script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+        </script><![endif]-->        
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
-        <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/clients.css" media="screen, projection">
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->                
 
 		<?php include("../include/analytics.php"); ?>
     </head>

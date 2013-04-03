@@ -62,7 +62,9 @@
 			                        	if(
 			                        		$page=='/about.php' or
 			                        		$page=='/about-management.php' or
-			                        		$page=='/about-partners.php'
+                                            $page=='/about-partners.php' or
+                                            $page=='/careers.php' or
+			                        		$page=='/contact.php'
 		                        		) 
 		                        		echo "class='current'"; ?> 
 			                        href="about">

@@ -1,13 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd" >
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <title>ScandiLabs : Home</title>
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/index.css" media="screen, projection">
-        <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">        
+        <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->                
 
         <script src="js/jquery-1.8.2.min.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
@@ -28,13 +32,13 @@
                             <img src="img/wfall60.jpg" />
                         </div>
                         
-                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.6; margin-bottom: -112px; 
-                          position: relative; top: -360px; margin-left: 240px; width: 600px;">
+                        <div class="overlayOuter" style="opacity: 0.6; margin-bottom: -112px; 
+                          top: -360px; margin-left: 240px; width: 600px;">
                             
-                            <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                            <p class="overlay" >
                               "Our business demands flawless execution.  ScandiLabs proved time and time again that they are experienced and creative problem solvers who deliver high quality code."
                             </p>                                             
-                            <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
+                            <p class="overlay overlaySignature" >
                                 Bernard Chien, CTO<br/>
                                 MedVentive, a McKesson Company                      
                             </p>                                
@@ -48,35 +52,32 @@
                             <img src="img/berg60.jpg" />
                         </div>
                         
-                        <div style="padding:16px 16px; background-color:#000000; opacity: 0.5; 
-                            position: relative; top: -320px; margin-left: 360px; width: 600px;">
+                        <div class="overlayOuter" style="opacity: 0.5; 
+                            top: -320px; margin-left: 360px; width: 600px;">
                             
-                            <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
-                              "I don't like it when vendors need a lot of hand-holding.
-                            </p>                                             
-                            <p class="overlay" style="margin-top: 16px; font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                            <p class="overlay">
                                 ScandiLabs understood our business needs right away, and got productive FAST."
                             </p>
-                            <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
+                            <p class="overlay overlaySignature">
                                 Thomas Fredell, CTO<br/>
                                 SnagAJob                        
                             </p>                            
                         </div>                        
                     </div>    
   
-                    <div class="bgImageBoxOuter">
+                    <div class="bgImageBoxOuter clearIe">
                         <div class="bgImageBox">
                             <img src="img/kvik30.jpg" />
                         </div>
                         
-                       <div style="padding:16px 16px; background-color:#000000; opacity: 0.8; 
-                            position: relative; top: -180px; margin-left: 474px; width: 600px;">
+                       <div class="overlayOuter" style="opacity: 0.8; 
+                            top: -180px; margin-left: 474px; width: 600px;">
                             
-                            <p class="overlay" style="font-style:italic; font-size:22px; font-weight:600; color: #FFFFFF;">
+                            <p class="overlay">
                               "ScandiLabs provided a full tech-team-in-a-box which helped me launch my Healthcare IT startup quickly."
                             </p>
                                 
-                            <p class="overlay" style="margin-top: 16px; font-size:22px; font-weight:600; color: #DDDDDD;">
+                            <p class="overlay overlaySignature">
                                 Jim Dougherty, Founder<br/>
                                 Madaket Health                      
                             </p>

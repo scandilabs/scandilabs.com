@@ -8,6 +8,9 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/tabs.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/what.css" media="screen, projection">
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->                
                 
         <script type="text/javascript" src="js/site.js"></script>
 		<?php include("include/analytics.php"); ?>

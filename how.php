@@ -8,6 +8,9 @@
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/how.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/arrow-breadcrumb.css" media="screen, projection">
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->                
 
 		<?php include("include/analytics.php"); ?>
     </head>
