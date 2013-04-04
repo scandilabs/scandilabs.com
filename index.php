@@ -12,6 +12,18 @@
         <!--[if IE]>
             <link rel="stylesheet" type="text/css" href="css/ie.css" />
         <![endif]-->                
+        <!-- fix for border on IE10 since conditionals don't work above IE10 -->
+        <script>
+            if(Function('/*@cc_on return document.documentMode===10@*/')()){
+              document.documentElement.className+=' ie10';
+            }            
+        </script>
+        <style>
+            .ie10 .overlayOuter {
+                padding:1px 16px 1px 16px; 
+            } 
+        </style>
+        <!-- END fix for border on IE10 since conditionals don't work above IE10 -->
 
         <script src="js/jquery-1.8.2.min.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>

@@ -1,14 +1,7 @@
 /* IE workarounds */
-a, img {
-    border:none;
-}
 input {
     border-color: #808080;
     border-width: thin;
-}
-body {
-    padding: 0;
-    margin: 0;
 }
 .overlay {
     font-weight:500;
@@ -16,11 +9,4 @@ body {
 .overlayOuter {
     padding:1px 16px 1px 16px; 
 }
-ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-#header ul {
-    top: 11px;
-}
+
