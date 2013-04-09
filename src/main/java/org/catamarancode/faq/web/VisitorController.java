@@ -1,6 +1,7 @@
 package org.catamarancode.faq.web;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.StringWriter;
 import java.net.URL;
@@ -183,7 +184,12 @@ public class VisitorController {
         
         // We maintain page contents as markdown for easy editing/formatting
         URL loadedResource = this.getClass().getClassLoader().getResource("tutorial.md");
-       	BufferedReader b = new BufferedReader(new FileReader(loadedResource.getFile()));
+        BufferedReader b = new BufferedReader(new FileReader(loadedResource.getFile()));
+        
+        //URL loadedResource = this.getClass().getClassLoader().getResource("tutorial.md");
+        //File file = new File("/Users/mkvalsvik/git/scandilabs-apps/java-scandilabs-com/src/main/resources/tutorial.md");
+        //BufferedReader b = new BufferedReader(new FileReader(file));
+        
     	StringWriter w = new StringWriter();
     	String line = null;
 		boolean indent = false;

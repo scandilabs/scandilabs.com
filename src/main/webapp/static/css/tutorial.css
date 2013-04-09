@@ -16,6 +16,28 @@ blockquote p {
     padding-bottom:4px;
 }
 
-#mainCol div+h1 { /* Trick to select first h1 - http://stackoverflow.com/questions/3747547/need-css-selector-for-first-div-within-another-div */
+#mainCol h1 {
+    margin-top:3em;
+}
+
+#intro+h1 { /* Trick to select first h1 - http://stackoverflow.com/questions/3747547/need-css-selector-for-first-div-within-another-div */
     margin-top:0px;    
+}
+
+#mainCol a:link, #mainCol a:visited, #mainCol a:hover {
+    text-decoration:underline;
+}
+
+ul {
+    list-style: disc outside none;
+    -webkit-padding-start: 40px;
+    -webkit-margin-before: 1em;
+}
+
+#mainCol ol li {
+    margin-bottom: 0.2em;
+}
+
+.tutorialNav {
+    font-size:12px; vertical-align:middle;
 }
