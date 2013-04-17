@@ -17,6 +17,7 @@ import org.catamarancode.faq.entity.Audit;
 import org.catamarancode.faq.entity.Comment;
 import org.catamarancode.faq.entity.Faq;
 import org.catamarancode.faq.entity.NestedTag;
+import org.catamarancode.faq.service.ApplicationConfiguration;
 import org.catamarancode.faq.service.MessageContext;
 import org.catamarancode.faq.service.SolrService;
 import org.catamarancode.faq.service.UserContext;
@@ -44,6 +45,9 @@ public class VisitorController {
     
     @Autowired
 	private MessageContext messageContext;    
+
+    @Autowired
+	private ApplicationConfiguration applicationConfiguration;    
 
     @Autowired
 	private UserContext userContext;        
@@ -183,12 +187,21 @@ public class VisitorController {
         userContext.prepareModel(mv.getModel());
         
         // We maintain page contents as markdown for easy editing/formatting
-        URL loadedResource = this.getClass().getClassLoader().getResource("tutorial.md");
-        BufferedReader b = new BufferedReader(new FileReader(loadedResource.getFile()));
         
-        //URL loadedResource = this.getClass().getClassLoader().getResource("tutorial.md");
-        //File file = new File("/Users/mkvalsvik/git/scandilabs-apps/java-scandilabs-com/src/main/resources/tutorial.md");
-        //BufferedReader b = new BufferedReader(new FileReader(file));
+        // Check for external tutorial file override
+        BufferedReader b = null;
+        if (applicationConfiguration != null && applicationConfiguration.getTutorialFileOverridePath() != null && applicationConfiguration.getTutorialFileOverridePath().length() > 2) {
+        	
+        	// Load tutorial file
+        	URL loadedResource = this.getClass().getClassLoader().getResource("tutorial.md");
+            File file = new File(applicationConfiguration.getTutorialFileOverridePath());
+            b = new BufferedReader(new FileReader(file));
+        } else {
+        	
+        	// Load from classpath by default
+        	URL loadedResource = this.getClass().getClassLoader().getResource("tutorial.md");
+            b = new BufferedReader(new FileReader(loadedResource.getFile()));	
+        }
         
     	StringWriter w = new StringWriter();
     	String line = null;

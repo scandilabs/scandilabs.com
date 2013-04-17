@@ -7,7 +7,7 @@ Please note we are constantly adding topics to this tutorial (it was last update
 # Table of Contents
 1. [Setup](#setup)
 1. [HTML Templates and MVC](#mvc)
-1. Persistence
+1. [Persistence](#persistence)
 1. Forms
 1. Validation, Messages
 1. AJAX / jQuery
@@ -215,18 +215,17 @@ Congrats.  You are now done with the setup stage, and ready to start developing 
 # HTML Templates and MVC <span class="tutorialNav">(<a href="#intro">top</a>)</span>
 ScandiLabs Java uses [Freemarker](http://freemarker.org/) and [Spring MVC](http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/mvc.html) to handle HTML rendering and HTTP request handling (the "View" and "Controller" aspects of the [MVC](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern).    
 
-#### Freemarker
+#### Passing a variable from Java to Freemarker
 
-Here's the basic Freemarker HTML template that was used to render the basic web page in the [setup](#setup) chapter above:
+This the basic Freemarker HTML template we used to render the basic hello-world app:
 
+<code>/sl/apps/hello-world/src/main/webapp/WEB-INF/freemarker-www/index.ftl</code>
 ~~~
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-
 <head>
-    <link type="text/css" rel="stylesheet" href="/css/global.css" media="screen, projection">
-    
+    <link type="text/css" rel="stylesheet" href="/css/global.css" media="screen, projection">    
     <title>Hello World from ScandiLabs Java</title>
 </head>
 <body>
@@ -235,11 +234,11 @@ Here's the basic Freemarker HTML template that was used to render the basic web 
 </html>
 ~~~
 
-The file is located in <code>/sl/apps/hello-world/src/main/webapp/WEB-INF/freemarker-www/index.ftl</code>.
+Right now it contains straight-up HTML.  
 
-As you can see, right now it contains regular HTML only.  
+Now let's look at the Controller code that runs right before this Freemarker template is sent back to the browser:  
 
-Now let's look at the Controller code that runs right before this Freemarker template is sent back to the browser.  Here is <code>/sl/apps/hello-world/src/main/java/myapp/web/VisitorController.java</code>:
+<code>/sl/apps/hello-world/src/main/java/myapp/web/VisitorController.java</code>
 ~~~
 package myapp.web;
 
@@ -280,30 +279,74 @@ Let's focus on the <code>public ModelAndView index(...)</code> method.  Right no
 
     ModelAndView mv = new ModelAndView("index");
     
-Note that Spring MVC will look for a View (a freemarker template) that matches the name given to the ModelAndView object ("index").
-> If you don't specify a view name in the constructor, as in <code>new ModelAndView()</code>, Spring MVC will try to use the PATH name specified in the HTTP GET request.  Here we specify the view name explicitly because the <code>home(..)</code> method specified above means that PATH may be either <code>/</code> or <code>/index</code>.  
+Spring MVC will look for a View (a freemarker template) that matches the name given to the ModelAndView object <code>("index")</code>.
+> NOTE: If you don't specify a view name in the ModelAndView constructor, Spring MVC will use the PATH name specified in the HTTP GET request.  
+>
+> On the home page we specify the view name explicitly because the <code>home()</code> method above means PATH may be either <code>/</code> or <code>/index</code>.  
 
-But let's modify the method slightly and add a variable: 
+Now let's add a variable: 
 
     @RequestMapping("/index")
     public ModelAndView index(HttpServletRequest request,
             HttpServletResponse response) throws Exception {
 
         ModelAndView mv = new ModelAndView("index");
-        **String myName = "Lionel Messi";**
-        **mv.addObject("name", myName);**
+        String myName = "Lionel Messi";                // ADDED LINE
+        mv.addObject("name", myName);                  // ADDED LINE
         return mv;
     }
 
-And we'll also add the same variable to the Freemarker template:
+Also add it to the Freemarker template:
     
     <body>
         <p>Hello ${name}! <img src="/img/info-icon.png" /></p>
     </body>
     
-Since we modified the VisitorController Java code, we need to restart or redeploy our webapp to see the changes.  The easiest way to accomplish this is to stop tomcat with Ctrl-C and then re-build and re-start tomcat with one command:
+Since we modified the VisitorController Java code, we need to restart or redeploy our webapp to see the changes.  Stop tomcat with Ctrl-C and then re-build and re-start tomcat with this command:
 
     ./manage.sh rerun
     
 > NOTE: Because of the symlinks in TOMCAT\_HOME/webapps/ROOT, tomcat does not need to be restarted if only the freemarker .FTL file is changed.   
 
+<div id="persistence"></div>
+# Persistence <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+For persisting java objects to a database, we use [Hibernate](http://www.hibernate.org/) along with some additional conventions and tools to enable a [Domain-Driven Design](http://en.wikipedia.org/wiki/Domain-driven_design) style of programming. 
+
+#### Our first persistent object
+
+Create a <code>User</code> class:
+~~~
+package myapp.entity;
+
+@Entity
+public class User {
+    
+    private String userName;
+    private String email;
+    private boolean active;
+    
+    public String getUserName() {
+        return userName;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public boolean isActive() {
+        return active;
+    }
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+}
+~~~
+
+Notice we created the class in a new <code>myapp.entity</code> package.  You can use any package you like but this conforms to our [recommended package structure](http://java.scandilabs.com/faqs?query=topic:java:packages).  
+> NOTE: If you haven't already, now might be a good time to import the hello-world project into an editor like [Eclipse](http://java.scandilabs.com/faqs?query=eclipse) and run <code>mvn eclipse:eclipse</code> to auto-configure it based on the pom.xml file
+
+Now we need to tell Hibernate where to look for 

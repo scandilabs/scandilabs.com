@@ -28,13 +28,18 @@ To split configuration across multiple spring files, consult web.xml -->
         <property name="locations">
             <list>
                 <value>
-                    file:///catamaran/apps/catamaran-faq/conf/application.properties
+                    file:///sl/apps/java-scandilabs-com/conf/application.properties
                 </value>
             </list>
         </property>
     </bean>
     
     <!-- begin 'manually' declared beans (i.e. ones that don't use the @Component annotation) -->
+    <bean id="applicationConfiguration"
+        class="org.catamarancode.faq.service.ApplicationConfiguration">
+        <property name="tutorialFileOverridePath" value="${tutorial.file.classpath.override}" />
+    </bean>
+    
     <bean id="solrService"
      class="org.catamarancode.faq.service.SolrService">
         <constructor-arg ref="solrServerConfig"/>

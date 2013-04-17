@@ -32,7 +32,7 @@
             </code></pre>
             </p>
 
-            <p>For more info, see <a href="/faqs?query=maven">keyword 'maven'</a> in our knowledge base.
+            <p>For more info, see <a href="/faqs?query=maven">keyword 'maven'</a> in our knowledge base.</p>
 
 		</div> <!-- mainCol -->			
 	</div> <!-- content -->
