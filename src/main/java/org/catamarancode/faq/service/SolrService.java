@@ -147,7 +147,7 @@ public class SolrService {
     }
     
     public List<Faq> searchFaq(String query, String contextId, Map<String, String> facetFields) {
-        return searchFaq(query, contextId, facetFields, DEFAULT_ROWS, 0);
+        return searchFaq(query, contextId, facetFields, 20, 0);
     }
     
     public List<Audit> searchAudit(Faq faq, String contextId) {

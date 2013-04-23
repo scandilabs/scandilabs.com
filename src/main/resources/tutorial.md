@@ -2,12 +2,14 @@
 # Introduction
 Welcome to the ScandiLabs Java tutorial!   
 
-Please note we are constantly adding topics to this tutorial (it was last updated on 3/27/2013).  If you don't find what you're looking for, check back soon.  You can also review the <a href="/faqs">knowledge base</a> and our sample applications at <a href="https://github.com/scandilabs/scandilabs-apps">github</a>. 
+Please note we are constantly adding topics to this tutorial, it was last updated on April 22, 2013.  If you don't find what you're looking for, check back soon.  
+
+You can also review the <a href="/faqs">knowledge base</a> and our sample applications at <a href="https://github.com/scandilabs/scandilabs-apps">github</a>. 
 
 # Table of Contents
 1. [Setup](#setup)
 1. [HTML Templates and MVC](#mvc)
-1. [Persistence](#persistence)
+1. [Persistence and Command Line Scripts](#persistence)
 1. Forms
 1. Validation, Messages
 1. AJAX / jQuery
@@ -309,14 +311,18 @@ Since we modified the VisitorController Java code, we need to restart or redeplo
 > NOTE: Because of the symlinks in TOMCAT\_HOME/webapps/ROOT, tomcat does not need to be restarted if only the freemarker .FTL file is changed.   
 
 <div id="persistence"></div>
-# Persistence <span class="tutorialNav">(<a href="#intro">top</a>)</span>
-For persisting java objects to a database, we use [Hibernate](http://www.hibernate.org/) along with some additional conventions and tools to enable a [Domain-Driven Design](http://en.wikipedia.org/wiki/Domain-driven_design) style of programming. 
+# Persistence and Command Line Scripts <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+For persisting java objects to a database, we use [Hibernate](http://www.hibernate.org/) along with some additional conventions and tools to enable a [Domain-Driven Design](http://en.wikipedia.org/wiki/Domain-driven_design) style of programming.  This chapter will also demonstrate how to modify the database using a Java command-line program.
+
+Before going any further, make sure you have MySQL installed on your local workstation.  Follow [these installation instructions](http://java.scandilabs.com/faq?key=How_to_install_MySQL) if you need help. 
 
 #### Our first persistent object
 
 Create a <code>User</code> class:
 ~~~
 package myapp.entity;
+
+import javax.persistence.Entity;
 
 @Entity
 public class User {
@@ -346,7 +352,62 @@ public class User {
 }
 ~~~
 
-Notice we created the class in a new <code>myapp.entity</code> package.  You can use any package you like but this conforms to our [recommended package structure](http://java.scandilabs.com/faqs?query=topic:java:packages).  
-> NOTE: If you haven't already, now might be a good time to import the hello-world project into an editor like [Eclipse](http://java.scandilabs.com/faqs?query=eclipse) and run <code>mvn eclipse:eclipse</code> to auto-configure it based on the pom.xml file
+Then let's create a simple script to populate a row in the database.  Copy and paste the code below into <code>CreateUser.java</code> into a new <code>src/main/java/myapp/shell</code> folder:  
+~~~
+package myapp.shell;
 
-Now we need to tell Hibernate where to look for 
+import myapp.entity.User;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.orm.hibernate4.HibernateTransactionManager;
+
+public class CreateUser {
+
+    /**
+     * Run from command line
+     * 
+     * @param args
+     */
+    public static void main(String[] args) {
+
+        ApplicationContext ctx = new FileSystemXmlApplicationContext(
+                "/src/main/webapp/WEB-INF/applicationContext.xml");
+        
+        # Set up the transaction manager, start a transaction, and bind it to threadlocal
+        HibernateTransactionManager tm = (HibernateTransactionManager) ctx.getBean("transactionManager");
+        tm.getTransaction(null);
+
+        # Simply instantiate a persistent object like any other object, and call save() to persist it to db 
+        User user = new User();
+        user.setActive(true);
+        user.setEmail("mail@example.com");
+        user.setUserName("userName");
+        long id = user.save();
+        System.out.println("Saved a new User with id: " + id);
+        
+        // Every persistent object comes with a built-in way to issue simple queries via a [PersistentClass].objects.[queryMethod] syntax
+        User user2 = (User) User.objects.load(id);
+        System.out.println("Loaded User by id, name is: " + user2.getUserName());
+        
+        // objects.all() returns all rows in a table
+        List<User> allUsers = User.objects.all();
+        User user3 = allUsers.iterator().next();
+        System.out.println("First row in User table has name: " + user3.getUserName());
+        
+        // And objects.filter allows you to query by column value
+        List<User> users = User.objects.filter("email", "mail@example.com");
+        System.out.println("Found " + users.size() + " user(s) with email: mail@example.com");
+    }
+}
+~~~
+
+To run the script, type this maven command in your Terminal window:
+
+    mvn compile exec:java -Dexec.mainClass="myapp.shell.CreateUser"
+
+If all goes well, you should now be able to view a row in the newly created <code>User</code> table of a database called <code>my-catamaran</code>.  You can use the MySQL command line client or data browsing tools Sequelpro or Navicat.
+
+If you have any problems, do a search in [our knowledge base](http://java.scandilabs.com/faqs) for the word [exception](http://java.scandilabs.com/faqs?query=exception).  Or copy-paste a portion of your log file stack trace into the search field.  If you still need help, [contact us](http://www.scandilabs.com/contact).
+
+    

@@ -129,8 +129,15 @@ if [ "$COMMAND" == "build" ]; then
 
   # Then build which will move files from src/ to target/
   echo "CATAMARAN Running 'mvn compile war:exploded' .."
-  mvn compile war:exploded
-  
+  mvn compile war:exploded > /dev/null
+  ERROR_STATUS=$?
+  if [ $ERROR_STATUS -eq 0 ]; then
+    echo "Maven build successful"
+  else
+    echo "Maven build failed. Run it again with 'mvn compile war:exploaded' to see details."
+    exit 1
+  fi  
+
   # Remove newly copied static files from target/
   echo "CATAMARAN Removing web files from: $LOCAL_WEBAPP_DIR .."
   rm -r $LOCAL_WEBAPP_DIR/WEB-INF/freemarker 2> /dev/null
@@ -158,22 +165,31 @@ fi
 if [ "$COMMAND" == "clean" ]; then
   cd $PROJECT_HOME
 
-  # First remove old symlinks
-  if [ -f $LOCAL_WEBAPP_DIR ]; then
-    echo "CATAMARAN Removing symlinks from: $LOCAL_WEBAPP_DIR .."
-    rm $LOCAL_WEBAPP_DIR/WEB-INF/freemarker 2> /dev/null
-    rm $LOCAL_WEBAPP_DIR/static 2> /dev/null
-  fi  
-  
-  # Remove symlink in tomcat/webapps back to project's target directory
-  echo "CATAMARAN Removing symlink or directory $LOCAL_WEBAPP_NAME inside $LOCAL_TOMCAT_WEBAPPS_DIR .."
-  cd $LOCAL_TOMCAT_WEBAPPS_DIR
-  rm $LOCAL_WEBAPP_NAME
-  
+  cd $LOCAL_TOMCAT_WEBAPPS_DIR  
+  echo "Cleaning up inside [$LOCAL_TOMCAT_WEBAPPS_DIR] .."
+  if [ -d $LOCAL_WEBAPP_NAME ]; then
+    DT=$(date +"%Y%m%d%H%M%S")
+    NEW_NAME=${LOCAL_WEBAPP_NAME}.${DT}
+    echo "CATAMARAN Renaming directory [$LOCAL_WEBAPP_NAME] in [$LOCAL_TOMCAT_WEBAPPS_DIR] to [$NEW_NAME].."
+    mv $LOCAL_WEBAPP_NAME $NEW_NAME
+  else
+
+    # First remove old symlinks
+    if [ -L $LOCAL_WEBAPP_NAME ]; then
+      echo "CATAMARAN Removing symlinks inside [$LOCAL_WEBAPP_DIR] .."
+      rm $LOCAL_WEBAPP_DIR/WEB-INF/freemarker 2> /dev/null
+      rm $LOCAL_WEBAPP_DIR/static 2> /dev/null
+
+      # Remove symlink in tomcat/webapps back to project's target directory
+      echo "CATAMARAN Removing symlink [$LOCAL_WEBAPP_NAME] in [$LOCAL_TOMCAT_WEBAPPS_DIR] .."
+      rm $LOCAL_WEBAPP_NAME
+    fi
+  fi
+
   # Then maven clean
   echo "CATAMARAN Performing 'mvn clean' in $PROJECT_HOME .."
   cd $PROJECT_HOME
-  mvn clean
+  mvn clean > /dev/null
 
   echo "CATAMARAN manage.sh: Finished command $COMMAND" 
   exit 0  
@@ -228,7 +244,14 @@ if [ "$COMMAND" == "deploy" ]; then
 
   # Then build a war
   echo "CATAMARAN Running 'mvn compile war:war' .."
-  mvn compile war:war
+  mvn compile war:war > /dev/null
+  ERROR_STATUS=$?
+  if [ $ERROR_STATUS -eq 0 ]; then
+    echo "Maven build successful"
+  else
+    echo "Maven build failed. Run it again with 'mvn compile war:exploaded' to see details."
+    exit 1
+  fi    
 
   # Copy to remote
   echo "CATAMARAN Copying war file to $COMMAND_ARG_1"

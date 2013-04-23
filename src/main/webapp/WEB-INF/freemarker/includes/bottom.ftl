@@ -74,6 +74,18 @@
                         <td>                    
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <a href="${javaSiteBase}/questions">FAQs</a>
+                        </td>
+                        <td>                    
+                        </td>
+                    </tr>                    
                 </table>
     
             </div>

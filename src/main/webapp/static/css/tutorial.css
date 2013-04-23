@@ -24,20 +24,6 @@ blockquote p {
     margin-top:0px;    
 }
 
-#mainCol a:link, #mainCol a:visited, #mainCol a:hover {
-    text-decoration:underline;
-}
-
-ul {
-    list-style: disc outside none;
-    -webkit-padding-start: 40px;
-    -webkit-margin-before: 1em;
-}
-
-#mainCol ol li {
-    margin-bottom: 0.2em;
-}
-
 .tutorialNav {
     font-size:12px; vertical-align:middle;
 }

@@ -35,7 +35,7 @@ public class AdminController {
     private SolrService solrService;
 
     @Autowired
-	private MessageContext messageContext;    
+	private MessageContext messageContext;
 
     @Autowired
 	private UserContext userContext;        

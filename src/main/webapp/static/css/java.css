@@ -49,4 +49,22 @@ code {
     font-size: 14px;
 }
 
+#mainCol ol li {
+    margin-bottom: 0.2em;
+}
+
+#mainCol ul li {
+    margin-bottom: 0.2em;
+}
+
+#mainCol a:link, #mainCol a:visited, #mainCol a:hover {
+    text-decoration:underline;
+}
+
+#mainCol ul {
+    list-style: disc outside none;
+    -webkit-padding-start: 40px;
+    -webkit-margin-before: 1em;
+}
+
 

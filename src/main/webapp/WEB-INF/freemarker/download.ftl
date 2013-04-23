@@ -15,13 +15,20 @@
 		</ul><div id="mainCol">
 
 
-			<h1 class="noTopMargin">Download</h1>
-			<p>Compiled jar-files are available and ready to use from our <a href="http://maven.catamarancode.org/repository" target="_blank">Maven Repository</a>.</p>
+			<h1 class="noTopMargin">How To Get Started</h1>
+            <h3>Starter Web Application</h3>            
+            <p>To start your own web project we recommend you grab our blank <a href="https://github.com/scandilabs/hello-world">hello-world</a> web application template:</p>
+            <pre><code>git clone git@github.com:scandilabs/hello-world.git</code></pre>
+            
+            <p>New to Git?  See our <a href="tutorial">tutorial</a>.  Or search our knowledge base for <a href="/faqs?query=git">keyword 'git'</a> or <a href="/faqs?query=github">keyword 'github'</a>.
+            
+			<h3>Maven</h3>
+			<p>The latest catamaran-x.x.x.jar file is available from our <a href="http://maven.scandilabs.com/repository" target="_blank">Maven Repository</a> under <a href="http://maven.scandilabs.com/repository" target="_blank">com.scandilabs.catamaran</a>.</p>
     
-            <p>To use this repository in your build, add this to your settings.xml (<a href="http://maven.apache.org/ref/3.0.3/maven-settings/settings.html">reference</a>):
+            <p>To use this repository in your build, add the following to your settings.xml file (<a href="http://maven.apache.org/ref/3.0.3/maven-settings/settings.html">what is this?</a>):
             <pre><code>&lt;repository&gt;
-    &lt;id&gt;catamaran&lt;/id&gt;
-    &lt;url&gt;http://maven.catamarancode.org/repository&lt;/url&gt;
+    &lt;id&gt;maven.scandilabs&lt;/id&gt;
+    &lt;url&gt;http://maven.scandilabs.com/repository&lt;/url&gt;
     &lt;releases&gt;
         &lt;enabled&gt;true&lt;/enabled&gt;
     &lt;/releases&gt;
@@ -31,8 +38,7 @@
 &lt;/repository&gt;       
             </code></pre>
             </p>
-
-            <p>For more info, see <a href="/faqs?query=maven">keyword 'maven'</a> in our knowledge base.</p>
+            <p>New to maven?  See <a href="/faqs?query=maven">keyword 'maven'</a> in our knowledge base.</p>
 
 		</div> <!-- mainCol -->			
 	</div> <!-- content -->

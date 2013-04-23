@@ -245,4 +245,13 @@ public class VisitorController {
         return mv;
     }
 
+    @RequestMapping("/questions")
+    public ModelAndView questions(HttpServletRequest request,
+            HttpServletResponse response) throws Exception {
+
+        ModelAndView mv = new ModelAndView();
+        userContext.prepareModel(mv.getModel());
+        return mv;
+    }
+
 }
