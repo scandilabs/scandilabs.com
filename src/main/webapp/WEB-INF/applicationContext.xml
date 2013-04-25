@@ -28,7 +28,7 @@ To split configuration across multiple spring files, consult web.xml -->
         <property name="locations">
             <list>
                 <value>
-                    file:///sl/apps/java-scandilabs-com/conf/application.properties
+                    file:///catamaran/apps/java-scandilabs-com/conf/application.properties
                 </value>
             </list>
         </property>

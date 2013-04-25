@@ -9,13 +9,17 @@
 	vertical-align: top;
 }
 
-ul {
+#mainCol ul {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 	/*
 	padding: 0.5em;
 	margin: 0.5em; */
+}
+
+#mainCol a:link, #mainCol a:visited, #mainCol a:hover {
+    text-decoration:none;
 }
 
 ul#level1 {
