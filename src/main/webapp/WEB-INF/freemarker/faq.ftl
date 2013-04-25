@@ -15,7 +15,7 @@
 		<ul class="leftNav">
 			<#assign menu="faqs" />
 			<div style="height: 100px">
-    			<li><a href="faqs">Back</a></li>
+    			<li><a href="faqs">Back to Search</a></li>
     		    <#if user??>
     		        <li><a href="faq-edit?key=${faq.key}">Edit</a></li>
     		        <#if ((user.administrator) && !(faq.visibility == "PUBLIC"))>

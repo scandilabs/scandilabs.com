@@ -13,11 +13,11 @@ PROJECT_HOME=
 # Note that a symlink will be created in the local tomcat webapps directory which will point back to this directory.
 LOCAL_WEBAPP_DIR=
 
-# Your local Tomcat /bin directory, where 'catalina.sh' lives. Defaults to /sl/apps/[PROJECT_HOME]/tomcat/bin
+# Your local Tomcat /bin directory, where 'catalina.sh' lives. Defaults to /catamaran/apps/[PROJECT_HOME]/tomcat/bin
 LOCAL_TOMCAT_BIN_DIR=
 
 # Your local Tomcat /webapps directory, where the local webapp will be deployed (via a symlink to LOCAL_WEBAPP_DIR). 
-# Defaults to /sl/apps/[PROJECT_HOME]/tomcat/webapps
+# Defaults to /catamaran/apps/[PROJECT_HOME]/tomcat/webapps
 LOCAL_TOMCAT_WEBAPPS_DIR=
 
 # The name of your webapp when it's deployed locally
@@ -65,10 +65,10 @@ fi
 
 # set local tomcat defaults
 if [ -z "$LOCAL_TOMCAT_BIN_DIR" ]; then
-  LOCAL_TOMCAT_BIN_DIR=/sl/apps/$PROJECT_NAME/tomcat/bin
+  LOCAL_TOMCAT_BIN_DIR=/catamaran/apps/$PROJECT_NAME/tomcat/bin
 fi 
 if [ -z "$LOCAL_TOMCAT_WEBAPPS_DIR" ]; then
-  LOCAL_TOMCAT_WEBAPPS_DIR=/sl/apps/$PROJECT_NAME/tomcat/webapps
+  LOCAL_TOMCAT_WEBAPPS_DIR=/catamaran/apps/$PROJECT_NAME/tomcat/webapps
 fi  
 if [ -z "$LOCAL_WEBAPP_NAME" ]; then
   LOCAL_WEBAPP_NAME=$ARTIFACT_ID-$VERSION

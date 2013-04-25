@@ -1,21 +1,22 @@
 <div id="intro"></div>
 # Introduction
-Welcome to the ScandiLabs Java tutorial!   
+This is a tutorial for developers who want a quick and easy-to-use guide to creating Web Applications with Java.  
 
-Please note we are constantly adding topics to this tutorial, it was last updated on April 22, 2013.  If you don't find what you're looking for, check back soon.  
+While Java has some of the most powerful and proven web technologies out there, its enterprise roots and toolkit diversity can pose a challenge to a small team that needs to get up and running quickly.   
 
-You can also review the <a href="/faqs">knowledge base</a> and our sample applications at <a href="https://github.com/scandilabs/scandilabs-apps">github</a>. 
+This guide, along with our <a href="/faqs">knowledge base</a>, helps our own developers to write scalable Java applications quickly and in a consistent high-quality style.  Feel free to use it, and [let us know](http://www.scandilabs.com/contact) if you'd like to contribute.
 
 # Table of Contents
 1. [Setup](#setup)
 1. [HTML Templates and MVC](#mvc)
 1. [Persistence and Command Line Scripts](#persistence)
-1. Forms
-1. Validation, Messages
-1. AJAX / jQuery
-1. Security and Sessions
-1. Email
-1. Background Tasks
+1. [Forms](#forms)
+1. [Validation and Messages](#validation)
+1. [AJAX and jQuery](#ajax)
+1. [Services](#services)
+1. [Security and Sessions](#security)
+1. [Email](#email)
+1. [Background Tasks](#background)
 
 <div id="setup"></div>
 # Setup <span class="tutorialNav">(<a href="#intro">top</a>)</span>
@@ -410,4 +411,529 @@ If all goes well, you should now be able to view a row in the newly created <cod
 
 If you have any problems, do a search in [our knowledge base](http://java.scandilabs.com/faqs) for the word [exception](http://java.scandilabs.com/faqs?query=exception).  Or copy-paste a portion of your log file stack trace into the search field.  If you still need help, [contact us](http://www.scandilabs.com/contact).
 
+<div id="forms"></div>
+# Forms <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+In this section we will elaborate on Spring MVC support for web forms and show several good patterns to follow.
+
+#### A note about Controller classes
+Developers who work with Spring MVC may be forgiven for being confused about when to create a new Controller class and when to just add a method with a @RequestMapping annotation to an existing controller.
+
+The problem with creating a new Controller class every time is that you end up with lots of classes.  The problem with having just one single Controller class is that you end up with too many methods (and thus too much code in one Java class).  We recommend following these simple guidelines:
+
+- A form (i.e. POST request handler) always gets its own Controller class, with a name that ends in "FormController".  This makes it easy to group related methods with it (edit, delete, read) and it also makes it easy to configure field mappings and any other Spring MVC features that may be specific to one form.
+- GET request handler methods that are NOT directly/logically tied to a FormController are generally grouped into one Controller class per user type ("Actor").  For instance, you may have a VisitorController (for unauthenticated users), a AuthenticatedUserController (for authenticated users with no special admin role), and an AdminUserController (for authenticated users that have special admin privileges and/or are members of an Admin role).  This grouping makes it easy to create and enforce security checks that are specific to a specific type of users.  For instance, every method in AuthenticatedUserController may call a helper method that verifies that the current user's session contains a valid user object. 
+- Login/logout usually gets it's own controller with a login (or signin) method and a logout (or signout) method        
+
+#### Complete RESTful CRUD (create, read, update, delete) method of handling forms
+
+Let's dive into forms by first creating a FormController for the entity (User) we created above in the myapp.web package:
+
+<code>myapp/web/UserFormController.java</code>
+~~~
+package myapp.web;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@Controller
+@RequestMapping("/users")
+public class UserFormController {
+
+    @RequestMapping(value = "/create", method = RequestMethod.GET)
+    public String create(Map<String, Object> model) {
+        User user = new User();
+        model.put("user", user);
+        return "user-edit";
+    }
+
+}
+~~~      
+
+This will map the create method to the /users/create request path.  The create method will then instantiate a new User object and pass it along as a model object to the "user-edit" freemarker template.
+
+user-edit.ftl might look something like this:
+
+~~~
+<#import "/spring.ftl" as spring />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+</head>
+<body>
+    <form action="<@spring.url '/users/save' />" method="POST">
+        <#if user.id??>
+            <@spring.formHiddenInput "user.id" />
+        </#if>
+        <div>  
+            <label for="userName">User Name</label>
+            <@spring.formInput "user.userName"/>
+        </div>
+        <div>          
+            <label for="email">Email</label>             
+            <@spring.formInput "user.email"/>
+        </div>
+        <div>
+            <label for="button"></label>
+            <input type="submit" value="Save" />
+        </div>  
+    </form>
+</body>
+</html>
+~~~
+
+As you can probably guess, the html form above will need a "save" request path handler in order to work.  Let's it to UserFormController, and let's add a basid read (or view) method while we're at it:
+
+~~~
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String save(@ModelAttribute("user") User user, 
+            BindingResult errors, Map<String, Object> model) {
+        long id = person.save();
+        return "redirect:" + id;
+    }
     
+    @RequestMapping(value = "/{userId}", method = RequestMethod.GET)
+    public String view(@PathVariable long userId,
+            Map<String, Object> model) {
+        User user = (User) User.objects.load(userId);
+        model.put("user", user);
+        return "user-view";
+    }
+~~~
+
+Finally let's create user-view.ftl and then we'll be done with the entire create-view flow:
+
+~~~
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+</head>
+<body>
+    <h1>${user.userName}</h1>
+    <p>Email: ${user.email}</p>
+</body>
+</html>    
+~~~
+
+Now we're ready to restart tomcat and create a new user by pointing our browser to http://localhost:8080/users/create
+
+  
+<div id="validation"></div>
+# Validation and Messages <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+In this section we will build on the basic Forms example.  We will implement validation logic and show how to provide validation errors and other messages back to the browser user.
+
+## Validation
+Some validation rules naturally belong with an entity.  One example is a minimum-length requirement on the user.userName field.  It belows on the User entity because the validation rule should always be applied wherever a User object is being processed.
+
+Other validation rules may belong to a specific web form.  One example might be "terms" checkbox that is commonly included on sign-up forms (i.e. "check this box to agree to our privacy terms").     
+
+We will start with the entity field validation example.  Open up the myapp.entity.User class in your favorite editor and add a validation annotation on the userName like this:
+
+    @Size(min = 2)       
+    public String getUserName() {
+        return userName;
+    }
+
+Then we need to tell the Controller's save method to perform validation on the User object upon form submission.  We do that simply by adding a @Valid annotation on the save method:
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String save(@ModelAttribute("user") @Valid User user, 
+        BindingResult errors, Map<String, Object> model) {
+
+Lastly we need a way to display the messages on the html form.  For now we'll just show any and all messages at the top of the form:
+
+~~~
+<body>
+    <@spring.bind "user" />
+    <#if spring.status??>   
+        <p>
+        <#list spring.status.errorMessages as error> 
+            <strong>${error}</strong> <br>
+        </#list>
+        </p>
+    </#if>      
+
+    <form action="<@spring.url '/users/save' />" method="POST">
+    ...
+~~~     
+
+Now rebuild and restart tomcat, and use your browser to save a new user with a username that is shorter than 8 letters.  If you don't get a validation error double-check that you did a ./manage.sh rerun.
+
+For more validation options, check out SpringValidatorUtils ([javadocs](http://scandilabs.github.io/catamaran/apidocs/com/scandilabs/catamaran/mvc/SpringValidatorUtils.html), [source](https://github.com/scandilabs/catamaran/blob/master/src/main/java/com/scandilabs/catamaran/mvc/SpringValidatorUtils.java)).  Or try these common validation annotations:
+
+    Email address: @Email
+    US phone number: @Pattern(regexp = "^(?:(?:\\+?1\\s*(?:[.-]\\s*)?)?(?:\\(\\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\\s*\\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\\s*(?:[.-]\\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\\s*(?:[.-]\\s*)?([0-9]{4})(?:\\s*(?:#|x\\.?|ext\\.?|extension)\\s*(\\d+))?$")  [see](http://stackoverflow.com/questions/123559/a-comprehensive-regex-for-phone-number-validation)
+    Min size: @Size(min = 2)
+    Max size: @Size(max = 20)
+    
+> NOTE: If some of these don't work, check out catamaran-connect's PersonController and also this: https://jira.springsource.org/browse/SPR-9112    
+
+## Messages
+In addition to error messages, we sometimes want to show other messages to users as well.  One common scenario is a confirmation message.  
+
+Note the problem with confirmation messages is that successful POST requests should generally end in a redirect to a GET (per the [Post/Redirect/Get](http://en.wikipedia.org/wiki/Post/Redirect/Get) design pattern).  Therefore we need to store the message in some type of temporary location.  With Catamaran, that temporary location is generally the user's http session. 
+
+So let's add a "User was saved successfully" message to our sample application.  First edit the controller's save method:
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String save(@ModelAttribute("user") @Valid User user, 
+            BindingResult errors, Map<String, Object> model) {
+        long id = person.save();
+        DisplayMessage.addToNextPage(model, "New user with id " + id + " was saved successfully", true);
+        return "redirect:" + id;
+    }   
+
+That should get you going with Validation and Messages.  If some of this code doesn't work as intended please [let us know](/contact).
+
+## Additional references
+[Spring Validation](http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/validation.html#validation-beanvalidation)
+
+[BindStatus](http://static.springsource.org/spring/docs/3.2.x/javadoc-api/org/springframework/web/servlet/support/BindStatus.html)
+
+[Errors](http://static.springsource.org/spring/docs/3.2.x/javadoc-api/org/springframework/validation/Errors.html)
+
+
+<div id="ajax"></div>
+# AJAX and jQuery <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+In order to make the HTML application experience "richer", it is common to expose back-end services via JSON to a Javascript function via AJAX.  This section will show how to create a jQuery pop-up window that pulls data from a controller method serving JSON.
+
+Start by creating a new AjaxController class with a json lookup method:
+
+~~~
+@Controller
+public class AjaxController {
+
+    @RequestMapping("/users.json")
+    public ModelAndView users() throws Exception {
+
+        ModelAndView mv = new ModelAndView("json-string");
+        List<User> userList = User.objects.all();        
+        JSONObject jsonTop = JSONObject.fromObject(userList);
+        mv.addObject("users", jsonTop);
+        return mv;
+    }
+}
+~~~
+
+Do a ./manage.sh rerun and verify that the controller returns json data to the browser at http://localhost:8080/users.json
+
+Now let's start simple by writing a simple script to read the json, and then use javascript's built-in "alert" function to show us a list of usernames:
+~~~
+...
+<head>
+    <link type="text/css" rel="stylesheet" href="/css/global.css" media="screen, projection">    
+    <title>Hello World from ScandiLabs Java</title>
+    
+    <script>
+    
+    $(document).ready(function() { 
+        
+        // Render tag cloud html
+        var output = "Usernames: ";
+        
+        $.getJSON('users.json', function(data) {
+            
+            for (var i = 0, ii = data.length, thisTag, groupId; i < ii; i++) {
+                element = data[i];                            
+                output +=  'element.userName ';
+                console.log('read and added: ' + element.userName);
+            }
+            alert(output);
+        });
+    }
+    
+    </script>
+</head>
+<body>
+    <p>Hello world! <img src="/img/info-icon.png" /></p>
+</body>
+</html>
+~~~
+
+> NOTE: The console.log("..") statement above won't be seen by the browser visitor, but it makes it easier to debug your javascript code.  View the console tab of your [browser's debugger](http://www.netmagazine.com/tutorials/javascript-debugging-beginners) to see the output. 
+
+<div id="services"></div>
+# Services <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+A service is generally used to centralise a part of the codebase that is used in many different places.  The service may use it's own persistence mechanism or it may represent an API or Facade to another system.  It may or may not require it's own explicit configuration via Spring's Application Context configuration container.
+
+Commonly used services include:
+
+- SearchService: A way to centralize all access to back-end search engine
+- EmailService: A service which contains logic for sending email message, thus enabling Controller code to be free from email-specific setup
+- ApplicationConfiguration: A service which provides easy access to a set of server-specific information such as database name, user, and password
+
+Here is an example of an ApplicationConfiguration service (which is used by java.scandilabs.com):
+
+~~~
+public class ApplicationConfiguration {
+    
+    private String tutorialFileOverridePath;
+
+    public String getTutorialFileOverridePath() {
+        return tutorialFileOverridePath;
+    }
+
+    public void setTutorialFileOverridePath(String tutorialFileOverridePath) {
+        this.tutorialFileOverridePath = tutorialFileOverridePath;
+    }
+
+}
+~~~
+
+This java class is saved as ApplicationConfiguration.java in the myapp.service package.  It is configured via this xml snippet in Spring's applicationContext.xml file:
+
+~~~
+    <bean id="applicationConfiguration"
+        class="org.catamarancode.faq.service.ApplicationConfiguration">
+        <property name="tutorialFileOverridePath" value="${tutorial.file.classpath.override}" />
+    </bean>
+~~~  
+
+Note the <code>${tutorial.file.classpath.override}</code> is a reference to a property in the /catamaran/apps/hello-world/conf/application.properties file:
+
+    tutorial.file.classpath.override=/some/file/path/here
+    
+Once a service has been declared in applicationContext.xml it may be "injected" into a Controller class via an @AutoWired annotation:
+
+    @Controller
+    public class VisitorController {
+
+        @Autowired
+        private ApplicationConfiguration applicationConfiguration;
+        ...
+    }    
+
+The service is now ready for use in the Controller, as in this example:
+
+~~~
+    @RequestMapping("/tutorial")
+    public ModelAndView tutorial(HttpServletRequest request,
+            HttpServletResponse response) throws Exception {
+            
+        ...
+        
+        BufferedReader b = null;
+        if (applicationConfiguration != null && applicationConfiguration.getTutorialFileOverridePath() != null && applicationConfiguration.getTutorialFileOverridePath().length() > 2) {
+            
+            // Load tutorial file
+            URL loadedResource = this.getClass().getClassLoader().getResource("tutorial.md");
+            File file = new File(applicationConfiguration.getTutorialFileOverridePath());
+            b = new BufferedReader(new FileReader(file));
+        }
+        ...
+~~~
+           
+
+<div id="security"></div>
+# Security and Sessions <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+For complex security needs, Spring provides it's own [security framework](http://static.springsource.org/spring-security/site/index.html) that is very powerful and extensible.
+
+But for basic web applications, you can get a basic user authentication scheme up and running with these component parts:
+- Login controller with a POST reqest handler method that handles a submitted username (or email) and password
+- A persisted User object and a way to store and retrieve it from the HTTP session
+- An <code>isLoggedIn</code> method call check in each of your "secured" controller methods
+
+Let's start by creating a UserContextService that will be responsible for all the heavy lifting:
+~~~
+@Component
+@Scope("session")
+public class UserContext implements Serializable {
+    
+    private static final String USER_MODEL_KEY = "user";
+
+    private Long userId;
+    
+    public void prepareModel(Map<String, Object> model) {
+        User user = this.getUser();
+        model.put(USER_MODEL_KEY, user);
+    }
+    
+    public User getUser() {
+        User user = User.objects.load(getUserId());
+        return user;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+    
+    public boolean isLoggedIn() {
+        if (this.userId != null) {
+            return true;
+        }
+        return false;
+    }
+}
+~~~
+
+With the @Scope annotation, we are telling Spring MVC that this object should be scoped in the user's HTTP session.  
+
+Then we need to write a LoginController (new java class in in myapp.web):
+~~~
+@Controller
+@Scope("request")
+public class LoginController {
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)  
+    public String logInPost(HttpServletResponse response, Map<String,Object> model, @RequestParam("email") String email, @RequestParam("password") String password) {
+
+        List<User> users = User.objects.filter(Restrictions.eq("email", email));
+        User user = (User) CollectionUtils.findOne(users);
+        if (user == null) {
+            MessageContext.addToModel(model, "Invalid email", false);
+            return "login";
+        }
+        if (!user.passwordMatches(password)) {
+            MessageContext.addToModel(model, "Invalid email or password", false);
+            return "login";
+        }
+        
+        // Success
+        userContext.setUserId(user.getId());
+        return "redirect:/index";
+    }
+
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)  
+    public String logOut(Map<String,Object> model) {
+
+        userContext.setUserId(null);
+        return "redirect:/login";
+    }
+~~~
+
+We need a login HTML template:
+~~~
+<#import "/spring.ftl" as spring />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+</head>
+<body>  
+    <#if message??>
+        <h3>${message}</h3>
+    </#if>
+            
+    <form action="<@spring.url '/login' />" method="post">
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />                       
+        </div>
+                    
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+        </div>
+                    
+        <div>
+            <label for="button"></label>
+            <input type="submit" value="Log in" />
+        </div>
+    </form>
+</body>
+</html>
+~~~
+
+And finally we insert security checks into our controller methods.  In this example, we will require a login before allowing a new User to be created:
+~~~
+public class UserFormController {
+
+    @RequestMapping(value = "/create", method = RequestMethod.GET)
+    public String create(Map<String, Object> model) {
+
+        if (!userContext.isLoggedIn(request)) {
+            return "redirect:/login";
+        }
+    
+        User user = new User();
+        model.put("user", user);
+        return "user-edit";
+    }
+}
+~~~
+
+
+<div id="email"></div>
+# Email <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+
+~~~
+  <bean id="springMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+    <property name="host">
+      <value>${email.host}</value>
+    </property>
+    <property name="port">
+      <value>${email.port}</value>
+    </property> 
+    <property name="protocol">
+      <value>${email.protocol}</value>
+    </property> 
+    <property name="username">
+      <value>${email.username}</value>
+    </property> 
+    <property name="password">
+      <value>${email.password}</value>
+    </property> 
+    <property name="javaMailProperties">
+      <props>
+        <prop key="mail.smtps.auth">${email.mail.smtps.auth}</prop>
+        <prop key="mail.smtps.starttls.enable">${email.mail.smtps.starttls.enable}</prop>
+        <prop key="mail.smtps.debug">${email.mail.smtps.debug}</prop>
+      </props>
+    </property> 
+    </bean>
+
+
+  <!-- A service that wraps the Spring/Java mail sender to allow for sending html-formatted emails with minimal coding -->
+  <bean id="htmlMailSender" class="com.scandilabs.catamaran.mail.send.SimpleHtmlMailSender">
+    <constructor-arg ref="springMailSender" />
+    <property name="defaultFrom" value="${email.default.from}"/>
+    <property name="defaultTo" value="${email.default.to}"/>
+    <property name="testMode" value="false"/>
+  </bean>  
+~~~
+
+## Email Templates
+For more advanced emailing needs, you may wish to use Freemarker to compose your email templates.  Add this to your Spring applicationContext.xml:
+~~~
+    <bean id="freemarkerEmailConfig" class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean">
+     <property name="templateLoaderPath"><value>${email.freemarker.template.base.dir}</value></property>
+     <property name="freemarkerVariables">
+      <map>
+        <entry key="xml_escape" value-ref="fmXmlEscape"/>
+      </map>
+    </property>
+  </bean>
+  
+  <!-- A service that populates the email body field from a freemarker template and an object data model -->
+    <bean id="emailBodyComposer" class="com.scandilabs.catamaran.mail.compose.freemarker.FreemarkerSimpleMessageBodyComposer"> 
+    <constructor-arg ref="freemarkerEmailConfig" />
+  </bean>
+~~~
+
+
+<div id="background"></div>
+# Background Tasks <span class="tutorialNav">(<a href="#intro">top</a>)</span>
+
+~~~
+  <!-- A mail sender that uses a DB-based outbound queue -->
+  <bean id="asyncMailSender" class="com.scandilabs.catamaran.mail.async.AsyncSender">
+    <constructor-arg ref="sessionFactory" />
+  </bean>
+  
+  <!-- Asynchronous mail sender daemon. Required when using AsyncMailMessageSender.  Uses DB as the outbound queue -->
+  <bean id="asyncMailDaemon" class="com.scandilabs.catamaran.mail.async.AsyncDaemon" init-method="init">
+    <constructor-arg ref="sessionFactory" />
+    <constructor-arg ref="htmlMailSender" />
+    <constructor-arg><value>20000</value></constructor-arg>
+    <constructor-arg><value>5000</value></constructor-arg>
+  </bean>
+  ~~~
