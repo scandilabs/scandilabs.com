@@ -39,13 +39,18 @@
         	<div class="slideBg">
 				<div class="slideshow" style="height:410px;">
 					
-                    <div class="bgImageBoxOuter">
+                    <div class="bgImageBoxOuter slide1">
                         <div class="bgImageBox">
-                            <img src="img/wfall60.jpg" />
+                            <img src="img/wfall60.jpg" />                            
                         </div>
                         
+                        <div class="slideNav">
+                            <span class="prevSlideNav"><img src="img/arrow_left.png" /></span>
+                            <span class="nextSlideNav"><img src="img/arrow_right.png" /></span>
+                        </div>                    
+
                         <div class="overlayOuter" style="opacity: 0.6; margin-bottom: -112px; 
-                          top: -360px; margin-left: 240px; width: 600px;">
+                          top: -524px; margin-left: 360px; width: 600px;">
                             
                             <p class="overlay" >
                               "Our business demands flawless execution.  ScandiLabs proved time and time again that they are experienced and creative problem solvers who deliver high quality code."
@@ -55,17 +60,23 @@
                                 MedVentive, a McKesson Company                      
                             </p>                                
                             
-                        </div>                      
+                        </div>  
+                        
                     </div>
                   					
 					
-                    <div class="bgImageBoxOuter">
+                    <div class="bgImageBoxOuter slide2">
                         <div class="bgImageBox">
                             <img src="img/berg60.jpg" />
                         </div>
                         
+                        <div class="slideNav">
+                            <span class="prevSlideNav"><img src="img/arrow_left.png" /></span>
+                            <span class="nextSlideNav"><img src="img/arrow_right.png" /></span>
+                        </div>                    
+
                         <div class="overlayOuter" style="opacity: 0.5; 
-                            top: -320px; margin-left: 360px; width: 600px;">
+                            top: -524px; margin-left: 360px; width: 600px;">
                             
                             <p class="overlay">
                                 ScandiLabs understood our business needs right away, and got productive FAST."
@@ -75,15 +86,21 @@
                                 SnagAJob                        
                             </p>                            
                         </div>                        
+
                     </div>    
   
-                    <div class="bgImageBoxOuter clearIe">
+                    <div class="bgImageBoxOuter clearIe slide3">
                         <div class="bgImageBox">
                             <img src="img/kvik30.jpg" />
                         </div>
                         
+                        <div class="slideNav">
+                            <span class="prevSlideNav"><img src="img/arrow_left.png" /></span>
+                            <span class="nextSlideNav"><img src="img/arrow_right.png" /></span>
+                        </div>                    
+
                        <div class="overlayOuter" style="opacity: 0.8; 
-                            top: -180px; margin-left: 474px; width: 600px;">
+                            top: -5240px; margin-left: 360px; width: 600px;">
                             
                             <p class="overlay">
                               "ScandiLabs provided a full tech-team-in-a-box which helped me launch my Healthcare IT startup quickly."
@@ -97,33 +114,12 @@
                         </div>                        
                     </div>   
 
-                    <!--
-					<div class="bgImageBoxOuter">
-			    		<div class="bgImageBox">
-							<img src="img/topp60.jpg" />
-						</div>
-						
-						<div style="padding:16px 16px; background-color:#000000; opacity: 0.6; position: 
-						  relative; top: -340px; margin-left: 540px; width: 440px;">
-
-                            <h1 style="margin: 0px; color: white;"">EXPERIENCE</h1>
-                            
-                            <h2 style="margin: 0px; color: #DDDDDD;">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br/>
-                                Myles Trachtenberg, CIO<br/>
-                                TravelClick                        
-                            </h2>                           
-							
-						</div>						
-					</div>
-                    -->      
-                                     
 	        	</div>
         	</div>		        	
 
      </div> <!-- slideOuter -->
        
- 	<h1 style="text-align: center" calss="copy">We create quality scalable software</h1>    
+ 	<h1 style="text-align: center" calss="copy">We help startups scale</h1>    
  	<br/>
  	
  	<div id="logoGrid">
