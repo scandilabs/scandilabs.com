@@ -8,7 +8,6 @@
         <link type="text/css" rel="stylesheet" href="css/site.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/top.css" media="screen, projection">
         <link type="text/css" rel="stylesheet" href="css/index.css" media="screen, projection">
-        <link type="text/css" rel="stylesheet" href="css/rotator.css" media="screen, projection">
         <!--[if IE]>
             <link rel="stylesheet" type="text/css" href="css/ie.css" />
         <![endif]-->                
@@ -24,178 +23,172 @@
             } 
         </style>
         <!-- END fix for border on IE10 since conditionals don't work above IE10 -->
+        
+        <!-- override nav stuff -->
+        <style>
+            #header {
+                height:56px;
+            }
+            #nav {
+                height: 50px;                
+                width:66px;
+                margin-left:643px;
+                opacity: 0.9;
+                top: 10px;                
+            }
+            
+            #pageCanvas {
+                background-color: #2e3235;
+            }
+            
+
+            
+            .slideOuter {
+                
+            }
+            
+            .bgImageBoxOuter {
+                width:100%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            
+            .overlay {
+                font-weight: 500;
+                font-size:17px;
+                color: black;
+                font-style:normal;
+            }
+            
+            html {
+                overflow:hidden;
+            }
+            
+            #outerContent {
+                /* compensate for 14px scrollbar on chrome */
+                width: 979px;
+                padding-right: 15px;
+                
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
 
         <script src="js/jquery-1.8.2.min.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
         <script src="js/jquery.cycle.all.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-		<?php include("include/analytics.php"); ?>
+        <?php include("include/analytics.php"); ?>
     </head>
     <body>
+        
+    <div class="bgImageBox" style="position:fixed; width:100%; top:80px;">
+        <img style="height:100%; width:100%" src="img/wfall_1560x1200.jpg" />                            
+    </div>
+    
     <?php include("include/top.php"); ?>  
-        	
-    	<div class="slideOuter">
-	        
-        	<div class="slideBg">
-				<div class="slideshow" style="height:410px;">
-					
-                    <div class="bgImageBoxOuter slide1">
-                        <div class="bgImageBox">
-                            <img src="img/wfall60.jpg" />                            
-                        </div>
+            
+        <div class="slideOuter">
+            
+            <div class="slideBg">
+                <div class="slideshow" >
+                    
+                    <div class="bgImageBoxOuter slide1" >
                         
-                        <div class="slideNav">
-                            <span class="prevSlideNav"><img src="img/arrow_left.png" /></span>
-                            <span class="nextSlideNav"><img src="img/arrow_right.png" /></span>
-                        </div>                    
-
-                        <div class="overlayOuter" style="opacity: 0.6; margin-bottom: -112px; 
-                          top: -524px; margin-left: 360px; width: 600px;">
-                            
-                            <p class="overlay" >
-                              "Our business demands flawless execution.  ScandiLabs proved time and time again that they are experienced and creative problem solvers who deliver high quality code."
-                            </p>                                             
-                            <p class="overlay overlaySignature" >
-                                Bernard Chien, CTO<br/>
-                                MedVentive, a McKesson Company                      
-                            </p>                                
-                            
-                        </div>  
+                        <div >
+                            <div >
+                                <div class="slideBlackBox">
+                                    <div class="slideInnerWhiteBox">
+                                        <h1 style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
+                                            Scaling a company takes time and effort. <br/>We help you get there faster.</h1>
+                                        <img src="img/candyland_no_text.png" style="margin-left:60px" />
+                                    </div>                                            
+                                    
+                                </div>
+                            </div>
+                        </div>
                         
                     </div>
-                  					
-					
-                    <div class="bgImageBoxOuter slide2">
-                        <div class="bgImageBox">
-                            <img src="img/berg60.jpg" />
-                        </div>
-                        
-                        <div class="slideNav">
-                            <span class="prevSlideNav"><img src="img/arrow_left.png" /></span>
-                            <span class="nextSlideNav"><img src="img/arrow_right.png" /></span>
-                        </div>                    
-
-                        <div class="overlayOuter" style="opacity: 0.5; 
-                            top: -524px; margin-left: 360px; width: 600px;">
                             
-                            <p class="overlay">
-                                ScandiLabs understood our business needs right away, and got productive FAST."
-                            </p>
-                            <p class="overlay overlaySignature">
-                                Thomas Fredell, CTO<br/>
-                                SnagAJob                        
-                            </p>                            
-                        </div>                        
+                    <div class="bgImageBoxOuter slide2">
+
+                        <div >
+                            <div >
+                                <div class="slideBlackBox">
+                                    <div class="slideInnerWhiteBox">
+                                        <h1 style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
+                                            We cover every aspect of product development.</h1>
+                                        <img src="img/what_we_provide.png" style="margin-left:104px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>    
   
-                    <div class="bgImageBoxOuter clearIe slide3">
-                        <div class="bgImageBox">
-                            <img src="img/kvik30.jpg" />
-                        </div>
-                        
-                        <div class="slideNav">
-                            <span class="prevSlideNav"><img src="img/arrow_left.png" /></span>
-                            <span class="nextSlideNav"><img src="img/arrow_right.png" /></span>
-                        </div>                    
+                    
+                  <div class="bgImageBoxOuter clearIe slide3">
+                      <div class="slideBlackBox">                                
+                        <div class="slideInnerWhiteBox" style="padding-left:30px; padding-right:30px;">
+                            <h1 style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
+                                    Together, let's build a capability <br/>you can grow with.</h1>
 
-                       <div class="overlayOuter" style="opacity: 0.8; 
-                            top: -5240px; margin-left: 360px; width: 600px;">
+                            <div style="margin-top:48px; margin-bottom: 16px">
+                                <div style="vertical-align:top; display:inline-block; padding-right:16px; ">
+                                    <a href="clients/"><img style="width:140px" src="img/madaket_color.png"/></a>
+                                </div>
+                                <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
+                                  "Using the ScandiLabs tech-team-in-a-box, I was able to build a product that can scale to thousands of doctors and insurance companies."
+                                  <br/><br/>
+                                   Jim Dougherty<br/>
+                                    Co-Founder, Madaket Health<br/> 
+                                    Entrepreneur in Residence, Center for MIT Entrepreneurship         
+                                </p>
+                            </div>
+                            <hr/>
+                            <div style="margin-top:16px; margin-bottom: 16px">
+                                <div style="vertical-align:top; display:inline-block; padding-right:16px; ">
+                                    <a href="clients/snagajob"><img style="width:140px" src="img/Snag-a-Job-Logo.gif"/></a>
+                                </div>
+                                <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
+                                  "With ScandiLabs' help we now serve large customers better."
+                                  <br/><br/>
+                                   Thomas Fredell<br/>
+                                   CTO, SnagAJob<br/>
+                                   Founder, Membly.com                                          
+                                </p>
+                            </div>                            
+                            <hr/>
+                            <div style="margin-top:16px; margin-bottom: 16px">
+                                <div style="vertical-align:top; display:inline-block; padding-right:16px; ">
+                                    <a href="clients/medventive"><img style="width:140px" src="img/medventive_logo.gif"/></a>
+                                </div>
+                                <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
+                                  "The solution they provided allows our operations team to support more clients with the same staff."
+                                  <br/><br/>
+                                   Bernard Chien<br/>
+                                   CTO, MedVentive, a McKesson Company         
+                                </p>
+                            </div>                            
+                        </div>
                             
-                            <p class="overlay">
-                              "ScandiLabs provided a full tech-team-in-a-box which helped me launch my Healthcare IT startup quickly."
-                            </p>
-                                
-                            <p class="overlay overlaySignature">
-                                Jim Dougherty, Founder<br/>
-                                Madaket Health                      
-                            </p>
-                                                       
-                        </div>                        
-                    </div>   
+                      </div>
 
-	        	</div>
-        	</div>		        	
+                  </div>                        
+                    
+               </div> <!-- .slideshow -->
+            </div>                  
 
-     </div> <!-- slideOuter -->
-       
- 	<h1 style="text-align: center" calss="copy">We help startups scale</h1>    
- 	<br/>
- 	
- 	<div id="logoGrid">
-        <ul class="logoRow1">
-            <li>
-                <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients">
-                        <div>
-                            <img style="width:154px;" src="img/madaket_color.png" />
-                        </div>    
-                    </a>
-                </div>
-            </li>     
-            <li>
-                <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients/medventive">
-                        <div>
-                            <img src="http://www.medventive.com/Collateral/Templates/English-US/Images/top_logo.gif">
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients/travelclick">
-                        <div>
-                            <img src="http://www.travelclick.com/sites/all/themes/travelclick/logo.png">
-                        </div>    
-                    </a>
-                </div>
-            </li>   
-        </ul>
-        <ul class="logoRow2">
-            <li>
-                <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients/postpost">
-                        <div>
-                            <img style="width:150px; " src="http://postpost.com/static/img/global/postpost-logo.png">
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients/snagajob">
-                        <div>
-                            <img src="http://2011.richmond.wordcamp.org/files/2011/10/Snag-a-Job-Logo.gif">
-                        </div>
-                    </a>
-                </div>    
-            </li>
-            <li>
-                <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients/medventive">
-                        <div>
-                            <img style="padding-left: 19px; padding-top:18px;" src="img/mckesson.png">
-                        </div>    
-                    </a>
-                </div>
-            </li>     
-            
-            <!--     
-            <li>
-                <div class="tableBlock drop-shadow raised">
-                    <a class="centeredTableCell" href="clients/inspector-time">
-                        <div>
-                            <img style="width:150px; " src="http://inspectortime.com/it/images/home/header.gif">
-                        </div>
-                    </a>
-                </div>
-            </li>       
-            -->       
-        </ul>
-    </div>
-
-    
-	<?php include("include/bottom.php"); ?>        
+        </div> <!-- slideOuter -->
+        
+        <div class="slideNav">
+            <span class="prevSlideNav"><img src="img/slidenav_left.png" /></span>
+            <span class="nextSlideNav"><img src="img/slidenav_right.png" /></span>
+        </div>
+        
+            <!-- footer include begin -->
+            </div> <!-- pageCanvas -->
+        </div> <!-- border -->
+    </div> <!-- outerContent -->        
     </body>
 </html>

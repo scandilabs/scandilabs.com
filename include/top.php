@@ -11,21 +11,14 @@
 				<div id="headerOuter">
 			        <div id="header">
 			            <div id="logoBox" >
-			                <a href="index" ><img src="img/logo150x32.png"></a>
+			                <a href="index" ><img src="img/logo_acc_150x50.png"></a>
 			            </div>   
 			            <ul>
 			                <li>
 			                    <a 
-			                        <?php if($page=='/what.php') echo "class='current'"; ?> 
-			                        href="what">
-			                        <h2>What We Do</h2>
-			                    </a>
-			                </li>   
-			                <li>
-			                    <a 
-			                        <?php if($page=='/how.php') echo "class='current'"; ?> 
-			                        href="how">
-			                        <h2>How We Work</h2>
+			                        <?php if($page=='/services.php') echo "class='current'"; ?> 
+			                        href="services">
+			                        <h2>Services</h2>
 			                    </a>
 			                </li>   
 			                <li>

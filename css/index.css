@@ -20,13 +20,19 @@ body {
 }
 
 .slideBg {
-    width:1360px;
+    /*
+    
     height: 600px;
     margin-left: auto;
     margin-right:auto;
-    position:relative;
     left: -260px;
-        
+    */
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-681px;
+    margin-top:-258px;
+    width:1360px;    
 }
 
 .bgImageBox {
@@ -55,15 +61,16 @@ body {
     margin-right:auto;
     /*padding-right:40px;*/
     position:relative;
-    top: -70px;
+    top: -200px;
     z-index: 8;
-    opacity: 0.5;
+    opacity: 0.7;
+    cursor:pointer;
 }
 
 .navItem {
     width:22px;
     height:22px;
-    background-image: url('../img/slidernav_off.png');
+    background-image: url('../img/grey-dot-trans.png');
     background-size: 22px 22px;
     background-repeat: no-repeat;    
     display:inline-block;
@@ -73,7 +80,7 @@ body {
 }
 
 #nav .activeSlide {
-    background-image: url('../img/slidernav_on.png');
+    background-image: url('../img/black-dot-trans.png');
 }
 
 
@@ -158,12 +165,14 @@ td {
 }
 
 .slideNav {
-    font-size:200px;
-    position:relative; 
-    top: -210px; 
-    margin-left: 240px; 
-    width: 880px;
-    opacity: 0.9; 
+    display:none;    
+    position:fixed; 
+    top: 50%; 
+    margin-left: 23px; 
+    width: 808px;
+    z-index: 24;
+    margin-top: -29px;
+    /*opacity: 0.6;*/
 }
 
 .nextSlideNav {
@@ -176,5 +185,23 @@ td {
 }
 
 .prevSlideNav img, .nextSlideNav img {
-    height: 48px;   
+    /*height: 48px;*/   
 }
+
+.slideInnerWhiteBox {
+    background-color: white; height:100%;    
+}
+
+.slideBlackBox {
+    padding:16px 16px 16px 16px; 
+    background-color:#000000; 
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-top:20px; 
+    z-index: 20; 
+    opacity: 0.8; 
+    top:20px; 
+    width: 710px; 
+    height: 494px;
+}
+

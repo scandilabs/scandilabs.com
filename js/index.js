@@ -1,16 +1,47 @@
+var slideNavEnabled = true;
+var slideNavHover = false;
 
+/**
+ * Used to disable slide nav while it is transitioning 
+ * (avoids nav appearing during transitions)
+ */
+function handleSlideNavClick() {
+    $('.slideNav').hide();
+    slideNavHover = true;
+    slideNavEnabled = false;
+}
+
+function showSlideNav() {
+    if (slideNavEnabled == true) {
+        $('.slideNav').show();   
+    }
+    slideNavHover = true;
+}
 
 $(document).ready(function() {
     
-    /*
+    $('.slideBlackBox').hover(function() {
+        showSlideNav();  
+    }, function() {
+        $('.slideNav').hide();
+        slideNavHover = false;
+    });
+    
+    $('.slideNav').hover(function() {
+        showSlideNav();  
+    }, function() {
+        $('.slideNav').hide();
+        slideNavHover = false;
+    });    
+    
     $('.nextSlideNav').click(function() {
-        $('.slideshow').cycle('next');      
+        handleSlideNavClick();
     });
     
     $('.prevSlideNav').click(function() {
-        $('.slideshow').cycle('prev');      
+        handleSlideNavClick();      
     });
-    */
+    
     
     $('.slideshow')    
     .after('<div id="nav">') 
@@ -25,7 +56,21 @@ $(document).ready(function() {
           return '<div class="navItem"><a href="#">&nbsp;&nbsp;</a></div>';
           //return '';
         },
-        pager: '#nav'
+        pager: '#nav', 
+        after: function(currSlideElement, nextSlideElement, options, forwardFlag) {
+
+            // Re-enable nav links            
+            slideNavEnabled = true;
+            
+            // Show nav if we're currently hovering
+            if (slideNavHover == true) {
+                showSlideNav();
+            }
+        },
+        before: function(currSlideElement, nextSlideElement, options, forwardFlag) {               
+            $('.slideNav').hide();            
+            slideNavEnabled = false;
+        }
     });
     
     $('.centeredTableCell').mouseenter(

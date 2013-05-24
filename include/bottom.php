@@ -13,7 +13,7 @@
         					<a href="about">Company</a>
         				</td>
         				<td class="footerHeading">    				    
-        					Services
+        					<a href="services">Services</a>
         				</td>
         				<td class="footerHeading">
         					<a href="<?php echo $javabase ?>/">Java</a>	        					
@@ -27,7 +27,7 @@
         					<a href="about-management">Management</a>
         				</td>
         				<td>
-        					<a href="what">What We Do</a>
+        					<a href="clients">Clients</a>
         				</td>
         				<td>
         				    <a href="<?php echo $javabase ?>/faqs">Knowledge Base</a>    					
@@ -41,7 +41,7 @@
         					<a href="about-partners">Partners</a>
         				</td>
         				<td>
-        					<a href="how">How We Work</a>
+        					
         				</td>
         				<td>
         				    <a href="<?php echo $javabase ?>/tutorial">Tutorial</a>    					
@@ -54,7 +54,7 @@
         					<a href="careers">Careers</a>
         				</td>
         				<td>
-        				    <a href="clients">Clients</a>
+        				    
         				</td>
         				<td>
                             <a href="<?php echo $javabase ?>/source">Source</a>

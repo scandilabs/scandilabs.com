@@ -1,10 +1,10 @@
 /** CSS for header and footer **/
 
 #headerOuter {
-   /*position:fixed;*/
    width:100%;
    top:0;
    z-index: 9;
+   position:relative;
 }
 
 #header {
@@ -43,7 +43,7 @@
 #logoBox {
     display: inline-block;
     vertical-align: top;
-    padding-top: 11px;
+    padding-top: 4px;
     padding-bottom: 9px;
     padding-left:58px;
     font-size:0px; /* java header workaround */
@@ -63,7 +63,7 @@
     -webkit-padding-start:0px;
     font-weight: 500;   
     position:relative;
-    top:25px;
+    top:37px;
 }
 
 #header ul li {
