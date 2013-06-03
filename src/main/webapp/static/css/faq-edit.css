@@ -30,3 +30,15 @@ form input[type=text] {
 th {
     font-weight:normal;
 }
+
+
+/* Override jquery UI 's CSS defaults */
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+.ui-widget {
+    font-size: 12px;
+}
+/* END Override jquery UI 's CSS defaults */

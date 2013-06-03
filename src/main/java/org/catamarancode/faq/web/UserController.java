@@ -100,16 +100,18 @@ public class UserController {
         		}
         		
         		// Overwrite an existing tag?
-        		if (j == 0 && hasValue) {
+        		if (j == 0) {
         			currentTag = new NestedTag();
         			faq.getNestedTags()[i] = currentTag;
         		}
         		
         		if (hasValue && currentTag != null) {
-        			currentTag.addElement(value);
-        		} else if (hasValue) {
-        			throw new IllegalArgumentException("Missing values above for tag " + (i+1));
-        		}
+        			
+        			// Make sure parent tag is not empty before adding child elements
+        			if (j == 0 || (j > 0 && !currentTag.getElements().isEmpty())) {
+        				currentTag.addElement(value);	
+        			}        			
+        		} 
         	}
         }
         

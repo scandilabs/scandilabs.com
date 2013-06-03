@@ -6,9 +6,10 @@
 <head>
 	<#include "includes/head.ftl" />
 
+    <script type="text/javascript" src="static/js/jquery-ui-1.10.3.min.js"></script>
 	<script type="text/javascript" src="static/js/faq-edit.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/css/jquery-ui-1.10.3.css" />   
     <link type="text/css" rel="stylesheet" href="static/css/faq-edit.css" media="screen, projection">
-	
 </head>
 <body>
 	<#include "includes/top-nav.ftl" />
@@ -62,6 +63,7 @@
 			        <label>Answer</label>
 			        <textarea rows="20" cols="72" tabindex=1 name="answer">${(faq.answer)!}</textarea>
 				</div>
+				
 				<table id="topicTable">
 				<tr>
 	                <th><label>Topic #1</label></th>
@@ -70,7 +72,7 @@
 	                <th><label>Topic #4</label></th>
 	            </tr>
 	            <tr>
-	                <td>
+	                <td class="ui-widget">
 	                    <input type="text"  tabindex=11 name="tag11" class="tagX1 tag" id="tag11" value="${(faq.tag11)!}" />
 	                </td>
 	                <td>
@@ -132,7 +134,11 @@
 				<div>					
 			        <label></label>
 			        <input type="submit" tabindex=99 value="Save" />
-			        <a href="faq?key=${(faq.key)!}">Cancel</a>
+			        <#if faq??>
+			             <a href="faq?key=${(faq.key)!}">Cancel</a>
+			        <#else>
+			             <a href="faqs">Cancel</a>
+			        </#if>
 				</div>
 				
 			</form>

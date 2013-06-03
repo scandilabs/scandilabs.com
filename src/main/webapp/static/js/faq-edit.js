@@ -3,6 +3,27 @@ var lastFocusedTagId = null;
 
 $().ready(function() {
 	
+	
+    $("#tester1").autocomplete({
+        source: function(request, response) {   
+            console.log("searching..");         
+            $.getJSON("tags1.json?term=" + request.term, function(data) {
+                response(data);
+                console.log("done searching..");
+                suppressNextFocusEvent = true;
+            });            
+        },  
+        minLength: 0,
+        select: function(request, response) {
+            console.log("select event.. firing close..");
+            $("input.topTag").autocomplete("close");
+        },
+        close: function(request, response) {
+            console.log("close event.. unsuppressing next focus");
+            suppressNextFocusEvent = false;
+        }
+    });	
+	
 	//
 	// AUTOCOMPLETE events
 	//
@@ -87,7 +108,7 @@ $().ready(function() {
         }
     });    
     
-    $("input.tagX3").autocomplete({
+    $("input.tagX4").autocomplete({
         source: function(request, response) {   
             console.log("searching..");    
             var tagX = lastFocusedTagId.substring(3,4);

@@ -149,8 +149,8 @@ public class VisitorController {
         String faqId = request.getParameter("key");        
         Faq faq = solrService.loadFaq(faqId);
         if (faq == null) {
-        	messageContext.setMessage("Invalid FAQ key", false);            
-            return mv;
+        	messageContext.setMessage("Invalid FAQ key", false);
+            return new ModelAndView("redirect:faqs");
         }
         
         // Audits and comments
