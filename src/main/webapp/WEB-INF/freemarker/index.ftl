@@ -4,7 +4,7 @@
 
 <head>
 	<#include "includes/head.ftl" />
-    
+	<title>ScandiLabs : Java : Overview</title>    
     <script type="text/javascript" src="static/js/jquery-1.4.js"></script>
 	<script type="text/javascript" src="static/js/jquery.animate.js"></script>
 	<script type="text/javascript" src="static/js/jquery.tagcanvas.min.js"></script>

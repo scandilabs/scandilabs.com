@@ -27,7 +27,7 @@
                             <a href="${parentSiteBase}/about-management">Management</a>
                         </td>
                         <td>
-                            <a href="${parentSiteBase}/what">What We Do</a>
+                            <a href="${parentSiteBase}/clients">Clients</a>
                         </td>
                         <td>
                             <a href="${javaSiteBase}/faqs">Knowledge Base</a>                       
@@ -41,7 +41,7 @@
                             <a href="${parentSiteBase}/about-partners">Partners</a>
                         </td>
                         <td>
-                            <a href="${parentSiteBase}/how">How We Work</a>
+                            
                         </td>
                         <td>
                             <a href="${javaSiteBase}/tutorial">Tutorial</a>                     
@@ -54,7 +54,7 @@
                             <a href="${parentSiteBase}/careers">Careers</a>
                         </td>
                         <td>
-                            <a href="${parentSiteBase}/clients">Clients</a>
+                            
                         </td>
                         <td>
                             <a href="${javaSiteBase}/source">Source</a>

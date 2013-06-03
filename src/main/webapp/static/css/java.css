@@ -59,6 +59,7 @@ code {
 
 #mainCol a:link, #mainCol a:visited, #mainCol a:hover {
     text-decoration:underline;
+    cursor:pointer;
 }
 
 #mainCol ul {

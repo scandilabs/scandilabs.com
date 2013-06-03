@@ -4,6 +4,7 @@
 
 <head>
 	<#include "includes/head.ftl" />
+	<title>ScandiLabs : Java : Source</title>	
 	<script type="text/javascript" src="static/js/jquery-1.4.js"></script>
     <script type="text/javascript" src="static/js/jquery.githubRepoWidget.js"></script>	
 </head>

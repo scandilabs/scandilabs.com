@@ -4,6 +4,7 @@
 
 <head>
 	<#include "includes/head.ftl" />
+	<title>ScandiLabs : Java : Download</title>
 </head>
 <body>
 	<#include "includes/top-nav.ftl" />

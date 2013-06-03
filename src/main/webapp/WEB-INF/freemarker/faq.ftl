@@ -5,7 +5,7 @@
 
 <head>
 	<#include "includes/head.ftl" />
-    
+	<title>ScandiLabs : Java : Knowledge Base : ${faq.question}</title>	    
 	<link type="text/css" rel="stylesheet" href="static/css/faqs.css" media="screen, projection">
 </head>
 <body>

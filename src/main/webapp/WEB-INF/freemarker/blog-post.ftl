@@ -14,7 +14,7 @@
     </script><![endif]-->        
 
 	<#include "includes/head.ftl" />
-    <title>ScandiLabs : ${post.title}</title>
+    <title>ScandiLabs : Blog : ${post.title}</title>
 	<link type="text/css" rel="stylesheet" href="static/css/faqs.css" media="screen, projection">
 	
 	<script type="text/javascript" src="static/js/jquery.animate.js"></script>

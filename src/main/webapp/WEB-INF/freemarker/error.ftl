@@ -5,6 +5,7 @@
 <#assign page = "notFound">
 <head>
 	<#include "includes/head.ftl" />
+	<title>ScandiLabs : Java : Error</title>
 </head>
 <#flush>
 <body>

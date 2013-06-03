@@ -4,6 +4,7 @@
 
 <head>
 	<#include "includes/head.ftl" />
+	<title>ScandiLabs : Java : Knowledge Base</title>	
 
 	<link type="text/css" rel="stylesheet" href="static/css/faqs.css" media="screen, projection">
 	

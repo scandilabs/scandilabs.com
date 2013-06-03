@@ -6,19 +6,13 @@
 			        <div id="header">
 			        
 			            <div id="logoBox" >
-			                <a href="${parentSiteBase}/index" ><img src="${parentSiteBase}/img/logo150x32.png"></a>
+			                <a href="${parentSiteBase}/index" ><img src="${parentSiteBase}/img/logo_accelerated_scaling_151px.png"></a>
 			            </div>   
 			            <ul>
 			                <li>
 			                    <a 
-			                        href="${parentSiteBase}/what">
-			                        <h2>What We Do</h2>
-			                    </a>
-			                </li>   
-			                <li>
-			                    <a 
-			                        href="${parentSiteBase}/how">
-			                        <h2>How We Work</h2>
+			                        href="${parentSiteBase}/services">
+			                        <h2>Services</h2>
 			                    </a>
 			                </li>   
 			                <li>

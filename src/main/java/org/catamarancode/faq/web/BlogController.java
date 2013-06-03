@@ -31,9 +31,14 @@ public class BlogController {
 
 	private Logger logger = LoggerFactory.getLogger(BlogController.class);
 
+	private static final int CACHE_SIZE = 200;
+	
+	// Live for a year - use /blog-clear-cache to clear it
+	private static final long CACHE_TIME_TO_LIVE_MILLIS = 31536000000l;
+	
 	// Live 24hrs
 	// Note pageCache is static because of @Scope("request") annotation.  Without that annotation the controller would be a singleton so it would not have to be static. 
-	private static LRUCache<String, List<Page>> pageCache = new LRUCache<String, List<Page>>(200, 86400000);
+	private static LRUCache<String, List<Page>> pageCache = new LRUCache<String, List<Page>>(CACHE_SIZE, CACHE_TIME_TO_LIVE_MILLIS);
 	
 	// A cache of keys used for cache-only lookups
 	private static List<String> keyCache = new ArrayList<String>();
@@ -109,7 +114,7 @@ public class BlogController {
 	public void blogClearCache(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 
-		pageCache = new LRUCache<String, List<Page>>(200, 86400000);
+		pageCache = new LRUCache<String, List<Page>>(CACHE_SIZE, CACHE_TIME_TO_LIVE_MILLIS);
 		
 	}
 
