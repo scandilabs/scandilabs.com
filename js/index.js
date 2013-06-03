@@ -66,8 +66,15 @@ $(document).ready(function() {
             if (slideNavHover == true) {
                 showSlideNav();
             }
+            if (options.currSlide > 0) {
+                
+                // Capture navigation to any slide but the first as a google analytics event
+                var eventName = "NavigateToSlide" + (options.currSlide + 1);
+                var label = "Showing slide " + (options.currSlide + 1);
+                _gaq.push(['_trackEvent', 'index_slider', eventName, '" + label + "']);
+            }
         },
-        before: function(currSlideElement, nextSlideElement, options, forwardFlag) {               
+        before: function(currSlideElement, nextSlideElement, options, forwardFlag) {  
             $('.slideNav').hide();            
             slideNavEnabled = false;
         }

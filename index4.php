@@ -82,13 +82,11 @@
     </head>
     <body>
         
-    <div class="bgImageBox" style="position:fixed; top:80px; width:100%; background-color: #474f64;">
-        <div style="width:2040px; margin-left:auto; margin-right:auto;">
-            <img style="height:100%; width:100%" src="img/berg2040x1240.png" />
-        </div>                            
+    <div class="bgImageBox" style="position:fixed; width:100%; top:80px;">
+        <img style="height:100%; width:100%" src="img/wfall_1560x1200.jpg" />                            
     </div>
     
-    <?php include("include/top.php"); ?>  
+    <?php include("include/top4.php"); ?>  
             
         <div class="slideOuter">
             
@@ -102,8 +100,8 @@
                                 <div class="slideBlackBox">
                                     <div class="slideInnerWhiteBox">
                                         <h1 style="text-align:center; margin-top: 0px; margin-bottom:24px; padding-top:20px; padding-left:10px; padding-right:10px;">
-                                            We help companies scale.</h1>
-                                        <img src="img/milestones2.png" style="margin-left:24px; margin-top: 10px;" />
+                                            Scaling a company requires time and effort. <br/>With our help you will reach key milestones sooner.</h1>
+                                        <img src="img/milestones.png" style="margin-left:24px" />
                                     </div>                                            
                                     
                                 </div>
@@ -119,7 +117,7 @@
                                 <div class="slideBlackBox">
                                     <div class="slideInnerWhiteBox">
                                         <h1 style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
-                                            By providing people, process, and technology.</h1>
+                                            We cover every aspect of product development.</h1>
                                         <img src="img/what_we_provide.png" style="margin-left:144px;" />
                                     </div>
                                 </div>
@@ -132,15 +130,15 @@
                   <div class="bgImageBoxOuter clearIe slide3">
                       <div class="slideBlackBox">                                
                         <div class="slideInnerWhiteBox" style="padding-left:40px; padding-right:40px;">
-                            <div style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
-                                <h1 style="margin:0px; display:inline-block">Let's talk.</h1><a href="contact"><img style="width:44px; vertical-align: middle; margin-bottom: 6px; margin-left: 0px;" src="img/right_hook.jpeg" /></a>
-                            </div>
+                            <h1 style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
+                                    Together, let's build a product development <br/>capability you can grow with.</h1>
+
                             <div style="margin-top:48px; margin-bottom: 24px">
-                                <div style="vertical-align:top; display:inline-block; padding-right:22px; ">
+                                <div style="vertical-align:top; display:inline-block; padding-right:16px; ">
                                     <a href="clients/"><img style="width:140px" src="img/madaket_color.png"/></a>
                                 </div>
                                 <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
-                                  <span style="font-weight:600">"Together we built a Healthcare IT solution that connects thousands of doctors to insurance providers."</span>
+                                  "Using the ScandiLabs tech-team-in-a-box, I was able to build a product that can scale to thousands of doctors and insurance companies."
                                   <br/><br/>
                                    Jim Dougherty<br/>
                                     Co-Founder, Madaket Health<br/> 
@@ -149,11 +147,11 @@
                             </div>
                             <hr/>
                             <div style="margin-top:16px; margin-bottom: 24px">
-                                <div style="vertical-align:top; display:inline-block; padding-right:22px; ">
+                                <div style="vertical-align:top; display:inline-block; padding-right:16px; ">
                                     <a href="clients/snagajob"><img style="width:140px" src="img/Snag-a-Job-Logo.gif"/></a>
                                 </div>
                                 <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
-                                  <span style="font-weight:600">"With ScandiLabs' help we now serve large customers better."</span>
+                                  "With ScandiLabs' help we now serve large customers better."
                                   <br/><br/>
                                    Thomas Fredell<br/>
                                    CTO, SnagAJob<br/>
@@ -162,11 +160,11 @@
                             </div>                            
                             <hr/>
                             <div style="margin-top:16px; margin-bottom: 24px">
-                                <div style="vertical-align:top; display:inline-block; padding-right:22px; ">
+                                <div style="vertical-align:top; display:inline-block; padding-right:16px; ">
                                     <a href="clients/medventive"><img style="width:140px" src="img/medventive_logo.gif"/></a>
                                 </div>
                                 <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
-                                  <span style="font-weight:600">"Their solution allows our operations team to support more clients with the same staff."</span>
+                                  "The solution they provided allows our operations team to support more clients with the same staff."
                                   <br/><br/>
                                    Bernard Chien<br/>
                                    CTO, MedVentive, a McKesson Company         

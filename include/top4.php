@@ -1,9 +1,7 @@
 <?php 
   $page = $_SERVER["PHP_SELF"];
   $javabase = "http://java.scandilabs.com";
-  //$javabase = "http://localhost:8081";
   $blogbase = "http://blog.scandilabs.com";
-  //$blogbase = "http://localhost:8081";
 ?>
 
         <div id="outerContent">
@@ -13,7 +11,7 @@
 				<div id="headerOuter">
 			        <div id="header">
 			            <div id="logoBox" >
-			                <a href="index" ><img src="img/logo_accelerated_scaling_151px.png"></a>
+			                <a href="index" ><img src="img/logo_removing_scaling_pain.png"></a>
 			            </div>   
 			            <ul>
 			                <li>

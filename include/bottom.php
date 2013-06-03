@@ -74,6 +74,18 @@
         				<td>    				
         				</td>
         			</tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <a href="<?php echo $javabase ?>/questions">FAQs</a>
+                        </td>
+                        <td>                    
+                        </td>
+                    </tr>
         		</table>
     
     		</div>
