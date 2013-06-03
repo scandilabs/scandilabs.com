@@ -1,7 +1,7 @@
 $().ready(function() {
 	
 	/* Scroll to posts with the navigation on left */
-    $('.postLink').live('click', function (e) {
+    $('.postLink').on('click', function (e) {
         e.preventDefault();
         var anchor = $(this);
         var href=anchor.attr('href');
