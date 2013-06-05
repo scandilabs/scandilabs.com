@@ -102,7 +102,7 @@
                                 <div class="slideBlackBox">
                                     <div class="slideInnerWhiteBox">
                                         <h1 style="text-align:center; margin-top: 0px; margin-bottom:24px; padding-top:20px; padding-left:10px; padding-right:10px;">
-                                            We help companies scale.</h1>
+                                            Develop Your Product Faster</h1>
                                         <img src="img/milestones2.png" style="margin-left:24px; margin-top: 10px;" />
                                     </div>                                            
                                     
@@ -119,7 +119,7 @@
                                 <div class="slideBlackBox">
                                     <div class="slideInnerWhiteBox">
                                         <h1 style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
-                                            By providing people, process, and technology.</h1>
+                                            With Acceleration From Us</h1>
                                         <img src="img/what_we_provide.png" style="margin-left:144px;" />
                                     </div>
                                 </div>
@@ -133,14 +133,14 @@
                       <div class="slideBlackBox">                                
                         <div class="slideInnerWhiteBox" style="padding-left:40px; padding-right:40px;">
                             <div style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
-                                <h1 style="margin:0px; display:inline-block">Let's talk.</h1><a href="contact"><img style="width:44px; vertical-align: middle; margin-bottom: 6px; margin-left: 0px;" src="img/right_hook.jpeg" /></a>
+                                <h1 style="margin:0px; display:inline-block; position:relative;">Let's Talk</h1><a href="contact"><img style="vertical-align: middle; margin-bottom: 7px; margin-left: 10px; position:relative;" src="img/right_hook_sm.png" /><img style="vertical-align: middle; margin-bottom: 7px; margin-left: 0px; position:relative;" src="img/right_hook_sm.png" /></a>
                             </div>
                             <div style="margin-top:48px; margin-bottom: 24px">
                                 <div style="vertical-align:top; display:inline-block; padding-right:22px; ">
                                     <a href="clients/"><img style="width:140px" src="img/madaket_color.png"/></a>
                                 </div>
                                 <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
-                                  <span style="font-weight:600">"Together we built a Healthcare IT solution that connects thousands of doctors to insurance providers."</span>
+                                  <span style="font-weight:600">"Together we built a Healthcare IT solution that can connect thousands of doctors to insurance companies."</span>
                                   <br/><br/>
                                    Jim Dougherty<br/>
                                     Co-Founder, Madaket Health<br/> 
