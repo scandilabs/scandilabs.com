@@ -27,17 +27,22 @@
 				<li><a href="contact">Contact</a></li>
 			</ul><div id="mainCol">
 				
-				<h2 class="noTopMargin">A Better Way</h2>
-                <p>How come these developers do not understand our business needs?</p>
-                <p>Why does software development take so long?</p>
-                <p>Sound familiar?  These are the questions that plague many software development projects.  At ScandiLabs, we are passionate about creating quality software to fulfill your business needs.  We strive to get it right the first time, so that you don't have to ask these questions.</p>
-                <p>Our experience with both startups and enterprise projects helps us to determine how we can best help you.</p>  
-                <ul>
-                    <li>Does your business have scaling and integration challenges?</li>
-                    <li>Are you bogged down by performance problems?</li>                
-                </ul>
-                <p>Let us help you with our standardized methodology and Java open source web framework.  ScandiLabs combines startup speed with enterprise scale to deliver your projects.  We believe that yes&mdash;you can and should have it all.</p>
+				<h2 class="noTopMargin">We Keep Startups From Slowing Down</h2>
+                <p>Does your lead developer struggle to balance team expansion and ongoing new feature work?<br/>
+                    Is the pace of product development slowing down?<br/>
+                </p>
+                
+                <p>These are common issues that plague many startups and new products as they transition from an initial prototype mode into a product development growth mode.  The downstream costs and delays associated with not having the right team in place at the right time can be considerable.</p>  
+                    
+                <p>At ScandiLabs, we are passionate about helping our clients keep up the critical startup momentum.  While you keep the business on track we work with your technical staff to address the issues above and many others that arise as you're scaling your team and your technology platform.</p>
+                <p>Team scaling, site performance, technical limitations.  Whatever your particular challenges are, we can help get you on the right track without slowing down.</p>
 
+                <h4>History</h4>
+                <p>ScandiLabs started out doing web development for Madaket Health, a Healthcare IT startup.</p>
+                <p>Founder Jim Dougherty had worked with ScandiLabs founder Mads Kvalsvik as the CEO of <a href="http://www.intralinks.com/" target="_new">IntraLinks</a>, a SaaS-based virtual dataroom provider.  Because of Mads' leadership on the Intralinks software platform that ultimately took them public in 2010, Jim knew that Mads would get the job done.</p>                
+                <p>Today, ScandiLabs serves a variety  of startup clients including MedVentive, SnagAJob, TravelClick and Sold On Sunday.  Thanks to its <a href="http://java.scandilabs.com/">accumulated experience</a> and a culture that values knowledge sharing and efficiency, ScandiLabs is able to quickly on-board new clients and deliver development services with unprecedented speed, quality, and scale.</p>
+                <p>The company is headquartered in Cambridge, MA and has its principal development office in Pune, India.  It was founded in 2012.</p>
+    
             	<div class="clearfix"></div>    
 			</div>
            

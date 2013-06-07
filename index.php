@@ -119,7 +119,7 @@
                                 <div class="slideBlackBox">
                                     <div class="slideInnerWhiteBox">
                                         <h1 style="text-align:center; margin-top: 0px; margin-bottom:30px; padding-top:20px; padding-left:10px; padding-right:10px;">
-                                            With Acceleration From Us</h1>
+                                            Your Team, Accelerated By Us</h1>
                                         <img src="img/what_we_provide.png" style="margin-left:144px;" />
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@
                                     <a href="clients/medventive"><img style="width:140px" src="img/medventive_logo.gif"/></a>
                                 </div>
                                 <p style="font-size:14px; display:inline-block; width:75%;" class="overlay" >
-                                  <span style="font-weight:600">"Their solution allows our operations team to support more clients with the same staff."</span>
+                                  <span style="font-weight:600">"Their solutions allow our operations team to support more clients with the same staff."</span>
                                   <br/><br/>
                                    Bernard Chien<br/>
                                    CTO, MedVentive, a McKesson Company         

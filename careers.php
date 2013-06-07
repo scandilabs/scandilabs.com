@@ -32,12 +32,12 @@
 	        	    We are looking for several talented software engineers with strong foundational skills in:
 	        	    <ul>
 	        	        <li>Java</li>
-                        <li>HTML and CSS</li>
+                        <li>HTML 5 and CSS</li>
                         <li>Javascript / jQuery</li>
 	        	    </ul>
         	    </p>
 	        	<p>
-	        	    Applicants with the following skills will be given preference:
+	        	    In addition, applicants with the following skills will be given preference:
                     <ul>
                         <li>Linux shell scripting and server operations</li>
                         <li>Freemarker</li>

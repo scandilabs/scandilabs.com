@@ -31,13 +31,13 @@
                 <div class="twoColLeft">
                     <h4>United States</h4>
                     <p>
-                        Mads Kvalsvik, Owner<br/>
+                        Mads Kvalsvik, Founder and CEO<br/>
                         <span class="label">Phone:</span> <span class="blackLink"><a href="tel:617 682 0310">(617) 682-0310</a></span><br/>
                         <span class="label">Fax:</span> (617) 297-0013<br/>
                         <br/>
                         ScandiLabs, Inc. <br/>
-                        122 Prospect Street<br/>
-                        Acton, MA 01720<br/>
+                        One Broadway, 14th Floor<br/>
+                        Cambridge, MA 02142<br/>
                         United States<br/>
                     </p>
                 </div>
@@ -45,8 +45,8 @@
                     <h4>India</h4>
                     <p>
                         Vikram Shinde, Operations Manager<br/>
-                        <span class="label">Phone:</span> <span class="blackLink"><a href="tel:617 682 0310">(617) 682-0310</a></span><br/>
-                        <span class="label">Fax:</span> (617) 297-0013<br/>
+                        <span class="label">Phone:</span> <span class="blackLink"><a href="tel:+91 7620807620">+91.762.080.7620</a></span><br/>
+                        <span class="label">Fax:</span>+1 (617) 297-0013<br/>
                         <br/>
                         ScandiLabs<br/>
                         27/365, Netaji Nagar, Wanworie,<br/> 
