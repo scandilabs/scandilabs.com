@@ -1,9 +1,9 @@
-package org.catamarancode.faq.web.support;
+package com.scandilabs.www.web.support;
 
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import org.catamarancode.faq.entity.Faq;
+import com.scandilabs.www.entity.Faq;
 
 public class NestedTagNode implements Comparable<Object> {
 

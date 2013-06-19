@@ -1,4 +1,4 @@
-package org.catamarancode.faq.web;
+package com.scandilabs.www.web;
 
 import java.util.Date;
 import java.util.List;
@@ -7,13 +7,6 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang.RandomStringUtils;
-import org.catamarancode.faq.entity.Audit;
-import org.catamarancode.faq.entity.Faq;
-import org.catamarancode.faq.entity.User;
-import org.catamarancode.faq.service.MessageContext;
-import org.catamarancode.faq.service.SolrService;
-import org.catamarancode.faq.service.UserContext;
-import org.catamarancode.faq.service.support.Visibility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +16,14 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.scandilabs.www.entity.Audit;
+import com.scandilabs.www.entity.Faq;
+import com.scandilabs.www.entity.User;
+import com.scandilabs.www.service.MessageContext;
+import com.scandilabs.www.service.SolrService;
+import com.scandilabs.www.service.UserContext;
+import com.scandilabs.www.service.support.Visibility;
 
 
 @Controller

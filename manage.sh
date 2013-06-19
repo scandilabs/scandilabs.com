@@ -28,14 +28,14 @@ LOCAL_WEBAPP_NAME=ROOT
 # The name of your webapp when it's deployed to the server. 
 # Defaults to your maven pom.xml's [artifactId]-[version]. 
 # 'ROOT' is the right choice if you want your application deployed in the root context of tomcat (i.e. my.site.com/index.html).
-REMOTE_WEBAPP_NAME=ROOT
+REMOTE_WEBAPP_NAME=tech
 
 # Where the war file will be copied to on remote server
 # Defaults to LOCAL_TOMCAT_WEBAPPS_DIR
 # On Ubuntu, this is commonly /var/lib/tomcat7/webapps
 # IMPORTANT: Make both the user you're logging in with (i.e. 'sladmin') 
 #            and the tomcat server user (i.e. 'tomcat7') can write to this directory
-REMOTE_TOMCAT_WEBAPPS_DIR=/var/lib/tomcat7/javaslapps
+REMOTE_TOMCAT_WEBAPPS_DIR=/var/lib/tomcat7/webapps
 
 
 

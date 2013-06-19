@@ -1,11 +1,10 @@
-package org.catamarancode.faq.entity;
+package com.scandilabs.www.entity;
 
 import java.util.Date;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrInputDocument;
-import org.catamarancode.faq.service.SolrService;
 import org.catamarancode.type.Name;
 import org.catamarancode.util.Timestamped;
 import org.slf4j.Logger;
@@ -13,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
 import com.scandilabs.framework.util.PasswordUtils;
+import com.scandilabs.www.service.SolrService;
 
 public class User implements Timestamped {
 	

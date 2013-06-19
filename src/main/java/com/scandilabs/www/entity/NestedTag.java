@@ -1,4 +1,4 @@
-package org.catamarancode.faq.entity;
+package com.scandilabs.www.entity;
 
 import java.util.ArrayList;
 import java.util.List;

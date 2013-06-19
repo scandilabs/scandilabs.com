@@ -17,7 +17,7 @@
     </bean>
     
     <!-- Tells Spring MVC where to look for controller classes marked with an @Controller annotation -->
-	<context:component-scan base-package="org.catamarancode.faq.web"/>
+	<context:component-scan base-package="com.scandilabs.www.web"/>
 	
 	<!-- Tells freemarker where to look for .FTL files -->
 	<bean id="freemarkerConfig"

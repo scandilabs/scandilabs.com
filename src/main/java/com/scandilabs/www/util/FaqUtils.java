@@ -1,4 +1,4 @@
-package org.catamarancode.faq.util;
+package com.scandilabs.www.util;
 
 import java.util.Comparator;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import org.catamarancode.faq.entity.Faq;
-import org.catamarancode.faq.entity.NestedTag;
+import com.scandilabs.www.entity.Faq;
+import com.scandilabs.www.entity.NestedTag;
 
 public class FaqUtils {
 

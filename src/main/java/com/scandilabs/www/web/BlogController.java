@@ -1,4 +1,4 @@
-package org.catamarancode.faq.web;
+package com.scandilabs.www.web;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,10 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import net.bican.wordpress.Page;
 import net.bican.wordpress.Wordpress;
 
-import org.catamarancode.faq.service.MessageContext;
-import org.catamarancode.faq.service.SolrService;
-import org.catamarancode.faq.service.UserContext;
-import org.catamarancode.faq.util.StringLineBreakToParagraphConverter;
 import org.catamarancode.util.LRUCache;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +20,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.scandilabs.www.service.MessageContext;
+import com.scandilabs.www.service.SolrService;
+import com.scandilabs.www.service.UserContext;
+import com.scandilabs.www.util.StringLineBreakToParagraphConverter;
 
 @Controller
 @Scope("request")

@@ -1,4 +1,4 @@
-package org.catamarancode.faq.util;
+package com.scandilabs.www.util;
 
 public class CatamaranMarkdownException extends RuntimeException {
 

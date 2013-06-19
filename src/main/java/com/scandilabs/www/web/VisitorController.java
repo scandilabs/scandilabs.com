@@ -1,4 +1,4 @@
-package org.catamarancode.faq.web;
+package com.scandilabs.www.web;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,17 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.solr.client.solrj.response.QueryResponse;
-import org.catamarancode.faq.entity.Audit;
-import org.catamarancode.faq.entity.Comment;
-import org.catamarancode.faq.entity.Faq;
-import org.catamarancode.faq.entity.NestedTag;
-import org.catamarancode.faq.service.ApplicationConfiguration;
-import org.catamarancode.faq.service.MessageContext;
-import org.catamarancode.faq.service.SolrService;
-import org.catamarancode.faq.service.UserContext;
-import org.catamarancode.faq.util.CatamaranMarkdown;
-import org.catamarancode.faq.util.FaqUtils;
-import org.catamarancode.faq.web.support.NestedTagNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +21,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.scandilabs.www.entity.Audit;
+import com.scandilabs.www.entity.Comment;
+import com.scandilabs.www.entity.Faq;
+import com.scandilabs.www.entity.NestedTag;
+import com.scandilabs.www.service.ApplicationConfiguration;
+import com.scandilabs.www.service.MessageContext;
+import com.scandilabs.www.service.SolrService;
+import com.scandilabs.www.service.UserContext;
+import com.scandilabs.www.util.CatamaranMarkdown;
+import com.scandilabs.www.util.FaqUtils;
+import com.scandilabs.www.web.support.NestedTagNode;
 
 
 @Controller

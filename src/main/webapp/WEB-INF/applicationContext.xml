@@ -16,7 +16,7 @@ To split configuration across multiple spring files, consult web.xml -->
     see: http://matthiaswessendorf.wordpress.com/2010/04/17/spring-3-0-and-jsr-330-part/
     and: http://richardchesterwood.blogspot.com/2011/03/using-sessions-in-spring-mvc-including.html
     -->
-    <context:component-scan base-package="org.catamarancode.faq.service" />
+    <context:component-scan base-package="com.scandilabs.www.service" />
 
     <!-- Load environment-specific properties such as database ports and passwords -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -28,7 +28,7 @@ To split configuration across multiple spring files, consult web.xml -->
         <property name="locations">
             <list>
                 <value>
-                    file:///catamaran/apps/java-scandilabs-com/conf/application.properties
+                    file:///catamaran/apps/scandilabs-com/conf/application.properties
                 </value>
             </list>
         </property>
@@ -36,24 +36,24 @@ To split configuration across multiple spring files, consult web.xml -->
     
     <!-- begin 'manually' declared beans (i.e. ones that don't use the @Component annotation) -->
     <bean id="applicationConfiguration"
-        class="org.catamarancode.faq.service.ApplicationConfiguration">
+        class="com.scandilabs.www.service.ApplicationConfiguration">
         <property name="tutorialFileOverridePath" value="${tutorial.file.classpath.override}" />
     </bean>
     
     <bean id="solrService"
-     class="org.catamarancode.faq.service.SolrService">
+     class="com.scandilabs.www.service.SolrService">
         <constructor-arg ref="solrServerConfig"/>
     </bean>
     
     <bean id="solrServerConfig" class="com.scandilabs.framework.solr.SolrServerConfig" init-method="init">
-        <property name="solrHost" value="localhost" />
-        <property name="solrPort" value="8997"/>
+        <property name="solrHost" value="${solr.host}" />
+        <property name="solrPort" value="${solr.port}"/>
     </bean>
 
     <bean id="faqSolrServiceSetter"  
         class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="staticMethod">    
-            <value>org.catamarancode.faq.entity.Faq.setSolrService</value>  
+            <value>com.scandilabs.www.entity.Faq.setSolrService</value>  
         </property>  
         <property name="arguments">    
             <list>      
@@ -65,7 +65,7 @@ To split configuration across multiple spring files, consult web.xml -->
     <bean id="userContextSolrServiceSetter"  
         class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="staticMethod">    
-            <value>org.catamarancode.faq.service.UserContext.setSolrService</value>  
+            <value>com.scandilabs.www.service.UserContext.setSolrService</value>  
         </property>  
         <property name="arguments">    
             <list>      

@@ -1,4 +1,4 @@
-package org.catamarancode.faq.service;
+package com.scandilabs.www.service;
 
 import java.io.Serializable;
 import java.util.Map;
@@ -6,12 +6,13 @@ import java.util.Map;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
-import org.catamarancode.faq.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
+import com.scandilabs.www.entity.User;
 
 /**
  * A bean that represents a wrapper around a User object stored in a session

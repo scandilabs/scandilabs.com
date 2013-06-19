@@ -1,4 +1,4 @@
-package org.catamarancode.faq.service.support;
+package com.scandilabs.www.service.support;
 
 public enum Visibility {
 	

@@ -1,10 +1,11 @@
-package org.catamarancode.faq.web.support;
+package com.scandilabs.www.web.support;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import org.catamarancode.faq.entity.User;
-import org.catamarancode.faq.service.SolrService;
+
+import com.scandilabs.www.entity.User;
+import com.scandilabs.www.service.SolrService;
 
 
 public class HttpSessionUtils {

@@ -1,4 +1,4 @@
-package org.catamarancode.faq.util;
+package com.scandilabs.www.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;

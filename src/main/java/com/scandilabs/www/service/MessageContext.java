@@ -1,4 +1,4 @@
-package org.catamarancode.faq.service;
+package com.scandilabs.www.service;
 
 import java.io.Serializable;
 import java.util.Map;

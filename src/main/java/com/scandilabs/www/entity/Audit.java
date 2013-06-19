@@ -1,20 +1,21 @@
-package org.catamarancode.faq.entity;
+package com.scandilabs.www.entity;
 
 import java.util.Date;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrInputDocument;
-import org.catamarancode.faq.service.SolrService;
 import org.catamarancode.type.Name;
 import org.catamarancode.util.Timestamped;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
-public class Comment implements Comparable<Object>, Timestamped {
+import com.scandilabs.www.service.SolrService;
+
+public class Audit implements Comparable<Object>, Timestamped {
     
-    private Logger logger = LoggerFactory.getLogger(Comment.class);
+    private Logger logger = LoggerFactory.getLogger(Audit.class);
     
     private String key;
     private String contextId;
@@ -31,15 +32,15 @@ public class Comment implements Comparable<Object>, Timestamped {
     /**
      * Used so that we can distinguish between a key and a short id by a simple String.startsWith
      */
-    public static final String SHORT_ID_PREFIX = "COMMENTSHORTID";
+    public static final String SHORT_ID_PREFIX = "AUDITSHORTID";
     
-    public Comment() {    
+    public Audit() {    
         if (this.shortId == null) {
             this.shortId = SHORT_ID_PREFIX + RandomStringUtils.randomAlphanumeric(10);    
         }        
     }
     
-    public Comment(SolrDocument doc) {
+    public Audit(SolrDocument doc) {
 
         this.key = (String) doc.getFieldValue("key");
         this.shortId = (String) doc.getFieldValue("short-id");
@@ -68,7 +69,7 @@ public class Comment implements Comparable<Object>, Timestamped {
         inputDoc.addField("modified-time", this.getLastModifiedTime());
 
         // Default field for all solr docs of this type/class
-        inputDoc.addField("document-type", SolrService.DOCUMENT_TYPE_COMMENT);
+        inputDoc.addField("document-type", SolrService.DOCUMENT_TYPE_AUDIT);
         
         return inputDoc;
     }
@@ -115,7 +116,7 @@ public class Comment implements Comparable<Object>, Timestamped {
 
 	@Override
 	public int compareTo(Object o) {
-		Comment otherFaq = (Comment) o;
+		Audit otherFaq = (Audit) o;
 		return this.body.compareToIgnoreCase(otherFaq.getBody());
 	}
 
@@ -135,14 +136,14 @@ public class Comment implements Comparable<Object>, Timestamped {
 		this.lastModifiedTime = lastModifiedTime;
 	}
 
-	public String toString() {
+	public String toString() {		
 		if (StringUtils.hasText(this.body)) {
-			return this.body;
+			return String.format("On %s, %s %s for faq %s", this.getLastModifiedTime(), this.getOwnerName(), this.getBody(), this.getFaqForeignKey());
 		}
 		if (StringUtils.hasText(this.key)) {
-			return "key: " + this.key;
+			return "audit key: " + this.key;
 		}
-		return "Empty_COMMENT";
+		return "Empty_AUDIT";
 	}
 
 	public String getBody() {

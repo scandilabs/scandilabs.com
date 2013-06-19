@@ -1,4 +1,4 @@
-package org.catamarancode.faq.web;
+package com.scandilabs.www.web;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -12,11 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
-import org.catamarancode.faq.entity.Faq;
-import org.catamarancode.faq.entity.NestedTag;
-import org.catamarancode.faq.service.SolrService;
-import org.catamarancode.faq.service.UserContext;
-import org.catamarancode.faq.util.FaqUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +25,12 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.scandilabs.www.entity.Faq;
+import com.scandilabs.www.entity.NestedTag;
+import com.scandilabs.www.service.SolrService;
+import com.scandilabs.www.service.UserContext;
+import com.scandilabs.www.util.FaqUtils;
 
 
 @Controller

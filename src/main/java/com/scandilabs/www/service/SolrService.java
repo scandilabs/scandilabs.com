@@ -1,4 +1,4 @@
-package org.catamarancode.faq.service;
+package com.scandilabs.www.service;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,12 +16,6 @@ import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
-import org.catamarancode.faq.entity.Audit;
-import org.catamarancode.faq.entity.Comment;
-import org.catamarancode.faq.entity.Faq;
-import org.catamarancode.faq.entity.NestedTag;
-import org.catamarancode.faq.entity.User;
-import org.catamarancode.faq.service.support.Visibility;
 import org.catamarancode.util.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,6 +23,12 @@ import org.springframework.util.StringUtils;
 
 import com.scandilabs.framework.solr.SearchQuery;
 import com.scandilabs.framework.solr.SolrServerConfig;
+import com.scandilabs.www.entity.Audit;
+import com.scandilabs.www.entity.Comment;
+import com.scandilabs.www.entity.Faq;
+import com.scandilabs.www.entity.NestedTag;
+import com.scandilabs.www.entity.User;
+import com.scandilabs.www.service.support.Visibility;
 
 public class SolrService {
     

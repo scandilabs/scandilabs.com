@@ -1,4 +1,4 @@
-package org.catamarancode.faq.service;
+package com.scandilabs.www.service;
 
 
 /**

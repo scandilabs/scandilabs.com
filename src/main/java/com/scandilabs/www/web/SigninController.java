@@ -1,4 +1,4 @@
-package org.catamarancode.faq.web;
+package com.scandilabs.www.web;
 
 import java.util.List;
 import java.util.Map;
@@ -6,10 +6,6 @@ import java.util.Map;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
-import org.catamarancode.faq.entity.User;
-import org.catamarancode.faq.service.MessageContext;
-import org.catamarancode.faq.service.SolrService;
-import org.catamarancode.faq.service.UserContext;
 import org.catamarancode.util.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +16,11 @@ import org.springframework.web.bind.UnsatisfiedServletRequestParameterException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.scandilabs.www.entity.User;
+import com.scandilabs.www.service.MessageContext;
+import com.scandilabs.www.service.SolrService;
+import com.scandilabs.www.service.UserContext;
 
 
 @Controller
