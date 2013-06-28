@@ -6,38 +6,41 @@
 			        <div id="header">
 			        
 			            <div id="logoBox" >
-			                <a href="${parentSiteBase}/index" ><img src="${parentSiteBase}/img/logo_accelerated_scaling_151px.png"></a>
+			                <a href="/" ><img src="/static/img/logo_accelerated_scaling_151px.png"></a>
 			            </div>   
 			            <ul>
 			                <li>
 			                    <a 
-			                        href="${parentSiteBase}/services">
-			                        <h2>Services</h2>
+                                    <#if (page?? && page == "services")>class='current'</#if> 
+                                    href="/services">
+                                    <h2>Services</h2>
 			                    </a>
 			                </li>   
 			                <li>
 			                    <a 
-			                        <#if (!page??)>class='current'</#if> 
-			                        href="${javaSiteBase}/">
-			                        <h2>Java</h2>
+			                        <#if (page?? && page == "technology")>class='current'</#if> 
+			                        href="/technology">
+			                        <h2>Technology</h2>
 			                    </a>
 			                </li>   
 			                <li>
 			                    <a 
 			                        <#if (page?? && page == "blog")>class='current'</#if>
-			                        href="${blogSiteBase}/blog">
+			                        href="/blog">
 			                        <h2>Blog</h2>
 			                    </a>
 			                </li>   
 			                <li>
 			                    <a 
-			                        href="${parentSiteBase}/clients">
+                                    <#if (page?? && page == "clients")>class='current'</#if> 
+			                        href="/clients">
 			                        <h2>Clients</h2>
 			                    </a>
 			                </li>   
 			                <li>
 			                    <a 
-			                        href="${parentSiteBase}/about">
+                                    <#if (page?? && page == "about")>class='current'</#if> 
+			                        href="/about">
 			                        <h2>About</h2>
 			                    </a>
 			                </li>   

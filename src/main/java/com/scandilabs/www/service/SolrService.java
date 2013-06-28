@@ -16,11 +16,11 @@ import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
-import org.catamarancode.util.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
+import com.scandilabs.catamaran.util.CollectionUtils;
 import com.scandilabs.framework.solr.SearchQuery;
 import com.scandilabs.framework.solr.SolrServerConfig;
 import com.scandilabs.www.entity.Audit;

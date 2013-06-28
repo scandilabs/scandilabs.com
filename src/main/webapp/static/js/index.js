@@ -1,52 +1,102 @@
-$(document).ready(function() { 
+var slideNavEnabled = true;
+var slideNavHover = false;
+
+/**
+ * Used to disable slide nav while it is transitioning 
+ * (avoids nav appearing during transitions)
+ */
+function handleSlideNavClick() {
+    $('.slideNav').hide();
+    slideNavHover = true;
+    slideNavEnabled = false;
+}
+
+function showSlideNav() {
+    if (slideNavEnabled == true) {
+        $('.slideNav').show();   
+    }
+    slideNavHover = true;
+}
+
+$(document).ready(function() {
     
-    // Render tag cloud html
-    var output = "<ul>";
-    
-    $.getJSON('keywords.json', function(data) {
-        
-        for (var i = 0, ii = data.length, thisTag, groupId; i < ii; i++) {
-            element = data[i];            
-            output +=  '<li><a class="tag-cloud-link" href="' + element.word + '" data-weight="65" style="font-size: ' + element.size + 'ex">' + element.word.toUpperCase() + '</a></li>';
-        }
-        output +=  "</ul>";
-        document.getElementById("tags").innerHTML = output; 
+    $('.slideBlackBox').hover(function() {
+        showSlideNav();  
+    }, function() {
+        $('.slideNav').hide();
+        slideNavHover = false;
     });
-
-    // Display tag cloud canvas 
-    /* reference: http://www.goat1000.com/tagcanvas.php */
-    setTimeout(function (){
-        if(!$('#myCanvas').tagcanvas({
-          textFont: 'Helvetica,sans-serif',
-          textColour: '#000000',
-          outlineColour: '#777777',
-          outlineThickness : 1,
-          reverse: true,
-          depth: 0.8,
-          maxSpeed: 0.02,
-          minSpeed: 0.01,
-          weight: true,
-          shape: "hcylinder",
-          wheelZoom: false,
-          freezeActive: true,
-          initial: [0.8,-0.3],
-          radiusX: 1.6,
-          textHeight: 25,
-          hideTags: true,
-        },'tags')) {
-          // something went wrong, hide the canvas container
-           // $('#myCanvas').add('#tags').hide();
-        }
-    },400);
     
-    // Handle clicks on tags cloud items
-    $(".tag-cloud-link").live('click', function(e) {
-        e.preventDefault();
-        var anchor = $(this);
-        var keyword=anchor.attr('href');
-        
-        window.location.href = "faqs?query=" + keyword;
-        
-    });     
+    $('.slideNav').hover(function() {
+        showSlideNav();  
+    }, function() {
+        $('.slideNav').hide();
+        slideNavHover = false;
+    });    
+    
+    $('.nextSlideNav').click(function() {
+        handleSlideNavClick();
+    });
+    
+    $('.prevSlideNav').click(function() {
+        handleSlideNavClick();      
+    });
+    
+    
+    $('.slideshow')    
+    .after('<div id="nav">') 
+    .cycle({
+        fx: 'scrollHorz',
+        next: '.nextSlideNav',
+        prev: '.prevSlideNav',
+        timeout: 0,
+        pause: 0,
+        speed: 1000,        
+        pagerAnchorBuilder: function(index, el) {
+          return '<div class="navItem"><a href="#">&nbsp;&nbsp;</a></div>';
+          //return '';
+        },
+        pager: '#nav', 
+        after: function(currSlideElement, nextSlideElement, options, forwardFlag) {
 
+            // Re-enable nav links            
+            slideNavEnabled = true;
+            
+            // Show nav if we're currently hovering
+            if (slideNavHover == true) {
+                showSlideNav();
+            }
+            if (options.currSlide > 0) {
+                
+                // Capture navigation to any slide but the first as a google analytics event
+                var eventName = "NavigateToSlide" + (options.currSlide + 1);
+                var label = "Showing slide " + (options.currSlide + 1);
+                _gaq.push(['_trackEvent', 'index_slider', eventName, '" + label + "']);
+            }
+        },
+        before: function(currSlideElement, nextSlideElement, options, forwardFlag) {  
+            $('.slideNav').hide();            
+            slideNavEnabled = false;
+        }
+    });
+    
+    $('.centeredTableCell').mouseenter(
+        function() {
+            $(this).parent().addClass("hover");
+            //alert('hia ' + el);
+        }
+    ).mouseleave( 
+        function() {
+            $(this).parent().removeClass("hover");
+            //alert('hi');
+        }
+    );
+    
+    /*
+    $('.centeredTableCell').click(
+        function() {
+            alert('hia ');
+        }
+    );
+    */
 });

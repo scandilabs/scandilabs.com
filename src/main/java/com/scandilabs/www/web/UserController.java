@@ -41,7 +41,7 @@ public class UserController {
     @Autowired
 	private MessageContext messageContext;   
     
-	@RequestMapping(value = "/faq-edit", method = RequestMethod.GET)	
+	@RequestMapping(value = "/technology/knowledge/entry-edit", method = RequestMethod.GET)	
 	public String faqEditGet(Map<String,Object> model, @RequestParam(value="key", required=false) String faqId, HttpServletRequest request) {
 
 		messageContext.addPendingToModel(model);
@@ -52,10 +52,10 @@ public class UserController {
 		
         Faq faq = solrService.loadFaq(faqId);
         model.put("faq", faq);
-        return "faq-edit";		
+        return "technology/knowledge/entry-edit";		
 	}
     
-    @RequestMapping(value = "/faq-edit", method = RequestMethod.POST)
+    @RequestMapping(value = "/technology/knowledge/entry-edit", method = RequestMethod.POST)
     public String faqEditPost(Map<String,Object> model, HttpServletRequest request) throws Exception {
     	
     	if (!userContext.isLoggedIn(request)) {
@@ -139,10 +139,10 @@ public class UserController {
         audit.setCreatedTime(new Date());
         this.solrService.save(audit);
         
-        return "redirect:faq?key=" + faq.getKey();
+        return "redirect:/technology/knowledge/entry?key=" + faq.getKey();
     }
     
-	@RequestMapping(value = "/comment-edit", method = RequestMethod.GET)	
+	@RequestMapping(value = "/technology/knowledge/comment-edit", method = RequestMethod.GET)	
 	public String commentEditGet(Map<String,Object> model, @RequestParam(value="key", required=false) String key, HttpServletRequest request) {
 
 		messageContext.addPendingToModel(model);
@@ -153,10 +153,10 @@ public class UserController {
 		
         Comment comment = solrService.loadComment(key, userContext.getEffectiveContextId(request));
         model.put("comment", comment);
-        return "comment-edit";		
+        return "technology/knowledge/comment-edit";		
 	}
     
-    @RequestMapping(value = "/comment-edit", method = RequestMethod.POST)
+    @RequestMapping(value = "/technology/knowledge/comment-edit", method = RequestMethod.POST)
     public String commentEditPost(Map<String,Object> model, HttpServletRequest request) throws Exception {
     	
     	if (!userContext.isLoggedIn(request)) {
@@ -209,7 +209,7 @@ public class UserController {
         audit.setCreatedTime(new Date());
         this.solrService.save(audit);
         
-        return "redirect:faq?key=" + faqKey;
+        return "redirect:/technology/knowledge/entry?key=" + faqKey;
     }    
 
 }

@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import net.bican.wordpress.Page;
 import net.bican.wordpress.Wordpress;
 
-import org.catamarancode.util.LRUCache;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +20,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.scandilabs.catamaran.util.LRUCache;
+import com.scandilabs.www.service.ApplicationConfiguration;
 import com.scandilabs.www.service.MessageContext;
 import com.scandilabs.www.service.SolrService;
 import com.scandilabs.www.service.UserContext;
@@ -49,13 +50,16 @@ public class BlogController {
 
 	@Autowired
 	private MessageContext messageContext;
+	
+    @Autowired
+	private ApplicationConfiguration applicationConfiguration;    
 
 	@Autowired
 	private UserContext userContext;
 	
 	private Wordpress getWordpressClient() throws Exception {
 		// Note that www.scandilabs.com DNS is set statically on uprod. for some reason the DNS lookup fails..
-		Wordpress wp = new Wordpress("sladmin", "scandi12",
+		Wordpress wp = new Wordpress(applicationConfiguration.getWordpressUser(), applicationConfiguration.getWordpressPassword(),
 				"http://www.scandilabs.com/blog/xmlrpc.php");
 		return wp;
 	}

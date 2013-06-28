@@ -10,54 +10,54 @@
                 <table>
                     <tr>
                         <td class="footerHeading" >
-                            <a href="${parentSiteBase}/about">Company</a>
+                            <a href="about">Company</a>
                         </td>
                         <td class="footerHeading">                      
-                            Services
+                            <a href="services">Services</a>
                         </td>
                         <td class="footerHeading">
-                            <a href="${javaSiteBase}/">Java</a>                             
+                            <a href="technology">Technology</a>                             
                         </td>
                         <td class="footerHeading" style="width:120px;">
-                            <a href="${parentSiteBase}/contact">Contact</a>                       
+                            <a href="contact">Contact</a>                       
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href="${parentSiteBase}/about-management">Management</a>
+                            <a href="about/management">Management</a>
                         </td>
                         <td>
-                            <a href="${parentSiteBase}/clients">Clients</a>
+                            <a href="clients">Clients</a>
                         </td>
                         <td>
-                            <a href="${javaSiteBase}/faqs">Knowledge Base</a>                       
+                            <a href="faqs">Knowledge Base</a>                       
                         </td>
                         <td>
-                            <a href="${blogSiteBase}/blog">Blog</a>                     
+                            <a href="blog">Blog</a>                     
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href="${parentSiteBase}/about-partners">Partners</a>
+                            <a href="about/partners">Partners</a>
                         </td>
                         <td>
                             
                         </td>
                         <td>
-                            <a href="${javaSiteBase}/tutorial">Tutorial</a>                     
+                            <a href="tutorial">Tutorial</a>                     
                         </td>
                         <td>                        
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href="${parentSiteBase}/careers">Careers</a>
+                            <a href="careers">Careers</a>
                         </td>
                         <td>
                             
                         </td>
                         <td>
-                            <a href="${javaSiteBase}/source">Source</a>
+                            <a href="source">Source</a>
                         </td>
                         <td>                        
                         </td>
@@ -69,7 +69,7 @@
                         <td>
                         </td>
                         <td>
-                            <a href="${javaSiteBase}/download">Download</a>
+                            <a href="download">Download</a>
                         </td>
                         <td>                    
                         </td>
@@ -81,7 +81,7 @@
                         <td>
                         </td>
                         <td>
-                            <a href="${javaSiteBase}/questions">FAQs</a>
+                            <a href="questions">FAQs</a>
                         </td>
                         <td>                    
                         </td>
@@ -101,9 +101,9 @@
         </div>
     
         <div style="float:right;padding-top:4px;">
-            <a target="_blank" href="https://twitter.com/scandilabs"><img src="${parentSiteBase}/img/tw_icon_20.gif"/></a>
-            <a target="_blank" href="http://www.facebook.com/ScandiLabs"><img src="${parentSiteBase}/img/fb_icon_20.gif"/></a>
-            <a target="_blank" href="https://plus.google.com/u/0/104908377553538789362/about"><img src="${parentSiteBase}/img/gplus_icon_20.gif"/></a>
+            <a target="_blank" href="https://twitter.com/scandilabs"><img src="static/img/tw_icon_20.gif"/></a>
+            <a target="_blank" href="http://www.facebook.com/ScandiLabs"><img src="static/img/fb_icon_20.gif"/></a>
+            <a target="_blank" href="https://plus.google.com/u/0/104908377553538789362/about"><img src="static/img/gplus_icon_20.gif"/></a>
         </div>
     </div>
 </div>

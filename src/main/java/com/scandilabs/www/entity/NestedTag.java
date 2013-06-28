@@ -3,7 +3,7 @@ package com.scandilabs.www.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.catamarancode.util.CollectionUtils;
+import com.scandilabs.catamaran.util.CollectionUtils;
 
 /* A tag with multiple levels - e.g. programming|java|persistence
  * 

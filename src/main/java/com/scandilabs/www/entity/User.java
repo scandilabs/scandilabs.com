@@ -5,13 +5,13 @@ import java.util.Date;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrInputDocument;
-import org.catamarancode.type.Name;
-import org.catamarancode.util.Timestamped;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
-import com.scandilabs.framework.util.PasswordUtils;
+import com.scandilabs.catamaran.type.Name;
+import com.scandilabs.catamaran.util.PasswordUtils;
+import com.scandilabs.catamaran.util.Timestamped;
 import com.scandilabs.www.service.SolrService;
 
 public class User implements Timestamped {

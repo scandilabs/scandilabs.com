@@ -41,7 +41,7 @@ public class AdminController {
     @Autowired
 	private UserContext userContext;        
     
-    @RequestMapping(value = "/faq-publicize", method = RequestMethod.GET)	
+    @RequestMapping(value = "/technology/knowledge//entry-publicize", method = RequestMethod.GET)	
 	public String faqPublicize(Map<String,Object> model, HttpServletRequest request) {
     	
 		if (!userContext.isLoggedInAdministrator(request)) {
@@ -54,17 +54,17 @@ public class AdminController {
         Faq faq = solrService.loadFaq(faqId);
         if (faq == null) {
         	messageContext.setMessage("FAQ key not found", false);        	
-        	return "redirect:/faq?key=" + faqId;
+        	return "redirect:/technology/knowledge/entry?key=" + faqId;
         }
 
         faq.setVisibility(Visibility.PUBLIC);
         solrService.save(faq);
         messageContext.setMessage("Publicized FAQ successfully", true);
-        return "redirect:/faq?key=" + faqId;
+        return "redirect:/technology/knowledge/entry?key=" + faqId;
 	}
 
     
-    @RequestMapping(value = "/create-initial-admin-user", method = RequestMethod.GET)	
+    @RequestMapping(value = "/technology/knowledge/create-initial-admin-user", method = RequestMethod.GET)	
 	public String createInitialAdminUser(Map<String,Object> model, HttpServletRequest request) {
     	
     	User existingUser = this.solrService.loadUser("adminUserKey");
@@ -87,7 +87,7 @@ public class AdminController {
     	return "redirect:/signin";
     }
     
-	@RequestMapping(value = "/users", method = RequestMethod.GET)	
+	@RequestMapping(value = "/technology/knowledge/users", method = RequestMethod.GET)	
 	public String users(Map<String,Object> model, HttpServletRequest request) {
 
 		if (!userContext.isLoggedInAdministrator(request)) {
@@ -101,10 +101,10 @@ public class AdminController {
 		List<User> users = solrService.listUsers();
 		model.put("users", users);
 		
-		return "users";
+		return "technology/knowledge/users";
 	}
 
-	@RequestMapping(value = "/audits", method = RequestMethod.GET)	
+	@RequestMapping(value = "/technology/knowledge/audits", method = RequestMethod.GET)	
 	public String audits(Map<String,Object> model, HttpServletRequest request) {
 
 		if (!userContext.isLoggedInAdministrator(request)) {
@@ -118,11 +118,11 @@ public class AdminController {
 		List<Audit> audits = solrService.listAudits(userContext.getEffectiveContextId(request));
 		model.put("audits", audits);
 		
-		return "audits";
+		return "technology/knowledge/audits";
 	}
 	
 	
-	@RequestMapping(value = "/user", method = RequestMethod.GET)	
+	@RequestMapping(value = "/technology/knowledge/user", method = RequestMethod.GET)	
 	public String user(Map<String,Object> model, @RequestParam("key") String key, HttpServletRequest request) {
 
 		messageContext.addPendingToModel(model);
@@ -136,10 +136,10 @@ public class AdminController {
 		User displayUser = this.solrService.loadUser(key);
 		model.put("displayUser", displayUser);
 		
-		return "user";
+		return "technology/knowledge/user";
 	}	
 	
-	@RequestMapping(value = "/user-edit", method = RequestMethod.GET)	
+	@RequestMapping(value = "/technology/knowledge/user-edit", method = RequestMethod.GET)	
 	public String userEditGet(Map<String,Object> model, @RequestParam(value="key", required=false) String key, HttpServletRequest request) {
 
 		messageContext.addPendingToModel(model);
@@ -153,10 +153,10 @@ public class AdminController {
 		User displayUser = this.solrService.loadUser(key);
 		model.put("displayUser", displayUser);
 		
-		return "user-edit";
+		return "technology/knowledge/user-edit";
 	}
     
-	@RequestMapping(value = "/user-edit", method = RequestMethod.POST)	
+	@RequestMapping(value = "/technology/knowledge/user-edit", method = RequestMethod.POST)	
 	public String userEditPost(HttpServletRequest request, Map<String,Object> model, @RequestParam("administratorFlag") boolean administratorFlag, @RequestParam(value="key", required=false) String key, @RequestParam("firstName") String firstName, @RequestParam("lastName") String lastName, @RequestParam("email") String email, @RequestParam("password") String password) {
 
 		if (!userContext.isLoggedInAdministrator(request)) {
@@ -184,7 +184,7 @@ public class AdminController {
         
         this.solrService.save(user);
         
-        return "redirect:users";
+        return "redirect:/technology/knowledge/users";
     }    
     
 }

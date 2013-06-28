@@ -1,17 +1,18 @@
-	<#assign parentSiteBase="http://www.scandilabs.com" />
-	<#assign blogSiteBase="http://blog.scandilabs.com" />
-	<#assign javaSiteBase="http://java.scandilabs.com" />
+	<#assign parentSiteBase="http://localhost:8081" />
+	<#assign blogSiteBase="http://localhost:8081" />
+	<#assign javaSiteBase="http://localhost:8081" />
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	
-	<link type="text/css" rel="stylesheet" href="${parentSiteBase}/css/site.css" media="screen, projection">
-  <link type="text/css" rel="stylesheet" href="${parentSiteBase}/css/top.css" media="screen, projection">
-  <link type="text/css" rel="stylesheet" href="static/css/java.css" media="screen, projection">
-  <!--[if IE]>
-      <link rel="stylesheet" type="text/css" href="${parentSiteBase}/css/ie.css" />
-  <![endif]-->                
+	<link type="text/css" rel="stylesheet" href="/static/css/site.css" media="screen, projection">
+    <link type="text/css" rel="stylesheet" href="/static/css/top.css" media="screen, projection">
+    <link type="text/css" rel="stylesheet" href="/static/css/java.css" media="screen, projection">
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="static/css/ie.css" />
+    <![endif]-->                
 
-  <script type="text/javascript" src="static/js/jquery-1.10.0.min.js"></script>
-  <script type="text/javascript" src="static/js/global.js"></script>  
+    <script type="text/javascript" src="/static/js/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="/static/js/global.js"></script>  
   
   <script type="text/javascript">
 

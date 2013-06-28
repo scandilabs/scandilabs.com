@@ -1,0 +1,178 @@
+/** CSS for header and footer **/
+
+#headerOuter {
+   width:100%;
+   top:0;
+   z-index: 9;
+   position:relative;
+}
+
+#header {
+   
+   border-bottom: 2px solid #BDBDBD;
+   
+   /*
+   border-bottom-style: solid;
+   border-bottom-width:thin;
+   border-bottom-color: black;
+   */
+   
+  
+   background-color: white;
+    
+   padding-top: 12px;
+   padding-bottom: 12px;   
+   color: #888888;
+    
+   margin-left: auto;
+   margin-right: auto;
+   width: 960px;
+   height: 54px; /* this exists only to prevent refresh issue on no-cache reload */
+}
+
+#header h2 {
+    margin: 0;
+    font-size: 15px;
+}
+
+#header p {
+    margin: 0;
+    font-size: 15px;
+}
+
+#logoBox {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 4px;
+    padding-bottom: 9px;
+    padding-left:58px;
+    font-size:0px; /* java header workaround */
+}
+
+#logoBox img {
+    margin: 0;
+}
+
+#header ul {
+    float:right;
+    padding: 0px;
+    /*padding-top: 39px;*/
+    padding-right:60px;
+    -webkit-margin-before:0px;
+    -webkit-margin-after:0px;
+    -webkit-padding-start:0px;
+    font-weight: 500;   
+    position:relative;
+    top:37px;
+}
+
+#header ul li {
+    
+    list-style: none inside;
+    display:inline-block;
+    /*width:24%;*/
+    text-align:right;
+    padding-left: 20px;
+}
+
+#footerOuter {
+    margin-right: auto;
+    margin-left: auto;
+    width: 964px;
+    background-color: #BDBDBD;
+    
+}
+
+
+#footer {
+    margin-left:2px;        
+    margin-right:2px;
+    color:white;
+    /*background-color: #616161;*/
+}
+
+.footerLinkBox a {
+    font-size: 14px;
+    /*padding-left:8px;*/
+}
+
+.footerLinkBox a:link, #footer a:visited {
+    text-decoration:none;
+    color:white;
+}
+
+.footerHeading {
+    font-weight:700;
+    color:white;
+    font-size:16px;  
+    width: 240px;
+}
+
+.footerHeading a {
+    font-size:16px;
+    padding-left:0px;
+}
+
+#footer ul {
+    padding:0;
+    padding-bottom: 1em;
+    -webkit-margin-after:0px;
+    -webkit-padding-start:0px;
+    list-style-type:none;
+    display:inline-block;
+}
+
+.footerRow {
+    list-style: none inside;
+    display:inline-block;
+    margin-right: 20px;
+}
+
+#social {
+    float:right;
+    margin-top:11px;
+    padding-right:40px;
+}
+
+ul.row {
+    list-style:inside;
+    display:block;
+    margin-right: 20px;
+}
+
+ul.row li {
+    list-style:inside;
+    display:block;
+    margin-right: 20px;
+}
+
+.footerLinkBox {    
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0px;
+}
+
+.footerLinkBox td {
+    padding-right: 0px;
+    /*width:240px;
+    padding-left:60px;
+    padding-right:0px;*/
+    /*padding-right: 20px;*/
+}
+
+#footerBottomOuter {
+    width:962px;
+    margin-left: auto;
+    margin-right:auto;   
+}
+
+#footerBottom {
+    display:inline-block;
+    margin-top:8px;
+    margin-bottom:8px;
+    background: white;
+    font-size: 11px;
+    text-transform: uppercase;
+}

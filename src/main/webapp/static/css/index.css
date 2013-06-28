@@ -1,0 +1,211 @@
+/* slide show */
+
+body {
+    overflow: hidden;
+}
+
+#header {
+    border-bottom: 0px solid #BDBDBD;
+}
+
+#pageCanvas {
+    margin-top: -2px; /* workaround to hide top line */
+}
+
+.slideOuter {
+    /*
+    height: 458px;
+    padding-top: 53px;
+    */    
+}
+
+.slideBg {
+    /*
+    
+    height: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    left: -260px;
+    */
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-681px;
+    margin-top:-248px;
+    width:1360px;    
+}
+
+.bgImageBox {
+    /*width:1560px;
+    height:400px;
+    margin-left: auto;
+    margin-right:auto;
+    */
+}
+
+.bgImageBox img {
+    /*
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    */
+}
+
+.belowSliderBar {
+    width:960px;
+    margin-left: auto;
+    margin-right:auto;    
+}
+
+#nav {
+    width:66px;
+    margin-left: auto;
+    margin-right:auto;
+    /*padding-right:40px;*/
+    position:relative;
+    top: -200px;
+    z-index: 8;
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+.navItem {
+    width:22px;
+    height:22px;
+    background-image: url('../img/white_dot_trans_sm.png');
+    background-size: 22px 22px;
+    background-repeat: no-repeat;    
+    display:inline-block;
+}
+
+#nav a {
+}
+
+#nav .activeSlide {
+    background-image: url('../img/black_dot_trans_sm.png');
+}
+
+
+.overlay {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    font-style:italic; 
+    font-size:22px;
+    font-weight:300; 
+    color: #FFFFFF;
+}
+
+.overlaySignature {
+    margin-top: 16px; 
+    color: #DDDDDD;
+}
+
+.overlayOuter {
+    position: relative; 
+    padding:16px 16px 16px 16px; 
+    background-color:#000000;
+} 
+
+.overlayAdditionalParagraph {
+    margin-top: 16px;
+}
+
+td {
+    border: 0px;
+    padding: 0px;
+}
+
+#logoGrid ul {
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    margin-bottom:8px;
+}
+
+#logoGrid li {
+    display:inline-block;  
+    /*margin-right:8px;*/  
+}
+
+.tableBlock {
+    width: 269px;
+    height: 220px;
+    border: thin solid #BDBDBD;
+    display:table;    
+}
+
+.hover {
+    border: 1px solid #000000;
+    cursor:pointer;
+}
+
+.centeredTableCell {
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.logoRow1 div {
+    
+}
+
+.logoRow1 div {
+    text-align: center; 
+}
+
+#logoGrid div img {
+    vertical-align: middle;
+}
+
+.logoRow2 div {
+        
+}
+
+.logoRow2 div {
+    text-align: center; 
+}
+
+.slideNav {
+    display:none;    
+    position:fixed; 
+    top: 50%;
+    left: 50%; 
+    margin-left: -443px; 
+    width: 884px;
+    z-index: 24;
+    margin-top: -22px;
+    
+    /*opacity: 0.6;*/
+}
+
+.nextSlideNav {
+    cursor:pointer;
+    padding-left:782px;
+}
+
+.prevSlideNav {
+    cursor:pointer;
+}
+
+.prevSlideNav img, .nextSlideNav img {
+    /*height: 48px;*/   
+    position:relative;
+}
+
+.slideInnerWhiteBox {
+    background-color: white; height:100%;    
+}
+
+.slideBlackBox {
+    padding:16px 16px 16px 16px; 
+    background-color:#000000; 
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-top:0px; 
+    z-index: 20; 
+    opacity: 0.8; 
+    /*top:20px;*/ 
+    width: 784px; 
+    height: 512px;
+}
+

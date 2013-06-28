@@ -28,7 +28,7 @@
             <li style="text-align:right; padding-right:8px;"><a href="#">next 10</a></li>
             
 		  </div>	
-		</ul><div id="mainCol">
+		</ul><div class="mainCol">
 			
 		    <#if message??>
 		        <#if messageSuccess>

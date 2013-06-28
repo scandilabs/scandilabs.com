@@ -1,0 +1,12 @@
+/* IE workarounds */
+input {
+    border-color: #808080;
+    border-width: thin;
+}
+.overlay {
+    font-weight:500;
+}
+.overlayOuter {
+    padding:1px 16px 1px 16px; 
+}
+

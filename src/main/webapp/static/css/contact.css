@@ -1,0 +1,27 @@
+label {
+	display: inline-block;
+	width: 90px;
+	vertical-align: top;
+}
+
+.label {
+    display: inline-block;
+    width: 54px;
+    vertical-align: top;
+}
+
+input {
+	width: 371px;
+}
+
+input.button {
+	width:auto;
+}
+
+textarea {
+	margin: 0;
+}
+
+form div {
+	margin-bottom: 8px;
+}

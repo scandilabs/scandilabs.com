@@ -130,14 +130,14 @@ public class LookupController {
         return mv;
     }
     
-    @RequestMapping("/tags1.json")
+    @RequestMapping("/technology/knowledge/tags1.json")
     public ModelAndView tags1(HttpServletRequest request,
             @RequestParam(required = true) String term) throws Exception {
 
     	return nestedTagSearch(request, null, term);
     }    
     
-    @RequestMapping("/tags2.json")
+    @RequestMapping("/technology/knowledge/tags2.json")
     public ModelAndView tags2(HttpServletRequest request,
             @RequestParam(required = true) String term, 
             @RequestParam(required = true) String tagX1) throws Exception {
@@ -147,7 +147,7 @@ public class LookupController {
     	return nestedTagSearch(request, parentTag, term);
     }    
     
-    @RequestMapping("/tags3.json")
+    @RequestMapping("/technology/knowledge/tags3.json")
     public ModelAndView tags3(HttpServletRequest request,
             @RequestParam(required = true) String term, 
             @RequestParam(required = true) String tagX1, 
@@ -160,7 +160,7 @@ public class LookupController {
     	return nestedTagSearch(request, parentTag, term);
     }    
     
-    @RequestMapping("/tags4.json")
+    @RequestMapping("/technology/knowledge/tags4.json")
     public ModelAndView tags4(HttpServletRequest request,
             @RequestParam(required = true) String term, 
             @RequestParam(required = true) String tagX1,
@@ -175,7 +175,7 @@ public class LookupController {
     	return nestedTagSearch(request, parentTag, term);
     }    
     
-    @RequestMapping("/faq.json")
+    @RequestMapping("/technology/knowledge/faq.json")
     public ModelAndView faq(HttpServletRequest request,
             @RequestParam(required = true) String key) throws Exception {
 
@@ -189,7 +189,7 @@ public class LookupController {
         return mv;
     }
     
-    @RequestMapping("/keywords.json")
+    @RequestMapping("/technology/knowledge/keywords.json")
     public ResponseEntity<String> keywords(HttpServletRequest request,
             @RequestParam(required = false) String query, @RequestParam(required = false) String canvas) throws UnsupportedEncodingException {
 
@@ -276,7 +276,7 @@ public class LookupController {
     	return size;
     }   
     
-    @RequestMapping("/something")
+    @RequestMapping("/technology/knowledge/something")
     public ResponseEntity<String> handle(HttpEntity<byte[]> requestEntity) throws UnsupportedEncodingException {
       String requestHeader = requestEntity.getHeaders().getFirst("MyRequestHeader");
       byte[] requestBody = requestEntity.getBody();

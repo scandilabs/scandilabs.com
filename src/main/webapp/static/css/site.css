@@ -1,0 +1,366 @@
+/* IE workarounds/resets (including IE 10+) */
+a, img {
+    border:none;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+/* END IE workarounds/resets (including IE 10+) */
+
+html {
+    
+    /* Show disabled scroll bar when content too short 
+     * http://www.designerstalk.com/forums/web-standards/42762-center-margin-auto-what-about-scrollbar.html
+     */
+    overflow-y:scroll;
+}
+
+body {
+    margin: 0 0;
+    font-family: "Helvetica";
+    font-weight: 400;    
+    font-size: 14px;
+    /*letter-spacing: -1px;*/
+    /* color:#555556; */
+   color: black;
+   background-color: #F8F8F8;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+ul.leftNav {
+    -webkit-margin-before:0px;
+    -webkit-margin-after:0px;
+    -webkit-padding-start:0px;
+    list-style:none;
+    display:inline-block;
+    vertical-align: top;
+    width:240px;
+    font-weight: 600;
+}
+
+ul.leftNav li {
+    padding-bottom: 4px;
+}
+
+a.current:link, a.current:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #79797a;
+    text-decoration: none;
+}
+
+.blackLink a:link, .blackLink a:visited {
+    color: #000000;
+    text-decoration: none;
+    cursor:default;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+#outerContent {
+    /*background-color: #E8E8E8;*/
+}
+
+#border {
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #616161;*/
+   background-color: #BDBDBD;
+    z-index: -99;
+
+    width:964px;
+}
+
+#pageCanvas {    
+    background-color: white;
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:20px;
+    padding-left:60px;
+    padding-right:60px;
+    padding-top:0.1em; /* workaround for h2 top margins issue */    
+    min-height: 500px;
+}
+
+h1 {
+    color:black;
+    font-size:24px;
+    margin-bottom:12px;
+    margin-top:32px;
+}
+
+h1.copy {
+    margin-bottom:12px;
+    margin-top:32px;
+}
+
+h2 {
+    font-size:20px;
+    margin-top:32px;
+}
+
+h2.copy {
+    color:#555555;
+    -webkit-margin-after:12px;
+    margin-top:0.83em;
+}
+
+h3 {
+    font-size:18px;
+}
+
+h3.copy {
+    color:#696969;
+    margin-top:8px;
+    -webkit-margin-before:0px;    
+    -webkit-margin-after:8px;
+}
+
+h4 {
+    font-size:15px;
+}
+
+h4.copy {
+    color:#808080;
+    margin-top:8px;
+    -webkit-margin-before:0px;    
+    -webkit-margin-after:8px;
+}
+
+.twoColLeft, .twoColRight {
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 38px;
+}
+
+.twoColLeft {
+    width: 372px;
+}
+
+/*
+#pageCanvas h1, #pageCanvas h2, #pageCanvas h3 {
+    color:#79797a;
+}
+*/
+
+.mediumHeightBox {
+    height: 130px;    
+}
+
+#content {    
+    margin-top: 32px;
+}
+
+.mainCol h4 {
+    margin-top:3em;
+    color:black;
+}
+
+.mainCol .noTopMargin {
+    margin-top:0px;
+}
+
+.mainCol {
+    margin-left:0px;
+    display:inline-block;
+    width: 600px;
+}
+
+#mainRightCol {
+    width: 24%;
+    margin-left:40px;
+    margin-right: 40px;
+    display:inline-block;
+    vertical-align: top;
+    /*background: #F8E9FC;*/
+    background-color: #EAD6A8;
+    padding: 8px;
+}
+
+.mainCol .twoColLeft {
+    width: 300px;
+    margin-top:0px;
+}
+
+.mainCol .twoColRight {
+    margin-top:0px;
+}
+
+.mainCol .twoColLeft h4, .mainCol .twoColRight h4 {
+    margin-top:16px;
+}
+
+.threeColBox {
+    margin-left:0px;
+    height: 21em;
+    margin-bottom:40px;
+}
+
+.threeColBox div {
+    vertical-align: top;
+    
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right:10px;
+    display:inline-block;
+    width: 30%;
+    margin-left:10px;
+    margin-right: 0px;
+    height: 100%;
+}
+
+.threeColBox li {
+    padding-bottom:4px;
+}
+
+div.leftCol {
+    margin-left:0px;
+    background-color:hsla(213,85%,77%,1);
+}
+
+div.centerCol {
+    background-color:hsla(213,85%,85%,1);
+}
+
+div.rightCol {
+    background-color:hsla(213,85%,93%,1);
+}
+
+.wideBox {
+    width: 860px;
+    height: 240px;
+}
+
+.blurb {
+    /*margin-left: 20px;  
+    margin-right: 20px;*/
+    /*color: #79797a;*/ 
+}
+
+#chartBackgroundBox {
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+    /*
+    background-color: hsla(213,85%,90%,1);
+    */
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 40px;
+    /*margin-left: 40px;*/
+}
+
+#rtb {
+    margin-left:20px;
+    width: 900px;
+    margin-top: 18px;
+    /*position: relative;*/
+    text-align: left; 
+}
+
+#rtb div {
+    width: 32%;
+    display: inline-block;
+    text-align: left;    
+}
+
+#rtb h2 {
+    margin-bottom: 0;
+}
+
+td {
+    vertical-align: top;
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+.quote-indent {
+    padding-left: 8px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.float-right {
+    float: right;
+    margin-left: 24px;
+}
+
+.sourcing {
+    font-style:italics;
+    font-size:11px; 
+}
+
+.pop {
+    background-color:yellow;
+}
+
+.centeredBox {
+    margin-left:auto;
+    margin-right:auto;
+    width:823px;
+}
+
+/* BEGIN image boxes */
+
+.thinBorder {
+    border:#808080 solid 1px;
+}
+
+.wideImgBox {
+    margin-top:40px;
+    margin-bottom:20px;
+    /* position:relative;
+    left:-240px;
+    width:840px; */    
+}
+
+/* nicolasgallagher.com/css-drop-shadows-without-images/demo/ */
+.drop-shadow {
+    /*position:relative;*/
+    /*float:left;*/
+    /*width:40%;*/
+    /*padding:1em;*/
+    /*margin:2em 10px 4em;*/
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.drop-shadow:before,
+    .drop-shadow:after {
+        content:"";
+    position:absolute;
+    z-index:-2;
+}
+
+.raised {
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* END image boxes */
+
+
+

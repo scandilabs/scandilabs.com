@@ -33,7 +33,7 @@ $().ready(function() {
      		$(answerParagraphSelector).hide();
      		plus.html('+');
      	} else {	
-	    	$.getJSON('faq.json?key=' + faqShortId, function(data) {
+	    	$.getJSON('/technology/knowledge/faq.json?key=' + faqShortId, function(data) {
 	    		$(answerParagraphSelector).html('<p>' + data.answerAsMarkdown + '</p>');
 	    	});
 	    	$(answerParagraphSelector).show();
@@ -47,7 +47,7 @@ $().ready(function() {
     
     var keyword = getQueryString()["query"];
     
-    $.getJSON('keywords.json?&canvas=small', function(data) {
+    $.getJSON('/technology/knowledge/keywords.json?&canvas=small', function(data) {
         
         for (var i = 0, ii = data.length, thisTag, groupId; i < ii; i++) {
             element = data[i];            

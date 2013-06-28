@@ -33,7 +33,7 @@
 		  <div style="padding-right: 26px;">
 		      <li><a href="blog">Back</a></li>
 		  </div>	
-		</ul><div id="mainCol">
+		</ul><div class="mainCol">
 			
 		    <#if message??>
 		        <#if messageSuccess>

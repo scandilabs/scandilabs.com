@@ -9,7 +9,7 @@
 	vertical-align: top;
 }
 
-#mainCol ul {
+.mainCol ul {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
@@ -19,7 +19,7 @@
 }
 
 /*
-#mainCol a:link, #mainCol a:visited, #mainCol a:hover {
+.mainCol a:link, .mainCol a:visited, .mainCol a:hover {
     text-decoration:none;
 }
 */
@@ -86,4 +86,8 @@ form {
     background-color: #FFFFFF;
     padding: 0px;
     padding-bottom: 16px;
+}
+
+.faq a:link, .faq a:visited {
+    text-decoration:none;    
 }
