@@ -4,15 +4,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<#include "includes/head.ftl" />
+	<#include "../../includes/head.ftl" />
 
-    <script type="text/javascript" src="static/js/jquery-ui-1.10.3.min.js"></script>
-	<script type="text/javascript" src="static/js/faq-edit.js"></script>
-    <link type="text/css" rel="stylesheet" href="static/css/jquery-ui-1.10.3.css" />   
-    <link type="text/css" rel="stylesheet" href="static/css/faq-edit.css" media="screen, projection">
+    <script type="text/javascript" src="/static/js/jquery-ui-1.10.3.min.js"></script>
+	<script type="text/javascript" src="/static/js/faq-edit.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/css/jquery-ui-1.10.3.css" />   
+    <link type="text/css" rel="stylesheet" href="/static/css/faq-edit.css" media="screen, projection">
 </head>
 <body>
-	<#include "includes/top-nav.ftl" />
+	<#include "../../includes/top-nav.ftl" />
 
 	<div id="content">
 		<ul class="leftNav">
@@ -54,7 +54,7 @@
 				</div>
 			</#if>	
 		
-			<form action="faq-edit" method="post">
+			<form action="entry-edit" method="post">
 		        <div>					
 			        <label>Question</label>
 			        <input type="text" size="100" tabindex=1 name="question" value="${(faq.question)!}" />
@@ -135,9 +135,9 @@
 			        <label></label>
 			        <input type="submit" tabindex=99 value="Save" />
 			        <#if faq??>
-			             <a href="faq?key=${(faq.key)!}">Cancel</a>
+			             <a href="entry?key=${(faq.key)!}">Cancel</a>
 			        <#else>
-			             <a href="faqs">Cancel</a>
+			             <a href="../knowledge">Cancel</a>
 			        </#if>
 				</div>
 				
@@ -145,6 +145,6 @@
 
 		</div> <!-- mainCol -->			
 	</div> <!-- content -->
-	<#include "includes/bottom.ftl" />
+	<#include "../../includes/bottom.ftl" />
 </body>
 </html>

@@ -61,7 +61,7 @@ public class SigninController {
 		cookie.setMaxAge(2592000); // 30 days
 		response.addCookie(cookie);
 		
-		return "redirect:/faqs";
+		return "redirect:/technology/knowledge";
 	}
 	
 	@RequestMapping(value = "/signout", method = RequestMethod.GET)	
@@ -73,7 +73,7 @@ public class SigninController {
 		cookie.setMaxAge(2592000); // 30 days
 		response.addCookie(cookie);
 		messageContext.setMessage("Signed out " + user.getEmail(), true);
-		return "redirect:/faqs";
+		return "redirect:/technology/knowledge";
 	}
 
 }

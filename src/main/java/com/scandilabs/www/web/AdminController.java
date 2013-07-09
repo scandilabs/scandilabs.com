@@ -41,8 +41,8 @@ public class AdminController {
     @Autowired
 	private UserContext userContext;        
     
-    @RequestMapping(value = "/technology/knowledge//entry-publicize", method = RequestMethod.GET)	
-	public String faqPublicize(Map<String,Object> model, HttpServletRequest request) {
+    @RequestMapping(value = "/technology/knowledge/entry-publicize", method = RequestMethod.GET)	
+	public String entryPublicize(Map<String,Object> model, HttpServletRequest request) {
     	
 		if (!userContext.isLoggedInAdministrator(request)) {
 			messageContext.setMessage("Only Administrator can do that.", false);

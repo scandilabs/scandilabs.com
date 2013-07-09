@@ -146,8 +146,8 @@ public class Faq implements Comparable<Object>, Timestamped {
             // Create key from question
             String strippedQuestion = question.replaceAll("[^A-Za-z0-9]", "_");
             String newKey = null;
-            if (strippedQuestion.length() > 20) {
-                newKey = strippedQuestion.substring(0, 20);
+            if (strippedQuestion.length() > 50) {
+                newKey = strippedQuestion.substring(0, 50);
             } else {
                 newKey = strippedQuestion;
             }

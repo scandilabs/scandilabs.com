@@ -22,16 +22,12 @@
 	
 		<div class="right" style="margin-top: -22px; float:right;">
 		   <#if user??>
-		      <a href="faq-edit">New</a> | 
-		      <#if user.administrator><a href="users">Users</a> | </#if>
-		      <a href="signout">Sign out ${user.email}</a>
+		      <a href="knowledge/entry-edit">New</a> | 
+		      <#if user.administrator><a href="knowledge/users">Users</a> | <a href="knowledge/audits">History</a> | </#if>
+		      <a href="/signout">Sign out ${user.email}</a>
 	       <#else>
-	          <a href="signin">Sign in</a>
+	          <a href="/signin">Sign in</a>
 	       </#if>
-		   
-		   <!-- TODO: Enable menu 
-		   <#if user??> | <a href="faq-edit">Create</a><#if user.administrator> | <a href="users">Manage Users</a> | <a href="audits">History</a></#if></#if>
-		   -->
 	   </div>
 	   <div class="clearfix"></div>		
 
@@ -91,13 +87,13 @@
 				    </#if>
 					<ul>
 					<#list level1Node.faqs as faq>
-					  <#if faq.lastModifiedTime??>
-  					  <#assign entryLinkLabel = faq.lastModifiedTime?string("MMM d, yyyy") />
-  					<#else>
-  					  <#assign entryLinkLabel = "details" />
-  					</#if>
+                        <#if faq.lastModifiedTime??>
+                            <#assign entryLinkLabel = faq.lastModifiedTime?string("MMM d, yyyy") />
+                        <#else>
+                            <#assign entryLinkLabel = "details" />
+                        </#if>
 						<li id="${level1Node.nodeId}-${faq.shortId}" class="faq">
-							<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/entry?key=${faq.key}">[${entryLinkLabel}]</a>
+							<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/${faq.key}">[${entryLinkLabel}]</a>
 							<div class="answerBox"></div>
 						</li>
 					</#list>
@@ -108,8 +104,13 @@
 						    </#if>
 							<ul>
 							<#list level2Node.faqs as faq>
+                                <#if faq.lastModifiedTime??>
+                                    <#assign entryLinkLabel = faq.lastModifiedTime?string("MMM d, yyyy") />
+                                <#else>
+                                    <#assign entryLinkLabel = "details" />
+                                </#if>
 								<li id="${level2Node.nodeId}-${faq.shortId}" class="faq">
-									<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/entry?key=${faq.key}">[${entryLinkLabel}]</a>
+									<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/${faq.key}">[${entryLinkLabel}]</a>
 									<div class="answerBox"></div>
 								</li>								
 							</#list>
@@ -120,8 +121,13 @@
 								    </#if>
 									<ul>
 									<#list level3Node.faqs as faq>
+                                        <#if faq.lastModifiedTime??>
+                                            <#assign entryLinkLabel = faq.lastModifiedTime?string("MMM d, yyyy") />
+                                        <#else>
+                                            <#assign entryLinkLabel = "details" />
+                                        </#if>
 										<li id="${level3Node.nodeId}-${faq.shortId}" class="faq">
-											<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/entry?key=${faq.key}">[${entryLinkLabel}]</a>
+											<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/${faq.key}">[${entryLinkLabel}]</a>
 											<div class="answerBox"></div>
 										</li>
 									</#list>						
@@ -132,8 +138,13 @@
 										    </#if>
 											<ul>
 											<#list level4Node.faqs as faq>
+                                                <#if faq.lastModifiedTime??>
+                                                    <#assign entryLinkLabel = faq.lastModifiedTime?string("MMM d, yyyy") />
+                                                <#else>
+                                                    <#assign entryLinkLabel = "details" />
+                                                </#if>
 												<li id="${level4Node.nodeId}-${faq.shortId}" class="faq">
-													<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/entry?key=${faq.key}">[${entryLinkLabel}]</a>
+													<a class="toggle plus" name="${faq.shortId}" nohref>+</a> <a class="toggle" nohref>${faq.question}</a> <a class="entryLink" href="knowledge/${faq.key}">[${entryLinkLabel}]</a>
 													<div class="answerBox"></div>
 												</li>
 											</#list>

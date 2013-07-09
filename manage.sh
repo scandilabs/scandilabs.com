@@ -28,7 +28,7 @@ LOCAL_WEBAPP_NAME=ROOT
 # The name of your webapp when it's deployed to the server. 
 # Defaults to your maven pom.xml's [artifactId]-[version]. 
 # 'ROOT' is the right choice if you want your application deployed in the root context of tomcat (i.e. my.site.com/index.html).
-REMOTE_WEBAPP_NAME=tech
+REMOTE_WEBAPP_NAME=scandilabs-com
 
 # Where the war file will be copied to on remote server
 # Defaults to LOCAL_TOMCAT_WEBAPPS_DIR

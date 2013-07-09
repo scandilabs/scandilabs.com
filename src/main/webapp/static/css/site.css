@@ -52,6 +52,17 @@ ul.leftNav li {
     padding-bottom: 4px;
 }
 
+ul.leftSubNav {
+    padding-left: 10px; 
+    padding-top: 0px;
+}
+
+ul.leftSubNav li {
+    font-size: 13px;
+    padding-top: 2px; 
+    padding-bottom: 0px;
+}
+
 a.current:link, a.current:visited {
     color: black;
     text-decoration: none;

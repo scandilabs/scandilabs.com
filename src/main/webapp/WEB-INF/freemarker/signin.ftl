@@ -12,7 +12,7 @@
 	<div id="content">
 		<ul class="leftNav">
 			<#assign menu="faqs" />
-			<#include "includes/left-nav-content.ftl" />
+			<#include "technology/left-nav-content-include.ftl" />
 		</ul><div class="mainCol">
 
 			<form action="signin" method="post">

@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -53,22 +54,9 @@ public class VisitorController {
     @Autowired
 	private UserContext userContext;        
 
-    @RequestMapping("/")
-    public ModelAndView home(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-        return index(request, response);
-    }
-
     @RequestMapping("/technology/knowledge")
-    public ModelAndView technologyKnowledge(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-    	return technologyKnowledgeIndex(request, response);
-    }
-
-    
-    @RequestMapping("/technology/knowledge/index")
     public ModelAndView technologyKnowledgeIndex(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         // Get parameters
         String query = request.getParameter("query");
@@ -144,21 +132,21 @@ public class VisitorController {
         return mv;
     }
   
-    @RequestMapping("/technology/knowledge/entry")
-    public ModelAndView technologyKnowledgeEntry(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+	@RequestMapping("/technology/knowledge/{entryKey}")
+	public ModelAndView entry(@PathVariable("entryKey") String entryKey, HttpServletRequest request,
+			HttpServletResponse response) {
 
-        ModelAndView mv = new ModelAndView();
+        ModelAndView mv = new ModelAndView("technology/knowledge/entry");
         messageContext.addPendingToModel(mv.getModel());
         userContext.prepareModel(mv.getModel());
         String contextId = userContext.getEffectiveContextId(request);
         
         // One specific faq?
-        String faqId = request.getParameter("key");        
+        String faqId = entryKey;        
         Faq faq = solrService.loadFaq(faqId);
         if (faq == null) {
-        	messageContext.setMessage("Invalid FAQ key", false);
-            return new ModelAndView("redirect:faqs");
+        	messageContext.setMessage("Invalid FAQ url. Please search again.", false);
+            return new ModelAndView("redirect:/technology/knowledge");
         }
         
         // Audits and comments
@@ -178,52 +166,61 @@ public class VisitorController {
         return mv;
     }
     
+    @RequestMapping("/")
+    public ModelAndView home(HttpServletRequest request,
+            HttpServletResponse response) {
+    	return index(request, response);
+    }
+    
     @RequestMapping("/index")
     public ModelAndView index(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-
+            HttpServletResponse response) {
         ModelAndView mv = new ModelAndView("index");
         userContext.prepareModel(mv.getModel());
-        return mv;
+        return mv;    	
     }
+
     
     @RequestMapping("/technology")
     public ModelAndView technology(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-
-    	return technologyIndex(request, response);
-    }  
-    
-    @RequestMapping("/technology/index")
-    public ModelAndView technologyIndex(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView("technology/index");
         userContext.prepareModel(mv.getModel());
         return mv;
-    }    
-
+    }  
+    
     @RequestMapping("/services")
     public ModelAndView services(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
         return mv;
     }    
-
+    
     @RequestMapping("/careers")
     public ModelAndView careers(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
+
+        ModelAndView mv = new ModelAndView("careers/index");
+        userContext.prepareModel(mv.getModel());
+        return mv;
+    }      
+    
+
+    @RequestMapping("/careers/*")
+    public ModelAndView careersJobs(HttpServletRequest request,
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
         return mv;
-    }    
+    }       
 
     @RequestMapping("/contact")
     public ModelAndView contact(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         messageContext.addPendingToModel(mv.getModel());
@@ -231,24 +228,17 @@ public class VisitorController {
         return mv;
     }    
 
-    @RequestMapping("/clients/index")
-    public ModelAndView clientsIndex(HttpServletRequest request,
+    @RequestMapping("/clients")
+    public ModelAndView clients(HttpServletRequest request,
             HttpServletResponse response) throws Exception {
-
         ModelAndView mv = new ModelAndView("clients/index");
         userContext.prepareModel(mv.getModel());
         return mv;
     }    
 
-    @RequestMapping("/clients")
-    public ModelAndView clients(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-    	return clientsIndex(request, response);
-    }    
-
     @RequestMapping("/clients/inspector-time")
     public ModelAndView clientsInspectorTime(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -257,7 +247,7 @@ public class VisitorController {
 
     @RequestMapping("/clients/medventive")
     public ModelAndView clientsMedventive(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -266,7 +256,7 @@ public class VisitorController {
 
     @RequestMapping("/clients/postpost")
     public ModelAndView clientsPostpost(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -275,7 +265,7 @@ public class VisitorController {
 
     @RequestMapping("/clients/snagajob")
     public ModelAndView clientsSnagajob(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -284,31 +274,24 @@ public class VisitorController {
 
     @RequestMapping("/clients/travelclick")
     public ModelAndView clientsTravelclick(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
         return mv;
     }    
     
-    @RequestMapping("/about/index")
-    public ModelAndView aboutIndex(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-
+    @RequestMapping("/about")
+    public ModelAndView about(HttpServletRequest request,
+            HttpServletResponse response) {
         ModelAndView mv = new ModelAndView("about/index");
         userContext.prepareModel(mv.getModel());
         return mv;
     }    
 
-    @RequestMapping("/about")
-    public ModelAndView about(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-    	return aboutIndex(request, response);
-    }    
-
     @RequestMapping("/about/management")
     public ModelAndView aboutManagement(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -317,7 +300,7 @@ public class VisitorController {
 
     @RequestMapping("/about/partners")
     public ModelAndView aboutPartners(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -365,7 +348,7 @@ public class VisitorController {
 
     @RequestMapping("/reference")
     public ModelAndView reference(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -374,7 +357,7 @@ public class VisitorController {
 
     @RequestMapping("/technology/catamaran/source")
     public ModelAndView technologyCatamaranSource(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -383,7 +366,7 @@ public class VisitorController {
 
     @RequestMapping("/technology/catamaran/download")
     public ModelAndView technologyCatamaranDownload(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());
@@ -392,7 +375,7 @@ public class VisitorController {
 
     @RequestMapping("/technology/catamaran/questions")
     public ModelAndView technologyCatamaranQuestions(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
+            HttpServletResponse response) {
 
         ModelAndView mv = new ModelAndView();
         userContext.prepareModel(mv.getModel());

@@ -18,7 +18,7 @@
     		    <#if user??>
     		        <li><a href="entry-edit?key=${faq.key}">Edit</a></li>
     		        <#if ((user.administrator) && !(faq.visibility == "PUBLIC"))>
-    		            <li><a href="faq-publicize?key=${faq.key}">Publicize</a></li>
+    		            <li><a href="entry-publicize?key=${faq.key}">Publicize</a></li>
     		        </#if>
     		    </#if>
 		    </div>
@@ -27,7 +27,7 @@
                 <h3>Related topics</h3>
                 <ul>
                 <#list keywords as keyword>
-                    <li><a href="faqs?query=${keyword}">${keyword}</a></li>
+                    <li><a href="../knowledge?query=${keyword}">${keyword}</a></li>
                 </#list>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
 		        Owner: ${faq.ownerName!} | 
 		        Tagged as: <ul class="tags" style="list-style:none">               
 		            <#list faq.nestedTagsAsList as tag><li style="">
-		                <a href="faqs?query=topic:${tag.colonSeparatedNoSpaces}">${tag.colonSeparated}</a>
+		                <a href="../knowledge?query=topic:${tag.colonSeparatedNoSpaces}">${tag.colonSeparated}</a>
 		            </#list>
 		        </ul>
 		    </div>           

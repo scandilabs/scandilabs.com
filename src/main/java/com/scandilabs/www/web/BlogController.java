@@ -200,5 +200,12 @@ public class BlogController {
 
 		return mv;
 	}
+	
+	public static LRUCache<String, List<Page>> getPageCache() {
+		return pageCache;
+	}
 
+	public static List<String> getKeyCache() {
+		return keyCache;
+	}
 }

@@ -78,7 +78,7 @@
         
     <div class="bgImageBox" style="position:fixed; top:80px; width:100%; background-color: #474f64;">
         <div style="width:2040px; margin-left:auto; margin-right:auto;">
-            <img style="height:100%; width:100%" src="static/img/berg2040x1240.png" />
+            <img style="height:100%; width:100%" src="static/img/berg2040x1240med.jpg" />
         </div>                            
     </div>
     

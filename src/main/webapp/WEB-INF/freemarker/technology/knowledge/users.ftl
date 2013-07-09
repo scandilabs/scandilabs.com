@@ -3,18 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<#include "includes/head.ftl" />
+	<#include "../../includes/head.ftl" />
 </head>
 <body>
-	<#include "includes/top-nav.ftl" />
+	<#include "../../includes/top-nav.ftl" />
 	
 	<div id="content">
 		<ul class="leftNav">
 			<#assign menu="faqs" />
-			<#include "includes/left-nav-content.ftl" />
+			<#include "..//left-nav-content-include.ftl" />
 		</ul><div class="mainCol">
 
-			<h1>Users</h1>
+			<h1 class="noTopMargin">Users</h1>
 			
 			<a href="user-edit">Create User</a>
 			<ul>
@@ -25,6 +25,6 @@
 	
 		</div> <!-- mainCol -->			
 	</div> <!-- content -->
-	<#include "includes/bottom.ftl" />	
+	<#include "../../includes/bottom.ftl" />	
 </body>
 </html>

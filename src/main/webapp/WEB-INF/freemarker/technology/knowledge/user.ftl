@@ -3,31 +3,44 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<#include "includes/head.ftl" />
+	<#include "../../includes/head.ftl" />
 </head>
 <body>
-	<#include "includes/top-nav.ftl" />
+	<#include "../../includes/top-nav.ftl" />
 	
 	<div id="content">
 		<ul class="leftNav">
 			<#assign menu="faqs" />
-			<#include "includes/left-nav-content.ftl" />
+			<#include "../left-nav-content-include.ftl" />
 		</ul><div class="mainCol">
 
 
-			<h1>${displayUser.name.first} ${displayUser.name.last}</h1>
-			<p>
-			   Email: ${displayUser.email}<br/>
-			   Administrator?: ${displayUser.administrator?string}<br/>
-			   Context ID: ${displayUser.contextId}<br/>
-			   Key: ${displayUser.key}<br/>
-			   Short ID: ${displayUser.shortId}<br/>
-		   </p>
+			<h1 class="noTopMargin">${displayUser.name.first} ${displayUser.name.last}</h1>
+		    <div>
+                <label>Email:</label>
+                ${displayUser.email}
+            </div>
+            <div>
+                <label>Administrator?:</label>
+                ${displayUser.administrator?string}
+            </div>
+            <div>
+                <label>Context ID:</label>
+                ${(displayUser.contextId)!}
+            </div>
+            <div>
+                <label>Key:</label>
+                ${(displayUser.key)!}
+            </div>
+            <div>
+                <label>Short ID:</label>
+                ${(displayUser.shortId)!}
+            </div>
 			
 			<a href="user-edit?key=${displayUser.key}">Edit</a>
 	
 		</div> <!-- mainCol -->			
 	</div> <!-- content -->
-	<#include "includes/bottom.ftl" />	
+	<#include "../../includes/bottom.ftl" />	
 </body>
 </html>

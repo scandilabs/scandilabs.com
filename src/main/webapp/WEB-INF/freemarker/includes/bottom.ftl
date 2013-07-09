@@ -10,54 +10,54 @@
                 <table>
                     <tr>
                         <td class="footerHeading" >
-                            <a href="about">Company</a>
+                            <a href="/about">Company</a>
                         </td>
                         <td class="footerHeading">                      
-                            <a href="services">Services</a>
+                            <a href="/services">Services</a>
                         </td>
                         <td class="footerHeading">
-                            <a href="technology">Technology</a>                             
+                            <a href="/technology">Technology</a>                             
                         </td>
                         <td class="footerHeading" style="width:120px;">
-                            <a href="contact">Contact</a>                       
+                            <a href="/contact">Contact</a>                       
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href="about/management">Management</a>
+                            <a href="/about/management">Management</a>
                         </td>
                         <td>
-                            <a href="clients">Clients</a>
+                            <a href="/clients">Clients</a>
                         </td>
                         <td>
-                            <a href="faqs">Knowledge Base</a>                       
+                            <a href="/technology/knowledge">Knowledge Base</a>                       
                         </td>
                         <td>
-                            <a href="blog">Blog</a>                     
+                            <a href="/blog">Blog</a>                     
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href="about/partners">Partners</a>
+                            <a href="/about/partners">Partners</a>
                         </td>
                         <td>
                             
                         </td>
                         <td>
-                            <a href="tutorial">Tutorial</a>                     
+                            <a href="/technology/catamaran/tutorial">Tutorial</a>                     
                         </td>
                         <td>                        
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href="careers">Careers</a>
+                            <a href="/careers">Careers</a>
                         </td>
                         <td>
                             
                         </td>
                         <td>
-                            <a href="source">Source</a>
+                            <a href="/technology/catamaran/source">Source</a>
                         </td>
                         <td>                        
                         </td>
@@ -69,7 +69,7 @@
                         <td>
                         </td>
                         <td>
-                            <a href="download">Download</a>
+                            <a href="/technology/catamaran/download">Download</a>
                         </td>
                         <td>                    
                         </td>
@@ -81,7 +81,7 @@
                         <td>
                         </td>
                         <td>
-                            <a href="questions">FAQs</a>
+                            <a href="/technology/catamaran/questions">FAQs</a>
                         </td>
                         <td>                    
                         </td>
@@ -97,7 +97,7 @@
     
     <div id="footerBottomOuter">
         <div id="footerBottom">
-            ScandiLabs&nbsp;&nbsp;(617) 682-0310&nbsp;&nbsp;122 Prospect Street&nbsp;&nbsp;Acton, MA 01720          
+            ScandiLabs&nbsp;&nbsp;(617) 682-0310&nbsp;&nbsp;1 Broadway, 14th Floor&nbsp;&nbsp;Cambridge, MA 02142          
         </div>
     
         <div style="float:right;padding-top:4px;">

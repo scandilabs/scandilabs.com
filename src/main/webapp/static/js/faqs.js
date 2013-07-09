@@ -89,7 +89,7 @@ $().ready(function() {
         var anchor = $(this);
         var keyword=anchor.attr('href');
         
-        window.location.href = "faqs?query=" + keyword;
+        window.location.href = "/technology/knowledge?query=" + keyword;
         
     });    	
 	
