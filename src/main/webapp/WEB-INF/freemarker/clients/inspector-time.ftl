@@ -19,7 +19,7 @@
                 <div class="mainColOuter">
                     <div class="leftNavOuter">
         				<ul class="leftNav">
-        					<li><a href="clients/index">Madaket Health</a></li>
+        					<li><a href="clients">Madaket Health</a></li>
         					<li>Inspector Time</li>
         					<li><a href="clients/medventive">MedVentive</a></li>
         					<li><a href="clients/postpost">PostPost</a></li>

@@ -60,7 +60,7 @@ public class BlogController {
 	private Wordpress getWordpressClient() throws Exception {
 		// Note that www.scandilabs.com DNS is set statically on uprod. for some reason the DNS lookup fails..
 		Wordpress wp = new Wordpress(applicationConfiguration.getWordpressUser(), applicationConfiguration.getWordpressPassword(),
-				"http://www.scandilabs.com/blog/xmlrpc.php");
+				"http://wordpress.scandilabs.com/xmlrpc.php");
 		return wp;
 	}
 	

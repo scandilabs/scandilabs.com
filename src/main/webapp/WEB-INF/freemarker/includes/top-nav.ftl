@@ -6,7 +6,10 @@
 			        <div id="header">
 			        
 			            <div id="logoBox" >
-			                <a href="/" ><img src="/static/img/logo_accelerated_scaling_151px.png"></a>
+			                <a href="/" ><img src="/static/img/logo_java_NET_development_cropped.png"></a>
+			                <!--
+			                <a href="/" ><img src="/static/img/logo_web_product_development.png"></a>
+			                -->
 			            </div>   
 			            <ul>
 			                <li>

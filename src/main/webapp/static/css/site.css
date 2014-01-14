@@ -79,6 +79,12 @@ a:link, a:visited {
     cursor:default;
 }
 
+.underlineLinks a:link, .underlineLinks a:visited {
+    color: #000000;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
 a:hover {
     color: #000000;
     text-decoration: none;

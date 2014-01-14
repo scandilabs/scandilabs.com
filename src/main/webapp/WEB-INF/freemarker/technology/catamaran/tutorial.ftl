@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <base href="/">        
+  <base href="/technology/catamaran/tutorial">        
 	<#include "../../includes/head.ftl" />
 	<title>ScandiLabs : Java : Tutorial</title>
-    <link type="text/css" rel="stylesheet" href="static/css/tutorial.css" media="screen, projection">
+    <link type="text/css" rel="stylesheet" href="/static/css/tutorial.css" media="screen, projection">
 </head>
 <body>
   <#assign page="technology" />

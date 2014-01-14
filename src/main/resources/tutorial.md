@@ -4,7 +4,7 @@ This is a tutorial for developers who want a quick and easy-to-use guide to crea
 
 While Java has some of the most powerful and proven web technologies out there, its enterprise roots and toolkit diversity can pose a challenge to a small team that needs to get up and running quickly.   
 
-This guide, along with our <a href="/faqs">knowledge base</a>, helps our own developers to write scalable Java applications quickly and in a consistent high-quality style.  Feel free to use it, and [let us know](http://www.scandilabs.com/contact) if you'd like to contribute.
+This guide, along with our <a href="/technology/knowledge">knowledge base</a>, helps our own developers to write scalable Java applications quickly and in a consistent high-quality style.  Feel free to use it, and [let us know](http://www.scandilabs.com/contact) if you'd like to contribute.
 
 # Table of Contents
 1. [Setup](#setup)
@@ -25,7 +25,7 @@ The steps below will get your initial web application up and running.
 #### Tomcat, Maven
 To get started, you will need Java, Tomcat, Maven and Git (optional) installed on your local workstation.  
 
-Head over to the [workstation setup](/faq?key=ScandiLabs_Java_Deve) section of our [knowledge base](/faqs) if you're not sure if these tools are installed on your system.  
+Head over to the [workstation setup](/technology/knowledge?key=ScandiLabs_Java_Deve) section of our [knowledge base](/technology/knowledge) if you're not sure if these tools are installed on your system.  
 
 #### Download Hello World Webapp
 Next, you'll need to download a bare-bones web application from github.  While you can install it anywhere, we recommend you create a new top-level directory named <code>/sl/apps</code>.  Then check out the code with this command:
@@ -211,7 +211,7 @@ If everything went well, [http://localhost:8080/](http://localhost:8080/) should
 
 Congrats.  You are now done with the setup stage, and ready to start developing your own application!
 
-> TIP: If something went wrong, [search our knowledgebase](/faqs) for answers.  If you're still stuck, contact us [on twitter](https://twitter.com/scandilabs).
+> TIP: If something went wrong, [search our knowledgebase](/technology/knowledge) for answers.  If you're still stuck, contact us [on twitter](https://twitter.com/scandilabs).
 
 
 <div id="mvc"></div>
@@ -409,7 +409,7 @@ To run the script, type this maven command in your Terminal window:
 
 If all goes well, you should now be able to view a row in the newly created <code>User</code> table of a database called <code>my-catamaran</code>.  You can use the MySQL command line client or data browsing tools Sequelpro or Navicat.
 
-If you have any problems, do a search in [our knowledge base](http://java.scandilabs.com/faqs) for the word [exception](http://java.scandilabs.com/faqs?query=exception).  Or copy-paste a portion of your log file stack trace into the search field.  If you still need help, [contact us](http://www.scandilabs.com/contact).
+If you have any problems, do a search in [our knowledge base](http://java.scandilabs.com/technology/knowledge) for the word [exception](http://java.scandilabs.com/technology/knowledge?query=exception).  Or copy-paste a portion of your log file stack trace into the search field.  If you still need help, [contact us](http://www.scandilabs.com/contact).
 
 <div id="forms"></div>
 # Forms <span class="tutorialNav">(<a href="#intro">top</a>)</span>
