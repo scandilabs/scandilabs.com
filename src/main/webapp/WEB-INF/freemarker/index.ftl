@@ -6,9 +6,9 @@
         <#include "includes/head.ftl" />
         <title>ScandiLabs : Home</title>   
         <link type="text/css" rel="stylesheet" href="static/css/index.css" media="screen, projection">
-        <link rel="stylesheet" type="text/css" href="http://sorgalla.com/jcarousel/examples/basic/jcarousel.basic.css">
-        <!-- <script type="text/javascript" src="static/js/jquery-1.4.js"></script> -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="static/js/jcarousellite_1.0.1.min.js"></script>        
+        <script type="text/javascript" src="static/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="static/js/jquery.cycle.all.js"></script>
         
         <!-- fix for border on IE10 since conditionals don't work above IE10 -->
         <script>
@@ -97,137 +97,6 @@
             }
         </style>
         
-        <!-- jcarousel -->
-        <style>
-.jcarousel-wrapper {
-    margin: 20px auto;
-    position: relative;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-}
-
-
-.jcarousel-wrapper .photo-credits {
-    position: absolute;
-    right: 15px;
-    bottom: 0;
-    font-size: 13px;
-    color: #fff;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
-    opacity: .66;
-}
-
-.jcarousel-wrapper .photo-credits a {
-    color: #fff;
-}
-
-/** Carousel **/
-
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-    width: 200px;
-    height: 100px;
-}
-
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.jcarousel li {
-    float: left;
-}
-
-/** Carousel Controls **/
-
-.jcarousel-control-prev,
-.jcarousel-control-next {
-    position: absolute;
-    top: 200px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-}
-
-.jcarousel-control-prev {
-    left: -50px;
-}
-
-.jcarousel-control-next {
-    right: -50px;
-}
-
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
-    display: block;
-}
-
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
-    opacity: .5;
-    cursor: default;
-}
-
-/** Carousel Pagination **/
-
-.jcarousel-pagination {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-}
-
-.jcarousel-pagination a {
-    text-decoration: none;
-    display: inline-block;
-    
-    font-size: 11px;
-    line-height: 14px;
-    min-width: 14px;
-    
-    background: #fff;
-    color: #4E443C;
-    border-radius: 14px;
-    padding: 3px;
-    text-align: center;
-    
-    margin-right: 2px;
-    
-    opacity: .75;
-}
-
-.jcarousel-pagination a.active {
-    background: #4E443C;
-    color: #fff;
-    opacity: 1;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-}        
-        </style> <!-- jcarousel -->
-        
-        <script type="text/javascript" src="static/js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="static/js/jquery.cycle.all.js"></script>
-        <!-- <script type="text/javascript" src="static/js/jquery.jcarousel.min.js"></script> -->
-        <script type="text/javascript" src="http://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js"></script>     
-        <!-- <script type="text/javascript" src="http://sorgalla.com/jcarousel/examples/basic/jcarousel.basic.js"></script> -->   
         <script type="text/javascript" src="static/js/index.js"></script>
     </head>
     <body>
@@ -317,32 +186,40 @@
                     </li>
                     -->                                            
 
+            <div class="clientLogoOuter" style="margin-top: 10px;">
+                <button class="prev"><<</button>
+                <div class="clientLogoContainer">
+                    <div class="jCarouselLite">
+                        <ul id="clientLogoList" >
+                            <li>
+                                <img style="margin-top: 24px; width: 157px" src="/static/img/mckesson.png"/>
+                            </li>                                            
+                            <li>
+                                <img style="margin-top: 21px; width: 134px" src="static/img/travelclick_logo.png"/>
+                            </li>                                            
+                            <li>
+                                <img style="margin-top: 0px; width: 134px" src="static/img/medventive_logo.gif"/>
+                            </li>                                            
+                            <li>
+                                <img style="margin-top: 20px; width: 134px" src="static/img/madaket_color.png"/>
+                            </li>
+                            <li>
+                                <img style="margin-top: 8px; width:134px;" src="static/img/it_logo.gif">
+                            </li>
+                            <li>
+                                <img style="margin-top: 28px;" src="static/img/postpost-logo.png">
+                            </li>
+                            <li>
+                                <img style="margin-top: 26px; margin-left: -6px; width:148px;" src="static/img/Snag-a-Job-Logo.gif">                 
+                            </li>
+                        </ul>
+                    </div> 
+                </div>             
+                <button class="next">>></button>            
+            </div> 
+            <div class="clearfix"></div>
             
-            <div class="jcarousel-wrapper">
-                <ul id="clientLogos" class="jcarousel" data-jcarousel="true" style="display:-webkit-box; margin-top: 29px; margin-left: 7px;">
-                    <li class="box5" style="margin-left: 25px;">
-                        <img style="margin-top: 24px; width: 157px" src="/static/img/mckesson.png"/>
-                    </li>                                            
-                    <li class="box5" style="">
-                        <img style="margin-top: 21px; width: 134px" src="static/img/travelclick_logo.png"/>
-                    </li>                                            
-                    <li class="box5" style="">
-                        <img style="margin-top: 0px; width: 134px" src="static/img/medventive_logo.gif"/>
-                    </li>                                            
-                    <li class="box5" style="width: 171px;">
-                        <img style="margin-top: 20px; width: 134px" src="static/img/madaket_color.png"/>
-                    </li>
-                </ul> 
-                <a href="#" class="jcarousel-control-prev inactive" data-jcarouselcontrol="true">prev</a>
-                <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">next</a>
-                <p class="jcarousel-pagination" data-jcarouselpagination="true">
-                    <a href="#1" class="">1</a>
-                    <a href="#2" class="active">2</a>
-                    <a href="#3" class="">3</a>
-                    <a href="#4" class="">4</a><a href="#5" class="">5</a><a href="#6" class="">6</a></p>
-            </div>             
-            
-            <hr style="margin-top: 30px;"></hr>
+            <hr style="margin-top: 0px;"></hr>
             <h3 style="margin-top: 30px;">Activity Feeds</h3>
             
             <div id="activityFeed" class="underlineLinks slideBlackBox" style="display:-webkit-box; margin-top: 0px;">

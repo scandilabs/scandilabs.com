@@ -11,7 +11,7 @@
       <link rel="stylesheet" type="text/css" href="static/css/ie.css" />
     <![endif]-->                
 
-    <script type="text/javascript" src="/static/js/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/static/js/global.js"></script>  
   
   <script type="text/javascript">

@@ -178,3 +178,33 @@ body {
     /*height: 212px;*/
 }
 
+.clientLogoOuter {
+    display:inline-block;
+}    
+
+.clientLogoOuter button {
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 29px;
+}  
+
+.clientLogoContainer {
+    display:inline-block;
+    margin-left: 24px;
+    margin-right: 30px;
+}
+
+.jCarouselLite {
+    overflow: hidden;
+    left: 0px;
+    width: 710px;
+}
+
+#clientLogoList {
+}
+
+#clientLogoList li {
+    height: 87px;
+    margin-left: 23px;
+    margin-right: 18px;
+}
