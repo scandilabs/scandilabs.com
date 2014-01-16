@@ -208,3 +208,36 @@ body {
     margin-left: 23px;
     margin-right: 18px;
 }
+
+#bulletSection {
+    margin-top: 40px; font-size: 12pt;
+}
+
+#bulletSection div {
+    display: inline-block; width: 32%; vertical-align: top;
+}
+
+#bulletSection li {
+    margin-bottom:2px;
+}
+
+.quote p {
+    font-size:12pt; 
+    /*font-weight:bold;*/
+}
+ 
+#activityFeed h1 {
+    padding-top: 16px; margin: 16px; font-size:16px;
+}
+
+#activityFeed p {
+    font-size:11pt; 
+}
+
+.byline {
+    font-size:9pt;
+}
+
+.box3 div {
+    margin: 16px;
+} 

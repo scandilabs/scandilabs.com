@@ -25,12 +25,12 @@
                     <h4>United States</h4>
                     <p>
                         Mads Kvalsvik, Founder and CEO<br/>
-                        <span class="label">Phone:</span> <span class="blackLink"><a href="tel:617 682 0310">(617) 682-0310</a></span><br/>
-                        <span class="label">Fax:</span> (617) 297-0013<br/>
+                        <span class="label" style="display: inline-block; width:50px">Phone:</span> <span class="blackLink"><a href="tel:617 682 0310">(617) 682-0310</a></span><br/>
+                        <span class="label" style="display: inline-block; width:50px">Fax:</span> (617) 297-0013<br/>
                         <br/>
                         ScandiLabs, Inc. <br/>
-                        One Broadway, 14th Floor<br/>
-                        Cambridge, MA 02142<br/>
+                        155 Fifth Street<br/>
+                        Cambridge, MA 02141<br/>
                         United States<br/>
                     </p>
                 </div>

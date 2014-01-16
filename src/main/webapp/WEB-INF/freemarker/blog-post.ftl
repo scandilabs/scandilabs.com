@@ -31,7 +31,7 @@
 
 		<ul class="leftNav">
 		  <div style="padding-right: 26px;">
-		      <li><a href="blog">Back</a></li>
+		      <li><a href="blog">Recent Posts</a></li>
 		  </div>	
 		</ul><div class="mainCol">
 			
