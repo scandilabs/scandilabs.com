@@ -15,12 +15,13 @@
 		<ul class="leftNav">
 			<div style="height: 100px">
     			<li><a href="../knowledge">Back to Search</a></li>
-    		    <#if user??>
+    		    <#if (user??) && ( (user.administrator) || (faq.ownerKey == user.key) )>
     		        <li><a href="entry-edit?key=${faq.key}">Edit</a></li>
-    		        <#if ((user.administrator) && !(faq.visibility == "PUBLIC"))>
-    		            <li><a href="entry-publicize?key=${faq.key}">Publicize</a></li>
-    		        </#if>
+    		        <li><a href="entry-delete?key=${faq.key}">Delete</a></li>
     		    </#if>
+                <#if ((user??) && (user.administrator) && !(faq.visibility == "PUBLIC"))>
+                    <li><a href="entry-publicize?key=${faq.key}">Publicize</a></li>
+                </#if>
 		    </div>
 		    
             <div style="margin-top:24px;">          
@@ -49,20 +50,23 @@
 		        <div class="answerBox"><p>${faq.answerAsMarkdown}<p></div>
 		    </div>
 		    <div class="faqMeta">
-		        Owner: ${faq.ownerName!} | 
-		        Tagged as: <ul class="tags" style="list-style:none">               
+		        Tags: <ul class="tags" style="list-style:none">               
 		            <#list faq.nestedTagsAsList as tag><li style="">
 		                <a href="../knowledge?query=topic:${tag.colonSeparatedNoSpaces}">${tag.colonSeparated}</a>
 		            </#list>
 		        </ul>
+		        <br/>Posted by ${faq.ownerName!} on ${faq.lastModifiedTime?datetime?string}
+		        
 		    </div>           
 		    
 		    <#if (comments?size > 0)>
-		        <hr/>
-		        <h4>Comments:</h4>
 		        <#list comments as comment>
-		            ${comment.ownerName} on ${comment.lastModifiedTime?datetime?string} said:<br/>
-		            ${comment.body}<br/><br/>
+                    <hr/>
+                    Comment from ${comment.ownerName} on ${comment.lastModifiedTime?datetime?string}
+		            <#if (user??) && (comment.ownerKey??) && (comment.ownerKey == user.key)>
+		              (<a href="comment-delete?entryKey=${faq.key}&commentKey=${comment.key}">delete</a>)
+		            </#if>
+                    ${comment.bodyAsMarkdown}
 		        </#list>
 		    </#if>
 		    <#if user??>
@@ -80,7 +84,7 @@
 		        <hr/>
 		        <h4>Activity:</h4>
 		        <#list audits as audit>
-		            ${audit.ownerName} on ${audit.lastModifiedTime?datetime?string}: ${audit.body}<br/><br/>
+		            ${audit.body} by ${audit.ownerName} on ${audit.lastModifiedTime?datetime?string}<br/><br/>
 		        </#list>
 		    </#if>
 

@@ -126,9 +126,9 @@ public class UserController {
         // Create audit entry
         Audit audit = new Audit();
         if (update) {
-        	audit.setBody("Updated FAQ");
+        	audit.setBody("Updated");
         } else {
-        	audit.setBody("Created FAQ");
+        	audit.setBody("Created");
         }
         audit.setKey(RandomStringUtils.randomAlphanumeric(16));
         audit.setFaqForeignKey(faq.getKey());
@@ -139,7 +139,7 @@ public class UserController {
         audit.setCreatedTime(new Date());
         this.solrService.save(audit);
         
-        return "redirect:/technology/knowledge/entry?key=" + faq.getKey();
+        return "redirect:/technology/knowledge/" + faq.getKey();
     }
     
 	@RequestMapping(value = "/technology/knowledge/comment-edit", method = RequestMethod.GET)	
@@ -196,9 +196,9 @@ public class UserController {
         // Create audit entry
         Audit audit = new Audit();
         if (update) {
-        	audit.setBody("Updated Comment");
+        	audit.setBody("Comment updated");
         } else {
-        	audit.setBody("Created Comment");
+        	audit.setBody("Comment added");
         }
         audit.setKey(RandomStringUtils.randomAlphanumeric(16));
         audit.setFaqForeignKey(faqKey);
@@ -209,7 +209,82 @@ public class UserController {
         audit.setCreatedTime(new Date());
         this.solrService.save(audit);
         
-        return "redirect:/technology/knowledge/entry?key=" + faqKey;
+        return "redirect:/technology/knowledge/" + faqKey;
     }    
+    
+    @RequestMapping(value = "/technology/knowledge/entry-delete", method = RequestMethod.GET)
+    public String entryDelete(Map<String,Object> model, HttpServletRequest request) throws Exception {
+    	
+    	if (!userContext.isLoggedIn(request)) {
+    		return "redirect:/signin";
+    	}
+    	userContext.prepareModel(model);    	
+
+    	String entryKey = request.getParameter("key");
+    	if (!StringUtils.hasText(entryKey)) {
+    		throw new IllegalArgumentException("Missing key");
+    	}
+
+        Faq faq = solrService.loadFaq(entryKey);            
+
+        // delete
+        if (faq != null) {
+        	this.solrService.deleteFaq(entryKey, userContext.getEffectiveContextId(request));	
+        }
+        
+        // Create audit entry
+        Audit audit = new Audit();
+        audit.setBody("Entry deleted");
+        audit.setKey(RandomStringUtils.randomAlphanumeric(16));
+        audit.setFaqForeignKey(entryKey);
+        audit.setOwnerKey(userContext.getUserKey());
+        audit.setOwnerName(userContext.getUser().getName());
+        audit.setContextId(userContext.getEffectiveContextId(request));
+        audit.setLastModifiedTime(new Date());
+        audit.setCreatedTime(new Date());
+        this.solrService.save(audit);
+        
+        return "redirect:/technology/knowledge";
+    }        
+    
+    
+    @RequestMapping(value = "/technology/knowledge/comment-delete", method = RequestMethod.GET)
+    public String commentDelete(Map<String,Object> model, HttpServletRequest request) throws Exception {
+    	
+    	if (!userContext.isLoggedIn(request)) {
+    		return "redirect:/signin";
+    	}
+    	userContext.prepareModel(model);    	
+
+    	String commentKey = request.getParameter("commentKey");
+    	if (!StringUtils.hasText(commentKey)) {
+    		throw new IllegalArgumentException("Missing commentKey");
+    	}
+    	String entryKey = request.getParameter("entryKey");
+    	if (!StringUtils.hasText(entryKey)) {
+    		throw new IllegalArgumentException("Missing entryKey");
+    	}
+
+        Comment comment = solrService.loadComment(commentKey, userContext.getEffectiveContextId(request));            
+
+        // delete
+        if (comment != null) {
+        	this.solrService.deleteComment(commentKey, userContext.getEffectiveContextId(request));	
+        }
+        
+        // Create audit entry
+        Audit audit = new Audit();
+        audit.setBody("Comment deleted");
+        audit.setKey(RandomStringUtils.randomAlphanumeric(16));
+        audit.setFaqForeignKey(commentKey);
+        audit.setOwnerKey(userContext.getUserKey());
+        audit.setOwnerName(userContext.getUser().getName());
+        audit.setContextId(userContext.getEffectiveContextId(request));
+        audit.setLastModifiedTime(new Date());
+        audit.setCreatedTime(new Date());
+        this.solrService.save(audit);
+        
+        return "redirect:/technology/knowledge/" + entryKey;
+    }        
 
 }

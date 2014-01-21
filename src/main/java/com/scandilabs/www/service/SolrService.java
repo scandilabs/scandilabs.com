@@ -1,7 +1,9 @@
 package com.scandilabs.www.service;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +15,7 @@ import org.apache.solr.client.solrj.SolrQuery.ORDER;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.solr.client.solrj.response.UpdateResponse;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
@@ -29,6 +32,7 @@ import com.scandilabs.www.entity.Faq;
 import com.scandilabs.www.entity.NestedTag;
 import com.scandilabs.www.entity.User;
 import com.scandilabs.www.service.support.Visibility;
+import com.scandilabs.www.util.ReverseBeanPropertyComparator;
 
 public class SolrService {
     
@@ -63,8 +67,34 @@ public class SolrService {
     
     public List<Audit> listAudits(Faq faq) {
     	List<Audit> list = this.searchAudit(faq, faq.getContextId());
+    	SimpleDateFormat compareFormat = new SimpleDateFormat("yyyy-MM-dd");
     	if (list != null) {
-    		return list;
+    		
+    		// Reverse chrono sort
+    		ReverseBeanPropertyComparator comparator = new ReverseBeanPropertyComparator(
+    				"lastModifiedTime");
+    		Collections.sort(list, comparator);
+    		
+    		// Consolidate audit entries by event and date to avoid showing a bunch of updates for the same day
+    		List<Audit> consolidatedList = new ArrayList<Audit>();
+    		Audit lastAudit = null;
+    		for (Audit audit : list) {
+    			String currentCompareString = String.format("%s %s %s", audit.getOwnerName(), audit.getBody(), compareFormat.format(audit.getLastModifiedTime()));
+    			String lastCompareString = "[not set]";
+    			if (lastAudit != null) {
+    				lastCompareString = String.format("%s %s %s", lastAudit.getOwnerName(), lastAudit.getBody(), compareFormat.format(lastAudit.getLastModifiedTime()));
+    			}
+    			
+    			if (currentCompareString.equals(lastCompareString)) {
+    				// Do not save to the new list
+    			} else {
+    				consolidatedList.add(audit);
+    			}
+    			
+    			lastAudit = audit;
+    		}
+    		
+    		return consolidatedList;
     	}
     	return (List<Audit>) ListUtils.EMPTY_LIST;
     }
@@ -134,6 +164,14 @@ public class SolrService {
     	return null;
     }
     
+    public void deleteFaq(String key, String contextId) {
+    	this.delete(key);
+    }
+
+    public void deleteComment(String key, String contextId) {
+    	this.delete(key);
+    }
+    
     public User findUserByEmail(String email) {
     	List<User> users = this.searchForUsers("email:" + email);
     	if (users != null && !users.isEmpty()) {
@@ -173,7 +211,8 @@ public class SolrService {
         
         // Search
         QueryResponse queryResponse = this.search(modifiedQuery, contextId, null, 200, 0);
-        return extractComments(queryResponse);
+        List<Comment> comments = extractComments(queryResponse);
+		return comments;
     }
     
     public List<Faq> searchFaq(String query, String contextId, Map<String, String> facetFields, long rows, long startRow) {
@@ -397,6 +436,27 @@ public class SolrService {
                 queryResponse.getElapsedTime(),
                 (System.currentTimeMillis() - start)));
         return queryResponse;
+    }
+
+    private void delete(String id) {
+        long start = System.currentTimeMillis();
+
+        // Execute the Solr Query and get the response
+        UpdateResponse queryResponse;
+        try {
+            logger.debug(String.format("Executing DELETE query for id: %s", id));
+            queryResponse = solrServerConfig.getSolrServer().deleteById(id);
+        } catch (SolrServerException e) {
+            throw new RuntimeException("Exception during solr DELETE for id "
+                    + id, e);
+        } catch (IOException e) {
+            throw new RuntimeException("Exception during solr DELETE for id "
+                    + id, e);
+        }
+        logger.info(String.format(
+                "Executed DELETE for key %s. Time reported %d, client actual %d", id, 
+                queryResponse.getElapsedTime(),
+                (System.currentTimeMillis() - start)));
     }
 
     public QueryResponse search(String query, String contextId, Map<String, String> facetFields, long rows, long startRow) {

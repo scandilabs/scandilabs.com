@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.StringWriter;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -33,6 +34,7 @@ import com.scandilabs.www.service.SolrService;
 import com.scandilabs.www.service.UserContext;
 import com.scandilabs.www.util.CatamaranMarkdown;
 import com.scandilabs.www.util.FaqUtils;
+import com.scandilabs.www.util.ReverseBeanPropertyComparator;
 import com.scandilabs.www.web.support.NestedTagNode;
 
 
@@ -149,10 +151,15 @@ public class VisitorController {
             return new ModelAndView("redirect:/technology/knowledge");
         }
         
-        // Audits and comments
+        // Audits 
         List<Audit> audits = solrService.listAudits(faq);
         mv.addObject("audits",  audits);
+        
+        // Sort decending by timestamp.  Note I could not get the "sort=modified-time desc" query parameter to work (possibly because this field is not indexed)
         List<Comment> comments = solrService.listComments(faq);
+		ReverseBeanPropertyComparator comparator = new ReverseBeanPropertyComparator(
+				"lastModifiedTime");
+		Collections.sort(comments, comparator);
         mv.addObject("comments", comments);
         
         // Create keyword list from tags and categories

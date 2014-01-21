@@ -101,9 +101,9 @@
         </div>
     
         <div style="float:right;padding-top:4px;">
-            <a target="_blank" href="https://twitter.com/scandilabs"><img src="static/img/tw_icon_20.gif"/></a>
-            <a target="_blank" href="http://www.facebook.com/ScandiLabs"><img src="static/img/fb_icon_20.gif"/></a>
-            <a target="_blank" href="https://plus.google.com/u/0/104908377553538789362/about"><img src="static/img/gplus_icon_20.gif"/></a>
+            <a target="_blank" href="https://twitter.com/scandilabs"><img src="/static/img/tw_icon_20.gif"/></a>
+            <a target="_blank" href="http://www.facebook.com/ScandiLabs"><img src="/static/img/fb_icon_20.gif"/></a>
+            <a target="_blank" href="https://plus.google.com/u/0/104908377553538789362/about"><img src="/static/img/gplus_icon_20.gif"/></a>
         </div>
     </div>
 </div>

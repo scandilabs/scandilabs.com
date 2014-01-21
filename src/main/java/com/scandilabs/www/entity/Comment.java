@@ -12,6 +12,7 @@ import org.springframework.util.StringUtils;
 import com.scandilabs.catamaran.type.Name;
 import com.scandilabs.catamaran.util.Timestamped;
 import com.scandilabs.www.service.SolrService;
+import com.scandilabs.www.util.CatamaranMarkdown;
 
 public class Comment implements Comparable<Object>, Timestamped {
     
@@ -65,6 +66,7 @@ public class Comment implements Comparable<Object>, Timestamped {
         inputDoc.addField("body", this.getBody());
         inputDoc.addField("faq-foreign-key", this.getFaqForeignKey());
         inputDoc.addField("owner-name", this.getOwnerName());
+        inputDoc.addField("owner-key", this.getOwnerKey());
         inputDoc.addField("created", this.getCreatedTime());
         inputDoc.addField("modified-time", this.getLastModifiedTime());
 
@@ -149,6 +151,11 @@ public class Comment implements Comparable<Object>, Timestamped {
 	public String getBody() {
 		return body;
 	}
+	
+    public String getBodyAsMarkdown() {
+    	CatamaranMarkdown m = new CatamaranMarkdown(); 
+    	return m.markdown(this.getBody());
+    }	
 
 	public void setBody(String body) {
 		this.body = body;
