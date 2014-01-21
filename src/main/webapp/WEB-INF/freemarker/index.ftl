@@ -25,89 +25,25 @@
         
         <!-- override nav stuff -->
         <style>
-            #header {
-                height:56px;
-            }
-            
-            html {
-                overflow-x: hidden;
-            }            
 
-            .slideOuter {
-            }
-            
-            .bgImageBoxOuter {
-                width:100%;
-                margin-left:auto;
-                margin-right:auto;
-            }
-            
-            .overlay {
-                font-weight: 500;
-                font-size:17px;
-                color: black;
-                font-style:normal;
-            }
-            
-            #outerContent {
-                /* compensate for 14px scrollbar on chrome 
-                width: 979px;
-                padding-right: 15px;
-                
-                margin-left: auto;
-                margin-right: auto;
-                */
-            }
-            
-            #pageCanvas {
-                min-height: 600px;
-                padding-left: 20px;
-                padding-right: 20px;
-                width: 920px;
-            }
-            
-            .box2 {
-                width: 400px;
-                background-color:white;
-            }
-            
-            .box3 {
-                min-height:200px;
-                width: 278px;
-                background-color:white;
-                padding-bottom: 2px;
-            }
-            
-            .box5 {                
-                width: 178px;
-                background-color:white;
-            }            
-            
-            .boxDelim {
-                width: 7px;
-                /*background-color:#2e3235;*/
-                background-color:#fff;
-            }
-            
-            #staffPics {
-                width: 304px; 
-                height: 251px;
-                padding-left: 60px; 
-                left: 60px;
-                display: inline-block;                
-            }
         </style>
         
         <script type="text/javascript" src="static/js/index.js"></script>
     </head>
     <body>
         
-    
-    <div class="bgImageBox" style="position:absolute; top:80px; width:100%; background-color: #474f64;">
-        <div style="width:2040px; margin-left:auto; margin-right:auto;">
-            <img style="height:380px; width:100%" src="static/img/berg2040x1240med.jpg" />
-        </div>                            
+    <!-- set up absolute position container -->        
+    <div style="position: absolute; top: 80px; background-color: #474f64; width: 100%; height: 380px; ">
+        <!-- then position image in the middle of parent container -->
+        <img style="position: relative; left: 50%; margin-left: -1020px; height: 380px; width: 2040px;" src="static/img/berg2040x380med.jpg" />
+    </div>    
+    <!--
+    <div class="bgImageBox" style="position:relative; overflow: hidden; top:80px; height:380px; margin-left:auto; margin-right:auto; background-color: #474f64;">
+        <div style="position: absolute; left: -9999px; right: -9999px;">
+            <img style="height:380px; width:100%" src="static/img/berg2040x380med.jpg" />
+        </div>
     </div>
+    -->
     
     
     <#include "includes/top-nav.ftl" />
@@ -133,59 +69,38 @@
                         </h2>                        
                     </div>
                 </div>
-                <!--       
-                <h2 style="font-size:30px; margin-top: 0px; padding-left: 30px; padding-right: 30px; text-align: left; margin-bottom: 30px;">
-                    Game-changing technical design and rapid delivery.
-                </h2>
-                -->  
-                
             </div>                                            
         </div>
         
         <div id="contentBelowBgImage" style="padding-left: 40px; padding-right: 40px;">        
             
-            <div id="bulletSection">                                
+            <div id="bulletSection" class="box3">                                
                 <div>
-                    <h3 style="">Game-changing Solutions</h3>
-                    <ul>
+                    <h2 style="margin-left: 0px">Game-changing Solutions</h2>
+                    <ul style="margin-left: 0px">
                         <li>Cambridge/MIT based solutions design staff</li>
                         <li>Rapid prototyping/wireframing</li>
                         <li>Technical architects with broad business experience</li>
                     </ul>
-                </div>
-                <div style="width: 1%">
-                    &nbsp;
-                </div>
-                <div>
-                    <h3 style="">Quality Software</h3>
+                </div><div>
+                    <h2>Quality Software</h2>
                     <ul>
                         <li>Consistency through apprenticeship program</li>
                         <li>Low turnover, experienced staff</li>
                         <li>Developer input and design participation</li>
                     </ul>
-                </div>
-                <div style="width: 1%">
-                    &nbsp;
-                </div>
-                <div>
-                    <h3 style="">Rapid Delivery</h3>
+                </div><div>
+                    <h2>Rapid Delivery</h2>
                     <ul>
                         <li>We hire for talent, not for need</li>
                         <li>Full stack developers</li>
                         <li>Flat organizational structure</li>
-                        <li>Direct communication channels</li>
-                        
+                        <li>Direct communication channels</li>                        
                     </ul>
                 </div>            
             </div>
             
             <hr style="margin-top: 30px;"></hr>
-
-                    <!--
-                    <li class="" style="">
-                        <img style="margin-top: 19px; width: 43px; padding-right: 8px;" src="static/img/nav_left_arrow.png"/>
-                    </li>
-                    -->                                            
 
             <div class="clientLogoOuter" style="margin-top: 10px;">
                 <button class="prev"><<</button>
@@ -226,11 +141,11 @@
             <div class="clearfix"></div>
             
             <hr style="margin-top: 0px;"></hr>
-            <h3 style="margin-top: 30px;">Knowledge and Learning</h3>
+            <h2 style="margin-top: 30px;">Knowledge and Learning</h2>
             
-            <div id="activityFeed" class="underlineLinks slideBlackBox" style="display:-webkit-box; margin-top: 0px;">
-                <div class="box3" style="background-color: #dddddd">
-                    <h1>Blog</h1>
+            <div id="activityFeed" class="underlineLinks box3">
+                <div style="background-color: #e2e2e2">
+                    <h3>Blog</h3>
                     <div>
                         <p>
                             Web Framework Design Goals<br/> 
@@ -241,13 +156,11 @@
                             <span class="byline"><a href="/blog/why-do-startups-create-software-so-much-faster-than-enterprise-it-shops">March 15, 2013</a> by <a href="/about/management">mkvalsvik</a></span>
                         </p>
                         <p>
-                            <a target="_blank" href="/blog">More</a>
+                            <a href="/blog">More >></a>
                         </p>
-                    </div>
-                </div>                                            
-                
-                <div class="box3" style="background-color: #ffffff">
-                    <h1>Social Media <img src="static/img/new-window.png" alt="Links open in a new window"></h1>
+                    </div>                    
+                </div><div style="background-color: #ffffff">
+                    <h3>Social Media <img src="static/img/new-window.png" alt="Links open in a new window"></h3>
                     <div>                    
                         <p>
                             5 ways SAS scaled agile scrum <a target="_blank" href="http://zite.to/1alMRmN">http://zite.to/1alMRmN</a><br/> 
@@ -258,13 +171,11 @@
                             <span class="byline">June 18, 2013 by <a target="_blank" href="http://twitter.com/scandilabs">@scandilabs</a></span>
                         </p>
                         <p>
-                            <a target="_blank" href="http://twitter.com/scandilabs">More</a>
+                            <a target="_blank" href="http://twitter.com/scandilabs">More >></a>
                         </p>
                     </div>
-                </div>
-                
-                <div class="box3" style="background-color: #dddddd">
-                    <h1>Team Learning</h1>
+                </div><div style="background-color: #e2e2e2">
+                    <h3>Team Learning</h3>
                     <div>
                         <p>
                             How to Creating New AWS Hosting Environment and Deploy Application<br/> 
@@ -279,7 +190,7 @@
                             <span class="byline"><a href="/technology/knowledge/How_to_include_googl">June 26, 2013</a> by <a href="/about/management">pmurkute</a></span>
                         </p>        
                         <p>
-                            <a href="/technology/knowledge">More</a>
+                            <a href="/technology/knowledge">More >></a>
                         </p>
                                     
                     </div>
@@ -288,10 +199,11 @@
             
             
             <hr style="margin-top: 30px;"></hr>
+            <h2 style="margin-top: 30px;">Client Testimonials</h2>
             
             <!-- testimonials -->
-            <div class="slideBlackBox" style="display:-webkit-box; margin-top: 30px;">
-                <div class="box2 quote">
+            <div class="box2">
+                <div class="quote" style="padding-right:15px;">
                     <p>
                         "ScandiLabs has worked tirelessly with our product team to build a Healthcare IT solution for thousands of doctors and hundreds of insurance companies.
                     </p>
@@ -304,9 +216,7 @@
                         Entrepreneur in Residence, <br/>
                         Center for MIT Entrepreneurship<br/>                
                     </p>
-                </div>                                            
-                
-                <div class="box2 quote" style="padding-left:38px;">
+                </div><div class="quote" style="padding-left:15px;">
                     <p>
                         "The team from ScandiLabs helped us put together the right solution with minimal impact on our own resources.
                     </p>  

@@ -1,5 +1,3 @@
-/* slide show */
-
 body {
 }
 
@@ -12,61 +10,20 @@ body {
    min-height: 200px;
 }
 
-.slideOuter {
-    /*
-    height: 458px;
-    padding-top: 53px;
-    */    
+h2 {
+    font-size: 18px;
+    margin-top: 15px;
 }
 
-.slideBg {
-    /*
-    
-    height: 600px;
-    margin-left: auto;
-    margin-right:auto;
-    left: -260px;
-    
-    position:fixed;
-    top:50%;
-    left:50%;
-    margin-left:-681px;
-    margin-top:-248px;
-    width:1360px;
-    */    
-}
-
-.bgImageBox {
-    /*width:1560px;
-    height:400px;
-    margin-left: auto;
-    margin-right:auto;
-    */
-}
-
-.bgImageBox img {
-    /*
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    */
+h3 {
+    font-size: 16px;
+    margin-top: 15px;    
 }
 
 .belowSliderBar {
     width:960px;
     margin-left: auto;
     margin-right:auto;    
-}
-
-#nav {
-    width:66px;
-    margin-left: auto;
-    margin-right:auto;
-    /*padding-right:40px;*/
-    position:relative;
-    top: -200px;
-    z-index: 8;
-    opacity: 0.7;
-    cursor:pointer;
 }
 
 .navItem {
@@ -214,7 +171,7 @@ body {
 }
 
 #bulletSection div {
-    display: inline-block; width: 32%; vertical-align: top;
+    /*display: inline-block; width: 32%; vertical-align: top;*/
 }
 
 #bulletSection li {
@@ -222,12 +179,16 @@ body {
 }
 
 .quote p {
-    font-size:12pt; 
-    /*font-weight:bold;*/
+    font-size:12pt;
+    margin-top: 0px; 
 }
  
-#activityFeed h1 {
-    padding-top: 16px; margin: 16px; font-size:16px;
+#activityFeed { 
+    margin-top: 0px;
+} 
+ 
+#activityFeed h1 {     
+    font-size:16px;
 }
 
 #activityFeed p {
@@ -238,6 +199,82 @@ body {
     font-size:9pt;
 }
 
-.box3 div {
-    margin: 16px;
+#header {
+    height:56px;
+}
+
+html {
+    overflow-x: hidden;
+}            
+
+.slideOuter {
+}
+
+.bgImageBoxOuter {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.overlay {
+    font-weight: 500;
+    font-size:17px;
+    color: black;
+    font-style:normal;
+}
+
+#outerContent {
+    /* compensate for 14px scrollbar on chrome 
+    width: 979px;
+    padding-right: 15px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    */
+}
+
+#pageCanvas {
+    min-height: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 920px;
+}
+
+.box2 > div {
+    width: 420px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.box3 > div {
+    min-height:200px;
+    width: 280px;
+    height: 100%;
+    background-color:white;
+    padding-bottom: 2px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.box3 > div > ul, .box3 > div > h3, .box3 > div > h1, .box3 > div > div, .box3 > div > h2 {
+    margin: 15px;
 } 
+
+.box5 {                
+    width: 178px;
+    background-color:white;
+}            
+
+.boxDelim {
+    width: 7px;
+    /*background-color:#2e3235;*/
+    background-color:#fff;
+}
+
+#staffPics {
+    width: 304px; 
+    height: 251px;
+    padding-left: 60px; 
+    left: 60px;
+    display: inline-block;                
+}
