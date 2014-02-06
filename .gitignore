@@ -11,3 +11,14 @@ target/
 .classpath
 .project
 .DS_Store
+=======
+img/.DS_Store
+/.DS_Store
+/.settings
+
+# ignore all target directories below
+target/
+/target
+target
+/bin
+
