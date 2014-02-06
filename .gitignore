@@ -1,4 +1,13 @@
-.project
 img/.DS_Store
 /.DS_Store
 /.settings
+
+# ignore all target directories below
+target/
+/target
+target
+/bin
+
+# ignore files with following extensions
+.classpath
+.project
