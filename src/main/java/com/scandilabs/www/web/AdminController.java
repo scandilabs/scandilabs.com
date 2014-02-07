@@ -60,7 +60,7 @@ public class AdminController {
         faq.setVisibility(Visibility.PUBLIC);
         solrService.save(faq);
         messageContext.setMessage("Publicized FAQ successfully", true);
-        return "redirect:/technology/knowledge/entry?key=" + faqId;
+        return "redirect:/technology/knowledge/" + faqId;
 	}
 
     

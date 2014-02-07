@@ -91,3 +91,21 @@ form {
 .faq a:link, .faq a:visited {
     text-decoration:none;    
 }
+
+blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    border-style: solid;
+    border-color:  hsla(213,85%,40%,1);
+    border-width: 1px;
+    padding: 4px;
+    background-image: url('../img/icn-tips-large.png');
+    background-repeat: no-repeat;
+}
+
+blockquote p {
+    margin: 0px;   
+    margin-left:7px;
+    padding-top:3px;
+    padding-bottom:4px;
+}
