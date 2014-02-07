@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.scandilabs.java</groupId>
-  <artifactId>java-scandilabs-com</artifactId>
+  <artifactId>scandilabs.com</artifactId>
   <packaging>war</packaging>
   <version>1.0.0</version>
-  <name>Catamaran FAQ Management Web Application</name>
+  <name>ScandiLabs public website Web Application</name>
   <url>http://maven.apache.org</url>
   
   <dependencies>
