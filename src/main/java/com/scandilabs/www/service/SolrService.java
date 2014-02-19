@@ -143,7 +143,7 @@ public class SolrService {
         modifiedQuery = "document-type:" + DOCUMENT_TYPE_AUDIT + " AND key:" + key;
         
         // Search
-        QueryResponse queryResponse = this.search(modifiedQuery, contextId, null, 200, 0);
+        QueryResponse queryResponse = this.searchFaqs(modifiedQuery, contextId, null, 200, 0);
         List<Audit> audits = extractAudits(queryResponse);    	
     	if (audits != null && !audits.isEmpty()) {
     		return (Audit) CollectionUtils.findOne(audits);
@@ -156,7 +156,7 @@ public class SolrService {
         modifiedQuery = "document-type:" + DOCUMENT_TYPE_COMMENT + " AND key:" + key;
         
         // Search
-        QueryResponse queryResponse = this.search(modifiedQuery, contextId, null, 200, 0);
+        QueryResponse queryResponse = this.searchFaqs(modifiedQuery, contextId, null, 200, 0);
         List<Comment> comments = extractComments(queryResponse);    	
     	if (comments != null && !comments.isEmpty()) {
     		return (Comment) CollectionUtils.findOne(comments);
@@ -185,7 +185,7 @@ public class SolrService {
     }
     
     public List<Faq> searchFaq(String query, String contextId, Map<String, String> facetFields) {
-        return searchFaq(query, contextId, facetFields, 20, 0);
+        return searchFaq(query, contextId, facetFields, DEFAULT_ROWS, 0);
     }
     
     public List<Audit> searchAudit(Faq faq, String contextId) {
@@ -193,11 +193,15 @@ public class SolrService {
         if (faq != null) {
             modifiedQuery = "document-type:" + DOCUMENT_TYPE_AUDIT + " AND faq-foreign-key:" + faq.getKey();
         } else {
-            modifiedQuery = "document-type:" + DOCUMENT_TYPE_AUDIT + " AND context-id:" + contextId;
+            modifiedQuery = "document-type:" + DOCUMENT_TYPE_AUDIT;
         }
         
-        // Search
-        QueryResponse queryResponse = this.search(modifiedQuery, contextId, null, 200, 0);
+        SearchQuery searchQuery = this.createSearchQuery(modifiedQuery, contextId);
+
+        // Sorting and max rows
+        searchQuery.addSortField("created", ORDER.desc);
+
+        QueryResponse queryResponse = this.search(searchQuery);        
         return extractAudits(queryResponse);
     }
     
@@ -210,7 +214,7 @@ public class SolrService {
         }
         
         // Search
-        QueryResponse queryResponse = this.search(modifiedQuery, contextId, null, 200, 0);
+        QueryResponse queryResponse = this.searchFaqs(modifiedQuery, contextId, null, 200, 0);
         List<Comment> comments = extractComments(queryResponse);
 		return comments;
     }
@@ -224,7 +228,7 @@ public class SolrService {
         }
         
         // Search
-        QueryResponse queryResponse = this.search(modifiedQuery, contextId, facetFields, rows, startRow);
+        QueryResponse queryResponse = this.searchFaqs(modifiedQuery, contextId, facetFields, rows, startRow);
         return extractFaqs(queryResponse);
     }
     
@@ -241,7 +245,7 @@ public class SolrService {
         }
         
         // Search. Using null context since users are (presently) limited to admins anyway
-        QueryResponse queryResponse = this.search(modifiedQuery, null, facetFields, rows, startRow);
+        QueryResponse queryResponse = this.searchFaqs(modifiedQuery, null, facetFields, rows, startRow);
         return extractUsers(queryResponse);
     }    
     
@@ -412,7 +416,7 @@ public class SolrService {
     }
     
     public QueryResponse search(String query, String contextId, Map<String, String> facetFields) {
-        return search(query, contextId, facetFields, DEFAULT_ROWS, 0);
+        return searchFaqs(query, contextId, facetFields, DEFAULT_ROWS, 0);
     }
     
     private QueryResponse search(SearchQuery searchQuery) {
@@ -458,9 +462,9 @@ public class SolrService {
                 queryResponse.getElapsedTime(),
                 (System.currentTimeMillis() - start)));
     }
-
-    public QueryResponse search(String query, String contextId, Map<String, String> facetFields, long rows, long startRow) {
-        SearchQuery searchQuery = null;
+    
+    private SearchQuery createSearchQuery(String query, String contextId) {
+    	SearchQuery searchQuery = null;
         if (contextId == null) {
         	searchQuery = new SearchQuery(query);
         } else if (contextId.equals(CONTEXT_ID_PUBLIC)) {
@@ -468,6 +472,11 @@ public class SolrService {
         } else {
         	searchQuery = new SearchQuery("(" + query + ") AND context-id:" + contextId);
         }
+        return searchQuery;
+    }
+
+    public QueryResponse searchFaqs(String query, String contextId, Map<String, String> facetFields, long rows, long startRow) {
+        SearchQuery searchQuery = this.createSearchQuery(query, contextId);
 
         // Sorting and max rows
         searchQuery.addSortField("question", ORDER.asc);

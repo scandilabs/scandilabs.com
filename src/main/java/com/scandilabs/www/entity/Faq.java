@@ -78,7 +78,7 @@ public class Faq implements Comparable<Object>, Timestamped {
         			throw new RuntimeException("Bad solr data, a field like 'tag-2-1' was populated while 'tag-1-1' was null.");
         		}
         		if (hasValue) {
-        			this.nestedTags[i].addElement(value);	
+        			this.nestedTags[i].addElement(value.toUpperCase());	
         		}        		
         	}
         }
