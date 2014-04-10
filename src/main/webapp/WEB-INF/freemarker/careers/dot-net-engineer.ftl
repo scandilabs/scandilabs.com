@@ -21,39 +21,40 @@
           <li>
             <a href="/careers">Careers</a>
             <ul class='leftSubNav'>
-              <li><a href="/careers/dot-net-engineer">C#/.NET Engineers</a></li>
+              <li><a class='current' href="/careers/dot-net-engineer">C#/.NET Engineers</a></li>
               <li><a href="/careers/dot-net-lead">C#/.NET Team Lead</a></li>
-              <li><a class='current' href="/careers/software-engineer">Java Engineers</a></li>
+              <li><a href="/careers/software-engineer">Java Engineers</a></li>
               <li><a href="/careers/visual-designer">Visual Designer</a></li>
             </ul>
           </li>
   				<li><a href="/contact">Contact</a></li>
   			</ul><div class="mainCol">
 
-  				<h2 class="noTopMargin">Java Engineers</h2>
+  				<h2 class="noTopMargin">C#/.NET Engineers</h2>
 	        	<p>Location: Pune, India</p>
 	        	<p>
-	        	    We are looking for multiple Java engineers with 2-5 years of experience creating web-based applications using Enterprise Java technologies.
+	        	    We are looking for multiple C#/.NET engineer with 2-5 years of experience creating web-based applications using scalable software technologies such as Enterprise Java, .NET, Rails, or Python.
 	        	</p>    
             <h4>Job Responsibilities</h4>
             <ul>
-                <li>Work from prototype to finish on web-based applications for growing companies in HealthCare, Finance, Consumer Web and other industries.
+                <li>Work from prototype to finish on web-based applications for growing and established companies in HealthCare, Finance, and other industries.
                 </li>
                 <li>Develop clean, well-documented code for both visual and data-driven applications</li>
                 <li>Maintain organization over personal development resources, documented code, standards, etc</li>
-                <li>Become well-versed in ScandiLabs' own Catamaran Java framework, and contribute to its improvement</li>
+                <li>Become well-versed in ScandiLabs' Knowledge Base and internal libraries, and contribute to their improvement</li>
                 <li>Actively share knowledge with team members and across the company</li>
             </ul>
 	        	    
             <h4>Qualifications</h4>
             <ul>
-                <li>2+ years experience and expert knowledge of object-oriented software production in Java</li>
-                <li>Hands-on experience with a commonly used high-level IDE such as Eclipse</li>
+                <li>2+ years experience and expert knowledge of object-oriented software production in languages such as Java, Ruby, C++ or C#</li>
+                <li>1+ years experience with C# specifically</li>
+                <li>Experience with Visual Studio</li>
                 <li>Experience with MVC models</li>
                 <li>Experience supporting and maintaining web applications</li>
                 <li>Good working knowledge of common web-based technologies such as HTML, JavaScript, CSS and AJAX</li>
-                <li>Hands-on experience designing and developing database-drive applications, using SQL and object-relational frameworks such as Hibernate and iBatis</li>
-                <li>Open-source competence, Unix command line experience and Web/application server administration are big pluses</li>
+                <li>Hands-on experience designing and developing database-drive applications, using SQL and object-relational frameworks such as Entity Framework or NHibernate (or equivalent)</li>
+                <li>Batch/command line, drools.NET and silverlight are big pluses</li>
             </ul>
             
             <h4>Education</h4>

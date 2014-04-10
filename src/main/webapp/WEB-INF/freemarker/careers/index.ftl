@@ -21,27 +21,45 @@
           <li>
             <a class='current' href="/careers">Careers</a>
             <ul class='leftSubNav'>
+              <li><a href="/careers/dot-net-engineer">C#/.NET Engineers</a></li>
+              <li><a href="/careers/dot-net-lead">C#/.NET Team Lead</a></li>
+              <li><a href="/careers/software-engineer">Java Engineers</a></li>
               <li><a href="/careers/visual-designer">Visual Designer</a></li>
-              <li><a href="/careers/software-engineer">Software Engineer</a></li>
             </ul>
           </li>
   				<li><a href="/contact">Contact</a></li>
   			</ul><div class="mainCol">
 				
-  				<h2 class="noTopMargin">Visual Designer</h2>
-	        	<p>Location: Pune, India</p>
-	        	<p>
-	        	    We are looking for a talented digital designer with 1-5 years of experience designing for web browsers.
-	        	</p>    
-            <p><a href="/careers/visual-designer">More >></a></p>
+                <h2 class="noTopMargin">C#/.NET Engineers</h2>
+                <p>Location: Pune, India</p>
+                <p>
+                    Multiple software engineers proficient with Microsoft server-side web technologies such as ASP.NET and C#.  2-5 years of experience, minimum 1 year of professional C# experience.
+                </p>    
+                <p><a href="/careers/dot-net-engineer">More >></a></p>
   	        	    
+                <p><hr/></p>
+                <h2 class="noTopMargin">C#/.NET Team Lead</h2>
+                <p>Location: Pune, India</p>
+                <p>
+                    US-based .NET professional with 4-7 years of experience.
+                </p>    
+                <p><a href="/careers/dot-net-lead">More >></a></p>
+
 	  			<p><hr/></p>
-  				<h2 class="noTopMargin">Software Engineer</h2>
+  				<h2 class="noTopMargin">Java Engineers</h2>
 	        	<p>Location: Pune, India</p>
 	        	<p>
-	        	    We are looking for a talented software engineer with 2-5 years of experience creating web-based applications using scalable software technologies such as Enterprise Java, .NET, Rails, or Python.
+	        	    Multiple software engineers with 2-5 years of experience creating web-based applications using Enterprise Java server-side technologies such as Spring MVC and Hibernate.
 	        	</p>    
-            <p><a href="/careers/software-engineer">More >></a></p>
+                <p><a href="/careers/software-engineer">More >></a></p>
+
+                <p><hr/></p>
+                <h2 class="noTopMargin">Visual Designer</h2>
+                <p>Location: Pune, India</p>
+                <p>
+                    Digital designer with 1-5 years of experience designing for web and mobile.
+                </p>    
+                <p><a href="/careers/visual-designer">More >></a></p>
 
   			</div> <!-- mainCol -->
            

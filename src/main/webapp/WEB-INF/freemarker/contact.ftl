@@ -43,7 +43,7 @@
                         <br/>
                         ScandiLabs<br/>
                         S.F 11, Sacred World, 2nd Floor<br/> 
-                        Wanworie, Pune - 411040<br/>
+                        Wanowrie, Pune - 411040<br/>
                         India
                     </p>                    
                 </div>
