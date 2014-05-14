@@ -107,9 +107,9 @@
                 <div class="clientLogoContainer">
                     <div class="jCarouselLite">
                         <ul id="clientLogoList" >
-                            <li>
+                            <!-- li>
                                 <img style="margin-top: 24px; width: 157px" src="/static/img/mckesson.png"/>
-                            </li>                                            
+                            </li -->                                            
                             <li>
                                 <img style="margin-top: 21px; width: 134px" src="static/img/travelclick_logo.png"/>
                             </li>                                            
@@ -225,7 +225,7 @@
                     </p>
                     <p style="font-size:12px;">
                         <span style="font-weight:600">Bernard Chien</span><br/>
-                        CTO, Medventive, a McKesson Company<br/>
+                        CTO, MedVentive<br/>
                     </p>
                 </div>
             </div> <!-- testimonials -->            

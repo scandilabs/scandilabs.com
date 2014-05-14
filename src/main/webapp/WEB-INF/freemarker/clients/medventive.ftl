@@ -26,7 +26,7 @@
         					<li><a href="clients/travelclick">TravelClick</a></li>					
         				</ul>
         				<img style="width:134px;" src="static/img/medventive_logo.gif" />
-        				<p>A McKesson Company</p>
+        				<!-- p>A McKesson Company</p -->
 				    </div><div class="mainCol">
     					
                         <h2 class="noTopMargin">Advanced SaaS Application Monitoring</h2>
@@ -37,7 +37,7 @@
                         </p>
                         <h4>The ScandiLabs Solution</h4>
                         <p>
-                              ScandiLabs proposed and implemented an advanced monitoring solution that emulated client usage patterns to detect any site anomolies.  The solution also kept track of internal deployment and on-boarding events to ensure that service was restored in a safe and timely fashion.  Solution highlights:
+                              ScandiLabs proposed and implemented a monitoring solution that emulated client usage patterns to detect any site anomolies.  The solution also kept track of internal deployment and on-boarding events to ensure that service was restored in a safe and timely fashion.  Solution highlights:
                         </p>                        
                         <ul>
                             <li>Pure Java, multi-threaded solution</li>
