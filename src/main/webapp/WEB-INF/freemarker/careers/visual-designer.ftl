@@ -22,7 +22,7 @@
             <a href="/careers">Careers</a>
             <ul class='leftSubNav'>
               <li><a href="/careers/dot-net-engineer">C#/.NET Engineers</a></li>
-              <li><a href="/careers/dot-net-lead">C#/.NET Team Lead</a></li>
+              <li><a href="/careers/dot-net-lead">Senior C#/.NET Engineer</a></li>
               <li><a href="/careers/software-engineer">Java Engineers</a></li>
               <li><a class='current' href="/careers/visual-designer">Visual Designer</a></li>
             </ul>

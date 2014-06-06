@@ -22,7 +22,7 @@
             <a class='current' href="/careers">Careers</a>
             <ul class='leftSubNav'>
               <li><a href="/careers/dot-net-engineer">C#/.NET Engineers</a></li>
-              <li><a href="/careers/dot-net-lead">C#/.NET Team Lead</a></li>
+              <li><a href="/careers/dot-net-lead">Senior C#/.NET Engineer</a></li>
               <li><a href="/careers/software-engineer">Java Engineers</a></li>
               <li><a href="/careers/visual-designer">Visual Designer</a></li>
             </ul>
@@ -38,10 +38,10 @@
                 <p><a href="/careers/dot-net-engineer">More >></a></p>
   	        	    
                 <p><hr/></p>
-                <h2 class="noTopMargin">C#/.NET Team Lead</h2>
-                <p>Location: Pune, India</p>
+                <h2 class="noTopMargin">Senior C#/.NET Engineer</h2>
+                <p>Location: Cambridge, MA</p>
                 <p>
-                    US-based .NET professional with 4-7 years of experience.
+                    US-based .NET professional with 4-8 years of experience.
                 </p>    
                 <p><a href="/careers/dot-net-lead">More >></a></p>
 
