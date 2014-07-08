@@ -29,8 +29,8 @@
                         <span class="label" style="display: inline-block; width:50px">Fax:</span> (617) 297-0013<br/>
                         <br/>
                         ScandiLabs, Inc. <br/>
-                        155 Fifth Street<br/>
-                        Cambridge, MA 02141<br/>
+                        12 Spruce Street<br/>
+                        Acton, MA 01720<br/>
                         United States<br/>
                     </p>
                 </div>

@@ -97,7 +97,7 @@
     
     <div id="footerBottomOuter">
         <div id="footerBottom">
-            ScandiLabs&nbsp;&nbsp;&nbsp;(617) 682-0310&nbsp;&nbsp;&nbsp;155 Fifth Street&nbsp;&nbsp;&nbsp;Cambridge, MA 02141          
+            ScandiLabs&nbsp;&nbsp;&nbsp;(617) 682-0310&nbsp;&nbsp;&nbsp;12 Spruce Street&nbsp;&nbsp;&nbsp;Acton, MA 01720          
         </div>
     
         <div style="float:right;padding-top:4px;">
