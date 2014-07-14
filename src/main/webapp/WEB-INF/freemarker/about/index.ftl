@@ -35,7 +35,7 @@
                 <p>ScandiLabs started out doing web development for Madaket Health, a Healthcare IT startup.</p>
                 <p>Founder Jim Dougherty had worked with ScandiLabs founder Mads Kvalsvik as the CEO of <a href="http://www.intralinks.com/" target="_new">IntraLinks</a>, a SaaS-based virtual dataroom provider.  Because of Mads' leadership on the Intralinks software platform that ultimately took them public in 2010, Jim knew that Mads would get the job done.</p>                
                 <p>Today, ScandiLabs serves a variety  of startup clients including MedVentive, SnagAJob, TravelClick and Sold On Sunday.  Thanks to our accumulated experience and a culture that values knowledge sharing and efficiency, we can quickly on-board new clients and deliver development services with unprecedented speed, quality, and scale.</p>
-                <p>The company is headquartered in Cambridge, MA and has its principal development office in Pune, India.  It was founded in 2012.</p>
+                <p>The company is headquartered in Acton, MA and has its principal development office in Pune, India.  It was founded in 2009.</p>
     
             	<div class="clearfix"></div>    
 			</div>

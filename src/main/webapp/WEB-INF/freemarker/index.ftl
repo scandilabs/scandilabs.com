@@ -78,7 +78,7 @@
                 <div>
                     <h2 style="margin-left: 0px">Game-changing Solutions</h2>
                     <ul style="margin-left: 0px">
-                        <li>Cambridge/MIT based solutions design staff</li>
+                        <li>Boston-based solution design</li>
                         <li>Rapid prototyping/wireframing</li>
                         <li>Technical architects with broad business experience</li>
                     </ul>
