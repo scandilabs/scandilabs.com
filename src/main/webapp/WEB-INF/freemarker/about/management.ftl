@@ -35,7 +35,7 @@
                 <h5><a href="contact">E-mail</a></h5>                
 
                 <h2>Manuel D'Silva, Offshore Operations Manager</h2>
-                <p>Manuel loogs after our full-time development staff in Pune, India.  His career includes a number of business ventures ranging from printing to software technology.</p>
+                <p>Manuel looks after our full-time development staff in Pune, India.  His career includes a number of business ventures ranging from printing to software technology.</p>
                 <h5><a href="tel:020 2680 6555">+91.20 2680 6555</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="contact">E-mail</a></h5>                
 
             	<div class="clearfix"></div>    
