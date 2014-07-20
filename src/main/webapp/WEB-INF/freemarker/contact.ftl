@@ -37,7 +37,7 @@
                 <div class="twoColRight">
                     <h4>India</h4>
                     <p>
-                        Praful Thakare, Operations Manager<br/>
+                        Manuel D'Silva, Operations Manager<br/>
                         <span class="label">Phone:</span> <span class="blackLink"><a href="tel:020 2680 6555">+91.20 2680 6555</a></span><br/>
                         <span class="label"></span><br/>
                         <br/>
